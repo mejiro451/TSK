@@ -1,0 +1,161 @@
+spriteTypes = {	
+
+	### KOR - Company
+
+	spriteType = {
+		name = "GFX_idea_doosanDST"
+		texturefile = "gfx/interface/ideas/두산DST.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_samsungtec"
+		texturefile = "gfx/interface/ideas/삼성테크원.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_rottem"
+		texturefile = "gfx/interface/ideas/현대로템.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_daewoo_ship"
+		texturefile = "gfx/interface/ideas/대우조선해양.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hanjin_ship"
+		texturefile = "gfx/interface/ideas/한진해운.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_ship"
+		texturefile = "gfx/interface/ideas/현대중공업.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kai"
+		texturefile = "gfx/interface/ideas/KAI.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_asiana"
+		texturefile = "gfx/interface/ideas/금호아시아나.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_korean_air"
+		texturefile = "gfx/interface/ideas/대한항공.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hwanhwa"
+		texturefile = "gfx/interface/ideas/한화.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gs"
+		texturefile = "gfx/interface/ideas/GS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lg"
+		texturefile = "gfx/interface/ideas/LG.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sk"
+		texturefile = "gfx/interface/ideas/SK.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_samsung"
+		texturefile = "gfx/interface/ideas/삼성.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_doosan"
+		texturefile = "gfx/interface/ideas/두산.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_st"
+		texturefile = "gfx/interface/ideas/ST.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dasan"
+		texturefile = "gfx/interface/ideas/다산.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_daewoo_car"
+		texturefile = "gfx/interface/ideas/대우자동차.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_car"
+		texturefile = "gfx/interface/ideas/현대자동차.dds"
+	}
+	
+    ##### KOR_idea
+	
+	spriteType = {
+		name = "GFX_idea_mkr_unstable_security"
+		texturefile = "gfx/interface/ideas/치안붕괴.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mkr_unorthodox_goverment"
+		texturefile = "gfx/interface/ideas/정통성없는_정부.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mkr_safety_planning_department"
+		texturefile = "gfx/interface/ideas/안기부.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_economic_collapse_1"
+		texturefile = "gfx/interface/ideas/경제붕괴.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_juche"
+		texturefile = "gfx/interface/ideas/주체사상.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_ship"
+		texturefile = "gfx/interface/ideas/현대중공업.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kai"
+		texturefile = "gfx/interface/ideas/KAI.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_asiana"
+		texturefile = "gfx/interface/ideas/금호아시아나.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_korean_air"
+		texturefile = "gfx/interface/ideas/대한항공.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hwanhwa"
+		texturefile = "gfx/interface/ideas/한화.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gs"
+		texturefile = "gfx/interface/ideas/GS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lg"
+		texturefile = "gfx/interface/ideas/LG.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sk"
+		texturefile = "gfx/interface/ideas/SK.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_samsung"
+		texturefile = "gfx/interface/ideas/삼성.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_doosan"
+		texturefile = "gfx/interface/ideas/두산.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_st"
+		texturefile = "gfx/interface/ideas/ST.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dasan"
+		texturefile = "gfx/interface/ideas/다산.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_daewoo_car"
+		texturefile = "gfx/interface/ideas/대우자동차.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_car"
+		texturefile = "gfx/interface/ideas/현대자동차.dds"
+	}
+
+}

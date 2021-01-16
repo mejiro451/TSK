@@ -1,0 +1,85 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+MKR_mkr_nationwide_demonstration_clear_all = {
+	remove_ideas = {
+		mkr_nationwide_demonstration
+		mkr_nationwide_demonstration_2
+		mkr_nationwide_demonstration_3
+		mkr_nationwide_demonstration_4
+		mkr_nationwide_demonstration_5
+	}
+}
+
+#Important to put HIGHEST first
+MKR_mkr_nationwide_demonstration_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = USA_great_depression_up_tt
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration_2 }
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_2
+			add_idea = mkr_nationwide_demonstration
+		}
+	}
+	else_if = {
+		limit = { has_idea = mkr_nationwide_demonstration_3 }
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_3
+			add_idea = mkr_nationwide_demonstration_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = mkr_nationwide_demonstration_4 }
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_4
+			add_idea = mkr_nationwide_demonstration_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = mkr_nationwide_demonstration_5 }
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_5
+			add_idea = mkr_nationwide_demonstration_4
+		}
+	}
+}
+
+#Important to put LOWEST first
+MKR_mkr_nationwide_demonstration_level_down = {
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration_5 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		remove_ideas = mkr_nationwide_demonstration_5
+	}
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration_4 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_4
+			add_idea = mkr_nationwide_demonstration_5
+		}
+	}
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration_3 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_3
+			add_idea = mkr_nationwide_demonstration_4
+		}
+	}
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration_2 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration_2
+			add_idea = mkr_nationwide_demonstration_3
+		}
+	}
+	if = {
+		limit = { has_idea = mkr_nationwide_demonstration }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = mkr_nationwide_demonstration
+			add_idea = mkr_nationwide_demonstration_2
+		}
+	}
+}

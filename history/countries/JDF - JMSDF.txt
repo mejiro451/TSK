@@ -1,0 +1,306 @@
+﻿capital = 819
+
+oob = "JDF_1936"
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+
+	set_naval_oob = "JDF_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "JDF_1936_naval_mtg"
+}
+# Starting tech
+set_technology = {
+	modern_armored_car = 1
+	modern_moto = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	
+	m_1960_sup_infantry_eq = 1
+	m_1970_sup_infantry_eq = 1
+	m_1985_sup_infantry_eq = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	light_ship_engine_modern_1 = 1
+	cruiser_ship_engine_modern_1 = 1
+	ship_modern_radar_1 = 1
+	ship_aegis_radar = 1
+	ship_modern_control_system_1 = 1
+	
+	ship_torpedo_modern_1 = 1
+	
+	ship_ciws = 1
+	ship_ciws_2 = 1
+	
+	ship_missile_luncher_1 = 1	
+	ship_missile_luncher_2 = 1	
+	
+	ship_vls_1 = 1
+	
+	modern_light_battery_1 = 1
+	modern_light_battery_2 = 1
+
+	ship_aa_missile_luncher_1 = 1
+	
+	m_1990DDG = 1
+	
+	m_1980DDH = 1
+	m_1990DDH = 1
+	
+	armored_car1 = 1
+	
+	m_1990_IFV = 1
+}
+
+add_ideas = {
+   KOR_uncompromized_country_idea
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Koichi Furusho"
+	desc = ""
+	picture = "Koichi_Furusho.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Eiji Yoshikawa"
+	desc = ""
+	picture = "Eiji_Yoshikawa.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Taizo Terashima"
+	desc = ""
+	picture = "데라시마 다이조.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "JSDF Armed Force"
+	desc = ""
+	picture = "자위대.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Taizo Terashima"
+	picture = "데라시마 다이조.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Eiji Yoshikawa"
+		picture = "Eiji_Yoshikawa.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Koichi Furusho"
+	picture = "Koichi_Furusho.dds"
+	traits = { old_guard_navy }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	create_equipment_variant = {
+		name = "Kongō Class"
+		type = ship_hull_modern_DDG_1
+		name_group = JDF_DDG_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_ciws_2
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_2
+			fixed_ship_radar_slot = ship_aegis_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_modern_2
+			fixed_ship_sts_slot = ship_missile_luncher_2
+			fixed_ship_armor_slot = ship_armor_cruiser_modern_2
+			front_1_custom_slot = ship_vls_1
+			front_2_custom_slot = ship_ciws_2
+			mid_1_custom_slot = ship_missile_luncher_2
+			rear_1_custom_slot = ship_vls_1
+			rear_2_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Tachikaze Class"
+		type = ship_hull_modern_DDH_1
+		name_group = JDF_DDH_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_modern_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_armor_slot = ship_armor_cruiser_modern_1
+			front_1_custom_slot = ship_aa_missile_luncher_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			rear_1_custom_slot = modern_ship_light_battery_2
+			rear_2_custom_slot = ship_aa_missile_luncher_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Hatsuyuki Class"
+		type = ship_hull_modern_DDH_2
+		name_group = JDF_DDH_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_modern_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_armor_slot = ship_armor_cruiser_modern_1
+			front_1_custom_slot = ship_aa_missile_luncher_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			mid_2_custom_slot = ship_ciws_2
+			rear_1_custom_slot = ship_aa_missile_luncher_1
+			rear_2_custom_slot = ship_hel_modern
+		}
+	}
+	create_equipment_variant = {
+		name = "Asagiri Class"
+		type = ship_hull_modern_DDH_2
+		name_group = JDF_DDH_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_2
+			fixed_ship_radar_slot = ship_modern_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_modern_2
+			fixed_ship_sts_slot = ship_missile_luncher_2
+			fixed_ship_armor_slot = ship_armor_cruiser_modern_2
+			front_1_custom_slot = ship_aa_missile_luncher_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			mid_2_custom_slot = ship_ciws_2
+			rear_1_custom_slot = ship_hel_modern
+			rear_2_custom_slot = ship_hel_modern
+		}
+	}
+	create_equipment_variant = {
+		name = "Hatakaze Class"
+		type = ship_hull_modern_DDH_2
+		name_group = JDF_DDH_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_2
+			fixed_ship_radar_slot = ship_modern_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_modern_2
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_armor_slot = ship_armor_cruiser_modern_2
+			front_1_custom_slot = ship_aa_missile_luncher_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			mid_2_custom_slot = ship_torpedo_modern_1
+			rear_1_custom_slot = modern_ship_light_battery_1
+			rear_2_custom_slot = ship_hel_modern
+		}
+	}
+	create_equipment_variant = {
+		name = "Abukuma Class"
+		type = ship_hull_FF_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_2
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			fixed_ship_battery_slot_1 = empty
+			rear_1_custom_slot = ship_ciws_2
+			mid_1_custom_slot = ship_missile_luncher_1
+			front_1_custom_slot = ship_missile_luncher_1
+		}
+	}
+}

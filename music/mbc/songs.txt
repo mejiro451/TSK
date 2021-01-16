@@ -1,0 +1,135 @@
+
+music_station = "mbc"
+
+# General
+music = {
+	song = "anti_communism"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "anti_communism_ins"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "kimchilied"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "frontline"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "comrade"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "comrade_ins"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "5min"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "peoples_army"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "attack"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "letsgo"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "scared_war"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "aggukga_north"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}

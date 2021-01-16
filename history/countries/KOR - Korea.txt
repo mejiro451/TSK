@@ -1,0 +1,1215 @@
+﻿capital = 807 #South Korea - Seoul or Busan
+
+1936.1.3 = {
+	set_country_flag = 2009_scenario
+}
+oob = "KOR_1939"
+set_research_slots = 4
+
+add_ideas = {
+	#laws
+	korean_economy
+	korean_war
+	closed_economy
+	KOR_danilminjok
+	kor_law_of_korean_5
+	FKR_back_down_military
+	KOR_future_ideas
+	hell_joseon
+	kor_supremacy_of_will
+	KOR_legacy_of_518
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_equipment_1 = 1
+	improved_infantry_weapons = 1
+	#산업
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
+	fuel_silos = 1
+	construction1 = 1
+	#공군
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_fighter1 = 1
+	fighter2 = 1
+	cv_fighter2 = 1
+	CAS2 = 1
+	cv_CAS2 = 1
+	cv_naval_bomber1 = 1
+	naval_bomber2 = 1
+	cv_naval_bomber2 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	strategic_bomber1 = 1
+	suicide_craft = 1
+	#땅크
+	gwtank = 1
+	basic_light_tank = 1
+	basic_light_td = 1
+	basic_light_art = 1
+	basic_light_spaa = 1
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa = 1
+	basic_heavy_tank = 1
+	#야포
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+	m_1990_mechanized_equipment = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	
+	m_1980_motorized_rocket_unit = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	m_1990_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	m_1980_jet_CAS = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	m_1990_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	m_1990_util_helicopter = 1
+	
+	m_1970PCC = 1
+	m_1980PCC = 1
+	
+	modern_light_battery_1 = 1
+	ship_missile_luncher_1 = 1
+	ship_aa_missile_luncher_1 = 1
+	ship_ciws = 1
+	ship_modern_control_system_1 = 1
+	ship_modern_radar_1 = 1
+	light_ship_engine_modern_1 = 1
+}
+
+set_technology = {
+
+	light_ship_engine_modern_1 = 1
+	cruiser_ship_engine_modern_1 = 1
+	ship_modern_radar_1 = 1
+	ship_aegis_radar = 1
+	ship_modern_control_system_1 = 1
+	
+	ship_torpedo_modern_1 = 1
+	
+	ship_ciws = 1
+	ship_ciws_2 = 1
+	
+	ship_missile_luncher_1 = 1	
+	ship_missile_luncher_2 = 1	
+	
+	ship_vls_1 = 1
+	
+	modern_light_battery_1 = 1
+	modern_light_battery_2 = 1
+
+	ship_aa_missile_luncher_1 = 1
+	
+	m_1990DDG = 1
+	
+	m_1980DDH = 1
+	m_1990DDH = 1
+}
+set_convoys = 115
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 0
+	communism = 0
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "Rho Tae whoo"
+	desc = ""
+	picture = "Rho_Tae_Whoo.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Gu Chang hoe"
+	picture = "구창회.dds"
+	traits = { KOR_Hanahoe }
+	id = 10001
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Jin young"
+	picture = "김진영.dds"
+	traits = { KOR_Hanahoe }
+	id = 10002
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ahn Pil jun"
+	picture = "안필준.dds"
+	id = 10003
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Nam shin"
+	picture = "이남신.dds"
+	id = 10004
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Jong gu"
+	picture = "이종구.dds"
+	id = 10005
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Cho Nam poong"
+	picture = "조남풍.dds"
+	id = 10006
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Choi Se chang"
+	picture = "최세창.dds"
+	id = 10007
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gil Hyung bo"
+	picture = "길형보.dds"
+	id = 10008
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Dong shin"
+	picture = "김동신.dds"
+	id = 10009
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Do Il gyu"
+	picture = "도일규.dds"
+	traits = { }
+	id = 10010
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oh Ja bok"
+	picture = "오자복.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	id = 10011
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yoon Yong nam"
+	picture = "운용남.dds"
+	traits = { }
+	id = 10012
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Jun"
+	picture = "이준.dds"
+	traits = { }
+	skill = 1
+	id = 10013
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee jin sam"
+	picture = "이진삼.dds"
+	traits = { KOR_Hanahoe }
+	skill = 1
+	id = 10014
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Min Kyung bae"
+	picture = "민경배.dds"
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	id = 10015
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Pil sub"
+	picture = "이필섭.dds"
+	traits = { KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	id = 10016
+	logistics_skill = 1
+}
+#전격전 시나리오
+1936.1.4 = {
+remove_ideas = {
+    kor_supremacy_of_will
+}
+remove_unit_leader = 10001
+remove_unit_leader = 10002
+remove_unit_leader = 10003
+remove_unit_leader = 10004
+remove_unit_leader = 10005
+remove_unit_leader = 10006
+remove_unit_leader = 10007
+remove_unit_leader = 10008
+remove_unit_leader = 10009
+remove_unit_leader = 10010
+remove_unit_leader = 10011
+remove_unit_leader = 10012
+remove_unit_leader = 10013
+remove_unit_leader = 10014
+remove_unit_leader = 10015
+remove_unit_leader = 10016
+add_ideas = {
+	#laws
+	korean_economy
+	korean_war
+	closed_economy
+	FKR_back_down_military
+	KOR_no_communism_crusader
+	KOR_future_ideas
+	KOR_legacy_of_518
+	KOR_half_country
+	KOR_modern_millitary
+    KOR_nationalist_question
+    KOR_kowareta_katana
+}
+set_party_name = {
+    ideology = fascism
+    long_name = "한나라당"
+    name = "한나라당"
+}
+set_party_name = {
+    ideology = communism
+    long_name = "통합진보당"
+    name = "통합진보당"
+}
+set_party_name = {
+    ideology = democratic
+    long_name = "한나라당"
+    name = "한나라당"
+}
+set_party_name = {
+    ideology = neutrality
+    long_name = "대한제국 복권파"
+    name = "대한제국 복권파"
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_equipment_1 = 1
+	improved_infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	transport = 1
+	future_infantry_equipment = 1
+	future_mechanized_equipment = 1
+	future_modern_tank = 1
+	future_modern_tank_aa = 1
+	future_modern_tank_artillery = 1
+	attack_heli = 1
+	transport_heli = 1
+	future_jet_multirole = 1
+	future_jet_CAS = 1
+	#핵연구
+	atomic_research = 1
+	nuclear_reactor  = 1
+	#연구
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	#산업
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
+	fuel_silos = 1
+	construction1 = 1
+	#공군
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_fighter1 = 1
+	fighter2 = 1
+	cv_fighter2 = 1
+	CAS2 = 1
+	cv_CAS2 = 1
+	cv_naval_bomber1 = 1
+	naval_bomber2 = 1
+	cv_naval_bomber2 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	strategic_bomber1 = 1
+	suicide_craft = 1
+	#땅크
+	gwtank = 1
+	basic_light_tank = 1
+	basic_light_td = 1
+	basic_light_art = 1
+	basic_light_spaa = 1
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa = 1
+	basic_heavy_tank = 1
+	#야포
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	
+	#미래
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	m_2000_infantry_eq = 1
+	
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	m_2000_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+	m_1990_mechanized_equipment = 1
+	m_2000_mechanized_equipment = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	m_2000_spaa = 1
+	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	m_2000_sp = 1
+	
+	m_1980_motorized_rocket_unit = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	m_1990_manpad = 1
+	m_2000_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	m_2000_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	m_2000_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	m_1990_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	m_1980_jet_CAS = 1
+	m_1990_jet_CAS = 1
+	m_2000_jet_CAS = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	m_2000_atgm = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	m_1990_attack_helicopter = 1
+	m_2000_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	m_1990_util_helicopter = 1
+	m_2000_util_helicopter = 1
+	
+	m_1970PCC = 1
+	m_1980PCC = 1
+	m_1990PCC = 1
+	m_2000PCC = 1
+	
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		future_light_hull = 1
+		future_cruiser_hull = 1
+		future_carrier_hull = 1
+		future_submarine_hull = 1
+		future_naval_module = 1
+	}
+	set_naval_oob = ""
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		transport = 1
+		future_destroyer_legacy = 1
+		future_light_cruiser_legacy = 1
+		future_carrier_legacy = 1
+		future_submarine_legacy = 1
+	}
+	set_naval_oob = ""
+}
+
+set_convoys = 250
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 15
+	communism = 15
+}
+
+### Country Leader ###
+set_country_flag = mb_kor
+
+create_country_leader = {
+	name = "Lee Myungbak"
+	desc = ""
+	picture = "gfx/leaders/KOR/MB.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		KOR_lee_myungbak_trait
+	}
+}
+
+create_country_leader = {
+	name = "Yi Won"
+	desc = ""
+	picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		imperial_connections
+	}
+}
+
+create_country_leader = {
+	name = "Lee Seokki"
+	desc = ""
+	picture = "gfx/leaders/KOR/MB.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Park Geunhye"
+	desc = ""
+	picture = "gfx/leaders/KOR/PGH.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###
+
+create_field_marshal = {
+	name = "Lee Myungbak"
+	picture = "MB.dds"
+	traits = { }
+	skill = 9
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Chun Jinkoo"
+	picture = "Portrait_modern_general_jeon_jingu.dds"
+	traits = { career_officer commando naval_invader invader_ii }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Um Hyunsung"
+	picture = "Portrait_modern_admiral_eom_hyunsung.dds"
+	traits = { spotter superior_tactician air_controller }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+	create_corps_commander = {
+		name = "Han Min-goo"
+		picture = "generals/Han_Min_Goo.dds"
+		id = 33000
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Jeong Seung-jo"
+		picture = "generals/Jeong_Seung_Jo.dds"
+		id = 33001
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Kim Kwan-jin"
+		picture = "generals/Kim_Kwan_Jin.dds"
+		id = 33002
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Lee Sang-hoon"
+		picture = "generals/Lee_Sang_Hoon.dds"
+		id = 33003
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Lee Soon-jin"
+		picture = "generals/Lee_Soon_Jin.dds"
+		id = 33004
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Kim Yong-woo"
+		picture = "gen_Kim_Yong_Woo.dds"
+		traits = { }
+		id = 33005
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+	create_corps_commander = {
+		name = "Lee Sun-jin"
+		picture = "gen_Lee_Sun_Jin.dds"
+		traits = {  }
+		id = 33006
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_navy_leader = {
+		name = "Um Hyun-Seong"
+		picture = "adm_Um_Hyun_Seong.dds"
+		traits = { }
+		id = 33007
+	}
+	create_field_marshal = {
+		name = "Jang Jun-Kyu"
+		picture = "Portrait_Jang_Jun_Kyu.dds"
+		traits = { old_guard offensive_doctrine }
+		id = 33008
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Jeong Kyung-Doo"
+		picture = "Portrait_Jeong_Kyung_Doo.dds"
+		traits = { logistics_wizard }
+		id = 33009
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Park Chan-Ju"
+		picture = "Portrait_Park_Chan_Ju.dds"
+		traits = { thorough_planner }
+		id = 33010
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Chung Kyung-Seok"
+		picture = "Portrait_Chung_Kyung_Seok.dds"
+		traits = { fast_planner }
+		id = 33011
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Koo Hong-Moo"
+		picture = "Portrait_Koo_Hong_Moo.dds"
+		traits = { defensive_doctrine }
+		id = 33012
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Kim Seok-Jin"
+		picture = "Portrait_Kim_Seok_Jin.dds"
+		traits = {  }
+		id = 33013
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Jo Jong-Seol"
+		picture = "Portrait_Jo_Jong_Seol.dds"
+		traits = { commando urban_assault_specialist }
+		id = 33014
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Kim Byung-Joo"
+		picture = "Portrait_Kim_Byung_Joo.dds"
+		traits = { trait_mountaineer }
+		id = 33015
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Han Gi-Ho"
+		picture = "Portrait_Han_Gi_Ho.dds"
+		traits = { fortress_buster }
+		id = 33016
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Lee Jung-Geun"
+		picture = "Portrait_Lee_Jung_Geun.dds"
+		traits = { trait_engineer }
+		id = 33017
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Yong Sung-Hwan"
+		picture = "Portrait_Yong_Sung_Hwan.dds"
+		traits = { ranger }
+		id = 33018
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Lee Jin-Seong"
+		picture = "Portrait_Lee_Jin_Seong.dds"
+		traits = { trickster }
+		id = 33019
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Yeong-Sik"
+		picture = "Portrait_Kim_Jeong_Sik.dds"
+		traits = { panzer_leader ranger }
+		id = 33020
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Kim Un-Yeong"
+		picture = "Portrait_Kim_Un_Jeong.dds"
+		traits = { hill_fighter }
+		id = 33021
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Park Han-Ki"
+		picture = "Portrait_Park_Han_Ki.dds"
+		traits = { swamp_fox }
+		id = 33022
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Na Sang-Woong"
+		picture = "Portrait_Na_Sang_Woong.dds"
+		traits = { panzer_leader }
+		id = 33023
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Yom Gi-Hak"
+		picture = "Portrait_Yom_Gi_Hak.dds"
+		traits = { panzer_leader ranger }
+		id = 33024
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = " Kim Seon-Ho"
+		picture = "Portrait_Kim_Seon_Ho.dds"
+		traits = { ranger trickster }
+		id = 33025
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Chun Yung-Gu"
+		picture = "Portrait_Chun_Yung_Gu.dds"
+		traits = { commando naval_invader }
+		id = 33026
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Choi Chang-Ryong"
+		picture = "Portrait_Choi_Chang_Ryong.dds"
+		traits = { naval_invader trait_engineer }
+		id = 33027
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_navy_leader = {
+		name = "Jeong Jin-Seob"
+		picture = "Portrait_Jeong_Jin_Seob.dds"
+		traits = { ironside }
+		id = 33028
+	}
+
+	create_navy_leader = {
+		name = "Kim Chang-Kyu"
+		picture = "Portrait_Kim_Chang_Gyu.dds"
+		traits = { air_controller }
+		id = 33029
+	}
+
+	create_navy_leader = {
+		name = "Yoon Jeong-Sang"
+		picture = "Portrait_Yoon_Jeong_Sang.dds"
+		traits = { seawolf }
+		id = 33030
+	}
+	create_navy_leader = {
+		name = "Jung Ho-sub"
+		picture = "admirals/Jung_Ho_Sub.dds"
+		id = 33031
+	}
+	create_navy_leader = {
+		name = "Lee Ki-sik"
+		picture = "admirals/Lee_Ki_Sik.dds"
+		id = 33032
+	}
+
+	create_navy_leader = {
+		name = "Sim Seung-Seop"
+		picture = "Portrait_Sim_Seung_Seop.dds"
+		traits = { fly_swatter }
+		id = 33033
+	}
+
+	create_navy_leader = {
+		name = "Moon Byung-Ok"
+		picture = "Portrait_Moon_Byung_Ok.dds"
+		traits = { blockade_runner }
+		id = 33034
+	}
+
+	create_navy_leader = {
+		name = "Park Dong-Sun"
+		picture = "Portrait_Park_Dong_Sun.dds"
+		traits = { blockade_runner }
+		id = 33035
+	}
+
+	create_navy_leader = {
+		name = "Park Seong-Soo"
+		picture = "Portrait_Park_Seong_Soo.dds"
+		traits = { ironside }
+		id = 33036
+	}
+}
+    create_equipment_variant = {
+		name = "동해"
+		type = ship_hull_PCC_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "포항"
+		type = ship_hull_PCC_2
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			rear_1_custom_slot = ship_missile_luncher_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "울산"
+		type = ship_hull_FF_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			fixed_ship_battery_slot_1 = modern_ship_light_battery_1
+			rear_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			front_1_custom_slot = modern_ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "참수리"
+		type = ship_hull_PKM_1
+		name_group = ROK_PKM_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			mid_1_custom_slot = ship_ciws_1
+			rear_1_custom_slot = ship_depth_charge
+		}
+	}
+	set_country_flag = 2009_scenario
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+
+	set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = ""
+}
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	create_operative_leader = {
+		name = "염동진"
+		GFX = GFX_Portrait_yeom_dong_jin
+		traits = { operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { KOR JAP CHI USA }
+	}	
+	create_operative_leader = {
+		name = "상하이 조"
+		GFX = GFX_Portrait_shanghai_cho
+		traits = { operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { KOR CHI }
+	}
+	create_operative_leader = {
+		name = "김두한"
+		GFX = GFX_Portrait_4dollor2
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { KOR }
+	}
+	create_operative_leader = {
+		name = "심영"
+		GFX = GFX_Portrait_goza
+		traits = {  }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { KOR }
+	}
+}

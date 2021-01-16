@@ -1,0 +1,24 @@
+
+state={
+	id=815
+	name="양강도"
+
+	history={
+		owner = PRK
+		add_core_of = PRK
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		3803 3904 9899 11878 
+	}
+	manpower=723100
+	buildings_max_level_factor=1.000
+	state_category=city
+}

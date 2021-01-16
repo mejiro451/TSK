@@ -1,0 +1,63 @@
+spriteTypes = {	
+
+	### South korea ###
+
+
+	SpriteType = {
+		name = "GFX_KOR_m_1960_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/infantry/1960_infantry_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1970_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/infantry/1970_infantry_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1980_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/infantry/1980_infantry_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1990_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/infantry/1990_infantry_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1960_mbt_medium"
+		texturefile = "gfx/interface/technologies/tank/1960_mbt.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1970_mbt_medium"
+		texturefile = "gfx/interface/technologies/tank/1970_mbt.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1980_mbt_medium"
+		texturefile = "gfx/interface/technologies/tank/1980_mbt.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_m_1990_mbt_medium"
+		texturefile = "gfx/interface/technologies/tank/1990_mbt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_1980_attack_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/1980_attack_helicopter.dds"
+	}		
+	SpriteType = {
+		name = "GFX_GER_1970_attack_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/1970_attack_helicopter.dds"
+	}		
+	SpriteType = {
+		name = "GFX_GER_1970_util_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/1970_util_helicopter.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_2000_jet_multirole_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/2000_jet_multirole.dds"
+	}	
+    SpriteType = {
+		name = "GFX_ship_hull_modern_DDG_1_medium"
+		texturefile = "gfx/interface/technologies/navy/ship_hull_DDG_1.dds"
+	}
+    SpriteType = {
+		name = "GFX_ship_hull_modern_DDH_1_medium"
+		texturefile = "gfx/interface/technologies/navy/ship_hull_DDH_1.dds"
+	}
+}

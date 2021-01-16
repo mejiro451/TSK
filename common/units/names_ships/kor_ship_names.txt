@@ -1,0 +1,121 @@
+﻿##### USA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+ROK_PCC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOR ROK MKR }
+
+	type = ship
+	ship_types = { ship_hull_PCC ship_hull_FF }			
+
+	#link_numbering_with = { USA_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
+
+	prefix = "ROKS "							
+	fallback_name = "7%d"					
+
+	unique = {											# TO CHECK: "unique = { }" working but does not seem to recognize names already in OOBs
+		# 동해급
+		"동해" "수원" "강릉" "안양"
+		# 포항급
+		"포항" "군산" "경주" "목포" "김천" "충주" "진주" "여수" "진해" "순천" "익산" "원주" "안동" "천안" "부천" "성남" "제천" "대천" "속초" "영주" 
+		"남원" "광명" "신성" "공주"
+		#울산급
+		"울산" "서울" "충남" "마산" "경북" "전남" "제주" "부산" "청주"
+		#인천급
+		"인천" "경기" "전북" "강원" "충북" "광주" 
+		#대구급
+		"대구" "경남"
+		#창작
+		"양산" "밀양" "김해" "사천" "광양" "순천" "나주" "영천" "구미" "김천" "전주" "김제" "논산" "대전" "상주" "문경" "당진" "서산" "평택" 
+		"화성" "안성" "삼척" "태백" "여주" "이천" "용인" "안산" "남양주" "의정부" "김포" "양주" "파주" "포천" "동두천" "춘천"
+	}
+}
+
+
+### ESCORT DESTROYER NAMES###
+ROK_DDH_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DH
+
+	for_countries = { KOR ROK MKR }
+
+	type = ship
+	ship_types = { ship_hull_modern_DDH }
+	
+	#link_numbering_with = { USA_DD_HISTORICAL }	
+
+	prefix = "ROKS "							
+	fallback_name = "DD-%d"
+
+	unique = {
+		#광개토대왕급
+		"광개토대왕" "을지문덕" "양만춘"
+		#충무공 이순신급
+		"충무공 이순신" "문무대왕" "대조영" "왕건" "강감찬" "최영"
+		#세종대왕급
+		"세종대왕" "율곡이이" "서애류성룡"
+		#창작
+		"김윤후" "김춘추" "김유신" "계백" "김윤후" "권율" "근초고왕" "퇴계이황"
+		"홍범도" "지청천" "김좌진"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+ROK_PKM_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR ROK MKR }
+
+	type = ship
+	ship_types = { ship_hull_PKM }
+	
+	prefix = "ROKS "							
+	fallback_name = "PKM-2%d"
+}
+
+###해상자위대
+JDF_DDG_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { JDF }
+
+	type = ship
+	ship_types = { ship_hull_modern_DDG }
+	
+	prefix = "JDS "							
+	fallback_name = "DDG-%d"
+
+	unique = {
+		#공고 
+		"Kongō" "Kirishima" "Myōkō" "Chōkai"
+		#아타고 
+		"Atago" "Ashigara" 
+		#마야 
+		"Maya" "Haguro"
+	}
+}
+
+JDF_DDH_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { JDF }
+
+	type = ship
+	ship_types = { ship_hull_modern_DDH }
+	
+	prefix = "JDS "							
+	fallback_name = "DD-1%d"
+
+	unique = {
+		#타치카제
+		"Tachikaze" "Asakaze" "Sawakaze"
+		#하츠유키
+		"Hatsuyuki" "Shirayuki" "Mineyuki" "Sawayuki" "Hamayuki" "Isoyuki" "Haruyuki" "Yamayuki" "Matsuyuki" "Setoyuki" "Asayuki" "Shimayuki"
+		#아사기리
+		"Asagiri" "Yamagiri" "Yūgiri" "Amagiri" "Hamagiri" "Setogiri" "Sawagiri" "Umigiri"
+		#하타카제 
+		"Hatakaze" "Shimakaze"
+	}
+}
+
+
+

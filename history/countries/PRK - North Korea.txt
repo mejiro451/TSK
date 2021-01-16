@@ -1,0 +1,503 @@
+﻿capital = 818 
+
+oob = "PRK_1936"
+
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+}
+
+add_ideas = {
+   KOR_food_1
+   KOR_juche
+}
+
+set_stability = 0.2
+set_war_support = 0.4
+set_fuel_ratio = 1.0
+
+# Starting tech
+set_technology = {
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	modern_amphibious_mechanized = 1
+
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	
+	m_1960_sup_infantry_eq = 1
+	m_1970_sup_infantry_eq = 1
+	m_1985_sup_infantry_eq = 1
+	
+	m_1950_modern_tank = 1
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+
+	m_1970_IFV = 1
+	m_1980_IFV = 1
+	m_1990_IFV = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	
+	m_1970_sp = 1	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	
+	m_1970_motorized_rocket_unit = 1
+	m_1980_motorized_rocket_unit = 1
+	m_1990_motorized_rocket_unit = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	m_1980_jet_CAS = 1
+	m_1990_jet_CAS = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	modern_moto = 1
+	
+	modern_fuel_silos = 1
+	modern_fuel_refining = 1
+}
+
+add_ideas = KOR_modern_millitary
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 100
+}
+
+### Country Leader ###
+
+create_country_leader = {
+	name = "Yeo Woon hyung"
+	desc = ""
+	picture = "gfx/leaders/KPA/KJU.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim il sung"
+	desc = ""
+	picture = "gfx/leaders/PRK/Kim_il_sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###
+
+create_corps_commander = {
+	name = "Kim Kyek sik"
+	picture = "김격식.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Yeng chel"
+	picture = "김영철.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Young chun"
+	picture = "김영춘.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Myung Soo"
+	picture = "리명수.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oh Geuk ryeol"
+	picture = "오극렬.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oh Jin Woo"
+	picture = "오진우.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Choi Kwang"
+	picture = "최광.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Choe Ryong hae"
+	picture = "최룡해.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hwang Byeong seo"
+	picture = "황병서.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hyun Young chul"
+	picture = "현영철.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bak Yeong sik"
+	picture = "박영식.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Jung kak"
+	picture = "김정각.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+1936.1.3 = {
+	set_country_flag = 2009_scenario
+}
+1936.1.4 = {
+set_convoys = 50
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communism = 100
+}
+
+### Country Leader ###
+
+create_country_leader = {
+	name = "김 한솔"
+	desc = ""
+	picture = "gfx/leaders/KPA/KHS.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "장 성택"
+	desc = ""
+	picture = "gfx/leaders/KPA/portrait_jang_sung_tack.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Jong-un"
+	desc = ""
+	picture = "gfx/leaders/KPA/KJU.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+	create_field_marshal = {
+		name = "Kim Jong-un"
+			picture = "Kim_Jong-un.dds"
+		traits = { inspirational_leader }
+		id = 44100
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Ri Myong-su"
+			picture = "gen_Ri_Myong_Su.dds"
+		traits = {  }
+		id = 44101
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Ri Yong-gil"
+			picture = "gen_Ri_Yong_Gil.dds"
+		traits = {  }
+		id = 44102
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_navy_leader = {
+		name = "Yi Yong-ju"
+			picture = "adm_Yi_Yong_Ju.dds"
+		traits = {  }
+		id = 44103
+	}
+	create_corps_commander = {
+		name = "Hyon Yong Chol"
+		picture = "Portrait_Hyon_Yong_Chol.dds"
+		traits = {  }
+		id = 44104
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Cho Ryong Hae"
+		picture = "Portrait_Cho_Ryong_Hae.dds"
+		traits = {  }
+		id = 44105
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Choe Pu Il"
+		picture = "Portrait_Choe_Pu_Il.dds"
+		traits = {  }
+		id = 44106
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Hwang Pyong So"
+		picture = "Portrait_Hwang_Pyong_So.dds"
+		traits = {  }
+		id = 44107
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Jo Chun Ryong"
+		picture = "Portrait_Jo_Chun_Ryong.dds"
+		traits = {  }
+		id = 44108
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Chun Sop"
+		picture = "Portrait_Kim_Chun_Sop.dds"
+		traits = {  }
+		id = 44109
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Jo Kyong Chol"
+		picture = "Portrait_Jo_Kyong_Chol.dds"
+		traits = {  }
+		id = 44110
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Kyok Sik"
+		picture = "Portrait_Kim_Kyok_Sik.dds"
+		traits = {  }
+		id = 44111
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Myong Kuk"
+		picture = "Portrait_Kim_Myong_Kuk.dds"
+		traits = {  }
+		id = 44112
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Won Hong"
+		picture = "Portrait_Kim_Won_Hong.dds"
+		traits = {  }
+		id = 44113
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Yong Chun"
+		picture = "Portrait_Kim_Yong_Chun.dds"
+		traits = {  }
+		id = 44114
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Pak Yong Sik"
+		picture = "Portrait_Pak_Yong_Sik.dds"
+		traits = {  }
+		id = 44115
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	set_country_flag = 2009_scenario
+}

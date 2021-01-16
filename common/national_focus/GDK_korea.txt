@@ -1,0 +1,1388 @@
+focus_tree = {
+	id = GDK_korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TSK
+		}
+	}
+	focus = {
+		id = KPA_oppose_kim
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5.00
+		mutually_exclusive = {
+			focus = KPA_great_purge
+		}
+		aviable = {
+		    always = no
+		}
+		x = 29
+		y = 0
+	    completion_reward = {
+			add_political_power = 150
+			country_event = kpa.1
+			remove_ideas = FKR_back_down_military_2
+		}
+	}
+	focus = {
+		id = KPA_great_purge
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		mutually_exclusive = {
+			focus = KPA_oppose_kim
+		}
+		x = 14
+		y = 0
+	    completion_reward = {
+			add_political_power = 150
+			remove_ideas = FKR_back_down_military_2
+		}		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	focus = {
+		id = KPA_naval_reform
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		x = 21
+		y = 1
+		completion_reward = {
+			802 = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			804 = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KPA_reform_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = KPA_army_factories
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_reform_economy
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = KPA_korean_economy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_reform_economy
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = KPA_korean_spy_network
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 2.00
+		prerequisite = {
+			focus = KPA_great_purge
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KPA_partizan
+		icon = GFX_focus_ger_great_red_menace
+		cost = 2.00
+		prerequisite = {
+			focus = KPA_great_purge
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+			add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = KPA_build_trench
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 2.00
+		prerequisite = {
+			focus = KPA_great_purge
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			add_war_support = 0.3
+		}
+
+	}
+	focus = {
+		id = KPA_great_war_of_korea
+		icon = GFX_focus_jap_cast_the_die
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_korean_spy_network
+		}
+		prerequisite = {
+			focus = KPA_partizan
+		}
+		prerequisite = {
+			focus = KPA_build_trench
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 1사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 2사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 3사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 4사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			
+			declare_war_on = {
+				target = KOR
+				type = annex_everything
+			}
+			hidden_effect = {
+			    add_equipment_to_stockpile = {
+				    type = infantry_equipment_0
+				    amount = 10000
+				    producer = PRK
+			    }
+			}
+		
+		}
+
+	}
+	focus = {
+		id = KPA_support_chinese_comme
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_great_war_of_korea
+		}
+		completion_reward = {
+		PRC = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 10000
+				producer = PRK
+				}
+			}
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = KPA_united_china
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_support_chinese_comme
+		}
+		completion_reward = {
+		PRC = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GXC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XSM
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PRC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIK
+			}
+		}
+		PRK = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GXC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XSM
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PRC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIK
+			}
+		}
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = KPA_friend_sov
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_united_china
+		}
+		mutually_exclusive = {
+			focus = KPA_attack_sov
+		}
+		completion_reward = {
+		SOV = {
+			country_event = kor_world.1
+			}
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = KPA_attack_sov
+		icon = GFX_focus_attack_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_united_china
+		}
+		mutually_exclusive = {
+			focus = KPA_friend_sov
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = KPA_naval_foucs
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_naval_reform
+		}
+		completion_reward = {
+			navy_experience = 25
+			802 = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = KPA_ocean_navy
+		icon = GFX_focus_generic_cruiser2
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_naval_foucs
+		}
+		completion_reward = {
+			navy_experience = 50
+			527 = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+				category = shbb_tech
+			}
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = KPA_war_with_jap
+		icon = GFX_focus_attack_japan
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_ocean_navy
+		}
+		prerequisite = {
+			focus = KPA_united_china
+		}
+		mutually_exclusive = {
+			focus = KPA_allie_jap
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = KPA_allie_jap
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_ocean_navy
+		}
+		prerequisite = {
+			focus = KPA_united_china
+		}
+		mutually_exclusive = {
+			focus = KPA_war_with_jap
+		}
+		completion_reward = {
+		JAP = {
+			country_event = kor_world.1
+			}
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = KPA_plan_a
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_ocean_navy
+		}
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+				category = shbb_tech
+			}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = KPA_sub_central
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_plan_a
+		}
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_u_boat_effort
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = KPA_build_shipment
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_naval_foucs
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					NOT = { has_state_flag = GER_naval_effort2_2dockyards }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = KPA_new_navy
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_sub_central
+		}
+		prerequisite = {
+			focus = KPA_build_shipment
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 3
+				category = base_strike_main
+			}
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = KPA_form_new_country
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_oppose_kim
+		}
+		available = {
+			is_puppet = no
+			has_war = no
+			NOT = {
+				any_country = {
+					original_tag = PRK
+					has_government = communism
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+			}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = KPA_military_junta
+		icon = GFX_goal_generic_military_sphere
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_form_new_country
+		}
+		mutually_exclusive = {
+			focus = KPA_free_joeson
+		}
+		completion_reward = {
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = KPA_focus_korea
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_military_junta
+		}
+		prerequisite = {
+			focus = KPA_naval_foucs
+		}
+		mutually_exclusive = {
+			focus = KPA_focus_comme
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_named_threat = { threat = 5 name = KPA_focus_korea }
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = KPA_focus_comme
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_military_junta
+		}
+		mutually_exclusive = {
+			focus = KPA_focus_korea
+		}
+		completion_reward = {
+			add_popularity = {
+			ideology = communism
+			popularity = -0.5
+			}
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = KPA_free_joeson
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_form_new_country
+		}
+		mutually_exclusive = {
+			focus = KPA_military_junta
+		}
+		completion_reward = {
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = KPA_korean_militarism
+		icon = GFX_focus_mex_soldaderas
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_free_joeson
+			focus = KPA_military_junta
+		}
+		completion_reward = {
+			add_ideas = KPA_korean_militarism1
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = KPA_reform_nation
+		icon = GFX_focus_RAJ_indian_gurkhas
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_korean_militarism
+		}
+		completion_reward = {
+			add_ideas = KPA_rebuild_nation1
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = KPA_brand_new_korea
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_korean_militarism
+		}
+		completion_reward = {
+			add_ideas = KPA_new_korea
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = KPA_new_republic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_brand_new_korea
+		}
+		prerequisite = {
+			focus = KPA_reform_nation
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = KPA_korean_aid
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_free_joeson
+		}
+		completion_reward = {
+			PRK = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+				producer = KOR
+				}
+			}
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = KPA_break_korean_navy
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_focus_korea
+		}
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					NOT = { has_state_flag = GER_pride_of_the_modern_germany_dockyards }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = KPA_break_korean_navy
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = shbb_tech
+			}
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = KPA_korean_blockade
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5.00
+		prerequisite = {
+			focus = KPA_break_korean_navy
+		}
+		completion_reward = {
+			KOR = {
+				add_ideas = KPA_korean_blockade1
+				}
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = KPA_across_the_pacific
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_allie_jap
+			focus = KPA_war_with_jap
+			focus = KPA_attack_sov
+			focus = KPA_friend_sov
+		}
+		prerequisite = {
+			focus = KPA_plan_a
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+				expire = 0
+				}
+		}
+		
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = KPA_accept_korean_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_focus_comme
+		}
+		completion_reward = {
+			add_ideas = KPA_focus_troop
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = KPA_korean_peninsula_alliance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_accept_korean_navy
+		}
+		prerequisite = {
+			focus = KPA_new_republic
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+				create_faction = KPA_peninsula_alliance
+				KOR = { custom_effect_tooltip = invite_to_faction_tt }
+				hidden_effect = {
+					KOR = { country_event = generic.5 }
+					}
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = KPA_vladivostok
+		icon = GFX_focus_attack_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_korean_peninsula_alliance
+			focus = KPA_war_with_korea
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = KPA_war_with_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_korean_blockade
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KOR
+			}
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = KPA_sun_down
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_korean_peninsula_alliance
+		}
+		prerequisite = {
+			focus = KPA_vladivostok
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = KPA_industrial_park
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_korean_aid
+		}
+		completion_reward = {
+			811 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = KPA_separated_families_meeting
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_industrial_park
+		}
+		completion_reward = {
+			country_event = kpa.2
+				}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = KPA_union_united
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_disarm_DMZ
+		}
+		completion_reward = {
+			KOR = {
+				annex_country = {
+					target = PRK
+					transfer_troops = no
+				}
+			}
+			KOR = { change_tag_from = PRK }
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = KPA_truce_line_destruction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_separated_families_meeting
+		}
+		prerequisite = {
+			focus = KPA_new_republic
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = KPA_disarm_DMZ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_truce_line_destruction
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = KPA_attack_chi
+		icon = GFX_focus_attack_china
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_sun_down
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHI
+			}
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = KPA_unite_chi
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_war_with_korea
+		}
+		prerequisite = {
+			focus = KPA_vladivostok
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GXC
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = XSM
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHI
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIK
+			}
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = KPA_no_united_front
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_attack_chi
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KOR
+			}
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = KPA_rule_pacific
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_across_the_pacific
+		}
+		prerequisite = {
+			focus = KPA_go_to_south
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = AST
+				type = annex_everything
+				expire = 0
+				}
+			create_wargoal = {
+				target = PHI
+				type = annex_everything
+				expire = 0
+				}
+			create_wargoal = {
+				target = NZL
+				type = annex_everything
+				expire = 0
+				}
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = KPA_next_atlantic
+		icon = GFX_focus_generic_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_rule_pacific
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ENG
+				type = annex_everything
+				expire = 0
+				}
+			create_wargoal = {
+				target = POR
+				type = annex_everything
+				expire = 0
+				}
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+				expire = 0
+				}
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = KPA_greater_korean_republic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_next_atlantic
+		}
+		completion_reward = {
+			set_cosmetic_tag = KPA_GREATER
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = KPA_go_to_south
+		icon = GFX_focus_jap_strike_south
+		cost = 10.00
+		prerequisite = {
+			focus = KPA_allie_jap
+			focus = KPA_war_with_jap
+			focus = KPA_attack_sov
+			focus = KPA_friend_sov
+		}
+		prerequisite = {
+			focus = KPA_plan_a
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_wargoal_against = INS }
+					NOT = { has_war_with = INS }
+					country_exists = INS
+					if = {
+						limit = {
+							INS = { is_subject_of = HOL }
+						}
+						OR = {
+							has_country_flag = HOL_declare_war_indies_allowed
+							HOL = { NOT = { has_completed_focus = HOL_placate_the_japanese } }
+						}
+					}
+				}
+				create_wargoal = {
+					target = INS
+					type = annex_everything
+					expire = 0
+				}
+				add_ai_strategy = {
+					type = conquer
+					id = "INS"
+					value = 200
+				}
+			}
+			if = {
+				limit = {
+					INS = { exists = no }
+					335 = {
+						CONTROLLER = {
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+					if = {
+						limit = {
+							335 = {
+								CONTROLLER = {
+									tag = HOL
+								}
+							}
+						}
+						OR = {
+							has_country_flag = HOL_declare_war_indies_allowed
+							HOL = { NOT = { has_completed_focus = HOL_placate_the_japanese } }
+						}
+					}
+				}
+				335 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								expire = 0
+								generator = { 335 334 672 673 668 667 669 738 }
+							}
+							add_ai_strategy = {
+								type = conquer
+								id = PREV
+								value = 200
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_wargoal_against = MAL }
+					NOT = { has_war_with = MAL }
+					country_exists = MAL
+				}
+				create_wargoal = {
+					target = MAL
+					type = annex_everything
+					expire = 0
+				}
+				add_ai_strategy = {
+					type = conquer
+					id = "MAL"
+					value = 200
+				}
+			}
+			if = {
+				limit = {
+					MAL = { exists = no }
+					336 = {
+						CONTROLLER = {
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				336 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								expire = 0
+								generator = { 336 }
+							}
+							add_ai_strategy = {
+								type = conquer
+								id = PREV
+								value = 200
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						671 = {
+							is_controlled_by = FRA
+						}
+						670 = {
+							is_controlled_by = FRA
+						}
+						286 = {
+							is_controlled_by = FRA
+						}
+						741 = {
+							is_controlled_by = FRA
+						}
+					}
+					NOT = { has_wargoal_against = FRA }
+					NOT = { has_war_with = FRA }
+				}
+				create_wargoal = {
+					target = FRA
+					type = take_state_focus
+					expire = 0
+					generator = { 671 670 286 741 }
+				}
+			}
+		}
+	
+		x = 13
+		y = 6
+
+	}
+}

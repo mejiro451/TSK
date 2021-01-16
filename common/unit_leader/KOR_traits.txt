@@ -1,0 +1,74 @@
+leader_traits = {
+
+	
+##################################
+# Common Traits
+##################################
+	KOR_Hanahoe = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+				tag = ROK
+				tag = MKR
+			}
+		}
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	unaccustomed_to_modern_warfare = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+				tag = ROK
+				tag = MKR
+			}
+		}
+		modifier = {
+			armor_speed_factor = -0.1
+			armor_attack_factor = -0.1
+			experience_gain_army_factor = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}
+
+##################################
+# Field Marshal traits.
+##################################
+	
+##################################
+# Corps Commander traits.
+##################################
+	
+##################################
+# Corps Commander assignabme traits.
+##################################
+
+##################################
+# Naval traits.
+##################################

@@ -1,0 +1,26 @@
+state={
+	id=819
+	name="쓰시마"
+	provinces={
+		10011 
+	}
+	history={
+		owner = JDF
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 6
+			10011 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			10011 5 
+		}
+		add_core_of = JAP
+		add_core_of = JDF
+
+	}
+	manpower=21313
+	buildings_max_level_factor=1.000
+}

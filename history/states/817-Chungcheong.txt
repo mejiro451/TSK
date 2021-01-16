@@ -1,0 +1,28 @@
+
+state={
+	id=817
+	name="충청도"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			13249 10 
+		}
+		add_core_of = KOR
+		add_core_of = PRK
+
+	}
+
+	provinces={
+		1100 7175 7204 11992 13237 13249
+	}
+	manpower=3126433
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,64 @@
+add_namespace = PRK
+#1936년의 세계
+country_event = {
+	id = PRK.1
+	title = PRK.1.t
+	desc = PRK.1.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { 
+		name = PRK.1.a
+	}
+}
+
+#독립운동가들의 귀국
+country_event = {
+	id = PRK.2
+	title = PRK.2.t
+	desc = PRK.2.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { 
+		name = PRK.2.a
+	}
+}
+
+#남한의 접촉
+country_event = {
+	id = PRK.3
+	title = PRK.3.t
+	desc = PRK.3.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #엿이나 먹으라해라!
+		name = PRK.3.a
+		unlock_decision_category_tooltip = PRK_provocations_against_the_south
+		MKR = {
+		country_event = { id = mkorea.8 }
+		}
+	}
+}

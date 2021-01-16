@@ -1,0 +1,35 @@
+﻿add_namespace = south_korea_naisho
+
+country_event = {
+	id = south_korea_naisho.1
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
+	}
+
+}
+
+country_event = {
+	id = south_korea_naisho.2
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+			hidden_effect = {
+			KOR = { set_country_flag = KOR_sunshine_policy_system }
+			}
+	}
+
+}

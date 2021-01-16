@@ -1,0 +1,30 @@
+﻿
+
+units = {
+	fleet = {
+		name = "호위대군"			
+		naval_base = 10011
+		task_force = {
+			name = "호위함대" 
+			location = 10011 	 
+			ship = { name = "JDS Kongō" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDG_1 = { amount = 1 owner = JDF version_name = "Kongō Class" } } }
+			ship = { name = "JDS Shimakaze" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Hatakaze Class" } } }
+			ship = { name = "JDS Mineyuki" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Hatsuyuki Class" } } }			
+			ship = { name = "JDS Hamayuki" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Hatsuyuki Class" } } }	
+			ship = { name = "JDS Isoyuki" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Hatsuyuki Class" } } }			
+			ship = { name = "JDS Haruyuki" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Hatsuyuki Class" } } }	
+		    ship = { name = "JDS Tachikaze" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_1 = { amount = 1 owner = JDF version_name = "Tachikaze Class" } } }	
+		    ship = { name = "JDS Sawakaze" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_1 = { amount = 1 owner = JDF version_name = "Tachikaze Class" } } }	
+		    ship = { name = "JDS Sawagiri" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Asagiri Class" } } }	
+	        ship = { name = "JDS Amagiri" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = JDF version_name = "Asagiri Class" } } }	
+		}
+		task_force = {
+			name = "지방 호위대" 
+			location = 10011 	 
+			ship = { name = "JDS Abukuma" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Ōyodo" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Sendai" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "Abukuma Class" } } }			
+		}
+	}
+}
+

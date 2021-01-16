@@ -1,0 +1,63 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_unit_light_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_light_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_modern_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_light_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_modern_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_heliborne_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_light_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_modern_mbt_icon_small"
+		texturefile = "gfx/texticons/unit_modern_mbt_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_modern_motorized_icon_small"
+		texturefile = "gfx/texticons/unit_modern_motorized_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_modern_sp_art_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_modern_armor_icon_sp_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unit_jet_multirole_icon_small"
+		texturefile = "gfx/texticons/unit_air_jet_fighter_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+#############################아이디어 사진########################################
+
+	spriteType = {
+		name = "image_6_10"
+		texturefile = "gfx/texticons/image_6_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "f_15k"
+		texturefile = "gfx/texticons/f_15k.dds"
+		legacy_lazy_load = no
+	}
+}

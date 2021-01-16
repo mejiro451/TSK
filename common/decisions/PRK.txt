@@ -1,0 +1,342 @@
+#Category only allowed for PRK
+PRK_2nd_war = {
+
+	PRK_2nd_koreawar_start = {
+
+		icon = generic_operation
+	
+		available = {
+		    has_country_flag = PRK_war1
+		}
+		
+		visible = {
+			has_country_flag = PRK_war1
+		}
+	
+		fire_only_once = yes
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			PRK = { country_event = { id = korea_war.1 } }
+				hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = PRK
+					}
+					set_country_flag = PRK_seoul
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PRK_stage_1 = {
+
+		icon = generic_operation
+		
+		available = {
+		
+		PRK = {
+			controls_state = 807
+		}
+
+		}
+		
+		days_mission_timeout = 30
+		fire_only_once = yes
+
+		visible = {
+		    always = no
+		}
+	
+		fire_only_once = yes
+		
+		activation = {
+			PRK = { has_country_flag = PRK_seoul }
+		}
+
+		is_good = no
+
+		complete_effect = {
+			PRK = { set_country_flag = PRK_busan }
+			swap_ideas = {
+			remove_idea = PRK_war1
+			add_idea = PRK_war2
+			}
+		}
+		
+		timeout_effect = {
+			PRK = { 
+				country_event = { 
+					id = korea_war.3
+				}
+				country_event = { 
+					days = 2
+					id = korea_war.15
+				}
+			set_country_flag = PRK_fail_cap_seoul
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	PRK_stage_2 = {
+
+		icon = generic_operation
+		
+		
+		available = {
+		
+		PRK = {
+			controls_state = 809
+		}
+
+		}
+		
+		days_mission_timeout = 50
+		fire_only_once = yes
+
+		visible = {
+			PRK = { has_country_flag = PRK_busan }
+		}
+		
+		activation = {
+			PRK = { has_country_flag = PRK_busan }
+		}
+		
+		fire_only_once = yes
+
+		is_good = no
+		
+		timeout_effect = {
+			PRK = { country_event = { id = korea_war.4 } }
+			ROK = { country_event = { id = korea_war.5 } }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	
+PRK_provocations_against_the_south = { #대남도발
+
+	shelling_of_the_DMZ = { #휴전선 포격도발
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.9 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NLL_infiltration = { #NLL침투
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.10 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	aircraft_provocation = { #항공기 도발
+
+		icon = generic_operation
+		
+		
+		available = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.11 } }
+		}
+		
+		fire_only_once = no
+
+		is_good = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infiltration_of_troops = { #무장공비 침투
+
+		icon = generic_operation
+			
+		available = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+		}
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.12 } }
+		}
+		
+		fire_only_once = no
+
+		is_good = no
+		
+		timeout_effect = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shelling_of_the_DMZ_1 = { #휴전선 포격도발 (강경대응
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.9 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NLL_infiltration_1 = { #NLL침투 (강경대응
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.10 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	aircraft_provocation_1 = { #항공기 도발 (강경대응
+
+		icon = generic_operation
+		
+		
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.11 } }
+		}
+		
+		fire_only_once = no
+
+		is_good = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infiltration_of_troops_1 = { #무장공비 침투 (강경대응
+
+		icon = generic_operation
+			
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+		}
+		
+		complete_effect = {
+			MKR = { country_event = { id = mkorea.12 } }
+		}
+		
+		fire_only_once = no
+
+		is_good = no
+		
+		timeout_effect = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	

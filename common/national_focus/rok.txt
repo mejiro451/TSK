@@ -1,0 +1,781 @@
+focus_tree = {
+	id = rok_focus
+	country = {
+		factor = 0
+			tag = TSK
+	}
+	continuous_focus_position = { x = 100 y = 2000 }
+	shared_focus = ROKND_1
+	focus = { #14대 대선
+		id = presidential_election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 9
+		y = 0
+
+	}
+	focus = { #경제위기
+		id = economis_cris
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 27
+		y = 0
+
+	}
+	focus = { #김구 대통령
+		id = President_Kim_Koo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = presidential_election
+		}
+		mutually_exclusive = {
+			focus = President_Kim_Young_sam
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = { #새 국가보안법
+		id = new_national_security_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Koo
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = { #복지정책 도입
+		id = welfare_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Koo
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = { #북한과 접촉
+		id = contact_with_NK
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Koo
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = { #자유국가
+		id = libration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Koo
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = { #김영삼 대통령
+		id = President_Kim_Young_sam
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = presidential_election
+		}
+		mutually_exclusive = {
+			focus = President_Kim_Koo
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = { #국가안전기획부 법
+		id = enactment_of_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+			focus = President_Kim_Koo
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = { #자유,평등
+		id = freedom_equality
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+			focus = President_Kim_Koo
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = { #조선총독부 철거
+		id = Central_Office_Demolition
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+			focus = President_Kim_Koo
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = { #일본을 시험하다
+		id = test_Japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Central_Office_Demolition
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = { #중국에 접촉
+		id = Contact_with_China
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = test_Japan
+		}
+		mutually_exclusive = {
+			focus = test_China
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = { #국공내전 개입
+		id = intervention_in_the_civil_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_China
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = { #일본 해방전쟁
+		id = war_of_liberation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = test_Japan
+		}
+		mutually_exclusive = {
+			focus = an_ultimatum_to_Japan
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = { #일본에 최후통첩
+		id = an_ultimatum_to_Japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = test_Japan
+		}
+		mutually_exclusive = {
+			focus = war_of_liberation
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = { #검열 철폐
+		id = elimination_of_censorship 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+			focus = President_Kim_Koo
+		}
+		x = 11
+		y = 2
+
+	} 
+	focus = { #중국을 시험하다
+		id = test_China
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = test_Japan
+		}
+		mutually_exclusive = {
+			focus = Contact_with_China
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = { #장제스에게 요구하다
+		id = demand_from_jang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = test_China
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = { #군벌을 정리
+		id = theorem_of_warlords
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = demand_from_jang
+		}
+		mutually_exclusive = {
+			focus = old_enemy
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = { #old_enemy
+		id = old_enemy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = demand_from_jang
+		}
+		mutually_exclusive = {
+			focus = theorem_of_warlords
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = { #동아시아 연합
+		id = East_Asian_Union
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = old_enemy
+			focus = theorem_of_warlords
+		}
+		mutually_exclusive = {
+			focus = Allied_accession
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = { #하나회 관련자 처벌
+		id = Punishment_of_those_involved
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+		}
+		x = 14
+		y = 3
+
+	} 
+	focus = { #역사 바로알기 정책
+		id = history_correctly
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Punishment_of_those_involved
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = { #금융실명제
+		id = real_name_financial 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = President_Kim_Young_sam
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = { #교육에 투자
+		id = investment_in_education
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Punishment_of_those_involved
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = { #연합국 가입
+		id = Allied_accession
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = theorem_of_warlords
+		}
+		mutually_exclusive = {
+			focus = East_Asian_Union
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = { #차관을 요청하다
+		id = ask_for_a_loan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economis_cris
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = { #금모으기운동
+		id = gold_collecting_movement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ask_for_a_loan
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = { #긴급 기업보조금 승인
+		id = approval_of_corporate_subsidies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economis_cris
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = { #실업자 복지정책
+		id = unemployment_welfare_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economis_cris
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = { #긴급 은행보조금
+		id = emergency_bank_subsidy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = unemployment_welfare_policy
+		}
+		prerequisite = {
+			focus = approval_of_corporate_subsidies
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = { #물가 안정화
+		id = price_stabilization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = gold_collecting_movement
+		}
+		prerequisite = {
+			focus = emergency_bank_subsidy
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = { #경제 안정화
+		id = economic_stabilization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = price_stabilization
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = { #6차 경제개발5개년 계획
+		id = six_five_year_flan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economis_cris
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = { #사회 개발 확대
+		id = expansion_of_social_development 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = six_five_year_flan
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = { #지역개발
+		id = regional_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = expansion_of_social_development 
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = { #시장경제 질서 확립
+		id = establishment_of_market_economy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = regional_development
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = { #인프라개발
+		id = Infrastructure_Development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = six_five_year_flan
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = { #공단확장
+		id = Industrial_Complex_Expansion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infrastructure_Development
+		}
+		x = 31
+		y = 3
+
+	} 
+	focus = { #산업단지 개발
+		id = Industrial_Complex_Development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infrastructure_Development
+		}
+		x = 33
+		y = 3
+
+	} 
+	focus = { #부채상환계획수립
+		id = Establishing_a_debt_repayment_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Industrial_Complex_Development
+		}
+		prerequisite = {
+			focus = Industrial_Complex_Expansion
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = { #공정한 경쟁
+		id = fair_competition
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Establishing_a_debt_repayment_plan
+		}
+		prerequisite = {
+			focus = establishment_of_market_economy
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = { #KAIST
+		id = KAIST
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economic_stabilization
+		}
+		prerequisite = {
+			focus = fair_competition
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = defence_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Industrial_Complex_Development
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = { #대기업 견제
+		id = check_of_large_enterprises
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infrastructure_Development
+		}
+		mutually_exclusive = {
+			focus = small_business_policy
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = { #부실기업 정리
+		id = liquidation_of_insolvent_enterprises
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Industrial_Complex_Development
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = { #중소기업 정책
+		id = small_business_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infrastructure_Development
+		}
+		mutually_exclusive = {
+			focus = check_of_large_enterprises
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = { #경제개방 활성화
+		id = economic_opening
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = six_five_year_flan
+		}
+		mutually_exclusive = {
+			focus = No_export_allowed
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = { #수출 불허
+		id = No_export_allowed
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = six_five_year_flan
+		}
+		mutually_exclusive = {
+			focus = economic_opening
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = { #장제스를 만나다
+		id = meet_chang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_China
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = { #동아시아의 평화
+		id = Peace_in_EA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = war_of_liberation
+			focus = bury_sb_in_a_warlord
+			focus = an_ultimatum_to_Japan
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = { #군벌에 묻다
+		id = bury_sb_in_a_warlord
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = meet_chang
+		}
+		prerequisite = {
+			focus = intervention_in_the_civil_war
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = { #아시아 민족주의
+		id = Asian_nationalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = East_Asian_Union
+			focus = Peace_in_EA
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = { #영국과의 거래
+		id = deal_with_UK
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Asian_nationalism
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = { #미국과의 거래
+		id = deal_with_US
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Asian_nationalism
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = { #호주 초대
+		id = Invitation_to_Australia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = deal_with_UK
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = { #필리핀 초대
+		id = Invitation_to_the_Philippines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = deal_with_US
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = { #말레이 초대
+		id = Malay_Invitation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = deal_with_UK
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = { #시암 압박
+		id = siam_press
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Liberation_of_Indonesia
+		}
+		prerequisite = {
+			focus = Malay_Invitation
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = { #인도네시아의 해방
+		id = Liberation_of_Indonesia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = deal_with_US
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = { #인도 초대
+		id = Invitation_to_India
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = siam_press
+		}
+		x = 7
+		y = 13
+
+	}
+	focus = { #뉴질랜드 초대
+		id = Invitation_to_New_Zealand
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = siam_press
+		}
+		x = 9
+		y = 13
+
+	}
+	focus = { #제국주의의 몰락
+		id = the_fall_of_imperialism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Invitation_to_New_Zealand
+		}
+		prerequisite = {
+			focus = Invitation_to_India
+		}
+		x = 8
+		y = 14
+
+	}
+}

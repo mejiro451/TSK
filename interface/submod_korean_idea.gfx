@@ -1,0 +1,91 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_kor_korean_economic_crisis"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_korean_economic_crisis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_national_security_act"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_national_security_act.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_hell_joseon"
+		texturefile = "gfx/interface/ideas/KOR/hell_joseon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_jeju"
+		texturefile = "gfx/interface/ideas/KOR/jeju.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_danilminjok"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_danilminjok.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_memories_of_the_june_struggle"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_memories_of_the_june_struggle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_service_by_requirement"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_service_by_requirement.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_purged_army"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_purged_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_internet_censorship"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_Internet_censorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_choi_soon_sil"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_choi_soon_sil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_black_choi_soon_sil"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_black_choi_soon_sil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_strong_anti_nationalist"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_strong_anti_nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_weak_anti_nationalist"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_weak_anti_nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_nationalist_question"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_weak_anti_nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_weak_nationalist"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_weak_nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_strong_nationalist"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_strong_nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_supremacy_of_technology"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_supremacy_of_technology.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_supremacy_of_will"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_supremacy_of_will.dds"
+	}
+}

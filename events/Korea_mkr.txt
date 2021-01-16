@@ -1,0 +1,424 @@
+add_namespace = mkorea
+
+country_event = { # 대책회의
+	id = mkorea.1
+	title = mkorea.1.t
+	desc = mkorea.1.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.1.a
+		ai_chance = { factor = 100 }
+    }	
+}
+country_event = { # 예비군 추가동원
+	id = mkorea.2
+	title = mkorea.2.t
+	desc = mkorea.2.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.2.a
+		MKR = {
+				load_oob = mkr_yebi
+		}
+    }	
+}
+
+
+country_event = {
+	id = mkorea.3
+	title = mkorea.3.title
+	desc = mkorea.3.desc
+	picture = GFX_report_event_fkr_korea_MP
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.3.a
+		custom_effect_tooltip = mkorea.3.a.tt
+		create_corps_commander = {
+			name = "Lee Beom seok" #이범석
+			picture = "이범석.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			id = 2050
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Ji Cheong cheon" #지청천
+			picture = "지청천.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+}
+
+country_event = { #테러폭격?
+	id = mkorea.4
+	title = mkorea.4.t
+	desc = mkorea.4.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.4.a
+		add_ideas = ROK_bombing
+    }	
+}
+
+country_event = { #대한민국의 미래
+	id = mkorea.5
+	title = mkorea.5.t
+	desc = mkorea.5.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.5.a
+		add_political_power = 50
+		add_ideas = mkr_nationwide_demonstration
+		add_ideas = mkr_unstable_security
+		add_ideas = mkr_irregularities_barracks
+		hidden_effect = {
+		set_country_flag = MKR_rioters_busan
+		set_country_flag = MKR_rioters_seoul
+		set_country_flag = MKR_rioters_gwangju
+		set_country_flag = MKR_rioters_daejeon
+		set_country_flag = MKR_rioters_gwangwon
+		}
+    }	
+}
+
+country_event = { #내전에서의 회복
+	id = mkorea.6
+	title = mkorea.6.t
+	desc = mkorea.6.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.6.a
+		add_timed_idea = {
+		idea = MKR_recover_fronciv
+		days = 365
+		} 
+    }	
+}
+
+country_event = { #자유주의자들 문제
+	id = mkorea.7
+	title = mkorea.7.t
+	desc = mkorea.7.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.7.a
+    }	
+	option = {
+		name = mkorea.7.b
+    }	
+}
+
+country_event = { #북한이 우리의 요청을 거부하다!
+	id = mkorea.8
+	title = mkorea.8.t
+	desc = mkorea.8.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mkorea.8.a
+    }	
+}
+
+country_event = { #북한의 포격도발!
+	id = mkorea.9
+	title = mkorea.9.t
+	desc = mkorea.9.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.9.a
+    }	
+}
+
+country_event = { #북한의 NLL침범!
+	id = mkorea.10
+	title = mkorea.10.t
+	desc = mkorea.10.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.10.a
+    }	
+}
+
+country_event = { #북한의 방공식별구역 침범!
+	id = mkorea.11
+	title = mkorea.11.t
+	desc = mkorea.11.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.9.a
+    }	
+}
+
+country_event = { #북한의 무장공비 침투!
+	id = mkorea.12
+	title = mkorea.12.t
+	desc = mkorea.12.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.12.a
+    }	
+}
+
+country_event = { #동해에서의 해군 무력시위
+	id = mkorea.13
+	title = mkorea.13.t
+	desc = mkorea.13.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.13.a
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.6 }
+		}
+    }	
+}
+
+country_event = { #북진 멸공
+	id = mkorea.14
+	title = mkorea.14.t
+	desc = mkorea.14.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.14.a
+		add_ideas = mkr_eradicating_communism
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.6 }
+		}
+    }	
+}
+
+country_event = { #북한에게 경고
+	id = mkorea.15
+	title = mkorea.15.t
+	desc = mkorea.15.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.15.a
+    }	
+}
+
+country_event = { #북한의 포격도발! (강경대응)
+	id = mkorea.16
+	title = mkorea.16.t
+	desc = mkorea.16.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.16.a
+    }	
+}
+
+country_event = { #북한의 NLL침범! (강경대응)
+	id = mkorea.17
+	title = mkorea.17.t
+	desc = mkorea.17.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.10.a
+    }	
+}
+
+country_event = { #북한의 방공식별구역 침범! (강경대응)
+	id = mkorea.18
+	title = mkorea.18.t
+	desc = mkorea.18.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.18.a
+    }	
+}
+
+country_event = { #북한의 무장공비 침투! (강경대응)
+	id = mkorea.19
+	title = mkorea.19.t
+	desc = mkorea.19.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.19.a
+    }	
+}
+
+country_event = { #연평해전
+	id = mkorea.20
+	title = mkorea.20.t
+	desc = mkorea.20.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.20.a
+		war_support_factor = 0.1
+		navy_experience = 10
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.8 }
+		}
+    }	
+}
+
+country_event = { #서부전선 포격사건
+	id = mkorea.21
+	title = mkorea.21.t
+	desc = mkorea.21.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.21.a
+		war_support_factor = 0.4
+		army_experience = 40
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.9 }
+		}
+    }	
+}
+
+country_event = { #일본과 불가침 조약
+	id = mkorea.22
+	title = mkorea.22.t
+	desc = mkorea.22.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.22.a
+		JAP = {
+			country_event = { id = mkorea.23 }
+		}
+    }	
+}
+
+country_event = { #한국이 불가침조약을 제안하다
+	id = mkorea.23
+	title = mkorea.23.t
+	desc = mkorea.23.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	 
+	option = { #수락
+		name = mkorea.23.a
+		MKR = {
+			country_event = { id = mkorea.24 }
+		}
+    }	
+	
+	option = { #거부
+		name = mkorea.23.b
+		MKR = {
+			country_event = { id = mkorea.25 }
+		}
+    }	
+}
+
+country_event = { #일본이 수락하다
+	id = mkorea.24
+	title = mkorea.24.t
+	desc = mkorea.24.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.24.a
+		diplomatic_relation = { country = JAP relation = non_aggression_pact }
+    }	
+}
+
+country_event = { #일본이 거부하다
+	id = mkorea.25
+	title = mkorea.25.t
+	desc = mkorea.25.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.25.a
+    }	
+}

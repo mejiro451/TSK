@@ -1,0 +1,22 @@
+
+state={
+	id=816
+	name="자강도"
+
+	history={
+		owner = PRK
+		add_core_of = PRK
+		add_core_of = KOR
+		victory_points = {
+			6963 5 
+		}
+
+	}
+
+	provinces={
+		906 6963 11775 11828 
+	}
+	manpower=1216864
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,256 @@
+
+music_station = "nhk"
+
+# General
+music = {
+	song = "yukinoshingun"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "warshipmarch"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+#Germany
+music = {
+	song = "Schwarzbraun"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "panzerlied"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "könig_im_luftrevier"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Horst_Wessel"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Erika"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Battle_Hymn"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Marine"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "US_Airforce"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Us_Field_Artillery"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Johnny"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Yankee_Doodle"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Medley"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Anchor_Aweigh"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "National_Anthem_of_USA"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Katyusha"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Polyushka_Polye"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Sacred_War"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Sovie_Anthem"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Let's_Go"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "redarmyisthestrongest"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "Army_Of_The_People"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}

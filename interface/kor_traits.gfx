@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_KOR_Hanahoe"
+		texturefile = "gfx/interface/traits/personal/KOR_Hanahoe.dds"
+	}	
+	
+}
+

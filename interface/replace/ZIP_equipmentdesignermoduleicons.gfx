@@ -1,0 +1,88 @@
+spriteTypes = {
+
+###################################################
+# Contains GFX for the equipment modules and slots shown on top of the blue print
+#
+# Names of the modules are normalized and *must* obey the following naming
+# convention.
+#
+# "GFX_EMI_" MODULE_KEY
+# "GFX_EMSI_" MODULE_SLOT_KEY
+#
+# MODULE_KEY is either the specific key used to define the module in script, or
+#   the module's gfx attribute, if a matching graphics entry cannot be found
+#   with the module's specific key.
+# MODULE_SLOT_KEY is either the specific key used to define the module slot in
+#   the equipment type script, or the module slot's gfx attribute, if a matching
+#   graphics entry cannot be found with the slot's specific key.
+###################################################
+
+### Category Icon
+
+#현대장비
+	spriteType = {
+		name = "GFX_SMI_ship_ciws"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_aa_ciws_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_ciws_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_aa_ciws_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_aa_missile_luncher_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_ram_luncher_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_aa_missile_luncher_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_ram_luncher_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_vls_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_VlS_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_vls_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_VlS_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_missile_luncher_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_sts_luncher_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_missile_luncher_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_sts_luncher_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_modern_ship_light_battery_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_modern_battery_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_modern_ship_light_battery_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_modern_battery_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_modern_radar_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_modern_radar_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_modern_radar_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_modern_radar_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_radar_aegis"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/ship_radar_aegis_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_modern_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/modern_engine_icn.dds"
+	}
+	
+	
+	
+	
+}
+
+
+
+
+

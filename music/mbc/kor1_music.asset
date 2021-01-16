@@ -1,0 +1,80 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}
+
+#Generic
+music = {
+	name = "agguk"
+	file = "애국가.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "anti_communism"
+	file = "멸공의횃불.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "anti_communism_ins"
+	file = "멸공의횃불무가사.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "comrade_ins"
+	file = "전우여잘자라.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "kimchilied"
+	file = "충성전투가.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "frontline"
+	file = "전선을 간다.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "5min"
+	file = "최후의 5분.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "peoples_army"
+	file = "조선인민군가.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "attack"
+	file = "공격전이다.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "letsgo"
+	file = "진격.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "scared_war"
+	file = "성스러운전쟁.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "kat_kor"
+	file = "카츄샤(한국).ogg"
+	volume = 0.85
+}

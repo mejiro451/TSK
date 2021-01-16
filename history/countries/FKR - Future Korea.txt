@@ -1,0 +1,563 @@
+﻿capital = 807 #서울
+
+oob = "KOR_1936"
+
+set_stability = 0.5
+set_war_support = 0.30
+set_fuel_ratio = 1.0
+set_research_slot = 3
+1936.1.1 = {
+
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+	FKR_back_down_military
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_equipment_1 = 1
+	improved_infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	transport = 1
+	future_infantry_equipment = 1
+	future_mechanized_equipment = 1
+	future_modern_tank = 1
+	future_modern_tank_aa = 1
+	future_modern_tank_artillery = 1
+	attack_heli = 1
+	transport_heli = 1
+	future_jet_multirole = 1
+	future_jet_CAS = 1
+	#핵연구
+	atomic_research = 1
+	nuclear_reactor  = 1
+	#연구
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	#산업
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
+	fuel_silos = 1
+	construction1 = 1
+	#공군
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_fighter1 = 1
+	fighter2 = 1
+	cv_fighter2 = 1
+	CAS2 = 1
+	cv_CAS2 = 1
+	cv_naval_bomber1 = 1
+	naval_bomber2 = 1
+	cv_naval_bomber2 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	strategic_bomber1 = 1
+	suicide_craft = 1
+	#땅크
+	gwtank = 1
+	basic_light_tank = 1
+	basic_light_td = 1
+	basic_light_art = 1
+	basic_light_spaa = 1
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa = 1
+	basic_heavy_tank = 1
+	#야포
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	#미래
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	m_2000_infantry_eq = 1
+	m_2010_infantry_eq = 1
+	
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	m_2000_modern_tank = 1
+	m_2010_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+	m_1990_mechanized_equipment = 1
+	m_2000_mechanized_equipment = 1
+	m_2010_mechanized_equipment = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	m_2000_spaa = 1
+	m_2010_spaa = 1
+	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	m_2000_sp = 1
+	m_2010_sp = 1
+	
+	m_1980_motorized_rocket_unit = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	m_1990_manpad = 1
+	m_2000_manpad = 1
+	m_2010_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	m_2000_atgm = 1
+	m_2010_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	m_2000_jet_multirole = 1
+	m_2010_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	m_1990_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	m_1980_jet_CAS = 1
+	m_1990_jet_CAS = 1
+	m_2000_jet_CAS = 1
+	m_2010_jet_CAS = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	m_2000_atgm = 1
+	m_2010_atgm = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	m_1990_attack_helicopter = 1
+	m_2000_attack_helicopter = 1
+	m_2010_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	m_1990_util_helicopter = 1
+	m_2000_util_helicopter = 1
+	m_2010_util_helicopter = 1
+	
+	m_1970PCC = 1
+	m_1980PCC = 1
+	m_1990PCC = 1
+	m_2000PCC = 1
+	m_2010PCC = 1
+	
+	modern_light_battery_1 = 1
+	ship_missile_luncher_1 = 1
+	ship_aa_missile_luncher_1 = 1
+	ship_ciws = 1
+	ship_modern_control_system_1 = 1
+	ship_modern_radar_1 = 1
+	light_ship_engine_modern_1 = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		future_light_hull = 1
+		future_cruiser_hull = 1
+		future_carrier_hull = 1
+		future_submarine_hull = 1
+		future_naval_module = 1
+	}
+	set_naval_oob = ""
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		transport = 1
+		future_destroyer_legacy = 1
+		future_light_cruiser_legacy = 1
+		future_carrier_legacy = 1
+		future_submarine_legacy = 1
+	}
+	set_naval_oob = ""
+}
+
+set_convoys = 250
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 40
+	fascism = 0
+	communism = 0
+	neutrality = 60
+}
+create_country_leader = {
+	name = "Rho Mu-hyun"
+	desc = ""
+	picture = "gfx/leaders/FKR/MH.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rho Taewoo"
+	desc = ""
+	picture = "gfx/leaders/FKR/Roh_taewoo.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		political_connections
+	}
+}
+
+create_country_leader = {
+	name = "어둠의 북사모"
+	desc = ""
+	picture = "gfx/leaders/FKR/MB.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rho Taewoo"
+	desc = ""
+	picture = "gfx/leaders/FKR/Roh_taewoo.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###
+
+}
+1936.1.4 = {
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+	FKR_back_down_military
+}
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_equipment_1 = 1
+	improved_infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	transport = 1
+	future_infantry_equipment = 1
+	future_mechanized_equipment = 1
+	future_modern_tank = 1
+	future_modern_tank_aa = 1
+	future_modern_tank_artillery = 1
+	attack_heli = 1
+	transport_heli = 1
+	future_jet_multirole = 1
+	future_jet_CAS = 1
+	#핵연구
+	atomic_research = 1
+	nuclear_reactor  = 1
+	#연구
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	#산업
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
+	fuel_silos = 1
+	construction1 = 1
+	#공군
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_fighter1 = 1
+	fighter2 = 1
+	cv_fighter2 = 1
+	CAS2 = 1
+	cv_CAS2 = 1
+	cv_naval_bomber1 = 1
+	naval_bomber2 = 1
+	cv_naval_bomber2 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	strategic_bomber1 = 1
+	suicide_craft = 1
+	#땅크
+	gwtank = 1
+	basic_light_tank = 1
+	basic_light_td = 1
+	basic_light_art = 1
+	basic_light_spaa = 1
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa = 1
+	basic_heavy_tank = 1
+	#야포
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		future_light_hull = 1
+		future_cruiser_hull = 1
+		future_carrier_hull = 1
+		future_submarine_hull = 1
+		future_naval_module = 1
+	}
+	set_naval_oob = ""
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		transport = 1
+		future_destroyer_legacy = 1
+		future_light_cruiser_legacy = 1
+		future_carrier_legacy = 1
+		future_submarine_legacy = 1
+	}
+	set_naval_oob = ""
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 15
+	communism = 15
+}
+
+### Country Leader ###
+
+create_country_leader = {
+	name = "Lee Myungbak"
+	desc = ""
+	picture = "gfx/leaders/FKR/MB.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Won"
+	desc = ""
+	picture = "gfx/leaders/FKR/Portrait_yi_won.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		imperial_connections
+	}
+}
+
+create_country_leader = {
+	name = "Lee Seokki"
+	desc = ""
+	picture = "gfx/leaders/FKR/MB.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Park Geunhye"
+	desc = ""
+	picture = "gfx/leaders/FKR/PGH.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###
+
+create_field_marshal = {
+	name = "Lee Myungbak"
+	picture = "MB.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Chun Jinkoo"
+	picture = "Portrait_modern_general_jeon_jingu.dds"
+	traits = { career_officer commando naval_invader invader_ii }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Um Hyunsung"
+	picture = "Portrait_modern_admiral_eom_hyunsung.dds"
+	traits = { spotter superior_tactician air_controller }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "세종대왕 급"
+		type = ship_hull_light_future_1
+		name_group = FKR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = light_ship_engine_future_1
+			fixed_ship_torpedo_slot = ship_torpedo_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			rear_1_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "이순신 급"
+		type = ship_hull_cruiser_future_1
+		name_group = FKR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = cruiser_ship_engine_future_1
+			fixed_ship_secondaries_slot = ship_secondaries_future_1
+			fixed_ship_armor_slot = ship_armor_cruiser_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			mid_1_custom_slot = ship_secondaries_future_1
+			mid_2_custom_slot = ship_secondaries_future_1
+			rear_2_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "광개토대왕 급"
+		type = ship_hull_carrier_future_1
+		name_group = FKR_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = carrier_ship_engine_future_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "안창호 급"
+		type = ship_hull_submarine_future_1
+		name_group = FKR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_future_1 
+			fixed_ship_engine_slot = sub_ship_engine_future_1
+			front_1_custom_slot = ship_torpedo_sub_future_1
+			mid_1_custom_slot = ship_missile_launcher_future_1
+		}
+		obsolete = no
+	}
+
+}

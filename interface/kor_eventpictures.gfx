@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_event_kor_kingsejong_ship"
+		texturefile = "gfx/event_pictures/news_event_kor_kingsejong_ship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_kor_victery_tokyo"
+		texturefile = "gfx/event_pictures/news_event_kor_victery_tokyo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_jap_ww2_army"
+		texturefile = "gfx/event_pictures/news_event_jap_ww2_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_kor_victery_seoul_kpa"
+		texturefile = "gfx/event_pictures/news_event_kor_victery_seoul_kpa.dds"
+	}
+}

@@ -1,0 +1,43 @@
+state={
+	id=809
+	name="경상도"
+
+	resources={
+		steel=45.000
+		chromium=31.000
+		rubber=4.000
+	}
+	history={
+		owner = KOR
+		add_core_of = KOR
+		add_core_of = PRK
+		buildings = {
+			infrastructure = 6 
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 4
+			4056 = {
+				naval_base = 8
+			}
+		}
+		
+		victory_points = {
+			4056 25 
+		}
+		victory_points = {
+			13250 10 
+		}
+		victory_points = {
+			13251 10 
+		}
+	}
+
+	provinces={
+		1054 1081 4056 4086 4103 7121 10085 10115 11912 12060 12089 13250 13251
+	}
+	
+	manpower=9021909
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

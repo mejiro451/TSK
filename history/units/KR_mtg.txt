@@ -1,0 +1,94 @@
+﻿units = {
+	fleet = {
+		name = "1함대"			
+		naval_base = 4056
+		task_force = {
+			name = "1함대" 
+			location = 4056
+			ship = { name = "ROKS 울산" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 충남" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 마산" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 진주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 여수" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 진해" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 순천" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 익산" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 포항" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 목포" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 동해" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해" } } }
+			ship = { name = "ROKS 수원" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해" } } }
+			ship = { name = "ROKS 강릉" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해" } } }
+			ship = { name = "ROKS 안양" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해" } } }
+		}
+	}
+	fleet = {
+		name = "2함대"			
+		naval_base = 4056
+		task_force = {
+			name = "2함대" 
+			location = 4056 	 
+			ship = { name = "ROKS 서울" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 경북" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 전남" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 안동" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 부천" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 성남" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 제천" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 대천" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 속초" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 군산" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 김천" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+		}
+	}
+	fleet = {
+		name = "3함대"			
+		naval_base = 4056
+		task_force = {
+			name = "3함대" 
+			location = 4056 	 
+			ship = { name = "ROKS 제주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 부산" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 청주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산" } } }
+			ship = { name = "ROKS 영주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 남원" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 광명" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 신성" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 공주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 경주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+			ship = { name = "ROKS 충주" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항" } } }
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {				
+		equipment = {
+			type = ship_hull_PCC_1
+			creator = "KOR" 
+			version_name = "동해"
+		}
+		requested_factories = 2
+		progress = 0.9
+		amount = 1
+	}
+	add_equipment_production = {				
+		equipment = {
+			type = ship_hull_PCC_2
+			creator = "KOR" 
+			version_name = "포항"
+		}
+		requested_factories = 2
+		progress = 0.9
+		amount = 1
+	}
+	add_equipment_production = {				
+		equipment = {
+			type = ship_hull_PKM_1
+			creator = "KOR" 
+			version_name = "참수리"
+		}
+		requested_factories = 1
+		progress = 0.8
+		amount = 1
+	}
+}
+

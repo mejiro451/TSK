@@ -1,0 +1,237 @@
+ideas = {
+	hidden_ideas = {
+			KOR_modern_millitary = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = KOR
+	 		    original_tag = PRK
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				land_reinforce_rate = 0.4
+				attrition = -0.9
+				land_night_attack = 0.85
+				army_org_factor = 0.4
+				army_org_regain	 = 0.5
+				}
+			}
+		} 
+	
+	country = {
+	
+		KOR_uncompromized_country_idea = {
+
+			available = {
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				original_tag = JDF
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				enemy_justify_war_goal_time = 9.99
+				justify_war_goal_time = 9.99
+				lend_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+				trade_opinion_factor = -1.0
+				join_faction_tension = 1.0
+				guarantee_tension = 1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+				political_power_gain = -0.1
+			}
+		}
+		
+		KOR_focus_def = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = KOR
+	 		    original_tag = PRK
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_defense_factor = 0.5
+				army_defence_factor = 0.3
+				army_attack_factor = 0.3
+			}
+		}
+		
+		KOR_economic_collapse_1 = { #경제붕괴
+
+			picture = future_ideas
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.05
+				consumer_goods_factor = 0.5
+			}
+			traits = {
+			    KOR_economic_collapse
+			}
+		}
+		
+		PRK_war1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = ROK
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+
+			}
+			modifier = {
+				air_close_air_support_attack_factor  = 0.1
+				air_air_superiority_attack_factor  = 0.1
+				air_air_superiority_defence_factor   = 0.1
+				ai_focus_aggressive_factor = 0.3
+				
+			}
+
+		}
+		
+		PRK_war2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = MKR
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+
+			}
+			targeted_modifier = {
+				tag = ROK
+				attack_bonus_against = 0.6
+				defense_bonus_against = 0.6
+
+			}
+			modifier = {
+				air_close_air_support_attack_factor  = 0.15
+				air_air_superiority_attack_factor  = 0.15
+				air_air_superiority_defence_factor   = 0.15
+				
+			}
+
+		}
+		
+		PRK_focus_def = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = KOR
+	 		    original_tag = PRK
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.8
+				army_attack_factor = -0.4
+			}
+		}
+		ROK_counterattack = {
+			allowed = {
+				always = no
+				original_tag = ROK
+				original_tag = KOR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = PRK
+				attack_bonus_against = 0.7
+				defense_bonus_against = 0.6
+			}
+
+		}
+		ROK_bombing = { #무차별 폭격
+			allowed = {
+				always = no
+				original_tag = ROK
+				original_tag = KOR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				air_close_air_support_attack_factor  = 0.7
+			}
+
+		}
+		ROK_bomb = { #테러폭격의한 피해
+			allowed = {
+				always = no
+				original_tag = ROK
+				original_tag = KOR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				army_defence_factor = -0.2
+				army_attack_factor = -0.2
+			}
+
+		}
+		ROK_offensive = { #대 공세
+			allowed = {
+				always = no
+				original_tag = ROK
+				original_tag = KOR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+			}
+
+		}
+	}
+}

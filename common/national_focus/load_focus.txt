@@ -1,0 +1,25 @@
+focus_tree = {
+	id = loading_focus_rok
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TSK
+		}
+	}
+	focus = { 
+		id = TSK_loading_focus
+		icon = GFX_goal_kor_flag
+		cost = 10.00
+		x = 12
+		y = 0
+		completion_reward = {
+			PRK = {
+				load_focus_tree = GDK_korea
+			}
+			KOR = {
+				load_focus_tree = new_rok_focus
+			}
+		}
+	}
+}	

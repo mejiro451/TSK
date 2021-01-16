@@ -1,0 +1,25 @@
+Reaction = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	}
+
+	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+		always = yes
+	}
+}
+
+warlike_preparations = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	}
+
+	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+		always = yes
+	}
+}

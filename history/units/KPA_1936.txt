@@ -1,0 +1,222 @@
+﻿division_template = {
+	name = "인민 해방군"
+	division_names_group = KPA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	division = {
+		division_name = {
+		    1.인민 해방군
+		}
+		location = 12040 # Seoul
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+
+	division = {
+		division_name = {
+		    2.인민 해방군
+		}
+		location = 9981 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		division_name = {
+		    3.인민 해방군
+		}
+		location = 4004 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		division_name = {
+		    4.인민 해방군
+		}
+		location = 11958 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		division_name = {
+		    5.인민 해방군
+		}
+		location = 4052 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		division_name = {
+		    6.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    7.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    8.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    9.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    10.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    11.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    12.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    13.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    14.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    15.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    16.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    17.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    18.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    19.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    20.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    21.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    22.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    23.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    24.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = {
+		    25.인민 해방군
+		}
+		location = 9918 # Busan
+		division_template = "인민 해방군"
+		start_experience_factor = 0.25
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=818
+	name="평양"
+	provinces={
+		10065 
+	}
+	history={
+		owner = PRK
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 8
+			dockyard = 1
+			air_base = 4
+		}
+		victory_points = {
+			10065 40 
+		}
+		add_core_of = PRK
+		add_core_of = KOR
+
+	}
+	manpower=7307084
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

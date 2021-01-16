@@ -1,0 +1,21 @@
+state={
+	id=823
+	name="평택"
+	provinces={
+		13252
+	}
+	history={
+		owner = USF
+		buildings = {
+
+		}
+		victory_points = {
+			13246 10 
+		}
+		add_core_of = KOR
+		add_core_of = PRK
+		add_core_of = USF
+	}
+	manpower=302901
+	buildings_max_level_factor=1.000
+}

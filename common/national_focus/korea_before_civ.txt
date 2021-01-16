@@ -1,0 +1,131 @@
+focus_tree = {
+	id = korea_before_civ
+	country = {
+		factor = 0
+			tag = TSK
+	}
+	focus = { #1936년의 세계
+		id = KOR_world_1936
+		icon = GFX_goal_unknown
+		cost = 0.3
+		x = 10
+		y = 0
+		completion_reward = {
+			KOR = {
+			country_event = korea.3
+			}
+		}
+	}
+	focus = { #정보 수집
+		id = KOR_intel
+		icon = GFX_goal_unknown
+		cost = 0.5
+		prerequisite = {
+			focus = KOR_world_1936
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+			KOR = {
+			country_event = korea.4
+			}
+		}
+	}
+	focus = { #계엄령 선포
+		id = KOR_martial_law
+		icon = GFX_goal_unknown
+		cost = 0.5
+		prerequisite = {
+			focus = KOR_intel
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			KOR = {
+			country_event = korea.5
+			}
+
+		}
+	}
+	focus = { #언론통제
+		id = KOR_press_control
+		icon = GFX_goal_unknown
+		cost = 0.5
+		prerequisite = {
+			focus = KOR_intel
+		}
+		completion_reward = {
+			KOR = {
+			country_event = korea.7
+			}
+
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = { #공항,항구폐쇄
+		id = KOR_airport_closure
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_press_control
+		}
+		available = {
+				always = no
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = { #주한미군문제
+		id = KOR_USFK_issue
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_press_control
+		}
+		completion_reward = {
+			KOR = {
+			country_event = korea.6
+			}
+
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = { #국회점거
+		id = KOR_NA_Occupation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_intel
+		}
+		available = {
+				always = no
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = { #시민운동 진압명령
+		id = KOR_suppression_order
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = KOR_USFK_issue
+		}
+		prerequisite = {
+			focus = KOR_airport_closure
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			KOR = {
+			country_event = korea.1
+			}
+
+		}
+	}
+}

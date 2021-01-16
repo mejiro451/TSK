@@ -1,0 +1,13 @@
+﻿l_english:
+ heavy_mechanized:0 "현대 중 기계화보병"
+ heavy_mechanized_desc:0 "일반적인 APC를사용하여 수송하는 기계화보병과달리. 이 대대는 보병전투차(IFV)를 사용하여 보병과 함께 전투하여 보병의화력을 높이는데 집중합니다."
+ modern_mechanized:0 "현대 기계화보병"
+ modern_mechanized_desc:0 "훨신 진보하고,강해진 기계화보병들은 작전을 더 수월히 수행할수있을것입니다."
+ light_infantry:0 "현대 경보병"
+ light_infantry_desc:0 "현대의 경보병은 다목적임무를 수행하는데 집중합니다. 이들은 보병과전투할뿐만아니라 독자적으로 대전차미사일(ATGM)을 사용하여 전차에게또한 효과적입니다."
+ modern_motorized:0 "현대 차량화보병"
+ modern_motorized_desc:0 "훨신 진보하고,강해진 차량화보병들은 작전을 더 수월히 수행할수있을것입니다."
+ modern_infantry:0 "현대 보병"
+ modern_infantry_desc:0 "현대의 보병들은 개인화기외에도 더강력한대전차화기를 사용하여 적 기갑부대에도 일부저항이가능하고.작전을 더 수월히 수행할수있을것입니다."
+ modern_marine:0 "현대 해병대"
+ modern_marine_desc:0 "상륙장갑차를활용,더수월한 상륙작전을 펼칠수있는해병대입니다. 이들은 또한 지상전에서도 좋은전투력을 제공합니다."

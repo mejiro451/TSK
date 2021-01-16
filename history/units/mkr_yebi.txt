@@ -1,0 +1,82 @@
+﻿division_template = {
+	name = "동원 자원병사단"
+	is_locked = yes
+	
+	regiments = {
+		modern_infantry = { x = 0 y = 0 }
+		modern_infantry = { x = 0 y = 1 }
+		modern_infantry = { x = 0 y = 2 }
+		modern_infantry = { x = 1 y = 0 }
+		modern_infantry = { x = 1 y = 1 }
+		modern_infantry = { x = 1 y = 2 }
+		modern_infantry = { x = 2 y = 0 }
+		modern_infantry = { x = 2 y = 1 }
+		modern_infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+
+	}
+}
+
+
+units = {
+
+	division= { #
+		name = "제1 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+
+	division= { #
+		name = "제2 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+
+	division= { #
+		name = "제3 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+
+	division= { #
+		name = "제4 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+
+	division= { #
+		name = "제5 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+
+	division= { #
+		name = "제6 예비군 동원사단"
+		location = 7125
+		division_template = "동원 자원병사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+        force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+	}
+}

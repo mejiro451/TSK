@@ -1,0 +1,143 @@
+﻿capital = 813 #South Korea - Seoul or Busan
+
+oob = "JEJ_1936"
+
+# Starting tech
+set_technology = {
+	
+	m_1970PCC = 1
+	m_1980PCC = 1
+	m_1970ff = 1
+	m_1980patrol = 1
+	motorised_infantry = 1
+	
+	modern_light_battery_1 = 1
+	ship_missile_luncher_1 = 1
+	ship_aa_missile_luncher_1 = 1
+	ship_ciws = 1
+	ship_modern_control_system_1 = 1
+	ship_modern_radar_1 = 1
+	light_ship_engine_modern_1 = 1
+	ship_hel = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+create_country_leader = {
+	name = "Lee Soo-yong"
+	desc = ""
+	picture = "이수용.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_navy_leader = {
+	name = "Lee Soo-yong"
+		picture = "이수용.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jang Jeong-gil"
+	picture = "장정길.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	
+	create_equipment_variant = {
+		name = "동해급"
+		type = ship_hull_PCC_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "포항급"
+		type = ship_hull_PCC_2
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			rear_1_custom_slot = ship_missile_luncher_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "울산급"
+		type = ship_hull_FF_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			fixed_ship_battery_slot_1 = modern_ship_light_battery_1
+			rear_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			front_1_custom_slot = modern_ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "참수리급"
+		type = ship_hull_PKM_1
+		name_group = ROK_PKM_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			mid_1_custom_slot = ship_ciws_1
+			rear_1_custom_slot = ship_depth_charge
+		}
+	}
+}

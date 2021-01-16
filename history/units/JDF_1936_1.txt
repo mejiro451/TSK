@@ -1,0 +1,32 @@
+﻿division_template = {
+	name = "JSDF 차량화보병사단"
+
+	regiments = {
+		modern_mbt = { x = 0 y = 0 }
+		modern_sp_anti_air_brigade = { x = 0 y = 1 }
+
+		modern_motorized = { x = 1 y = 0 }
+		modern_motorized = { x = 1 y = 1 }
+		modern_motorized = { x = 1 y = 2 }
+		modern_motorized = { x = 1 y = 3 }
+		modern_motorized = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 3 }
+
+	}
+	support = {
+		armor_Recce_Comp = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division= {
+		name = "제8보병사단"
+		location = 10011
+		division_template = "JSDF 차량화보병사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1980_mbt = { owner = "JDF" } }
+	}
+}

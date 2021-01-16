@@ -1,0 +1,39 @@
+spriteTypes = {	
+	
+	
+	#### KOREA ###
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Kim_Suk_won"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hong_Sa_ik"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_4dollor2"
+		texturefile = "gfx/leaders/KOR/Portrait_4dollor2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_yeom_dong_jin"
+		texturefile = "gfx/leaders/KOR/Portrait_yeom_dong_jin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_goza"
+		texturefile = "gfx/leaders/KOR/Portrait_goza.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Future_Korea_Generic_Male_land_12"
+		texturefile = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_land_12.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Future_Korea_Generic_Male_land_11"
+		texturefile = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_land_11.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_shanghai_cho"
+		texturefile = "gfx/leaders/KOR/Portrait_shanghai_cho.dds"
+	}
+}	
+

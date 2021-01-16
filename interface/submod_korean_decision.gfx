@@ -1,0 +1,10 @@
+spriteTypes = {
+	### categories
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_picture_kor_nationalism"
+		texturefile = "gfx/interface/decisions/KOR/decision_cat_picture_kor_nationalism.dds"
+	}
+	
+	
+}

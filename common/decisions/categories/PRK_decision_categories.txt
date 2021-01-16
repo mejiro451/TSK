@@ -1,0 +1,19 @@
+#################
+#### GERMANY ####
+#################
+
+PRK_2nd_war = {
+
+	picture = GFX_decision_hitler
+	
+	allowed = {
+		original_tag = PRK
+	}
+}
+
+PRK_provocations_against_the_south = {
+	
+	allowed = {
+		original_tag = PRK
+	}
+}

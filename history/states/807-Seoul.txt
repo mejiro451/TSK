@@ -1,0 +1,25 @@
+state={
+	id=807
+	name="서울"
+	provinces={
+		7125 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 10
+			air_base = 5
+		}
+		victory_points = {
+			7125 40 
+		}
+		add_core_of = PRK
+		add_core_of = KOR
+
+	}
+	manpower=10291800
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

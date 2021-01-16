@@ -1,0 +1,27 @@
+
+state={
+	id=820
+	name="함경북도"
+
+	history={
+		owner = PRK
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			898 10 
+		}
+		add_core_of = KOR
+		add_core_of = PRK
+
+	}
+
+	provinces={
+		898 959 3860 6822 6944 
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+}

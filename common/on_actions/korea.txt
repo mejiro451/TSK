@@ -1,0 +1,56 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            KOR = {
+      country_event = {
+          id = kor.2
+          days = 0
+                  }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            PRK = {
+      country_event = {
+          id = kor.2a
+          days = 0
+                  }
+            }
+        }
+    }
+	on_state_control_changed = { #내전	
+	    effect = {
+			if = { #부산
+				limit = {
+					809 = { is_controlled_by = PRK }
+					has_country_falg = 2009_scenario
+					809 = { is_owned_by = KOR }
+					tag = PRK
+					PRK = { has_war_with = KOR }
+					divisions_in_state = { state = 809 size > 0 }
+				}
+				state_event = { id = PRK.5 trigger_for = controller }
+				KOR = {
+				    state_event = { id = KKOR.4 trigger_for = controller }
+				}	
+			}
+			if = { #평양
+				limit = {
+					818 = { is_controlled_by = KOR }
+					818 = { is_owned_by = PRK }
+					has_country_falg = 2009_scenario
+					807 = { is_controlled_by = KOR }
+					807 = { is_owned_by = PRK }
+					tag = KOR
+					KOR = { has_war_with = PRK }
+					divisions_in_state = { state = 818 size > 0 }
+				}
+				state_event = { id = KKOR.5 trigger_for = controller }
+				PRK = {
+				    state_event = { id = PRK.6 trigger_for = controller }
+			    }
+			}
+		}	
+	}
+}

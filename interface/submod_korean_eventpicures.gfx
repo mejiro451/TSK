@@ -1,0 +1,71 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_blue_house"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/blue_house.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_choi_soon_sil_gate"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/choi_soon_sil_gate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_moon_jae_in"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/moon_jae_in.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_roh_moo_hyun"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/roh_moo_hyun.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_lee_myung_bak"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/lee_myung_bak.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_park_geun_hye"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/park_geun_hye.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_jeju"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/jeju.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_yangyang_airport"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/yangyang_airport.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_typhoon_rusa"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/typhoon_rusa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_sejong"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/sejong.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anime_censorship"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/anime_censorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_namdaemun"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/namdaemun.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_korean_reunification"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/korean_reunification.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_pro_park"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/korea/pro_park.dds"
+	}
+}

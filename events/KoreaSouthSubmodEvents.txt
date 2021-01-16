@@ -1,0 +1,532 @@
+﻿add_namespace = south_korea_submod_events
+
+#Invitation to the East Asian Alliance
+country_event = {
+	id = south_korea_submod_events.1
+	title = south_korea_submod_events.1.t
+	desc = south_korea_submod_events.1.d
+	picture = GFX_report_event_blue_house
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea_submod_events.1.o1			
+		JAP = {
+			limit = {
+				is_puppet = no
+				is_in_faction = no
+				NOT = { has_war_with = KOR }
+			}
+			country_event = {
+				id = south_korea_submod_events.2
+				days = 1
+			}
+		}
+		PRK = {
+			limit = {
+				is_puppet = no
+				is_in_faction = no
+				NOT = { has_war_with = KOR }
+			}
+			country_event = {
+				id = south_korea_submod_events.2
+				days = 1
+			}
+		}
+		SIA = {
+			limit = {
+				is_puppet = no
+				is_in_faction = no
+				NOT = { has_war_with = KOR }
+			}
+			country_event = {
+				id = south_korea_submod_events.2
+				days = 1
+			}
+		}
+		CHI = {
+			limit = {
+				is_puppet = no
+				is_in_faction = no
+				NOT = { has_war_with = KOR }
+			}
+			country_event = {
+				id = south_korea_submod_events.2
+				days = 1
+			}
+		}
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.1.o1 executed"
+	}
+}
+
+
+#Invitation to the East Asian Alliance
+country_event = {
+	id = south_korea_submod_events.2
+	title = south_korea_submod_events.2.t
+	desc = south_korea_submod_events.2.d
+	picture = GFX_report_event_blue_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.2.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.2.a executed"
+		KOR = { add_to_faction = ROOT }
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = south_korea_submod_events.2.b
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.2.b executed"
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#South Korea's Aid to North Korea
+country_event = {
+	id = south_korea_submod_events.3
+	title = south_korea_submod_events.3.t
+	desc = south_korea_submod_events.3.d
+	picture = GFX_report_event_korean_reunification
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.3.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.3.a executed"
+		add_political_power = 30
+			add_to_variable = { influence_array_val^3 = 2 }
+
+			random_list = {
+				25 = {
+						PRK = { add_stability = -0.01 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.02
+        			}
+        			recalculate_party = yes
+						}
+				}
+				50 = {
+						PRK = { add_stability = -0.03 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.03
+        			}
+        			recalculate_party = yes
+						}
+				}
+				25 = {
+						PRK = { add_stability = -0.04 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.05
+        			}
+        			recalculate_party = yes
+						}
+					}
+			}
+			
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = south_korea_submod_events.3.b
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.3.b executed"
+		
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
+			
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#South Korea's Aid to North Korea
+country_event = {
+	id = south_korea_submod_events.4
+	title = south_korea_submod_events.4.t
+	desc = south_korea_submod_events.4.d
+	picture = GFX_report_event_korean_reunification
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.4.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.4.a executed"
+		add_political_power = 50
+			add_to_variable = { influence_array_val^3 = 2 }
+
+			random_list = {
+				25 = {
+						PRK = { add_stability = -0.03 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.04
+        			}
+        			recalculate_party = yes
+						}
+				}
+				50 = {
+						PRK = { add_stability = -0.06 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.05
+        			}
+        			recalculate_party = yes
+						}
+				}
+				25 = {
+						PRK = { add_stability = -0.08 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.05
+        			}
+        			recalculate_party = yes
+						}
+					}
+			}
+			
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = south_korea_submod_events.4.b
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.4.b executed"
+		
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
+			
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#South Korea's Aid to North Korea
+country_event = {
+	id = south_korea_submod_events.5
+	title = south_korea_submod_events.5.t
+	desc = south_korea_submod_events.5.d
+	picture = GFX_report_event_korean_reunification
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.5.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.5.a executed"
+		add_political_power = 30
+			add_to_variable = { influence_array_val^3 = 2 }
+
+			random_list = {
+				25 = {
+						PRK = { add_stability = -0.01 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.02
+        			}
+        			recalculate_party = yes
+						}
+				}
+				50 = {
+						PRK = { add_stability = -0.03 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.03
+        			}
+        			recalculate_party = yes
+						}
+				}
+				25 = {
+						PRK = { add_stability = -0.05 }
+						PRK = { 
+        			add_popularity = {
+        				ideology = democratic
+        				popularity = 0.05
+        			}
+        			recalculate_party = yes
+						}
+					}
+			}
+			
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = south_korea_submod_events.5.b
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.5.b executed"
+		
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
+			
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#Unification of the Korea
+country_event = {
+	id = south_korea_submod_events.6
+	title = south_korea_submod_events.6.t
+	desc = south_korea_submod_events.6.d
+	picture = GFX_report_event_korean_reunification
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.6.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.6.a executed"
+		
+		add_ideas = multi_ethnic_state_idea
+			
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Bulgom Project
+country_event = {
+	id = south_korea_submod_events.7
+	title = south_korea_submod_events.7.t
+	desc = south_korea_submod_events.7.d
+	#picture = GFX_african_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.7.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.7.a executed"
+		
+		SOV = { country_event = south_korea_submod_events.8 }
+			
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#South Korea wants to buy Tank
+country_event = {
+	id = south_korea_submod_events.8
+	title = south_korea_submod_events.8.t
+	desc = south_korea_submod_events.8.d
+	#picture = GFX_african_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.8.a # send some MBT
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.8.a executed"
+		
+		ai_chance = {
+			factor = 70
+		}	
+		trigger = {
+			has_equipment = { MBT_Equipment > 50 }
+		}
+		send_equipment = {
+			target = KOR
+			type = MBT_Equipment
+			amount = 50
+		}
+		add_political_power = 100
+		KOR = {	country_event = south_korea_submod_events.9 }
+
+	}
+	
+	option = {
+		name = south_korea_submod_events.8.b # no
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.8.a executed"
+		KOR = {	country_event = south_korea_submod_events.10 }
+		
+		ai_chance = {
+			factor = 30
+		}	
+		
+	}
+}
+
+#Bulgom Project
+country_event = {
+	id = south_korea_submod_events.9
+	title = south_korea_submod_events.9.t
+	desc = south_korea_submod_events.9.d
+	#picture = GFX_african_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.9.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.9.a executed"
+	}
+}
+#Bulgom Project
+country_event = {
+	id = south_korea_submod_events.10
+	title = south_korea_submod_events.10.t
+	desc = south_korea_submod_events.10.d
+	#picture = GFX_african_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = south_korea_submod_events.9.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_events.9.a executed"
+	}
+}
+
+#################
+add_namespace = south_korea_submod_historical_events
+
+
+#Rusa
+country_event = {
+	id = south_korea_submod_historical_events.1
+	title = south_korea_submod_historical_events.1.t #https://en.wikipedia.org/wiki/Typhoon_Rusa
+	desc = south_korea_submod_historical_events.1.d
+	picture = GFX_report_event_typhoon_rusa
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		date > 2002.8.01
+		date < 2002.10.01
+	}
+	
+	option = {
+		name = south_korea_submod_historical_events.1.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_historical_events.1.a executed"
+		add_political_power = -50
+	}
+}
+
+#Stop censorship of Japanese culture
+country_event = {
+	id = south_korea_submod_historical_events.2
+	title = south_korea_submod_historical_events.2.t #https://en.wikipedia.org/wiki/Censorship_of_Japanese_media_in_South_Korea
+	desc = south_korea_submod_historical_events.2.d
+	picture = GFX_report_event_anime_censorship
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		date > 2000.6.27
+		date < 2000.10.27
+	}
+	
+	option = {
+		name = south_korea_submod_historical_events.2.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_historical_events.2.a executed"
+		add_political_power = 25
+		
+  	if = {
+  		limit = {  has_idea = KOR_weak_anti_nationalist }
+  		swap_ideas = {
+  			remove_idea = KOR_weak_anti_nationalist
+  			add_idea = KOR_strong_anti_nationalist
+  		}
+  	}
+  
+  	if = {
+  		limit = { has_idea = KOR_nationalist_question }
+  		swap_ideas = {
+  			remove_idea = KOR_nationalist_question
+  			add_idea = KOR_weak_anti_nationalist
+  		}
+  	}
+  
+  	if = {
+  		limit = { has_idea = KOR_weak_nationalist }
+  		swap_ideas = {
+  			remove_idea = KOR_weak_nationalist
+  			add_idea = KOR_nationalist_question
+  		}
+  	}
+  
+  	if = {
+  		limit = { has_idea = KOR_strong_nationalist }
+  		swap_ideas = {
+  			remove_idea = KOR_strong_nationalist
+  			add_idea = KOR_weak_nationalist
+  		}
+  	}
+  	
+	}
+}
+
+#Yangyang International Airport construction
+country_event = {
+	id = south_korea_submod_historical_events.3
+	title = south_korea_submod_historical_events.3.t #https://en.wikipedia.org/wiki/Yangyang_International_Airport
+	desc = south_korea_submod_historical_events.3.d
+	picture = GFX_report_event_yangyang_airport
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		date > 2001.12.31
+		date < 2002.2.31
+	}
+	
+	option = {
+		name = south_korea_submod_historical_events.3.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_historical_events.3.a executed"
+		add_political_power = 25
+	}
+}
+
+#Namdaemun Fire
+country_event = {
+	id = south_korea_submod_historical_events.4
+	title = south_korea_submod_historical_events.4.t #https://en.wikipedia.org/wiki/2008_Namdaemun_fire
+	desc = south_korea_submod_historical_events.4.d
+	picture = GFX_report_event_namdaemun
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		date > 2001.12.31
+		date < 2002.2.31
+	}
+	
+	option = {
+		name = south_korea_submod_historical_events.4.a
+		log = "[GetDateText]: [This.GetName]: south_korea_submod_historical_events.4.a executed"
+		add_political_power = -50
+	}
+}

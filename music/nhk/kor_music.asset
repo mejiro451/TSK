@@ -1,0 +1,137 @@
+
+#NHK
+#Japan
+music = {
+	name = "yukinoshingun"
+	file = "눈의 진군.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "warshipmarch"
+	file = "군함 행진곡.ogg"
+	volume = 0.85
+}
+#Germany
+music = {
+	name = "Schwarzbraun"
+	file = "Schwarzbraun.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "panzerlied"
+	file = "panzerlied.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "konig_im_luftrevier"
+	file = "luftrevier.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Horst_Wessel"
+	file = "Horst_Wessel.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Erika"
+	file = "Erika.ogg"
+	volume = 0.85
+}
+
+#USA
+music = {
+	name = "Battle_Hymn"
+	file = "Battle_Hymn.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Marine"
+	file = "Marine.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "US_Airforce"
+	file = "US_Airforce.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Us_Field_Artillery"
+	file = "Us_Field_Artillery.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Johnny"
+	file = "Johnny.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Yankee_Doodle"
+	file = "Yankee_Doodle.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Medley"
+	file = "Medley.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Anchor_Aweigh"
+	file = "Anchor_Aweigh.ogg"
+	volume = 0.85
+}
+music = {
+	name = "National_Anthem_of_USA"
+	file = "National Anthem of USA.ogg"
+	volume = 0.85
+}
+#SOV
+music = {
+	name = "Katyusha"
+	file = "Katyusha.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Polyushka_Polye"
+	file = "Polyushka Polye.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Sacred_War"
+	file = "Sacred War.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Sovie_Anthem"
+	file = "Sovie_Anthem.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Lets_Go"
+	file = "Let's Go!.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "redarmyisthestrongest"
+	file = "redarmyisthestrongest.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "Army_Of_The_People"
+	file = "Army Of The People.ogg"
+	volume = 0.85
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=525
+	name="경기도"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 10
+			dockyard = 2
+			air_base = 6
+			13244 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			7125 40 
+		}
+		victory_points = {
+			13239 10 
+		}
+		victory_points = {
+			13240 10 
+		}
+		victory_points = {
+			13244 20 
+		}
+		add_core_of = KOR
+		add_core_of = PRK
+
+	}
+
+	provinces={
+		7221 10036 13239 13240 13244
+	}
+	manpower=13414590
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

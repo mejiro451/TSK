@@ -1,0 +1,663 @@
+ideas = {
+
+	country = {
+		
+		KOR_imf_economic_crisis = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_korean_economic_crisis
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.2
+        political_power_gain = -0.15
+			}
+		}
+		
+		KOR_national_security_law = {
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_national_security_act
+			
+			modifier = {
+				#stability_factor = -0.05
+        political_power_gain = -0.1
+				#communist_drift = -0.04
+			}
+		}
+		
+		
+		KOR_danilminjok = { #https://en.wikipedia.org/wiki/Korean_ethnic_nationalism
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_danilminjok
+			
+			modifier = {
+				war_support_factor = 0.2
+				#mobilization_laws_cost_factor = -0.25
+				nationalist_drift = 0.02
+				justify_war_goal_time = -0.2
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		
+		KOR_memories_of_the_june_struggle = {
+		
+			allowed = {
+			AND = {
+					original_tag = KOR
+					has_elections = yes
+					  }
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = memories_of_the_june_struggle
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		
+		KOR_service_by_requirement = {
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_service_by_requirement
+			
+			modifier = {
+				conscription = 0.15
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.1
+				army_org_factor = -0.03
+			}
+		}
+		
+		KOR_purged_army = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_purged_army
+			
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+			}
+		}
+		
+		#######
+		KOR_choi_soon_sil = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_choi_soon_sil
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.10
+				corruption_cost_factor = 0.3
+				nationalist_drift = 0.1
+			}
+		}
+		
+		KOR_black_choi_soon_sil = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_black_choi_soon_sil
+			
+			modifier = {
+				nationalist_drift = -0.01
+			}
+		}
+		
+		###### Jingoism vs Internationalism
+		KOR_strong_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_strong_nationalist
+			
+			modifier = {
+			  stability_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				#industrial_capacity_factory = -0.1
+				#industrial_capacity_dockyard = -0.1
+				nationalist_drift = 0.1
+			}
+		}
+		
+		KOR_weak_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_strong_nationalist
+			
+			modifier = {
+			  stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				#industrial_capacity_factory = -0.05
+				#industrial_capacity_dockyard = -0.05
+				nationalist_drift = 0.05
+			}
+		}
+		
+		KOR_nationalist_question = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_nationalist_question
+			
+			modifier = {
+			  #stability_factor = -0.05
+				#production_speed_arms_factory_factor = 0.05
+				#production_speed_dockyard_factor = 0.05
+				#industrial_capacity_factory = -0.05
+				#industrial_capacity_dockyard = -0.05
+			}
+		}
+		
+		KOR_weak_anti_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_weak_anti_nationalist
+			
+			modifier = {
+			  stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				#industrial_capacity_factory = 0.05
+				#industrial_capacity_dockyard = 0.05
+				nationalist_drift = -0.05
+			}
+		}
+		
+		KOR_strong_anti_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_weak_anti_nationalist
+			
+			modifier = {
+			  stability_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				#industrial_capacity_factory = 0.1
+				#industrial_capacity_dockyard = 0.1
+				nationalist_drift = -0.1
+			}
+		}
+		
+		####### Korean 
+		
+		KOR_kowareta_katana = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_purged_army
+			
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.05
+				army_morale_factor = -0.05
+			
+			}
+		}
+		
+		KOR_samurais_descendant = { #JAP_superior_will
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_will
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		KOR_independent_armys_descendant = { #JAP_supremacy_of_technology
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_technology
+			
+			modifier = {
+				#army_defence_factor = 0.1
+				#army_attack_factor = 0.1
+				#army_morale_factor = 0.1
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+				armor = 0.05
+			}
+		}
+		####
+		
+		KOR_neo_confucianism_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = conservatism
+			
+			modifier = {
+				nationalist_drift = 0.02
+			  stability_factor = 0.1
+				research_speed_factor = -0.02
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		KOR_protect_the_worker_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = propaganda
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		KOR_new_constitution_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = political_power_bonus
+			
+			modifier = {
+				non_core_manpower = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		
+		KOR_grass_roots_democracy_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = national_unity
+			
+			modifier = {
+				corruption_cost_factor = -0.25
+			}
+		}
+		
+		KOR_land_of_the_Free_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ban_fascism
+			
+			modifier = {
+				drift_defence_factor = 0.4
+				democratic_drift = 0.02 # Western
+				neutrality_drift = 0.02 #neutrality
+			}
+		}
+		
+		KOR_true_education_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_democracy
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		
+		KOR_good_internet = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = production_bonus
+			
+			modifier = {
+				drift_defence_factor = -0.1
+				political_power_factor = 0.15
+			}
+		}
+		
+		KOR_spiritual_mobilization = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = manpower_bonus
+			
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		
+		KOR_national_defense = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = national_defenders
+			
+			modifier = {
+				industry_air_damage_factor = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		KOR_powerful_discipline = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = army_war_college
+			
+			modifier = {
+				army_leader_start_planning_level = 1
+				planning_speed = 0.05
+			}
+		}
+		
+		KOR_internet_censorship = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_prisoners
+			
+			modifier = {
+				decryption_factor = 0.2
+			}
+		}
+		
+		KOR_russian_technology = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		KOR_russian_winter_army = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.1
+			}
+		}
+		
+		KOR_convoy_production = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+		
+		KOR_homeland_defense = {
+			picture = the_military
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
+		
+		KOR_Basic_income = {
+			picture = civil_law
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		
+		####### Kaeseong
+		
+		KOR_Kaeseong = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+	
+}
+
+}

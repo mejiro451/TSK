@@ -1,0 +1,169 @@
+ideas = {
+
+	country = {
+		
+		KOR_food_1 = { #식량난 위기
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = -0.02
+				stability_factor = -0.05
+				recruitable_population = -0.2
+			}
+		}
+		
+		KOR_juche = { #주체사상
+
+			picture = idea_KOR_juche
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_factor = 0.2
+				drift_defence_factor = 0.7
+				justify_war_goal_time = -0.2
+				political_power_gain = 0.2
+			}
+		}
+		
+		KOR_juche_2 = { #주체사상
+
+			picture = future_ideas
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_factor = 0.2
+				drift_defence_factor = 0.7
+				justify_war_goal_time = -0.2
+				political_power_gain = 0.2
+				communism_drift = 0.05
+				stability_factor = 0.2
+			}
+		}
+	}
+	
+	political_advisor = {
+	
+		rudolf_hess = { #김영남 (최고인민회의 위원장)
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				NOT = { has_country_flag = flight_of_hess }
+				OR = {
+					has_government = fascism
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
+		GER_carl_friedrich_goerdeler = { #최영림 (국가계획위원장)
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+			
+			traits = { economist }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		todt = { #리병철 (군수공업부 부장)
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_west_wall
+			}
+			
+			traits = { fortification_engineer }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		speer = { #김두봉 (조선민주주의인민공화국 초대원수)
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		hjalmar_schacht = { #박헌영
+
+			cost = 75
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_four_year_plan
+				NOT = { has_completed_focus = GER_demand_sudetenland }
+			}
+			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		walther_funk = { #여운형
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
