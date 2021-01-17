@@ -3,5 +3,3 @@
 DISCORD LINK
 
 discord.gg/PHEZ3Fk
-
-/github 링크에 넣어도 안되는 이유가 있을까 만약 안되는 이유를 안다면 진짜 대가리 박고 절 3번4번한다 싯~팔
