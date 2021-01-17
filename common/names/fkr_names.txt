@@ -57,6 +57,44 @@ PRK = {
  	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
 }
+MKR = {
+	male = {
+		names = {
+			Woosung Kyungjun Kiyoung Namgil Dongwon Seojun Seokwoo Sungmin Sungjin Seungwon
+			Shinil Indeok Euntak Jungwoo Jiseop Jihwan Taeoh Haneul Kyungpyo Sewon Inbeom Juwon
+			Changseok Hyeongjin Dowon Dongnyeong Siyang Jungwook Heesung Sangwoo Sungdeok
+			Ohjung Yongwoon Taewon Haesung Haeyo Hyeogsu Hyunsang
+		}
+	}
+	female = {
+		
+	}
+	surnames = {
+		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
+		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
+		Seo Shin Kwon Hwang Ahn Song
+ 	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
+}
+ROK = {
+	male = {
+		names = {
+			Woosung Kyungjun Kiyoung Namgil Dongwon Seojun Seokwoo Sungmin Sungjin Seungwon
+			Shinil Indeok Euntak Jungwoo Jiseop Jihwan Taeoh Haneul Kyungpyo Sewon Inbeom Juwon
+			Changseok Hyeongjin Dowon Dongnyeong Siyang Jungwook Heesung Sangwoo Sungdeok
+			Ohjung Yongwoon Taewon Haesung Haeyo Hyeogsu Hyunsang
+		}
+	}
+	female = {
+		
+	}
+	surnames = {
+		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
+		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
+		Seo Shin Kwon Hwang Ahn Song
+ 	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
+}
  
 FKR = {
 	male = {
