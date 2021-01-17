@@ -2164,7 +2164,9 @@ ideas = {
 				original_tag = KOR
 			}
 			available = {
-				
+				NOT = {
+					has_country_flag = 2009_scenario
+				}
 			}
 			research_bonus = {
 				armor = 0.10

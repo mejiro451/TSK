@@ -5,9 +5,17 @@ Reaction = {
 	allowed = {
 		tag = KOR
 	}
+		available = {
+			NOT = {
+				has_country_flag = 2009_scenario
+			}
+		}
 
 	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
-		always = yes
+		
+			NOT = {
+				has_country_flag = 2009_scenario
+			}
 	}
 }
 
@@ -19,7 +27,15 @@ warlike_preparations = {
 		tag = KOR
 	}
 
+		available = {
+			NOT = {
+				has_country_flag = 2009_scenario
+			}
+		}
 	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
-		always = yes
+		
+			NOT = {
+				has_country_flag = 2009_scenario
+			}
 	}
 }

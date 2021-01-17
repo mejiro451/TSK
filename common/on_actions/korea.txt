@@ -24,7 +24,6 @@ on_actions = {
 			if = { #부산
 				limit = {
 					809 = { is_controlled_by = PRK }
-					has_country_falg = 2009_scenario
 					809 = { is_owned_by = KOR }
 					tag = PRK
 					PRK = { has_war_with = KOR }
@@ -39,7 +38,6 @@ on_actions = {
 				limit = {
 					818 = { is_controlled_by = KOR }
 					818 = { is_owned_by = PRK }
-					has_country_falg = 2009_scenario
 					807 = { is_controlled_by = KOR }
 					807 = { is_owned_by = PRK }
 					tag = KOR

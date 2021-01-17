@@ -15,7 +15,6 @@ add_ideas = {
 	kor_law_of_korean_5
 	FKR_back_down_military
 	KOR_future_ideas
-	hell_joseon
 	kor_supremacy_of_will
 	KOR_legacy_of_518
 }
@@ -414,11 +413,15 @@ add_ideas = {
 	korean_economy
 	korean_war
 	closed_economy
+	KOR_danilminjok
+	kor_law_of_korean_5
 	FKR_back_down_military
 	KOR_no_communism_crusader
 	KOR_future_ideas
+	kor_supremacy_of_will
 	KOR_legacy_of_518
 	KOR_half_country
+	hell_joseon
 	KOR_modern_millitary
     KOR_nationalist_question
     KOR_kowareta_katana
@@ -710,16 +713,6 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_navy_leader = {
-	name = "Um Hyunsung"
-	picture = "Portrait_modern_admiral_eom_hyunsung.dds"
-	traits = { spotter superior_tactician air_controller }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 4
-	coordination_skill = 5
-}
 
 	create_corps_commander = {
 		name = "Han Min-goo"
@@ -931,6 +924,8 @@ create_navy_leader = {
 		planning_skill = 2
 		logistics_skill = 2
 	}
+	load_focus_tree = new_rok_focus
+	complete_national_focus = TSK_loading_focus
 
 	create_corps_commander = {
 		name = "Lee Jin-Seong"

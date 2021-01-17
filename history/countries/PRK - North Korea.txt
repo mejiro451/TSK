@@ -499,5 +499,7 @@ create_country_leader = {
 		planning_skill = 2
 		logistics_skill = 2
 	}
+	load_focus_tree = GDK_korea
+	complete_national_focus = TSK_loading_focus
 	set_country_flag = 2009_scenario
 }

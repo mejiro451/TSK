@@ -241,7 +241,9 @@ ideas = {
 	
 		chung_won_sik = { #정원식 (국무총리)
 
-			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -252,6 +254,9 @@ ideas = {
 		lee_young_man = { #이용만 (재무부장관)
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -265,6 +270,9 @@ ideas = {
 		
 		chung_geun_mo = { #정근모 (과학기술처 장관)
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -278,6 +286,9 @@ ideas = {
 		
 		choi_ghak = { #최각규 (경제 기획원 장관)
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -300,7 +311,10 @@ ideas = {
 		}
 		
 		kim_dae_jung = { #김대중 (민주주의 개혁가)
-
+			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -316,12 +330,15 @@ ideas = {
 		#문민정부 인물
 
 		chu_kyung = { #추경석 (건설교통부 장관)
-
+  
 			
 			allowed = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			traits = { communist_revolutionary }
 			
 			ai_will_do = {
@@ -336,6 +353,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			traits = { democratic_reformer }
 			
 			ai_will_do = {
@@ -350,6 +370,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			traits = { war_industrialist }
 
 			ai_will_do = {
@@ -369,6 +392,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				armor = 0.15
 			}
@@ -388,6 +414,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				armor = 0.15
 			}
@@ -407,6 +436,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				armor = 0.15
 			}
@@ -430,6 +462,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -449,6 +484,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -467,6 +505,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -489,6 +530,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -508,7 +552,10 @@ ideas = {
 			allowed = {
 				original_tag = KOR
 			}
-						
+					
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}	
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -533,6 +580,9 @@ ideas = {
 			}
 			
 						
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -552,6 +602,9 @@ ideas = {
 			}
 			
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -579,6 +632,9 @@ ideas = {
 				synth_resources = 0.15
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			traits = { refinery_concern }
 			
 			ai_will_do = {
@@ -592,6 +648,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				industry = 0.15
 				
@@ -609,6 +668,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -622,6 +684,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -634,6 +699,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -652,6 +720,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				artillery = 0.15
 			}
@@ -670,6 +741,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
@@ -690,6 +764,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
@@ -699,6 +776,9 @@ ideas = {
 		
 		hyundai_car = { #현대자동차
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -717,6 +797,9 @@ ideas = {
 		cho_nam_pung = { #조남풍 (하나회)
 			ledger = army
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -733,6 +816,9 @@ ideas = {
 			ledger = army
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -749,6 +835,9 @@ ideas = {
 			ledger = army
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -767,6 +856,9 @@ ideas = {
 			ledger = air
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -784,6 +876,9 @@ ideas = {
 			ledger = air
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -798,6 +893,9 @@ ideas = {
 		lee_nam_shin = { #이남신
 			ledger = army
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -820,6 +918,9 @@ ideas = {
 				original_tag = KOR
 			}
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			traits = { army_chief_organizational_2 }			
 			ai_will_do = {
 				factor = 1
@@ -829,6 +930,9 @@ ideas = {
 		kim_dong_jin  = { #김동진
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -843,6 +947,9 @@ ideas = {
 		lee_jin_sam = { #이진삼 (하나회)
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -857,6 +964,9 @@ ideas = {
 		do_il_kyu = { #도일규
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -875,6 +985,9 @@ ideas = {
 		cho_geun_hae = { #조근해
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -892,6 +1005,9 @@ ideas = {
 			allowed = {
 				original_tag = KOR
 			}
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 						
 			traits = { air_chief_all_weather_2 }
 			
@@ -905,6 +1021,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = KOR
+			}
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
 			}
 						
 			traits = { air_chief_reform_2 }
@@ -923,6 +1042,9 @@ ideas = {
 			allowed = {
 				original_tag = KOR
 			}
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 						
 			traits = { navy_chief_decisive_battle_2 }
 			
@@ -936,6 +1058,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = KOR
+			}
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
 			}
 						
 			traits = { navy_chief_commerce_raiding_3 }
@@ -952,6 +1077,9 @@ ideas = {
 			ledger = army
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -967,6 +1095,9 @@ ideas = {
 			ledger = army
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -980,6 +1111,9 @@ ideas = {
 		lee_jong_gu = { #이종구 (하나회)
 			ledger = army
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -995,6 +1129,9 @@ ideas = {
 		goo_chang_hoe = { #구창회 (하나회)
 			ledger = army
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -1010,6 +1147,9 @@ ideas = {
 		lee_yang_ho = { #이양호
 			ledger = air
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -1025,6 +1165,9 @@ ideas = {
 		lee_gwang = { #이광학
 			ledger = air
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -1040,6 +1183,9 @@ ideas = {
 		chung_yong = { #정용후
 			ledger = air
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR
@@ -1056,6 +1202,9 @@ ideas = {
 			ledger = navy
 
 			
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			allowed = {
 				original_tag = KOR
 			}
@@ -1070,6 +1219,9 @@ ideas = {
 		chang_jung = { #장정길
 			ledger = navy
 
+			visible = {
+			    NOT = { has_country_flag = 2009_scenario }
+			}
 			
 			allowed = {
 				original_tag = KOR

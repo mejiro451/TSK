@@ -13249,7 +13249,7 @@
 13246;12;93;42;land;true;forest;6
 13247;212;32;112;land;true;forest;6
 
-13248;31;32;33;land;true;urban;6
+13248;31;32;33;land;false;urban;6
 
 13249;111;112;113;land;false;urban;6
 13250;213;11;9;land;false;urban;6
