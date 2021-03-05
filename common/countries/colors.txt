@@ -1,4 +1,8 @@
 #reload countrycolors
+PR1 = {
+	color = rgb { 197  0  0 }
+	color_ui = rgb { 197  0  0 }
+}
 PRK = {
 	color = rgb { 204  0  0 }
 	color_ui = rgb { 204  0  0 }
@@ -6,6 +10,22 @@ PRK = {
 KOR = {
 	color = rgb { 18 7 116 }
 	color_ui = rgb { 18 7 116 }
+}
+MKR = {
+	color = rgb { 0  31  130 }
+	color_ui = rgb { 0  31  130 }
+}
+ROK = {
+	color = rgb { 75  114  242 }
+	color_ui = rgb { 75  114  242 }
+}
+USF = {
+	color = rgb { 142  122  242 }
+	color_ui = rgb { 142  122  242 }
+}
+JEJ = {
+	color = rgb { 0  49  255 }
+	color_ui = rgb { 0  49  255 }
 }
 JDF = {
 	color = rgb { 43  173  255 }

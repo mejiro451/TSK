@@ -87,14 +87,14 @@ bookmarks = {
 			history = FKR_GATHERING_STORM_DESC
 			ideology = democratic
 			ideas={
-				KOR_future_ideas
+				KOR_satellite
 				KOR_danilminjok
-				KOR_half_country
+				KOR_not_politic_act
 			}	
 			focuses = {
-				KOR_political_tree_imf
-				KOR_north_korea_problem
-				KOR_choi_soon_sil_advice
+				KOR_MB_timeslip
+				KOR_MB_oil_problem
+				KOR_MB_industry
 			}		
 		}
 		SOV = {

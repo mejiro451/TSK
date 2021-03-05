@@ -1,0 +1,765 @@
+add_namespace = Spy
+#성공적인 간첩침투 ( 민간 )
+country_event = {
+	id = Spy.1
+	title = Spy.1.t
+	desc = Spy.1.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.1.a
+		add_to_variable = { var = PRK.PRK_civ_spylevel value = 2 }
+	}
+}
+
+#간첩침투 대성공 ( 민간 )
+country_event = {
+	id = Spy.2
+	title = Spy.2.t
+	desc = Spy.2.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.2.a
+		add_to_variable = { var = PRK.PRK_civ_spylevel value = 4 }
+	}
+}
+#성공적인 간첩침투 ( 군사 )
+country_event = {
+	id = Spy.3
+	title = Spy.3.t
+	desc = Spy.3.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}	
+
+	option = { #좋군
+		name = Spy.3.a
+		add_to_variable = { var = PRK.PRK_army_spylevel value = 2 }
+	}
+}
+
+#간첩침투 대성공 ( 군사 )
+country_event = {
+	id = Spy.4
+	title = Spy.4.t
+	desc = Spy.4.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.4.a
+		add_to_variable = { var = PRK.PRK_army_spylevel value = 4 }
+	}
+}
+
+#간첩색출 대성공 ( 군사 )
+country_event = {
+	id = Spy.5
+	title = Spy.5.t
+	desc = Spy.5.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.5.a
+		PRK = {
+			country_event = { id = Spy.9 }
+			add_to_variable = { var = PRK.PRK_army_spylevel value = -3 }
+		}
+	}
+}
+
+#간첩색출 성공 ( 군사 )
+country_event = {
+	id = Spy.6
+	title = Spy.6.t
+	desc = Spy.6.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.6.a
+		PRK = {
+			country_event = { id = Spy.9 }
+			add_to_variable = { var = PRK.PRK_army_spylevel value = -1 }
+		}
+	}
+}
+
+#간첩색출 대성공 ( 민간 )
+country_event = {
+	id = Spy.7
+	title = Spy.7.t
+	desc = Spy.7.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.7.a
+		PRK = {
+			country_event = { id = Spy.9 }
+			add_to_variable = { var = PRK.PRK_civ_spylevel value = -3 }
+		}
+	}
+}
+
+#간첩색출 성공 ( 민간 )
+country_event = {
+	id = Spy.8
+	title = Spy.8.t
+	desc = Spy.8.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #좋군
+		name = Spy.8.a
+		PRK = {
+			country_event = { id = Spy.9 }
+			add_to_variable = { var = PRK.PRK_civ_spylevel value = -1 }
+		}
+	}
+}
+
+#체포된 우리 공작원
+country_event = {
+	id = Spy.9
+	title = Spy.9.t
+	desc = Spy.9.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #우리는 모르는일이다!
+		name = Spy.9.a
+		add_political_power = -15
+	}
+}
+
+country_event = { #기반시설 사보타주
+	id = Spy.10
+	title = Spy.10.t
+	desc = Spy.10.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.10.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+	}
+}
+
+country_event = { #군사공장 사보타주
+	id = Spy.11
+	title = Spy.11.t
+	desc = Spy.11.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.11.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.9
+			}
+		}
+	}
+}
+
+country_event = { #민간공장 사보타주
+	id = Spy.12
+	title = Spy.12.t
+	desc = Spy.12.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.12.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.9
+			}
+		}
+	}
+}
+
+country_event = { #군사공항 폭파
+	id = Spy.13
+	title = Spy.13.t
+	desc = Spy.13.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.13.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = air_base
+				damage = 0.9
+			}
+		}
+	}
+}
+
+country_event = { #발전소 폭파
+	id = Spy.14
+	title = Spy.14.t
+	desc = Spy.14.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.14.a #okay
+		add_timed_idea = {
+			idea = KOR_power_plant_explosion
+			days = 120
+		}
+	}
+}
+
+country_event = { #남한의 방첩기관학장
+	id = Spy.15
+	title = Spy.15.t
+	desc = Spy.15.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.15.a #그거안좋군...
+		set_country_flag = kor_Improved_organization
+	}
+}
+
+country_event = { #전방사단 교란
+	id = Spy.16
+	title = Spy.16.t
+	desc = Spy.16.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.16.a #okay
+		add_timed_idea = {
+			idea = Forward_Division_Disturbance_idea
+			days = 30
+		}
+	}
+}
+
+country_event = { #국군에 소규모침투
+	id = Spy.17
+	title = Spy.17.t
+	desc = Spy.17.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.17.a #okay
+		add_timed_idea = {
+			idea = prk_military_spy_little
+			days = 35
+		}
+	}
+}
+
+country_event = { #국군에 중규모침투
+	id = Spy.18
+	title = Spy.18.t
+	desc = Spy.18.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.18.a #okay
+		add_timed_idea = {
+			idea = prk_military_spy_medium
+			days = 35
+		}
+	}
+}
+
+country_event = { #국군에 대규모침투
+	id = Spy.19
+	title = Spy.19.t
+	desc = Spy.19.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.19.a #okay
+		add_timed_idea = {
+			idea = mkr_military_spy_mid
+			days = 35
+		}
+	}
+}
+
+country_event = { #공군에 침투
+	id = Spy.20
+	title = Spy.20.t
+	desc = Spy.20.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.20.a #okay
+		add_timed_idea = {
+			idea = spy_into_the_air_force
+			days = 35
+		}
+	}
+}
+
+country_event = { #해군에 침투
+	id = Spy.21
+	title = Spy.21.t
+	desc = Spy.21.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.21.a #okay
+		add_timed_idea = {
+			idea = spy_into_the_navy
+			days = 35
+		}
+	}
+}
+
+country_event = { #지령하달
+	id = Spy.22
+	title = Spy.22.t
+	desc = Spy.22.d
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Spy.21.a #okay
+		set_country_flag = prk_Operation_commencement
+	}
+}

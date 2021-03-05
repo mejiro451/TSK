@@ -1,0 +1,34 @@
+ideas = {
+	political_advisor = {	
+
+		roh_muhyun = {
+			picture = fkr_advisor_roh_muhyun
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+			}
+			cost = 75
+			traits = { KOR_roh_trait }
+			ai_will_do = { factor = 100 }
+		}
+		moon_jaein = {
+			picture = fkr_advisor_moon_jaein
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+			}
+			cost = 75
+			traits = { KOR_roh_trait }
+			ai_will_do = { factor = 100 }
+		}
+
+	}
+		
+
+	
+	
+}

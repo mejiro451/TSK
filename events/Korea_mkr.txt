@@ -28,7 +28,7 @@ country_event = { # 예비군 추가동원
 	option = {
 		name = mkorea.2.a
 		MKR = {
-				load_oob = mkr_yebi
+			load_oob = mkr_yebi
 		}
     }	
 }
@@ -52,21 +52,21 @@ country_event = {
 			picture = "이범석.dds"
 			traits = { 	unaccustomed_to_modern_warfare	}
 			id = 2050
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 5
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 6
 			logistics_skill = 2
 		}
 		create_corps_commander = {
 			name = "Ji Cheong cheon" #지청천
 			picture = "지청천.dds"
 			traits = { 	unaccustomed_to_modern_warfare	}
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 5
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 6
 		}
 	}
 }
@@ -175,6 +175,9 @@ country_event = { #북한의 포격도발!
 	
 	option = {
 		name = mkorea.9.a
+		add_political_power = -50
+		war_support = -0.01
+		manpower = -5
     }	
 }
 
@@ -188,6 +191,8 @@ country_event = { #북한의 NLL침범!
 	
 	option = {
 		name = mkorea.10.a
+		add_political_power = -50
+		war_support = -0.01
     }	
 }
 
@@ -201,6 +206,8 @@ country_event = { #북한의 방공식별구역 침범!
 	
 	option = {
 		name = mkorea.9.a
+		add_political_power = -50
+		war_support = -0.01
     }	
 }
 
@@ -331,7 +338,7 @@ country_event = { #연평해전
 	
 	option = {
 		name = mkorea.20.a
-		war_support_factor = 0.1
+		war_support = 0.1
 		navy_experience = 10
 		hidden_effect = {
 		news_event = { hours = 6 id = kor_news.8 }
@@ -349,7 +356,7 @@ country_event = { #서부전선 포격사건
 	
 	option = {
 		name = mkorea.21.a
-		war_support_factor = 0.4
+		war_support = 0.4
 		army_experience = 40
 		hidden_effect = {
 		news_event = { hours = 6 id = kor_news.9 }
@@ -421,4 +428,514 @@ country_event = { #일본이 거부하다
 	option = {
 		name = mkorea.25.a
     }	
+}
+
+country_event = { #우리 지도자의 암살!!
+	id = mkorea.26
+	title = mkorea.26.t
+	desc = mkorea.26.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.26.a
+		add_ideas = prc_invasion
+		create_wargoal = {
+			type = annex_everything
+			target = CHI
+			expire = 0
+		}
+    }	
+}
+
+country_event = { #신 제국주의
+	id = mkorea.27
+	title = mkorea.27.t
+	desc = mkorea.27.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.27.a
+		add_popularity = { ideology = fascism popularity = 0.5 }
+		add_ideas = mkr_new_facism
+    }	
+}
+
+country_event = { #만주국 압박
+	id = mkorea.28
+	title = mkorea.28.t
+	desc = mkorea.28.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.28.a
+		MAN = {
+			country_event = { id = mkorea.29 }
+		}
+    }	
+}
+
+country_event = { #만주국 압박
+	id = mkorea.29
+	title = mkorea.29.t
+	desc = mkorea.29.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.29.a
+    }	
+}
+
+country_event = { #일본도발
+	id = mkorea.30
+	title = mkorea.30.t
+	desc = mkorea.30.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.30.a
+		JDF = {
+			country_event = { id = mkorea.31 }
+		}	
+		news_event = { hours = 6 id = kor_news.12 }
+    }	
+}
+
+country_event = { #일본도발 (자위대 이벤트)
+	id = mkorea.31
+	title = mkorea.31.t
+	desc = mkorea.31.d
+	picture = GFX_two_peo_pic
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mkorea.31.a
+    }	
+}
+
+country_event = { #미합중국에 접촉하다
+	id = mkorea.32
+	title = mkorea.32.t
+	desc = mkorea.32.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = {
+		name = mkorea.32.a
+		USA = {
+			add_opinion_modifier = {
+				target = MKR
+				modifier = KOR_align_with_korea
+			}
+		}
+	}
+}
+
+country_event = { #연합국에 접촉하다
+	id = mkorea.33
+	title = mkorea.33.t
+	desc = mkorea.33.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = {
+		name = mkorea.33.a
+		ENG = {
+			add_opinion_modifier = {
+				target = MKR
+				modifier = KOR_align_with_korea
+			}
+		}
+		diplomatic_relation = { country = ENG relation = non_aggression_pact }
+		MKR = {
+			give_guarantee = ENG
+		}
+		ENG = {
+			give_guarantee = MKR
+		}
+	}
+}
+
+country_event = { #장비와 식민지의 대체
+	id = mkorea.34
+	title = mkorea.34.t
+	desc = mkorea.34.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋은 제안이군!
+		name = mkorea.34.a
+		MKR = {
+			country_event = { id = mkorea.35 days = 3 }
+		}
+	}
+
+	option = { #거절
+		name = mkorea.34.b
+
+	}
+}
+
+country_event = { #장비와 식민지의 대체 수락
+	id = mkorea.35
+	title = mkorea.35.t
+	desc = mkorea.35.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋아.
+		name = mkorea.35.a
+		MKR = {
+			transfer_ship = {
+				prefer_name = "ROKS 포항"
+				type = destroyer
+				target = ENG
+			}
+			transfer_ship = {
+				prefer_name = "ROKS 군산"
+				type = destroyer
+				target = ENG
+			}
+		}
+		MKR = {
+			if = { limit = { 658 = { is_controlled_by = ENG } }
+				transfer_state = 658
+			}
+			if = { limit = { 765 = { is_controlled_by = ENG } }
+				transfer_state = 765
+			}
+		}
+	}
+
+}
+
+country_event = { #장비와 식민지의 대체 거절
+	id = mkorea.36
+	title = mkorea.36.t
+	desc = mkorea.36.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #아쉽군
+		name = mkorea.36.a
+	}
+
+}
+
+country_event = { #미국 태평양방위연합 초대
+	id = mkorea.37
+	title = mkorea.37.t
+	desc = mkorea.37.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋은 제안이군!
+		name = mkorea.37.a
+		MKR = {
+			country_event = { id = mkorea.38 days = 3 }
+		}
+	}
+
+	option = { #거절
+		name = mkorea.37.b
+		MKR = {
+			country_event = { id = mkorea.39 days = 3 }
+		}
+	}
+}
+
+country_event = { #미국의 태평양방위연합 초대 수락
+	id = mkorea.38
+	title = mkorea.38.t
+	desc = mkorea.38.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #훌륭하군
+		name = mkorea.38.a
+		effect_tooltip = {
+			add_to_faction = USA
+		}
+	}
+
+}
+
+country_event = { #미국의 태평양방위연합 초대 거절
+	id = mkorea.39
+	title = mkorea.39.t
+	desc = mkorea.39.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #아쉽군
+		name = mkorea.39.a
+	}
+
+}
+
+country_event = { #호주 태평양방위연합 초대
+	id = mkorea.40
+	title = mkorea.40.t
+	desc = mkorea.40.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋은 제안이군!
+		name = mkorea.40.a
+		MKR = {
+			country_event = { id = mkorea.41 days = 3 }
+		}
+	}
+
+	option = { #거절
+		name = mkorea.40.b
+		MKR = {
+			country_event = { id = mkorea.42 days = 3 }
+		}
+	}
+}
+
+country_event = { #호주의 태평양방위연합 초대 수락
+	id = mkorea.41
+	title = mkorea.41.t
+	desc = mkorea.41.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #훌륭하군
+		name = mkorea.41.a
+		effect_tooltip = {
+			add_to_faction = AST
+		}
+	}
+
+}
+
+country_event = { #호주의 태평양방위연합 초대 거절
+	id = mkorea.42
+	title = mkorea.42.t
+	desc = mkorea.42.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #아쉽군
+		name = mkorea.42.a
+	}
+
+}
+
+country_event = { #미합중국을 지원하다
+	id = mkorea.43
+	title = mkorea.43.t
+	desc = mkorea.43.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋은소식이야!
+		name = mkorea.43.a
+		USA = {
+			hidden_effect = { set_technology = { m_1990_infantry_eq = 1 } }
+			hidden_effect = { set_technology = { m_1990_modern_tank = 1 } }
+			hidden_effect = { set_technology = { m_1990_motorized_rocket_unit = 1 } }
+			hidden_effect = { set_technology = { m_1990_IFV = 1 } }
+			hidden_effect = { set_technology = { m_1990_mechanized_equipment = 1 } }
+			hidden_effect = { set_technology = { modern_war_artillery_2 = 1 } }
+			hidden_effect = { set_technology = { m_1985_sup_infantry_eq = 1 } }
+			hidden_effect = { set_technology = { m_1990_spaa = 1 } }
+			hidden_effect = { set_technology = { m_1990_sp = 1 } }
+			
+			hidden_effect = { set_technology = { m_1980_manpad = 1 } }
+			hidden_effect = { set_technology = { m_1990_atgm = 1 } }
+			hidden_effect = { set_technology = { heavy_anti_air = 1 } }
+			hidden_effect = { set_technology = { aa_missile = 1 } }
+			hidden_effect = { set_technology = { m_1990_jet_CAS = 1 } }
+			hidden_effect = { set_technology = { m_1990_jet_fighter = 1 } }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = usfk_annex }
+			}
+			MKR = {
+			country_event = { id = mkorea.44 days = 1 }
+			}
+		}
+	}
+
+}
+
+country_event = { #주한미군병사들이 본국에가길원하다
+	id = mkorea.44
+	title = mkorea.44.t
+	desc = mkorea.44.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #그래.
+		name = mkorea.44.a
+		KOR = {
+			annex_country = { target = USF transfer_troops = no }
+		}
+		USF = {
+		remove_state_core = 823
+		}
+		USA = {
+		country_event = { id = mkorea.45 days = 1 }
+		}
+	}
+}
+
+country_event = { #주한미군병사들이 본국에도착하다
+	id = mkorea.45
+	title = mkorea.45.t
+	desc = mkorea.45.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #그래.
+		name = mkorea.45.a
+	}
+
+}
+
+country_event = { #대한민국 연합국가입
+	id = mkorea.46 
+	title = mkorea.46.t
+	desc = mkorea.46.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #좋은 제안이군!
+		name = mkorea.46.a
+		MKR = {
+			country_event = { id = mkorea.47 days = 3 }
+		}
+	}
+
+	option = { #거절
+		name = mkorea.46.b
+		MKR = {
+			country_event = { id = mkorea.48 days = 3 }
+		}
+	}
+}
+
+country_event = { #영국의 수락
+	id = mkorea.47
+	title = mkorea.47.t
+	desc = mkorea.47.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #훌륭하군
+		name = mkorea.47.a
+		ENG = {
+		add_to_faction = KOR
+		}
+	}
+
+}
+
+country_event = { #영국의 거절
+	id = mkorea.48
+	title = mkorea.48.t
+	desc = mkorea.48.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #아쉽군
+		name = mkorea.48.a
+	}
+
+}
+
+country_event = { #경제위기
+	id = mkorea.49
+	title = mkorea.49.t
+	desc = mkorea.49.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #아쉽군
+		name = mkorea.49.a
+	}
+
+}
+
+country_event = { #세금인상
+	id = mkorea.50
+	title = mkorea.50.t
+	desc = mkorea.50.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #올리자
+		name = mkorea.50.a
+	}
+
+	option = { #부담을줄순없다
+		name = mkorea.50.b
+	}
+}
+
+country_event = { #독도교전!
+	id = mkorea.51
+	title = mkorea.51.t
+	desc = mkorea.51.d
+	picture = GFX_report_event_japan_europe_pact	#debug
+
+	is_triggered_only = yes
+
+	option = { #훌륭하군
+		name = mkorea.51.a
+		JAP = { 
+			destroy_ships = {
+				type = ship_hull_carrier 
+				count = 2
+			}
+		}
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.13 }
+		}
+	}
 }

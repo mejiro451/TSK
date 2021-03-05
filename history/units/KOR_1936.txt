@@ -5,14 +5,22 @@
 	regiments = {
 		modern_infantry = { x = 0 y = 0 }
 		modern_infantry = { x = 0 y = 1 }
+		modern_infantry = { x = 0 y = 2 }
 		modern_infantry = { x = 1 y = 0 }
 		modern_infantry = { x = 1 y = 1 }
-		modern_infantry = { x = 2 y = 0 }
-		modern_infantry = { x = 2 y = 1 }
+		modern_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 		modern_artillery_brigade = { x = 3 y = 0 }
 
 	}
 	support = {
+	field_hospital = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	military_police = { x = 0 y = 2 }
+	anti_air = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 
@@ -22,17 +30,25 @@ division_template = {
 	
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		modern_artillery_brigade = { x = 0 y = 2 }
+		modern_infantry = { x = 0 y = 1 }
+		modern_infantry = { x = 0 y = 2 }
+		modern_artillery_brigade = { x = 0 y = 3 }
 		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		modern_artillery_brigade = { x = 1 y = 2 }
+		modern_infantry = { x = 1 y = 1 }
+		modern_infantry = { x = 1 y = 2 }
+		modern_artillery_brigade = { x = 1 y = 3 }
 		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
+		modern_infantry = { x = 2 y = 1 }
+		modern_infantry = { x = 2 y = 2 }
 		modern_mbt = { x = 3 y = 0 }
 
 	}
 	support = {
+	mot_recon = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	military_police = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -55,6 +71,11 @@ division_template = {
 
 	}
 	support = {
+	mot_recon = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	military_police = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -64,21 +85,28 @@ division_template = {
 	regiments = {
 		modern_mechanized = { x = 0 y = 0 }
 		modern_mechanized = { x = 0 y = 1 }
-		modern_sp_art_brigade = { x = 0 y = 2 }
+		modern_mechanized = { x = 0 y = 2 }
 		modern_mechanized = { x = 1 y = 0 }
 		modern_mechanized = { x = 1 y = 1 }
-		modern_mechanized = { x = 1 y = 2 }
-		modern_sp_art_brigade = { x = 1 y = 3 }
 		modern_mbt = { x = 2 y = 0 }
 		modern_mbt = { x = 2 y = 1 }
-		modern_armed_rec = { x = 2 y = 2 }
+		modern_mbt = { x = 2 y = 2 }
+		modern_mbt = { x = 2 y = 3 }
+		modern_armed_rec = { x = 2 y = 4 }
 		modern_sp_art_brigade = { x = 3 y = 0 }
 		modern_sp_art_brigade = { x = 3 y = 1 }
-		modern_sp_anti_air_brigade = { x = 3 y = 2 }
+		modern_sp_art_brigade = { x = 3 y = 2 }
+		modern_sp_art_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 4 y = 0 }
 	
 
 	}
 	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	military_police = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -98,7 +126,11 @@ division_template = {
 
 	}
 	support = {
-		
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	military_police = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -108,19 +140,60 @@ division_template = {
 		modern_motorized = { x = 0 y = 0 }
 		modern_motorized = { x = 0 y = 1 }
 		modern_motorized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 3 }
 		modern_motorized = { x = 1 y = 0 }
 		modern_motorized = { x = 1 y = 1 }
 		modern_motorized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 1  = 3 }
 		modern_motorized = { x = 2 y = 0 }
 		modern_motorized = { x = 2 y = 1 }
 		modern_motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 3 }
 		mot_artillery_brigade = { x = 3 y = 0 }
-		mot_artillery_brigade = { x = 3 y = 1 }
-		mot_artillery_brigade = { x = 3 y = 2 }
-		mot_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_art_brigade = { x = 3 y = 1 }
+		modern_sp_art_brigade = { x = 3 y = 2 }
+		modern_sp_art_brigade = { x = 3 y = 3 }
 		modern_mbt = { x = 4 y = 0 }
 	}
 	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	anti_tank = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "상비사단(중)"
+	
+	regiments = {
+		modern_motorized = { x = 0 y = 0 }
+		modern_motorized = { x = 0 y = 1 }
+		modern_motorized = { x = 0 y = 2 }
+		modern_motorized = { x = 0 y = 3 }
+		motorized_rocket_brigade = { x = 0 y = 4 }
+		modern_motorized = { x = 1 y = 0 }
+		modern_motorized = { x = 1 y = 1 }
+		modern_motorized = { x = 1 y = 2 }
+		modern_motorized = { x = 1  = 3 }
+		motorized_rocket_brigade = { x = 1 y = 4 }
+		modern_motorized = { x = 2 y = 0 }
+		modern_motorized = { x = 2 y = 1 }
+		modern_motorized = { x = 2 y = 2 }
+		modern_motorized = { x = 2 y = 3 }
+		motorized_rocket_brigade = { x = 2 y = 4 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_art_brigade = { x = 3 y = 1 }
+		modern_sp_art_brigade = { x = 3 y = 2 }
+		modern_sp_art_brigade = { x = 3 y = 3 }
+		modern_mbt = { x = 4 y = 0 }
+	}
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	anti_tank = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	manpad = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -145,12 +218,14 @@ units = {
 		division_template = "상비사단"
 		start_experience_factor = 0.4
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 	}
 	division= {
 		name = "제2보병사단 '노도'"
 		location = 7125
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -158,6 +233,7 @@ units = {
 		location = 7125
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } } 
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -165,6 +241,7 @@ units = {
 		location = 7125
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -172,6 +249,7 @@ units = {
 		location = 7125
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -179,90 +257,103 @@ units = {
 		location = 7125
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제8보병사단 '오뚜기'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제9보병사단 '백마'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제12보병사단 '을지'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제15 보병사단 '승리'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제17 보병사단 '번개'"
 		location = 7125
-		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		division_template = "상비사단(중)"
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제21 보병사단 '백두산'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제22 보병사단 '율곡'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제68 보병사단 '철벽'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제25 보병사단 '비룡'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제27 보병사단 '이기자'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } } 
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } } 
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제28 보병사단 '태풍'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
 		name = "제57 보병사단 '용마'"
 		location = 7125
 		division_template = "상비사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	#####################동원사단################
@@ -270,7 +361,7 @@ units = {
 		name = "제61 보병사단 '상승'"
 		location = 7125
 		division_template = "동원사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -278,7 +369,7 @@ units = {
 		name = "제62 보병사단 '충룡'"
 		location = 7125
 		division_template = "동원사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -286,7 +377,7 @@ units = {
 		name = "제65 보병사단 '밀물'"
 		location = 7125
 		division_template = "동원사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -294,7 +385,7 @@ units = {
 		name = "제67 보병사단 '용진'"
 		location = 7125
 		division_template = "동원사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -302,7 +393,7 @@ units = {
 		name = "제70 보병사단 '충효'"
 		location = 7125
 		division_template = "동원사단"
-		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -320,7 +411,9 @@ units = {
 		location = 7125
 		division_template = "기계화보병사단"
 		start_experience_factor = 0.5
+		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_spaa_equipment = { owner = "KOR" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 	}
 	division= {
 		name = "수도기계화보병사단 '맹호'"
@@ -340,7 +433,9 @@ units = {
 		location = 7125
 		division_template = "기계화보병사단"
 		start_experience_factor = 0.5
+		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_spaa_equipment = { owner = "KOR" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 	}
 	
 	#####################기갑여단##########
@@ -358,7 +453,7 @@ units = {
 		location = 7125
 		division_template = "기갑여단"
 		start_experience_factor = 0.4
-		force_equipment_variants = { m_1980_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_spaa_equipment = { owner = "KOR" } }
 	}
@@ -367,7 +462,7 @@ units = {
 		location = 7125
 		division_template = "기갑여단"
 		start_experience_factor = 0.4
-		force_equipment_variants = { m_1980_mbt = { owner = "KOR" } }
+		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_sp_equipment = { owner = "KOR" } }
 		force_equipment_variants = { m_1980_spaa_equipment = { owner = "KOR" } }
 	}

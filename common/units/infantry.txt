@@ -449,7 +449,7 @@ sub_units = {
 		max_organisation = 100
 		default_morale = 0.3
 		manpower = 0
-
+		
 		#Misc Abilities
 		training_time = 90
 		suppression = 1
@@ -466,7 +466,7 @@ sub_units = {
 		sprite = mechanized
 		map_icon_category = infantry
 
-		priority = 610
+		priority = 800
 		ai_priority = 200
 		active = yes
 
@@ -482,7 +482,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 4
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 50
@@ -495,9 +495,10 @@ sub_units = {
 		suppression = 2
 		weight = 1
 		
-		casualty_trickleback = 0.03
-		
-		supply_consumption = 0.1
+		casualty_trickleback = 0.01
+		breakthrough = 0.3
+
+		supply_consumption = 0.06
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
@@ -545,7 +546,7 @@ sub_units = {
 		sprite = mechanized
 		map_icon_category = infantry
 
-		priority = 610
+		priority = 800
 		ai_priority = 200
 		active = yes
 
@@ -561,7 +562,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 4
+		combat_width = 2
 
 		#Offensive Abilities
 		soft_attack = 0.1
@@ -572,14 +573,15 @@ sub_units = {
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 800
-
+		breakthrough = 0.35
+		
 		#Misc Abilities
 		training_time = 120
 		suppression = 2
 		weight = 1
-		casualty_trickleback = 0.05
-		
-		supply_consumption = 0.18
+		casualty_trickleback = 0.02
+
+		supply_consumption = 0.06
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
@@ -627,7 +629,7 @@ sub_units = {
 		sprite = infantry
 		map_icon_category = infantry
 		
-		priority = 600
+		priority = 800
 		ai_priority = 200
 		active = no
 
@@ -644,21 +646,22 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.55
 		manpower = 1000
-
+		breakthrough = 0.3
+		
 		#Misc Abilities
 		training_time = 80
 		suppression = 2
 		weight = 0.5
-		casualty_trickleback = 0.05
+		casualty_trickleback = 0.03
 		
-		supply_consumption = 0.02
+		supply_consumption = 0.04
 	
 		need = {
 			infantry_equipment = 80
@@ -673,7 +676,7 @@ sub_units = {
 		sprite = motorized
 		map_icon_category = infantry
 
-		priority = 599
+		priority = 800
 		ai_priority = 200
 		active = no
 
@@ -689,20 +692,22 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 40
 		max_organisation = 60
 		default_morale = 0.5
 		manpower = 800
-
+		breakthrough = 0.3
+		
 		#Misc Abilities
 		training_time = 90
 		suppression = 2.2
 		weight = 0.75
-		supply_consumption = 0.11
-		casualty_trickleback = 0.05
+		supply_consumption = 0.05
+		casualty_trickleback = 0.02
+		breakthrough = 0.4
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -762,21 +767,22 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.5
 		manpower = 600
-
+		breakthrough = 0.3
+		
 		#Misc Abilities
 		training_time = 90
 		suppression = 1.5
 		weight = 0.5
-		casualty_trickleback = 0.05
+		casualty_trickleback = 0.01
 		
-		supply_consumption = 0.05
+		supply_consumption = 0.04
 	
 		need = {
 			infantry_equipment = 100
@@ -788,7 +794,7 @@ sub_units = {
 		sprite = amphibious_mechanized
 		map_icon_category = infantry
 
-		priority = 610
+		priority = 900
 		ai_priority = 200
 		active = yes
 		special_forces = yes
@@ -806,7 +812,7 @@ sub_units = {
 			category_special_forces
 		}
 
-		combat_width = 4
+		combat_width = 2
 
 		#Offensive Abilities
 		soft_attack = 0.2
@@ -822,10 +828,12 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 1
-		supply_consumption = 0.06
 		breakthrough = 0.4
 		defense = 0.3
-		casualty_trickleback = 0.03
+
+		casualty_trickleback = 0.02
+
+		supply_consumption = 0.03
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
@@ -986,7 +994,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 4
+		combat_width = 2
 
 		#Size Definitions
 		max_strength = 5
@@ -998,7 +1006,7 @@ sub_units = {
 		training_time = 90
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.06
+		supply_consumption = 0.05
 		entrenchment = 10
 		defense = -0.5
 		breakthrough = -0.5
@@ -1066,5 +1074,143 @@ sub_units = {
 			movement = 0.45
 		}
 
+	}
+	rec_infantry = { #수색대
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 75
+		default_morale = 0.3
+		manpower = 1000
+		recon = 1
+		
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
+		#Misc Abilities
+		training_time = 90
+		suppression = 1.5
+		weight = 0.5
+		
+		supply_consumption = 0.07
+	
+		need = {
+			infantry_equipment = 100
+			support_infantry_equipment = 60
+		}
+	}
+	
+
+	infantry_vec = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 40
+		max_organisation = 60
+		default_morale = 0.5
+		manpower = 800
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 2.2
+		weight = 0.75
+		supply_consumption = 0.05
+		casualty_trickleback = 0.02
+		breakthrough = 0.3
+		# this is what moves us and sets speed
+		transport = motorized_equipment
+	
+		need = {
+			infantry_equipment = 100
+			motorized_equipment = 50
+			support_infantry_equipment = 10
+			Vertical_maneuvering_equipment = 70
+		}
+		hills = {
+			attack = -0.2
+			defence = -0.2
+			movement = -0.3
+		}
+		
+		mountain = {
+			attack = 0.35
+			defence = 0.1
+			movement = 0.2
+		}
+		
+		urban = {
+			attack = 1.5
+			defence = 1.5
+			movement = 2.5
+		}
+		
+		forest = {
+			attack = 1.5
+			defence = 1.5
+			movement = 2
+		}
+		
+		jungle = {
+			attack = 1.5
+			defence = 1.5
+			movement = 1.5
+		}
+		plains = {
+			attack = -0.5
+			movement = -0.5
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.3
+		}
+		river = {
+			attack = -0.1
+			movement = -0.05
+		}
+		amphibious = {
+			attack = -0.1
+		}
 	}
 }

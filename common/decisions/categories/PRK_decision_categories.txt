@@ -8,22 +8,153 @@ PRK_2nd_war = {
 	
 	allowed = {
 		original_tag = PRK
-	}
-		available = {
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
+		NOT = {
+		    has_country_flag = 2009_scenario
 		}
+	}
 }
 
 PRK_provocations_against_the_south = {
 	
 	allowed = {
 		original_tag = PRK
-	}
-		available = {
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
+		NOT = {
+		    has_country_flag = 2009_scenario
 		}
+	}
+	
+	visible = {
+		has_completed_focus = prk_provoke_South_Korea
+	}
+}
+
+Retraining = {
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		has_country_flag = Retrain_officer
+	}
+}
+
+prk_warlike_preparations = {
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		always = yes
+	}
+}
+
+prk_spy_sent = {
+
+	picture = GFX_decision_cat_PRK_hacker
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		has_completed_focus = prk_south_wave_espionage
+	}
+}
+
+kor_spy = {
+
+	picture = GFX_decision_cat_kor_dsc
+	
+	allowed = {
+		OR = {
+		original_tag = KOR
+		original_tag = MKR
+		original_tag = ROK
+		}
+	}
+	
+	visible = {
+		PRK = {
+		has_completed_focus = prk_south_wave_espionage
+		}
+	}
+}
+
+Preparation_for_a_coup = {
+
+	picture = GFX_decision_prk_coup
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		has_completed_focus = prk_orthodox_socialism
+	}
+}
+
+soviet_sup = {
+
+	picture = GFX_decision_prk_coup
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		has_completed_focus = prk_Soviet_support
+	}
+}
+
+spies_in_Japan = {
+
+	picture = GFX_decision_prk_coup
+	
+	allowed = {
+		original_tag = PRK
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		original_tag = PRK
+		has_completed_focus = prk_overthrow_of_Japanese
+	}
+}
+kor_spy = {
+
+	picture = GFX_decision_cat_kor_dsc
+	
+	allowed = {
+		OR = {
+		original_tag = JDF
+		}
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+	
+	visible = {
+		PRK = {
+		has_completed_focus = prk_attack_JMSDF
+		}
+	}
 }

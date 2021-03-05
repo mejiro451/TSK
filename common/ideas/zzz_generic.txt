@@ -1848,7 +1848,7 @@ ideas = {
 
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
-				NOT = { tag = KOR }
+				
 			}
 			
 			traits = { captain_of_industry }
@@ -1859,7 +1859,6 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
 			traits = { fortification_engineer }
 		}
 
@@ -1868,7 +1867,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { war_industrialist }
 		}
 	}
@@ -1880,7 +1879,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { army_chief_offensive_1 }
 		}
 
@@ -1889,7 +1888,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { army_chief_defensive_1 }
 		}
 	}
@@ -1901,7 +1900,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { navy_chief_decisive_battle_2 }
 		}
 
@@ -1910,7 +1909,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { navy_anti_submarine_2 }
 		}
 	}
@@ -1922,7 +1921,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { air_close_air_support_2 }
 		}
 	
@@ -1931,7 +1930,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { air_chief_all_weather_2 }			
 		}
 	}
@@ -1944,7 +1943,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-			NOT = { tag = KOR }
+			
 			traits = { army_artillery_1 }			
 		}
 		
@@ -1954,7 +1953,7 @@ ideas = {
 			allowed = {
 				OR = {  original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { army_logistics_2 }			
 		}
 
@@ -1964,7 +1963,7 @@ ideas = {
 			allowed = {
 				OR = {  original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { navy_fleet_logistics_1 }			
 		}
 
@@ -1974,7 +1973,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			traits = { air_air_combat_training_2 }			
 		}
 	}
@@ -1987,7 +1986,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			research_bonus = {
 				land_doctrine = 0.10
 			}
@@ -2001,7 +2000,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
@@ -2015,7 +2014,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
-				NOT = { tag = KOR }
+				
 			research_bonus = {
 				air_doctrine = 0.10
 			}

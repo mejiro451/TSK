@@ -1,10 +1,10 @@
 sub_units = {
 	modern_FF = {
-		sprite = destroyer
+		sprite = modern_FF
 		map_icon_category = ship
-		priority = 3
+		priority = 8
 		active = yes
-		type = { screen_ship }
+		type = { capital_ship }
 		need = { ship_hull_FF = 1 }
 		
 		max_organisation = 60

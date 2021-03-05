@@ -14,6 +14,12 @@ music = {
 }
 
 music = {
+	name = "agguk_north"
+	file = "애국가(북한).ogg"
+	volume = 0.85
+}
+
+music = {
 	name = "anti_communism"
 	file = "멸공의횃불.ogg"
 	volume = 0.85

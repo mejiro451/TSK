@@ -88,4 +88,12 @@ spriteTypes = {
 		name = "GFX_idea_kor_supremacy_of_will"
 		texturefile = "gfx/interface/ideas/KOR/idea_kor_supremacy_of_will.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_kor_law_of_korean_5"
+		texturefile = "gfx/interface/ideas/KOR/idea_korea_hunbup.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hong_junpyo"
+		texturefile = "gfx/interface/ideas/KOR/idea_hong_junpyo.dds"
+	}
 }

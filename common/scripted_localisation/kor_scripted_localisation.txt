@@ -1,0 +1,515 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+##############자위대
+defined_text = {
+	name = constitutionalismName
+	text = {
+		trigger = {
+			original_tag = JDF
+		}
+		localization_key = JDF_constitutionalism_name_and_icon
+	}
+}
+
+defined_text = {
+	name = constitutionalismValues
+	
+	text = {
+		localization_key = JDF_constitutionalism_values
+	}
+}
+
+defined_text = {
+	name = ImperialismName
+	text = {
+		trigger = {
+			original_tag = JDF
+		}
+		localization_key = JDF_Imperialism_name_and_icon
+	}
+}
+
+defined_text = {
+	name = ImperialismValues
+
+	text = {
+		localization_key = JDF_Imperialism_values
+	}
+}
+
+defined_text = {
+	name = prkspycivLevel
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 0 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 4 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_no
+	}
+	
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 9 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_few
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 14 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_little
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 19 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_medium
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 20 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 24 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_many
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 25 compare = greater_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_lotsof
+	}
+}
+
+defined_text = {
+	name = prkspycivLevelEffects
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 0 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_no_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 14 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_few_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 24 compare = less_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_mid_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_civ_spylevel value = 25 compare = greater_than_or_equals }
+		}
+		localization_key = PRK_civ_spylevel_many_effects
+	}
+}
+
+defined_text = {
+	name = prkspyarmyLevel
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_no
+	}
+	
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 9 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_few
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 14 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_little
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 19 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_medium
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 20 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 24 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_many
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 25 compare = greater_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_lotsof
+	}
+}
+
+defined_text = {
+	name = prkspyarmyLevelEffects
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_no_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 14 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_few_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 24 compare = less_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_mid_effects
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+			check_variable = { var = PRK_army_spylevel value = 25 compare = greater_than_or_equals }
+		}
+		localization_key = PRK_army_spylevel_many_effects
+	}
+}
+
+###############국군
+
+defined_text = {
+	name = korspycivLevel
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_civ_spylevel value = 4 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_no
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 9 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_few
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 14 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_little
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 19 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_medium
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 20 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 24 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_many
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 25 compare = greater_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_lotsof
+	}
+}
+
+defined_text = {
+	name = korspycivLevelEffects
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_no_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 14 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_few_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_civ_spylevel value = 24 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_mid_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_civ_spylevel value = 25 compare = greater_than_or_equals }
+			}
+		}
+		localization_key = KOR_civ_spylevel_many_effects
+	}
+}
+
+defined_text = {
+	name = korspyarmyLevel
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_no
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 9 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_few
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 14 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_little
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 19 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_medium
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 20 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 24 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_many
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 25 compare = greater_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_lotsof
+	}
+}
+
+defined_text = {
+	name = korspyarmyLevelEffects
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 0 compare = equals }
+			check_variable = { var = PRK_army_spylevel value = 4 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_no_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 14 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_few_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 15 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 24 compare = less_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_mid_effects
+	}
+	text = {
+		trigger = {
+			OR = {
+			original_tag = ROK
+			original_tag = MKR
+			original_tag = KOR
+			}
+			PRK = {
+			check_variable = { var = PRK_army_spylevel value = 25 compare = greater_than_or_equals }
+			}
+		}
+		localization_key = KOR_army_spylevel_many_effects
+	}
+}

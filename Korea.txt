@@ -1,0 +1,402 @@
+add_namespace = korea
+# 반란
+country_event = {
+	id = korea.1
+	title = korea.1.t
+	desc = korea.1.desc
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.1.a	#민주
+		ai_chance = { factor = 0 }
+		add_political_power = 20
+		ROK = { change_tag_from = KOR }
+
+			name = korea.1.a		
+			MKR = {
+			    transfer_state = 525
+			    transfer_state = 810
+			    transfer_state = 817
+			    transfer_state = 807
+			    set_state_owner  = 525
+			    set_state_owner  = 810
+			    set_state_owner  = 817
+			    set_state_owner  = 807
+			    add_state_core  = 525
+			    add_state_core  = 810
+			    add_state_core  = 817
+			    add_state_core  = 807
+			    add_state_core  = 809
+			    add_state_core  = 808
+			    add_state_core  = 813
+		        create_country_leader = {
+	                name = "Roh tae whoo"
+	                desc = ""
+	                picture = "gfx/leaders/KOR/Rho_Tae_Whoo.dds"
+	                expire = "1965.1.1"
+	                ideology = despotism
+	                traits = {
+	                }
+				
+                }
+			}	
+			ROK = {
+			    transfer_state = 809
+			    transfer_state = 808
+			    transfer_state = 813
+			    set_state_owner  = 809
+			    set_state_owner  = 808
+			    set_state_owner  = 813
+			    add_state_core  = 525
+			    add_state_core  = 810
+			    add_state_core  = 817
+			    add_state_core  = 807
+			    add_state_core  = 809
+			    add_state_core  = 808
+			    add_state_core  = 813
+		        create_country_leader = {
+	                    name = "Kim dae jung"
+	                    desc = ""
+	                    picture = "gfx/leaders/KOR/김대중.dds"
+	                    expire = "1965.1.1"
+	                    ideology = conservatism
+	                    traits = {
+	                    }
+					
+                }
+			}	
+			hidden_effect = {
+			hidden_effect = { country_event = { id = kor_news.1 hours = 6 } }
+			    ROK = {
+                    load_oob = ROK_civil
+					add_ideas = KOR_modern_millitary
+					country_event = {
+                       id = korea.war
+			           days = 2
+		            }	
+				}	
+				MKR = {
+                    load_oob = MKR_civil
+					add_ideas = KOR_modern_millitary
+                    declare_war_on = {
+                        target = ROK
+                        type = take_core_state
+						state = 809
+                    }
+					country_event = {
+                       id = korea.ai2
+			           days = 2
+		            }
+                }	
+				PRK = {
+					country_event = {
+                    	id = korea.2
+			        	days = 3
+		            }
+                }	
+			    KOR = {
+				    remove_state_core = 525
+				    remove_state_core = 810
+				    remove_state_core = 817
+				    remove_state_core = 807
+				    remove_state_core = 809
+				    remove_state_core = 808
+				    remove_state_core = 813
+				}	
+        }		
+	}
+	option = {
+		name = kor.1.b	#군정
+		add_political_power = 20
+		MKR = { change_tag_from = KOR }
+		ai_chance = { factor = 100 }
+        if = {
+			name = korea.1.b			
+			MKR = {
+			    transfer_state = 525
+			    transfer_state = 810
+			    transfer_state = 817
+			    transfer_state = 807
+			    set_state_owner  = 525
+			    set_state_owner  = 810
+			    set_state_owner  = 817
+			    set_state_owner  = 807
+			    add_state_core  = 525
+			    add_state_core  = 810
+			    add_state_core  = 817
+			    add_state_core  = 807
+			    add_state_core  = 809
+			    add_state_core  = 808
+			    add_state_core  = 813
+		        create_country_leader = {
+	                name = "Roh tae whoo"
+	                desc = ""
+	                picture = "gfx/leaders/KOR/Rho_Tae_Whoo.dds"
+	                expire = "1965.1.1"
+	                ideology = despotism
+	                traits = {
+	                }
+				
+                	}
+				}	
+				ROK = {
+			    	transfer_state = 809
+			    	transfer_state = 808
+			    	transfer_state = 813
+			    	set_state_owner  = 809
+			    	set_state_owner  = 808
+			    	set_state_owner  = 813
+			    	add_state_core  = 525
+			    	add_state_core  = 810
+			    	add_state_core  = 817
+			    	add_state_core  = 807
+			    	add_state_core  = 809
+			    	add_state_core  = 808
+			    	add_state_core  = 813
+		        	create_country_leader = {
+	                    name = "Kim dae jung"
+	                    desc = ""
+	                    picture = "gfx/leaders/KOR/김대중.dds"
+	                    expire = "1965.1.1"
+	                    ideology = conservatism
+	                    traits = {
+	                    }
+                	}
+				}	
+			hidden_effect = { country_event = { id = kor_news.1 hours = 6 } }
+				hidden_effect = { #
+			    	ROK = {
+                    	load_oob = ROK_civil
+				    	add_ideas = KOR_modern_millitary
+						country_event = {
+                       		id = korea.ai2
+			           		days = 2
+		            	}	
+					}	
+					MKR = {
+                        load_oob = MKR_civil
+				    	add_ideas = KOR_modern_millitary
+                    	declare_war_on = {
+                        	target = ROK
+                        	type = take_core_state
+							state = 809
+                    	}
+						country_event = {
+						id = korea.war
+			           		days = 2
+						}	
+                	}	
+					PRK = {
+						country_event = {
+                       		id = korea.2
+			           		days = 1
+		            	}
+                	}	
+			    KOR = {
+				    remove_state_core = 525
+				    remove_state_core = 810
+				    remove_state_core = 817
+				    remove_state_core = 807
+				    remove_state_core = 809
+				    remove_state_core = 808
+				    remove_state_core = 813
+				}
+        	}				
+        }		
+	}
+}
+#전쟁
+country_event = {
+	id = korea.war
+	title = korea.war.t
+	desc = korea.war.b
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.war.a	
+		ai_chance = { factor = 100 }		
+            delete_unit_template_and_units = {
+                division_template = "향토방위사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "동원사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "대한민국 해병사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "기계화보병사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "기갑여단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "상비사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "공수특전사단 2" 
+            }
+			country_event = {
+				id = korea.nav
+			    days = 2
+			}				
+		}
+    }	
+#Ai용
+country_event = {
+	id = korea.ai2
+	title = korea.ai2.t
+	desc = korea.ai2.b
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.ai2.a	
+		ai_chance = { factor = 100 }		
+            delete_unit_template_and_units = {
+                division_template = "향토방위사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "동원사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "대한민국 해병사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "기계화보병사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "기갑여단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "상비사단 2" 
+            }
+            delete_unit_template_and_units = {
+                division_template = "공수특전사단 2" 
+            }				
+		}
+    }	
+#해군이 반란을일으키다!!
+country_event = { 
+	id = korea.nav
+	title = korea.nav.t
+	desc = korea.nav.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.nav.a
+		JEJ = { 
+            load_oob = JEJ_civil
+			transfer_state = 813
+			add_state_core = 813
+		}
+	}
+}
+
+country_event = { #북한군 남침?
+	id = korea.2 
+	title = korea.2.t
+	desc = korea.2.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.2.a
+		ai_chance = { factor = 60 }
+		news_event = { { id = kor_news.1 hours = 6 } }
+		PRK = {
+            declare_war_on = {
+            target = MKR
+            type = take_core_state
+			state = 807
+			}
+            declare_war_on = {
+            target = ROK
+            type = take_core_state
+			state = 809
+			}
+        }
+    }		
+	
+	option = {
+		name = korea.2.b
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = { #정보수집
+	id = korea.4
+	title = korea.4.t
+	desc = korea.4.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.4.a
+		ai_chance = { factor = 100 }
+		KOR = {
+			add_ideas = KOR_economic_collapse
+
+		}	
+    }	
+}
+
+country_event = { #계엄령 선포
+	id = korea.5
+	title = korea.5.t
+	desc = korea.5.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.3.a
+		ai_chance = { factor = 100 }
+		
+		add_political_power = -300
+		add_stability = -0.3
+    }	
+}
+
+
+country_event = { #주한미군 문제
+	id = korea.6
+	title = korea.6.t
+	desc = korea.6.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = korea.3.a
+		ai_chance = { factor = 100 }
+		
+		add_political_power = -50
+		add_stability = -0.1
+    }	
+}

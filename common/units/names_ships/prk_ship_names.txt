@@ -41,7 +41,7 @@ PRK_people_other_HISTORICAL = {
 	type = ship
 
 	unique = {
-		"카를 마르크스" "블라디미르 레닌" "이오시프 스탈린" "피델 카스트로" "라울 카스트로" "요시프 브로즈 티토" "호치민" "빌헬름 피크" "미하일 칼리닌" "뱌체슬라프 멘진스키"
+		"김일성" "박헌영" "카를 마르크스" "블라디미르 레닌" "이오시프 스탈린" "피델 카스트로" "라울 카스트로" "요시프 브로즈 티토" "호치민" "체 게바라" "미하일 칼리닌" "뱌체슬라프 멘진스키" "로자 룩셈부르크" "안토니오 그람시"
 	}
 }
 
@@ -57,51 +57,5 @@ PRK_island_HISTORICAL = {
 		"신미" "대화" "백령" "대청" "소청" "기린" "창린" "순위" "마양" "내장" "외장" "곤유" "양각" "릉라"
 	}
 }
-
-###해상자위대
-JDF_DDG_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
-
-	for_countries = { JDF }
-
-	type = ship
-	ship_types = { ship_hull_modern_DDG }
-	
-	prefix = "JDS "							
-	fallback_name = "DDG-%d"
-
-	unique = {
-		#공고 
-		"Kongō" "Kirishima" "Myōkō" "Chōkai"
-		#아타고 
-		"Atago" "Ashigara" 
-		#마야 
-		"Maya" "Haguro"
-	}
-}
-
-JDF_DDH_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
-
-	for_countries = { JDF }
-
-	type = ship
-	ship_types = { ship_hull_modern_DDH }
-	
-	prefix = "JDS "							
-	fallback_name = "DD-1%d"
-
-	unique = {
-		#타치카제
-		"Tachikaze" "Asakaze" "Sawakaze"
-		#하츠유키
-		"Hatsuyuki" "Shirayuki" "Mineyuki" "Sawayuki" "Hamayuki" "Isoyuki" "Haruyuki" "Yamayuki" "Matsuyuki" "Setoyuki" "Asayuki" "Shimayuki"
-		#아사기리
-		"Asagiri" "Yamagiri" "Yūgiri" "Amagiri" "Hamagiri" "Setogiri" "Sawagiri" "Umigiri"
-		#하타카제 
-		"Hatakaze" "Shimakaze"
-	}
-}
-
 
 

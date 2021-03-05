@@ -47,7 +47,7 @@ music = {
 }
 
 music = {
-	song = "könig_im_luftrevier"
+	song = "konig_im_luftrevier"
 	
 	chance = {
 		modifier = {
@@ -223,7 +223,7 @@ music = {
 }
 
 music = {
-	song = "Let's_Go"
+	song = "Lets_Go"
 	
 	chance = {
 		modifier = {

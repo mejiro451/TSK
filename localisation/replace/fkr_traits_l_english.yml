@@ -1,5 +1,7 @@
 ﻿l_english:
- FKR_independent_army:0 "한국 광복군"
- FKR_independent_army_desc:1 "이 사람은 대한민국 임시 정부의 장군입니다. 그는 조국의 독립을 위해 일본군과 싸웠습니다."
- KOR_roh_trait:0 "인권 변호사 노무현" #가수
- KOR_park_trait:0 "박정희의 딸" #닭
+ unaccustomed_to_modern_warfare:0 "현대전에 익숙하지 않음"
+ unaccustomed_to_modern_warfare_desc:1 "이 장군은 과거의 전술,전략에 익숙합니다. 이들이 가진 기본적 능력치는 매우뛰어나지만,이들이 현대전에 익숙해지려면 현대전술에대한 이해와 교육이 필요할것입니다."
+ army:0 "육군 지휘관"
+ army_desc:1 "이 장군은 육군지휘관입니다."
+ air_force:0 "공군 지휘관"
+ air_force_desc:1 "이 장군은 공군지휘관입니다."

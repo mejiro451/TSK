@@ -84,7 +84,6 @@ soundeffect =
         sound = PRK_Move_01
 		sound = PRK_Move_02
 		sound = PRK_Move_03
-		sound = PRK_Idle_03
     }
 	max_audible = 1
 	max_audible_behaviour = fail

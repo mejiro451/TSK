@@ -14,8 +14,8 @@ country_event = {
 		name = korea.1.a	#민주
 		ai_chance = { factor = 0 }
 		add_political_power = 20
-		ROK = { change_tag_from = KOR }
 			name = korea.1.a		
+			ROK = { change_tag_from = KOR }
 			MKR = {
 			    transfer_state = 525
 			    transfer_state = 810
@@ -46,10 +46,11 @@ country_event = {
 			    transfer_state = 808
 			    transfer_state = 813
 			    transfer_state = 817
+				transfer_state = 821
 			    set_state_owner  = 809
 			    set_state_owner  = 808
 			    set_state_owner  = 813
-			    transfer_state = 817
+				set_state_owner  = 821
 			    add_state_core  = 525
 			    add_state_core  = 810
 			    add_state_core  = 817
@@ -57,6 +58,7 @@ country_event = {
 			    add_state_core  = 809
 			    add_state_core  = 808
 			    add_state_core  = 813
+				add_state_core  = 821
 		        create_country_leader = {
 	                    name = "Kim dae jung"
 	                    desc = ""
@@ -80,10 +82,12 @@ country_event = {
 					id = korea.300
 					days = 5
 				}			
+				set_country_flag = kor_civ
 			}	
 			MKR = {
                 load_oob = MKR_civil
 				add_ideas = KOR_modern_millitary
+				set_country_flag = kor_civ
                 declare_war_on = {
                     target = ROK
                     type = take_core_state
@@ -143,19 +147,23 @@ country_event = {
                 	}
 				}	
 				ROK = {
-			    	transfer_state = 809
-			    	transfer_state = 808
-			    	transfer_state = 813
-			    	set_state_owner  = 809
-			    	set_state_owner  = 808
-			    	set_state_owner  = 813
-			    	add_state_core  = 525
-			    	add_state_core  = 810
-			    	add_state_core  = 817
-			    	add_state_core  = 807
-			    	add_state_core  = 809
-			    	add_state_core  = 808
-			    	add_state_core  = 813
+			    transfer_state = 809
+			    transfer_state = 808
+			    transfer_state = 813
+			    transfer_state = 817
+				transfer_state = 821
+			    set_state_owner  = 809
+			    set_state_owner  = 808
+			    set_state_owner  = 813
+				set_state_owner  = 821
+			    add_state_core  = 525
+			    add_state_core  = 810
+			    add_state_core  = 817
+			    add_state_core  = 807
+			    add_state_core  = 809
+			    add_state_core  = 808
+			    add_state_core  = 813
+				add_state_core  = 821
 		        	create_country_leader = {
 	                    name = "Kim dae jung"
 	                    desc = ""
@@ -174,10 +182,12 @@ country_event = {
                        		id = korea.200
 			           		days = 2
 		            	}	
+						set_country_flag = kor_civ
 					}	
 					MKR = {
                         load_oob = MKR_civil
 				    	add_ideas = KOR_modern_millitary
+						set_country_flag = kor_civ
                     	declare_war_on = {
                         	target = ROK
                         	type = take_core_state
@@ -484,6 +494,7 @@ country_event = { #공항,항구폐쇄
     }	
 }
 
+
 country_event = { #국회점거
 	id = korea.9
 	title = korea.9.t
@@ -571,5 +582,28 @@ country_event = { #패잔병 재편성
 		ROK = {
             load_oob = ROK_mkr
         }
+    }	
+}
+
+country_event = { #자위대 항공기와 접촉
+	id = korea.12
+	title = korea.12.t
+	desc = korea.12.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		date > 1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = korea.12.a
+		ai_chance = { factor = 100 }
     }	
 }

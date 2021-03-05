@@ -1,0 +1,849 @@
+﻿division_template = {
+	name = "보병 사단" #standard
+
+	regiments = {						
+		modern_infantry = { x = 0 y = 0 } 
+		modern_infantry = { x = 0 y = 1 }
+		modern_infantry = { x = 0 y = 2 }
+		modern_artillery_brigade = { x = 0 y = 3 } 
+		modern_infantry = { x = 1 y = 0 }
+		modern_infantry = { x = 1 y = 1 }
+		modern_infantry = { x = 1 y = 2 } 
+		modern_artillery_brigade = { x = 1 y = 3 }
+		modern_infantry = { x = 2 y = 0 } 
+		modern_infantry = { x = 2 y = 1 } 
+		modern_infantry = { x = 2 y = 2 }
+		modern_artillery_brigade = { x = 2 y = 3 }
+		modern_artillery_brigade = { x = 3 y = 0 } 
+		modern_artillery_brigade = { x = 3 y = 1 }
+		modern_artillery_brigade = { x = 3 y = 2 }
+		modern_artillery_brigade = { x = 3 y = 3 }
+		modern_mbt = { x = 4 y = 0 }
+		light_infantry = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		motorized_rocket_brigade = { x = 4 y = 3 }
+		motorized_rocket_brigade = { x = 4 y = 4 }
+	}
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	field_hospital = { x = 0 y = 2 }
+	manpad = { x = 0 y = 3 }
+	recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "경 보병 사단" #standard
+
+	regiments = {						
+		light_infantry = { x = 0 y = 0 } 
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+		light_infantry = { x = 1 y = 0 } 
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
+		light_infantry = { x = 2 y = 0 } 
+		light_infantry = { x = 2 y = 1 }
+		modern_artillery_brigade = { x = 3 y = 0 } 
+		modern_artillery_brigade = { x = 3 y = 1 }
+	}
+	priority = 0
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	field_hospital = { x = 0 y = 2 }
+	manpad = { x = 0 y = 3 }
+	recon = { x = 0 y = 4 }
+	}
+}
+
+
+division_template = {
+	name = "차량화 보병 사단"
+
+	regiments = {						
+		modern_motorized = { x = 0 y = 0 } 
+		modern_motorized = { x = 0 y = 1 }
+		modern_motorized = { x = 0 y = 2 }
+		modern_motorized = { x = 0 y = 3 }
+		modern_motorized = { x = 0 y = 4 }
+		modern_motorized = { x = 1 y = 0 } 
+		modern_motorized = { x = 1 y = 1 }
+		modern_motorized = { x = 1 y = 2 }
+		modern_motorized = { x = 1 y = 3 }
+		modern_motorized = { x = 1 y = 4 }
+		modern_motorized = { x = 2 y = 0 } 
+		modern_motorized = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 0 } 
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+		motorized_rocket_brigade = { x = 3 y = 3 }
+		motorized_rocket_brigade = { x = 3 y = 4 }
+		modern_sp_anti_air_brigade = { x = 4 y = 0 }
+		modern_mbt = { x = 4 y = 1 }
+	}
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	field_hospital = { x = 0 y = 2 }
+	manpad = { x = 0 y = 3 }
+	modern_armed_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "기계화사단" #mostly motorized
+
+	regiments = {						
+		modern_mechanized = { x = 0 y = 0 }
+		modern_mechanized = { x = 0 y = 1 }
+		modern_mbt = { x = 0 y = 2 }
+		modern_mbt = { x = 0 y = 3 }
+		modern_sp_anti_air_brigade = { x = 0 y = 4 }
+		
+		modern_motorized = { x = 1 y = 0 }
+		modern_motorized = { x = 1 y = 1 }
+		modern_motorized = { x = 1 y = 2 }
+		modern_motorized = { x = 1 y = 3 }
+		
+		modern_motorized = { x = 2 y = 0 }
+		modern_motorized = { x = 2 y = 1 }
+		modern_motorized = { x = 2 y = 2 }
+		
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+		motorized_rocket_brigade = { x = 3 y = 3 }
+		motorized_rocket_brigade = { x = 3 y = 4 }
+		
+		modern_sp_artillery_brigade = { x = 4 y = 0 }
+		modern_sp_artillery_brigade = { x = 4 y = 1 }
+		modern_sp_artillery_brigade = { x = 4 y = 2 }
+		
+	}
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	field_hospital = { x = 0 y = 2 }
+	manpad = { x = 0 y = 3 }
+	modern_armed_recon = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "포병사단"
+	
+	regiments = {
+		modern_artillery_brigade = { x = 0 y = 0 }
+		modern_artillery_brigade = { x = 0 y = 1 }
+		modern_artillery_brigade = { x = 0 y = 2 }
+		motorized_rocket_brigade = { x = 0 y = 3 }
+		motorized_rocket_brigade = { x = 0 y = 4 }
+		motorized_rocket_brigade = { x = 1 y = 0 }
+		motorized_rocket_brigade = { x = 1 y = 1 }
+		modern_mechanized = { x = 2 y = 0 }
+		modern_mechanized = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+division_template = {
+	name = "기계화 려단" #mostly motorized
+
+	regiments = {						
+		heavy_mechanized = { x = 0 y = 0 }
+		modern_motorized = { x = 0 y = 1 }
+		modern_motorized = { x = 0 y = 2 }
+		modern_motorized = { x = 0 y = 3 }
+		modern_motorized = { x = 0 y = 4 }
+		modern_mbt = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 1 y = 2 }
+		mot_anti_tank_brigade = { x = 2 y = 0 }
+		mot_anti_air_brigade = { x = 2 y = 1 }
+	}
+	support = {
+	mot_roket = { x = 0 y = 0 }
+	logistics_company = { x = 0 y = 1 }
+	signal_company = { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	light_tank_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "땅크사단"
+
+	regiments = {						
+		modern_mbt = { x = 0 y = 0 } 
+		modern_mbt = { x = 0 y = 1 } 
+		modern_mbt = { x = 0 y = 2 }
+		modern_sp_anti_air_brigade = { x = 0 y = 3 }
+		modern_mbt = { x = 1 y = 0 } 
+		modern_mbt = { x = 1 y = 1 } 
+		modern_mbt = { x = 1 y = 2 }
+		modern_sp_anti_air_brigade = { x = 0 y = 3 }
+		heavy_mechanized = { x = 2 y = 0 }
+		heavy_mechanized = { x = 2 y = 1 }
+		heavy_mechanized = { x = 2 y = 2 }
+		heavy_mechanized = { x = 2 y = 3 }
+		heavy_mechanized = { x = 2 y = 4 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_artillery_brigade = { x = 3 y = 4 }
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+		motorized_rocket_brigade = { x = 4 y = 2 }
+	}
+	priority = 2
+	
+	support = {
+	logistics_company = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	field_hospital = { x = 0 y = 2 }
+	manpad = { x = 0 y = 3 }
+	modern_armed_recon = { x = 0 y = 4 }
+	}
+}
+
+
+division_template = {
+	name = "전차려단"
+
+	regiments = {						
+		modern_mbt = { x = 0 y = 0 }
+		modern_mbt = { x = 0 y = 1 }
+		modern_mbt = { x = 0 y = 2 }
+		modern_mechanized = { x = 1 y = 0 }
+		modern_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_anti_air_brigade = { x = 2 y = 1 }
+		
+	}
+	support = {
+	}
+}
+
+
+division_template = {
+	name = "항공륙전대"
+
+	regiments = {						
+		heliborne_infantry = { x = 0 y = 0 }
+		heliborne_infantry = { x = 0 y = 1 }
+		heliborne_infantry = { x = 0 y = 2 }
+		heliborne_infantry = { x = 0 y = 3 }
+		heliborne_infantry = { x = 0 y = 4 }
+		heliborne_infantry = { x = 1 y = 0 }
+		heliborne_infantry = { x = 1 y = 1 }
+	}
+	priority = 2
+	support = {
+	}
+}
+
+
+division_template = {
+	name = "해상저격대"
+	priority = 2
+	
+	regiments = {
+		modern_marine = { x = 0 y = 0 }
+		modern_marine = { x = 0 y = 1 }
+		modern_artillery_brigade = { x = 0 y = 2 }
+		modern_marine = { x = 1 y = 0 }
+		modern_marine = { x = 1 y = 1 }
+		modern_artillery_brigade = { x = 1 y = 2 }
+		modern_marine = { x = 2 y = 0 }
+		modern_marine = { x = 2 y = 1 }
+		modern_mbt = { x = 3 y = 0 }
+
+	}
+	priority = 2
+	support = {
+	}
+}
+units = {
+	division = {			
+		name = "제75 경 보병 사단"
+		location = 848
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		
+	}
+	division = {			
+		name = "제80 경 보병 사단"
+		location = 848
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		
+	}
+	division = {			
+		name = "제103 전차려단"
+		location = 848
+		division_template = "전차려단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제45 보병 사단"
+		location = 11958
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제5 보병 사단"
+		location = 848
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제12 보병 사단"
+		location = 9981
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제25 보병 사단"
+		location = 9981
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+	}
+
+###4th Army Corps
+
+	division = {			
+		name = "제20 보병 사단"
+		location = 1003
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제19 경 보병 사단"
+		location = 1003
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제35 전차려단"
+		location = 1003
+		division_template = "전차려단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제28 보병 사단"
+		location = 1003
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "33rd 보병 사단"
+		location = 1003
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제41 보병 사단"
+		location = 1003
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제26 보병 사단"
+		location = 1003
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	
+###2nd Army Corps
+
+	division = {			
+		name = "제32 경 보병 사단"
+		location = 7070
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제2 경 보병 사단"
+		location = 7070
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제10 경 보병 사단"
+		location = 7070
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+		
+	}
+	division = {			
+		name = "제107 전차려단"
+		location = 7070
+		division_template = "전차려단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }		
+	}
+	division = {			
+		name = "근위 서울 제3 보병 사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.7
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "근위 제6 보병사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { m_1970_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제8 보병사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+
+	division = {			
+		name = "제51 경 보병 사단"
+		location = 7070
+		division_template = "경 보병 사단"
+		start_experience_factor = 0.6
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제28 전차려단"
+		location = 7070
+		division_template = "전차려단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "근위 김책 제2 보병 사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.7
+		force_equipment_variants = { m_1970_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제13 보병 사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제31 보병 사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제46 보병 사단"
+		location = 7070
+		division_template = "보병 사단"
+		start_experience_factor = 0.4
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+
+###############################
+#### Second Elechon Units #####
+###############################
+
+	###806 Mechanized Corps 
+	division = {			
+		name = "제7 기계화사단"
+		location = 4004
+		division_template = "기계화사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1970_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제4 기계화사단"
+		location = 4004
+		division_template = "기계화사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+		
+	}
+	###815 Mechanized Corps
+	#One extra mech bde?
+	division = {			
+		name = "제27 기계화사단"
+		location = 978
+		division_template = "기계화사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제45 기계화사단"
+		location = 978
+		division_template = "기계화사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제32 전차려단"
+		location = 10083
+		division_template = "전차려단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1970_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제15 기계화 려단"
+		location = 10083
+		division_template = "기계화 려단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제105 근위서울 류경수 전차사단"
+		location = 10065
+		division_template = "땅크사단"
+		start_experience_factor = 0.8
+	}
+
+###############################
+##### Third Elechon Units ##### (need locations)
+###############################
+
+	### 3rd Army Corps
+	division = {			
+		name = "제42 전차려단"
+		location = 11896
+		division_template = "전차려단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1960_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제78 보병 사단"
+		location = 9795
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제79 보병 사단"
+		location = 9795
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제111 보병 사단"
+		location = 11896
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_0 = { owner = "PRK" } }
+	}
+	
+	### 12th Army Corps
+	division = {			
+		name = "제44 전차려단"
+		location = 13241
+		division_template = "전차려단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제59 차량화 보병 사단"
+		location = 13241
+		division_template = "차량화 보병 사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_mlrs_equipment = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제68 보병 사단"
+		location = 13241
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	
+###############################
+##### Fourth Elechon Units ####
+###############################
+
+	### 8th Army Corps
+	division = {			
+		name = "제78 전차려단"
+		location = 912
+		division_template = "전차려단"
+		start_experience_factor = 0.1
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_6 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제99 차량화 보병 사단"
+		location = 912
+		division_template = "차량화 보병 사단"
+		start_experience_factor = 0.1
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_mlrs_equipment = { owner = "PRK" } }	
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제167 차량화 보병 사단"
+		location = 912
+		division_template = "차량화 보병 사단"
+		start_experience_factor = 0.1
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_mlrs_equipment = { owner = "PRK" } }	
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	division = {			
+		name = "제47 기계화 려단"
+		location = 912
+		division_template = "기계화 려단"
+		start_experience_factor = 0.3
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_APC_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_IFV_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_5 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	### 11th Army Corps
+	division = {			
+		name = "제143 보병 사단"
+		location = 3912
+		division_template = "보병 사단"
+		start_experience_factor = 0.2
+		force_equipment_variants = { m_1950_mbt = { owner = "PRK" } }
+		force_equipment_variants = { m_1980_sp_equipment = { owner = "PRK" } }
+		force_equipment_variants = { m_1970_spaa_equipment = { owner = "PRK" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "PRK" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "PRK" } }
+	}
+	
+######################################
+### Special Purpose Forces Command ###
+######################################
+#Missing:
+# 8 spec ops bn
+
+	### Naval Infantry
+	division = {			
+		name = "제1 해상저격대"
+		location = 10065
+		division_template = "해상저격대"
+		start_experience_factor = 0.7
+		
+	}
+	division = {			
+		name = "제12 해상저격대"
+		location = 10065
+		division_template = "해상저격대"
+		start_experience_factor = 0.7
+		
+	}
+	
+	### Airborne units  
+	division = {			
+		name = "제13 항공륙전대"
+		location = 10065
+		division_template = "항공륙전대"
+		start_experience_factor = 0.8
+		
+	}
+	division = {			
+		name = "제17 항공륙전대"
+		location = 10065
+		division_template = "항공륙전대"
+		start_experience_factor = 0.8
+		
+	}
+	division = {			
+		name = "제22 항공륙전대"
+		location = 10065
+		division_template = "항공륙전대"
+		start_experience_factor = 0.8
+		
+	}
+	division = {			
+		name = "제19 항공륙전대"
+		location = 10065
+		division_template = "항공륙전대"
+		start_experience_factor = 0.8
+		
+	}
+	division = {			
+		name = "제6 항공륙전대"
+		location = 10065
+		division_template = "항공륙전대"
+		start_experience_factor = 0.8
+		
+	}
+}
+	
+air_wings = {
+}

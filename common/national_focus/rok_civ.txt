@@ -7,6 +7,7 @@ focus_tree = {
 			tag = ROK
 		}
 	}
+	default = no
 	focus = { #긴급보안법
 		id = security_law
 		icon = GFX_goal_unknown
@@ -82,6 +83,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			load_focus_tree = rok_focus
+			set_global_flag = civil_rok_win
 		}
 		x = 8
 		y = 4

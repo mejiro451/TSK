@@ -1,0 +1,17 @@
+﻿add_namespace = kor
+
+####UKKRHEE 개발자 인사####
+country_event = {
+	id = KOR_MB.1
+	title = KOR_MB.1.title
+	desc = KOR_MB.1.desc
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.1.a
+		country_event = { id = KOR_MB.1 }
+	}
+}

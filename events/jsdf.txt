@@ -1,9 +1,9 @@
-add_namespace = JSDF
+add_namespace = jsdf
 #1936년의 세계
 country_event = {
-	id = JSDF.1
-	title = JSDF.1.t
-	desc = JSDF.1.d
+	id = jsdf.1
+	title = jsdf.1.t
+	desc = jsdf.1.d
 	picture = GFX_report_event_hitler_parade
 	
 	fire_only_once = yes
@@ -18,7 +18,7 @@ country_event = {
 	}	
 
 	option = { 
-		name = JSDF.1.a
+		name = jsdf.1.a
 		JDF = {
             load_oob = JDF_1936_1
         }

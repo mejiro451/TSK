@@ -1,0 +1,18 @@
+JDF_internal_factions = {
+	priority = 10
+
+	icon = power_struggle
+
+	picture = GFX_decision_cat_picture_faction_management_bulgaria 
+
+	visible = {
+		always = yes
+	}
+
+	allowed = {
+		original_tag = JDF
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
+	}
+}

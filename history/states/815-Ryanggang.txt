@@ -8,9 +8,9 @@ state={
 		add_core_of = PRK
 		add_core_of = KOR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			air_base = 1
-
+			fuel_silo = 3
 		}
 
 	}

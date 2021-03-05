@@ -1,4 +1,81 @@
 equipment_modules = {
+
+	ship_light_secondaries_1 = {
+		category = ship_light_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			lg_attack = 1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_secondaries
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_secondaries }
+	}
+
+	ship_light_secondaries_2 = {
+		category = ship_light_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			lg_attack = 2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 4
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_secondaries
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_secondaries }
+	}
+	
+
+	ship_mg = {
+		category = ship_light_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			anti_air_attack = 3
+			lg_attack = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 0.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_secondaries
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_secondaries }
+	}
 	modern_ship_light_battery_1 = {
 		category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
@@ -237,7 +314,7 @@ equipment_modules = {
 	}
 	
 	ship_aegis_radar_1 = {
-		category = ship_radar
+		category = ship_aegis_radar
 		sfx = sfx_ui_sd_module_sonar
 
 		multiply_stats = {
@@ -486,7 +563,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 9
+			sub_detection = 15
 			build_cost_ic = 100
 		}
 		can_convert_from = {
@@ -610,13 +687,13 @@ equipment_modules = {
 		critical_parts = { damaged_torpedoes }
 	}
 
-	ship_torpedo_sub_future_1 = {
+	ship_torpedo_sub_modern_1 = {
 		category = ship_torpedo_sub
 		
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 40.5
+			torpedo_attack = 50
 			build_cost_ic = 16000
 		}
 		can_convert_from = {
@@ -624,5 +701,60 @@ equipment_modules = {
 			convert_cost_ic = 60
 		}
 		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_sub_modern_2 = {
+		category = ship_torpedo_sub
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 55
+			build_cost_ic = 16000
+		}
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_sub_modern_3 = {
+		category = ship_torpedo_sub
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 62
+			build_cost_ic = 16000
+		}
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+	ship_sts_sub_1 = {
+		category = ship_torpedo_sub
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 20
+			hg_attack = 30
+			build_cost_ic = 16000
+		}
+		build_cost_resources = {
+			steel = 1
+			chromium = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+		}
+		add_average_stats = {
+			lg_armor_piercing = 100
+			hg_armor_piercing = 150
+		}
 	}
 }

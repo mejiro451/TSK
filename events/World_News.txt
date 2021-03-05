@@ -45,6 +45,8 @@ news_event = {#서울 함락
 	
 	major = yes
 	
+	fire_only_once = yes
+	
 	trigger = {
 		OR = {
 			807 = { is_owned_by = MKR }
@@ -96,6 +98,8 @@ news_event = {#서울 수복
 	picture = GFX_news_event_kor_seoul_lib_prk
 	
 	major = yes
+	
+	fire_only_once = yes
 	
 	trigger = {
 		807 = { is_controlled_by = ROK }
@@ -185,6 +189,8 @@ news_event = {#부산함락
 	picture = GFX_news_event_kor_seoul_fall_prk
 	
 	major = yes
+	
+	fire_only_once = yes
 	
 	trigger = {
 		809 = { is_controlled_by = MKR }
@@ -302,11 +308,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = kor_news.7.b
+		name = kor_news.8.b
 		trigger = { TAG = PRK }
 	}
 	option = {
-		name = kor_news.7.c
+		name = kor_news.8.c
 		trigger = { TAG = MKR }
 	}
 }
@@ -327,16 +333,21 @@ news_event = {
 			NOT = {
 				TAG = PRK
 				TAG = MKR
+				TAG = JAP
 			}
 		}
 	}
 	option = {
-		name = kor_news.7.b
+		name = kor_news.9.b
 		trigger = { TAG = PRK }
 	}
 	option = {
-		name = kor_news.7.c
+		name = kor_news.9.c
 		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.9.c
+		trigger = { TAG = JAP }
 	}
 }
 
@@ -348,13 +359,17 @@ news_event = {
 	picture = GFX_news_event_001
 	
 	major = yes
-
+	
+	fire_only_once = yes
+	
 	trigger = {
 		PRK = {
 			has_defensive_war_with = MKR
 		}
+		
 		MKR = {
 			has_country_flag = MKR_preventive_war
+			NOT = { has_country_flag = kor_civ }
 		}
 	}
 	
@@ -385,7 +400,9 @@ news_event = {
 	picture = GFX_news_event_001
 	
 	major = yes
-
+	
+	fire_only_once = yes
+	
 	trigger = {
 		OR = {
 		PRK = {
@@ -417,5 +434,395 @@ news_event = {
 	option = {
 		name = kor_news.11.c
 		trigger = { TAG = MKR }
+	}
+}
+
+# 대한민국의 무력시위
+news_event = {
+	id = kor_news.12
+	title = kor_news.12.t
+	desc = kor_news.12.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.11.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = MKR
+			}
+		}
+	}
+	option = {
+		name = kor_news.11.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = kor_news.11.c
+		trigger = { TAG = MKR }
+	}
+}
+
+# 독도충돌!
+news_event = {
+	id = kor_news.13
+	title = kor_news.13.t
+	desc = kor_news.13.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.13.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = MKR
+				TAG = PRK
+			}
+		}
+	}
+	option = {
+		name = kor_news.13.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = kor_news.13.c
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.13.d
+		trigger = { TAG = PRK }
+	}
+}
+
+#암살당한 김정일!!
+news_event = {
+	id = kor_news.14
+	title = kor_news.14.t
+	desc = kor_news.14.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.14.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+			}
+		}
+	}
+	option = {
+		name = kor_news.15.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.15.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.14.d
+		trigger = { TAG = PRK }
+	}
+}
+
+#내전에 빠진 북한
+news_event = {
+	id = kor_news.15
+	title = kor_news.15.t
+	desc = kor_news.15.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.15.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+			}
+		}
+	}
+	option = {
+		name = kor_news.15.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.15.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.15.d
+		trigger = { TAG = PRK }
+	}
+}
+
+#북한관료들의 모스크바 방문
+news_event = {
+	id = kor_news.16
+	title = kor_news.16.t
+	desc = kor_news.16.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.16.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = kor_news.16.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.16.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.16.d
+		trigger = { TAG = PRK }
+	}
+	option = {
+		name = kor_news.16.c
+		trigger = { TAG = SOV }
+	}
+}
+
+#소련과 북한의 동맹
+news_event = {
+	id = kor_news.17
+	title = kor_news.17.t
+	desc = kor_news.17.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.17.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+			}
+		}
+	}
+	option = {
+		name = kor_news.17.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.17.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.17.d
+		trigger = { TAG = PRK }
+	}
+}
+
+#일본내전의 발발
+news_event = {
+	id = kor_news.18
+	title = kor_news.18.t
+	desc = kor_news.18.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.18.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+				TAG = JAP
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = kor_news.18.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.18.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.18.d
+		trigger = { TAG = PRK }
+	}
+	option = {
+		name = kor_news.18.e
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = kor_news.18.f
+		trigger = { TAG = SOV }
+	}
+}
+
+#중국과 조선민주주의 인민공화국의 신경전
+news_event = {
+	id = kor_news.19
+	title = kor_news.19.t
+	desc = kor_news.19.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.19.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+				TAG = PRC
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = kor_news.19.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.19.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.19.d
+		trigger = { TAG = PRK }
+	}
+	option = {
+		name = kor_news.19.e
+		trigger = { TAG = PRC }
+	}
+	option = {
+		name = kor_news.19.e
+		trigger = { TAG = CHI }
+	}
+}
+
+#진주만 공습
+news_event = {
+	id = kor_news.20
+	title = kor_news.20.t
+	desc = kor_news.20.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.20.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+				TAG = USA
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = kor_news.20.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.20.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.20.d
+		trigger = { TAG = PRK }
+	}
+	option = {
+		name = kor_news.20.e
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = kor_news.20.e
+		trigger = { TAG = JAP }
+	}
+}
+
+#일본해군과 충돌 (북한)
+news_event = {
+	id = kor_news.21
+	title = kor_news.21.t
+	desc = kor_news.21.desc
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.21.a
+		trigger = {
+			NOT = {
+				TAG = ROK
+				TAG = MKR
+				TAG = PRK
+				TAG = CHI
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = kor_news.21.b
+		trigger = { TAG = ROK }
+	}
+	option = {
+		name = kor_news.21.b1
+		trigger = { TAG = MKR }
+	}
+	option = {
+		name = kor_news.21.d
+		trigger = { TAG = PRK }
+	}
+	option = {
+		name = kor_news.21.e
+		trigger = { TAG = CHI }
+	}
+	option = {
+		name = kor_news.21.e
+		trigger = { TAG = JAP }
 	}
 }

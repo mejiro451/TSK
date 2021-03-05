@@ -3,19 +3,14 @@ Reaction = {
 	icon = GFX_decision_category_infiltration
 	
 	allowed = {
-		tag = KOR
-	}
-		available = {
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
+		tag = MKR
+		NOT = {
+		    has_country_flag = 2009_scenario
 		}
+	}
 
-	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
-		
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
+	visible = { 
+		always = yes
 	}
 }
 
@@ -24,18 +19,13 @@ warlike_preparations = {
 	icon = GFX_decision_category_infiltration
 	
 	allowed = {
-		tag = KOR
+		tag = MKR
+		NOT = {
+		    has_country_flag = 2009_scenario
+		}
 	}
 
-		available = {
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
-		}
-	visible = { # This doesn't prevent the periodic bandit raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
-		
-			NOT = {
-				has_country_flag = 2009_scenario
-			}
+	visible = { 
+		always = yes
 	}
 }

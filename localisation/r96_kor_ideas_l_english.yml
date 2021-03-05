@@ -69,3 +69,11 @@
  KOR_Basic_income_desc:0 "The basic income system is an experimental economic policy in which the state guarantees everyone the money they need to live."
  KOR_homeland_defense:0 "Homeland Defense"
  KOR_homeland_defense_desc:0 "The people will defend this land, the symbol of freedom, no matter what."
+ 
+ KOR_roh_trait:0 "사람사는 세상"
+ KOR_world_attack:0 "전쟁하자는 것입니까?"
+ KOR_world_attack_desc:0 "예 그렇슙니돠"
+ KOR_satellite:0 "인공위성 발사"
+ KOR_satellite_desc:0 "아아! 대한민국 제 첫호기 인공위성이 다시 발사되었습니다!"
+ KOR_not_politic_act:0 "계엄령"
+ KOR_not_politic_act_2:0 "데프콘 발령"

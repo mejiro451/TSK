@@ -2,6 +2,28 @@
 music_station = "mbc"
 
 # General
+
+music = {
+	song = "agguk"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+
+music = {
+	song = "agguk_north"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
 music = {
 	song = "anti_communism"
 	
@@ -37,17 +59,6 @@ music = {
 
 music = {
 	song = "frontline"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-		}		
-	}	
-}
-
-music = {
-	song = "comrade"
 	
 	chance = {
 		modifier = {
@@ -123,13 +134,15 @@ music = {
 	}	
 }
 
+
 music = {
-	song = "aggukga_north"
+	song = "1991_theme"
 	
 	chance = {
 		modifier = {
 			factor = 2
 
+			has_war = no
 		}		
 	}	
 }

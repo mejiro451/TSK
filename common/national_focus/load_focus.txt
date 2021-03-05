@@ -19,6 +19,15 @@ focus_tree = {
 			}
 			KOR = {
 				load_focus_tree = new_rok_focus
+				set_cosmetic_tag = KOR_2009_scenario
+				set_rule = {
+					can_not_declare_war = yes
+				}
+				add_ideas = KOR_modern_millitary
+                annex_country = {
+					target = USF 
+					transfer_troops = yes 
+				}
 			}
 		}
 	}

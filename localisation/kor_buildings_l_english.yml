@@ -1,0 +1,15 @@
+﻿l_english:
+ Constitutional_icon_value_desc:0 "입헌파(은)는 [?Root.Constitutional|+0] §H의 영향력§!를 가짐\n"
+ Constitutional_icon_value:0 "[?Root.Constitutional|0H]"
+ 
+ Imperial_icon_value_desc:0 "제국파(은)는 [?Root.Imperialism|+0] §H의 영향력§!를 가짐\n"
+ Imperial_icon_value:0 "[?Root.Imperialism|0H]"
+ 
+ 
+ steel_mill:0 "제철소"
+ steel_mill_plural:0 "제철소단지"
+ steel_mill_desc:0 "제철소는 철광석, 혹은 고철등을 원료로 삼아 최종적으로 각종 강재를 제작하는 공장을 말합니다. 자동차, 조선, 기계, 건설, 방위산업을 비롯한 많은 산업들에 필수적인 '산업의 쌀'을 생산해내기 때문에, 제철소는 국가 경제에서 상당히 중요한 역할을 하고 있습니다."
+ 
+ steel_alloy_ind:0 "특수강공장"
+ steel_alloy_ind_plural:0 "특수강공장"
+ steel_alloy_ind_desc:0 "합금(특수강)은 두 가지 이상의 금속을 녹여 첨가한 물질의 총칭이다. 이자원은 현대의 민간,군사산업을 비롯한 다양한곳에 사용되기에 현대시대에선 꼭필요한 자원이다."

@@ -34,13 +34,13 @@ units = {
 	
 	division= {
 		name = "USFK 제2보병사단"
-		location = 13252
+		location = 13246
 		division_template = "주한미군"
 		start_experience_factor = 0.8
         force_equipment_variants = { m_1990_spaa_equipment = { owner = "USF" } }
         force_equipment_variants = { m_1990_sp_equipment = { owner = "USF" } }
         force_equipment_variants = { m_1990_mbt = { owner = "USF" } }
-        force_equipment_variants = { m_1990_infantry_equipment = { owner = "USF" } }
+        force_equipment_variants = { infantry_equipment_6 = { owner = "USF" } }
         force_equipment_variants = { m_1990_APC_equipment = { owner = "USF" } }
         force_equipment_variants = { m_1990_IFV_equipment = { owner = "USF" } }
         force_equipment_variants = { m_1990_mlrs_equipment = { owner = "USF" } }

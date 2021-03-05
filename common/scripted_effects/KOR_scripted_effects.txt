@@ -83,3 +83,89 @@ MKR_mkr_nationwide_demonstration_level_down = {
 		}
 	}
 }
+
+KOR_economic_collapse_clear_all = {
+	remove_ideas = {
+		KOR_economic_collapse_1
+		KOR_economic_collapse_2
+		KOR_economic_collapse_3
+		KOR_economic_collapse_4
+		KOR_economic_collapse_5
+	}
+}
+
+#Important to put HIGHEST first
+KOR_economic_collapse_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = USA_great_depression_up_tt
+	if = {
+		limit = { has_idea = KOR_economic_collapse_2 }
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_2
+			add_idea = KOR_economic_collapse_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = KOR_economic_collapse_3 }
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_3
+			add_idea = KOR_economic_collapse_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = KOR_economic_collapse_4 }
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_4
+			add_idea = KOR_economic_collapse_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = KOR_economic_collapse_5 }
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_5
+			add_idea = KOR_economic_collapse_4
+		}
+	}
+}
+
+#Important to put LOWEST first
+KOR_economic_collapse_level_down = {
+	custom_effect_tooltip = USA_great_depression_up_tt
+	if = {
+		limit = { has_idea = KOR_economic_collapse_5 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		remove_ideas = KOR_economic_collapse_5
+	}
+	if = {
+		limit = { has_idea = KOR_economic_collapse_4 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_4
+			add_idea = KOR_economic_collapse_5
+		}
+	}
+	if = {
+		limit = { has_idea = KOR_economic_collapse_3 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_3
+			add_idea = KOR_economic_collapse_4
+		}
+	}
+	if = {
+		limit = { has_idea = KOR_economic_collapse_2 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_2
+			add_idea = KOR_economic_collapse_3
+		}
+	}
+	if = {
+		limit = { has_idea = KOR_economic_collapse_1 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = KOR_economic_collapse_1
+			add_idea = KOR_economic_collapse_2
+		}
+	}
+}

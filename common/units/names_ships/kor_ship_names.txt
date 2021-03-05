@@ -70,52 +70,75 @@ ROK_PKM_HISTORICAL = {
 	
 	prefix = "ROKS "							
 	fallback_name = "PKM-2%d"
-}
+}	
 
 ###해상자위대
 JDF_DDG_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
+	name = NAME_THEME_HISTORICAL_DDG
 
 	for_countries = { JDF }
 
 	type = ship
-	ship_types = { ship_hull_modern_DDG }
 	
 	prefix = "JDS "							
 	fallback_name = "DDG-%d"
 
 	unique = {
-		#공고 
+		#공고급
 		"Kongō" "Kirishima" "Myōkō" "Chōkai"
-		#아타고 
+		#아타고급
 		"Atago" "Ashigara" 
-		#마야 
+		#마야급
 		"Maya" "Haguro"
 	}
 }
 
 JDF_DDH_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
+	name = NAME_THEME_HISTORICAL_DDH
 
 	for_countries = { JDF }
 
 	type = ship
-	ship_types = { ship_hull_modern_DDH }
 	
 	prefix = "JDS "							
 	fallback_name = "DD-1%d"
 
 	unique = {
-		#타치카제
+		#타치카제급
 		"Tachikaze" "Asakaze" "Sawakaze"
-		#하츠유키
+		#하츠유키급
 		"Hatsuyuki" "Shirayuki" "Mineyuki" "Sawayuki" "Hamayuki" "Isoyuki" "Haruyuki" "Yamayuki" "Matsuyuki" "Setoyuki" "Asayuki" "Shimayuki"
-		#아사기리
+		#아사기리급
 		"Asagiri" "Yamagiri" "Yūgiri" "Amagiri" "Hamagiri" "Setogiri" "Sawagiri" "Umigiri"
-		#하타카제 
+		#하타카제급
 		"Hatakaze" "Shimakaze"
+		#무라사메급
+		"Murasame" "Harusame" "Yūdachi" "Kirisame" "Inazuma" "Samidare" "Ikazuchi" "Ikazuchi" "Ariake"
+		#타카나미급
+		"Takanami" "Ōnami" "Makinami" "Sazanami" "Suzunami"
+		#아키즈키급
+		"Akizuki" "Teruzuki" "Suzutsuki" "Fuyuzuki"
 	}
 }
 
+JDF_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CV
+
+	for_countries = { JDF }
+
+	type = ship
+	
+	prefix = "JDS "							
+	fallback_name = "CV-1%d"
+
+	unique = {
+		#휴우가급
+		"Hyūga" "Ise"
+		#이즈모급
+		"Izumo" "Kaga" "Yamashiro"
+		#구일본함선
+		"Shinano" "Akagi" "Hiryu" "Soryu" "Shokaku" "Zuikaku" "Taiho"
+	}
+}
 
 

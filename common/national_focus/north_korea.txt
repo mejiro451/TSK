@@ -15,7 +15,9 @@ focus_tree = {
 		cost = 10.00
 		x = 15
 		y = 0
-
+		completion_reward = {
+			country_event = { id = PRK.1 }
+		}
 	}
 	focus = { #천리마운동 재개 (국민정신 '천리마운동'추가)
 		id = prk_Chollima_Movement
@@ -23,7 +25,9 @@ focus_tree = {
 		cost = 10.00
 		x = 35
 		y = 0
-
+		completion_reward = {
+			add_ideas = chunrima
+		}
 	}
 	focus = { #조선인민군 (육,해,공군경험치 +10)
 		id = prk_KPA
@@ -42,7 +46,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+			country_event = { id = PRK.2 }
+		}
 	} 
 	focus = { #국가 안정 (안정도 +10)
 		id = prk_national_stability
@@ -50,6 +56,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_collect_intel
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 		x = 16
 		y = 1
@@ -65,6 +74,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_the_return_of_independence_fighters
 		}
+		completion_reward = {
+			country_event = { id = PRK.4 }
+		}
 		x = 15
 		y = 2
 
@@ -75,6 +87,20 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_The_Future_of_Joseon
+		}
+		available = {
+			is_puppet = no
+			has_war = no
+			OR = {
+				has_global_flag = civil_mkr_win
+				has_global_flag = civil_rok_win
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KOR_juche
+				add_idea = KOR_juche_2
+			}
 		}
 		x = 7
 		y = 3
@@ -90,6 +116,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = prk_Communistic_Unification
 		}
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 807
+					controls_state = 807 
+				}
+				effect_tooltip = {
+				PRK = { add_opinion_modifier = { target = ROOT modifier = PRK_south } }
+				ROOT = { add_opinion_modifier = { target = MKR modifier = PRK_south } }
+				}
+			}
+		}
 		x = 4
 		y = 4
 
@@ -101,6 +139,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Maintaining_Relations
 		}
+		completion_reward = {
+			add_political_power = 150
+		}
 		x = 3
 		y = 5
 
@@ -111,6 +152,17 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Maintaining_Relations
+		}
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 807
+					controls_state = 807 
+				}
+				effect_tooltip = {
+				ROOT = { country_event = { id = PRK.6 } }
+				}
+			}
 		}
 		x = 5
 		y = 5
@@ -126,6 +178,17 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_a_changed_world
 		}
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 807
+					controls_state = 807 
+				}
+				effect_tooltip = {
+				ROOT = { country_event = { id = PRK.8 } }
+				}
+			}
+		}
 		x = 2
 		y = 6
 
@@ -136,6 +199,8 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_interact_with_the_South
+		}
+		completion_reward = {
 		}
 		x = 6
 		y = 6
@@ -151,6 +216,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = prk_Maintaining_Relations
 		}
+		completion_reward = {
+			army_experience = 10
+			add_timed_idea = {
+			idea = mkr_military_training
+			days = 365
+			} 
+		}
 		x = 10
 		y = 4
 
@@ -162,6 +234,10 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Communistic_Unification
 		}
+		completion_reward = {
+			unlock_decision_tooltip = kyunggi_Underground_Tunnel
+			unlock_decision_tooltip = Gangwon_Underground_Tunnel
+		}
 		x = 9
 		y = 5
 
@@ -172,6 +248,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Communistic_Unification
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = prk_spy_sent
 		}
 		x = 11
 		y = 5
@@ -187,6 +266,24 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_south_wave_espionage
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 		x = 8
 		y = 6
 
@@ -197,6 +294,48 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_south_wave_espionage
+		}
+		completion_reward = {
+			814 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = GER_west_wall_forts
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11958
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 4004
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9981
+							instant_build = yes
+						}
+					}
+				}
+			}
+			811 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 12040
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 		x = 12
 		y = 6
@@ -212,6 +351,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = prk_Juche_Idea
 		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = { id = PRK.12  }
+			set_country_flag = coup
+		}
 		x = 22
 		y = 3
 
@@ -219,46 +363,44 @@ focus_tree = {
 	focus = { #정통파 독립운동가들 ('정통파 독립운동가들'이벤트발생)
 		id = prk_orthodox_independence_activists
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
+		}
+		completion_reward = {
+			country_event = { id = PRK.11 }
+			custom_effect_tooltip = prk_coop_lvl_up
 		}
 		x = 21
 		y = 4
 
 	}
-	focus = { #과거 장성 섭외 ('과거 장성섭외' 이벤트발생 김책,최용건,김원봉등의 과거장군들 출현)
+	focus = { #젊은 장성 섭외
 		id = prk_Young_Officer_Recruitment
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = prk_coop_lvl_up
 		}
 		x = 22
 		y = 5
 
 	}
-	focus = { #숙청회피 (삭제예정)
-		id = prk_Purge_Evasion
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_orthodox_socialism
-		}
-		x = 23
-		y = 4
-
-	}
 	focus = { #평양방위사령부 섭외 ('평양방어사령부 섭외' 이벤트발생)
 		id = prk_Pyongyang_Defense_Command_Appointment
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
 		}
 		x = 24
 		y = 5
-
+		completion_reward = {
+			custom_effect_tooltip = prk_coop_lvl_up
+		}
 	}
 	focus = { #주사위 던지기 ('암살당한 김정일' 뉴스뜸 북한에도'암살당한 김정일'이벤트발생 국가지도자를 북한군부로 교체, 황해도에서 일부 부대들반란)
 		id = prk_dice_throw
@@ -269,6 +411,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = prk_Young_Officer_Recruitment
+		}
+		completion_reward = {
+			custom_effect_tooltip = prk_coop_start
 		}
 		x = 23
 		y = 6
@@ -281,11 +426,15 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_dice_throw
 		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+		}
 		x = 23
 		y = 7
 
 	}
-	focus = { #마르크스-레닌주의 ('여운형'을 장관으로 쓸수있음)
+	focus = { #마르크스-레닌주의 ('박헌영'을 장관으로 쓸수있음)
 		id = prk_Marxism_Leninism
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -294,6 +443,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = prk_Social_democracy
+		}
+		completion_reward = {
+			custom_effect_tooltip = can_use_park
 		}
 		x = 18
 		y = 8
@@ -306,21 +458,13 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_orthodox_socialism
 		}
+		completion_reward = {
+			custom_effect_tooltip = prk_coop_lvl_up
+		}
 		x = 25
 		y = 4
 
 	}
-	focus = { #기계화군단 섭외 (삭제예정)
-		id = prk_Recruitment_of_Mechanized_Corps
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_orthodox_socialism
-		}
-		x = 26
-		y = 5
-
-	} 
 	focus = { #사민주의 (여운형을 장관으로 고용하였을시 찍을수있음,'군부의 불만'국민정신활성화)
 		id = prk_Social_democracy
 		icon = GFX_goal_unknown
@@ -1041,17 +1185,6 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #MIG-21 개량 (삭제예정)
-		id = prk_MIG_21_mod
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_low
-		}
-		x = 66
-		y = 5
-
-	}
 	focus = { #프롭기 개발 (공군종류 1개의 연구속도 +50%)
 		id = prk_new_fighterr
 		icon = GFX_goal_unknown
@@ -1284,6 +1417,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_additional_tunnel_construction
 		}
+		completion_reward = {
+			unlock_decision_category_tooltip = PRK_provocations_against_the_south
+		}
 		x = 10
 		y = 6
 
@@ -1449,6 +1585,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Marxism_Leninism
 		}
+		completion_reward = {
+			remove_ideas = KOR_juche
+		}
 		x = 18
 		y = 9
 
@@ -1459,6 +1598,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Declaration_of_the_Abolition_of_Juche_Idea
+		}
+		completion_reward = {
+			add_ideas = KOR_Marx
 		}
 		x = 19
 		y = 10
@@ -1471,6 +1613,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Declaration_of_the_Abolition_of_Juche_Idea
 		}
+		completion_reward = {
+			country_event = { id = PRK.16 }
+		}
 		x = 17
 		y = 10
 
@@ -1481,6 +1626,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_an_old_friend
+		}
+		completion_reward = {
+			country_event = { id = PRK.17 }
 		}
 		x = 18
 		y = 12
@@ -1493,6 +1641,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_visit_Moscow
 		}
+		completion_reward = {
+			diplomatic_relation = { country = SOV relation = non_aggression_pact }
+		}
 		x = 19
 		y = 13
 
@@ -1503,6 +1654,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_visit_Moscow
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = soviet_sup
 		}
 		x = 17
 		y = 13
@@ -1518,6 +1672,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Soviet_support
 		}
+		completion_reward = {
+			country_event = { id = PRK.18 }
+		}
 		x = 18
 		y = 14
 
@@ -1528,6 +1685,16 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Deals_with_the_Devil
+		}
+		completion_reward = {
+			SOV = {
+				effect_tooltip = {
+					add_to_faction = PRK
+				}
+			}
+			hidden_effect = {
+			news_event = { hours = 6 id = kor_news.17 }
+			}
 		}
 		x = 15
 		y = 15
@@ -1586,6 +1753,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_new_leader
 		}
+		completion_reward = {
+			unlock_decision_category_tooltip = spies_in_Japan
+		}
 		x = 22
 		y = 11
 
@@ -1596,6 +1766,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_overthrow_of_Japanese
+		}
+		completion_reward = {
+			country_event = { id = PRK.20 }
 		}
 		x = 22
 		y = 12
@@ -1608,6 +1781,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_contact_with_the_CPJ
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -5000 producer = PRK }
+		}
 		x = 21
 		y = 13
 
@@ -1619,6 +1795,10 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_contact_with_the_CPJ
 		}
+		completion_reward = {
+			unlock_decision_tooltip = Expanding_influence_in_Japan
+			unlock_decision_tooltip = Pre_survey
+		}
 		x = 23
 		y = 13
 
@@ -1627,11 +1807,18 @@ focus_tree = {
 		id = prk_Japanese_Civil_War
 		icon = GFX_goal_unknown
 		cost = 10.00
+		available = {
+			has_country_flag = Expanding_influence_in_Japan_1
+			has_country_flag = Pre_survey_1
+		}
 		prerequisite = {
 			focus = prk_Expanding_Influence_in_Japan
 		}
 		prerequisite = {
 			focus = prk_rifle_support
+		}
+		completion_reward = {
+			country_event = { id = PRK.21 }
 		}
 		x = 22
 		y = 14
@@ -1647,6 +1834,11 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_new_leader
 		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
+			SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+		}
 		x = 18
 		y = 11
 
@@ -1661,6 +1853,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Explosion_of_the_Juche_Tower
 		}
+		completion_reward = {
+			news_event = { id = kor_news.19 }
+		}
 		x = 14
 		y = 11
 
@@ -1671,6 +1866,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_China_Diplomacy_War
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = PRC modifier = enemy_china }
+			PRC = { add_opinion_modifier = { target = ROOT modifier = enemy_china } }
 		}
 		x = 13
 		y = 12
@@ -1683,6 +1882,10 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_China_Diplomacy_War
 		}
+		completion_reward = {
+			add_opinion_modifier = { target = PRC modifier = enemy_china }
+			CHI = { add_opinion_modifier = { target = ROOT modifier = enemy_china } }
+		}
 		x = 15
 		y = 12
 
@@ -1693,6 +1896,13 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Maoist_Criticism
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRC
+				expire = 0
+			}
 		}
 		x = 13
 		y = 13
@@ -1708,6 +1918,13 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_ask_prc
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+				expire = 0
+			}
+		}
 		x = 14
 		y = 14
 
@@ -1719,6 +1936,13 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Japanese_Civil_War
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MAN
+				expire = 0
+			}
+		}
 		x = 22
 		y = 15
 
@@ -1729,6 +1953,28 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_dictator_Jean_Jes
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SHX
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GXC
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YUN
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+				expire = 0
+			}
 		}
 		x = 15
 		y = 13
@@ -1742,29 +1988,32 @@ focus_tree = {
 			focus = prk_Declaration_of_Communistic_Unification
 			focus = prk_the_two_countries_on_the_Korean_Peninsula
 		}
+		completion_reward = {
+			add_opinion_modifier = { target = JAP modifier = enemy_china }
+			JAP = { add_opinion_modifier = { target = ROOT modifier = enemy_china } }
+		}
 		x = 6
 		y = 12
 
 	}
-	focus = { #일본을 도발하다 ('동해에서의 무력시위' 이벤트발생)
-		id = prk_provoke_Japan
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_hundred_years_enemy
-		}
-		x = 4
-		y = 13
-
-	}
-	focus = { #해상자위대 공격 ('자위대에 침투'디시전활성화)
+	focus = { #해상자위대 침투 ('자위대에 침투'디시전활성화)
 		id = prk_attack_JMSDF
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = prk_hundred_years_enemy
 		}
-		x = 8
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JDF
+				expire = 0
+			}
+			JDF = { 
+			set_country_flag = war_PRK
+			}
+		}
+		x = 7
 		y = 13
 
 	}
@@ -1775,7 +2024,10 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_hundred_years_enemy
 		}
-		x = 6
+		completion_reward = {
+			add_ideas = mkr_haebyung_1
+		}
+		x = 5
 		y = 13
 
 	}
@@ -1784,35 +2036,20 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = prk_marine_improve
+			focus = prk_attack_JMSDF
 		}
 		prerequisite = {
-			focus = prk_provoke_Japan
+			focus = prk_marine_improve
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+				expire = 0
+			}
 		}
 		x = 6
 		y = 14
-
-	}
-	focus = { #일본 요새화 (일본을 항복시켰을시 활성화,일본 모든항구지역에 해상요새 +5)
-		id = prk_Japanese_fortification
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_pre_emptive_strike
-		}
-		x = 6
-		y = 15
-
-	}
-	focus = { #일본에 복종요구 (일본항복도가 40%이하일때 활성화,일본서부지역 합병후 일본괴뢰화)
-		id = prk_demand_obedience_from_Japan
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_pre_emptive_strike
-		}
-		x = 4
-		y = 15
 
 	}
 	focus = { #태평양으로 ('일본에 함선요구'디시전활성화)
@@ -1820,32 +2057,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = prk_Japanese_fortification
+			focus = prk_pre_emptive_strike
 		}
-		x = 9
-		y = 16
-
-	}
-	focus = { #괌 영유권주장 (괌의 영유권을 주장함
-		id = prk_Guam_Territorial_Claims
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_Japanese_fortification
+		completion_reward = {
+			add_state_claim = 638
+			add_state_claim = 629
 		}
-		x = 5
-		y = 16
-
-	}
-	focus = { #미제 침략자에게 죽음을 (미국과 관계도 -50)
-		id = prk_Death_to_the_aggressor
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_Japanese_fortification
-		}
-		x = 7
-		y = 16
+		x = 6
+		y = 15
 
 	}
 	focus = { #하와이 공습 (미국에 '진주만공습'이벤트발생 뉴스이벤트 '진주만 공습'발생)
@@ -1853,10 +2072,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = prk_Death_to_the_aggressor
+			focus = prk_to_the_Pacific_Ocean
 		}
-		x = 7
-		y = 17
+		completion_reward = {
+			country_event = { id = PRK.23 }
+		}
+		x = 6
+		y = 16
 
 	}
 	focus = { #동아시아의 사회주의 ('동아시아의 사회주의' 국민정신얻고 전쟁명분 정당화시간 -25%)
@@ -2094,7 +2316,7 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = { #SU-25 (1980년대 근접항공지원기를 30만큼 재고에추가
+	focus = { #SU-25 (1990년대 근접항공지원기를 30만큼 재고에추가
 		id = prk_SU_25
 		icon = GFX_goal_unknown
 		cost = 10.00

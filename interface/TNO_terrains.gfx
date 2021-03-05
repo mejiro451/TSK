@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_terrain_seoul"
+		textureFile = "gfx/interface/terrains/terrain_seoul.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_seoul_winter"
+		textureFile = "gfx/interface/terrains/terrain_seoul_snow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_pyungyang"
+		textureFile = "gfx/interface/terrains/terrain_pyungyang.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_pyungyang_winter"
+		textureFile = "gfx/interface/terrains/terrain_pyungyang_winter.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_busan"
+		textureFile = "gfx/interface/terrains/terrain_busan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_busan_winter"
+		textureFile = "gfx/interface/terrains/terrain_busan_winter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_incheon"
+		textureFile = "gfx/interface/terrains/terrain_incheon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_incheon_winter"
+		textureFile = "gfx/interface/terrains/terrain_incheon_winter.dds"
+	}
+}

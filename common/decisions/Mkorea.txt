@@ -8,7 +8,7 @@ Reaction = {
 		icon = generic_civil_support
 
 		available = {
-			NOT = { has_idea = mkr_nationwide_demonstration_1 }
+			NOT = { has_idea = mkr_nationwide_demonstration }
 			has_country_flag = leader_chun
 		}
 
@@ -47,7 +47,7 @@ Reaction = {
 		icon = generic_civil_support
 
 		available = {
-			NOT = { has_idea = mkr_nationwide_demonstration_1 }
+			NOT = { has_idea = mkr_nationwide_demonstration }
 			has_country_flag = leader_rho
 		}
 

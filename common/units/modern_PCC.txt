@@ -1,6 +1,6 @@
 sub_units = {
 	modern_PCC = {
-		sprite = destroyer
+		sprite = modern_PCC
 		map_icon_category = ship
 		priority = 3
 		active = yes

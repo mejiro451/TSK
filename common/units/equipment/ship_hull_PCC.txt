@@ -7,6 +7,7 @@ equipments = {
 		is_buildable = no
 		type = screen_ship
 		interface_category = interface_category_screen_ships
+		alias = PCC
 		priority = 2000
 
 		upgrades = {
@@ -15,7 +16,7 @@ equipments = {
 			ship_ASW_upgrade
 			ship_anti_air_upgrade
 		}
-
+		
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
@@ -127,7 +128,6 @@ equipments = {
 		archetype = ship_hull_PCC
 		priority = 2000
 		parent = ship_hull_PCC_1
-		#alias = destroyer_2
 		
 		module_slots = {
 			fixed_ship_battery_slot = inherit

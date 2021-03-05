@@ -7,11 +7,12 @@ state={
 	history={
 		owner = PRK
 		buildings = {
-			infrastructure = 6
+			infrastructure = 9
 			arms_factory = 3
 			industrial_complex = 8
 			dockyard = 1
 			air_base = 4
+			fuel_silo = 3
 		}
 		victory_points = {
 			10065 40 

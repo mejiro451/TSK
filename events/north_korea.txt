@@ -36,6 +36,51 @@ country_event = {
 
 	option = { 
 		name = PRK.2.a
+		set_country_flag = Retrain_officer
+		create_corps_commander = {
+			name = "Nam il" #남일
+			picture = "남일.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			id = 9998
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Kim Won bong" #김원봉
+			picture = "김원봉.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			id = 9999
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		create_corps_commander = {
+			name = "Choi Yong geon" #최용건
+			picture = "최용건.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			id = 9997
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "Kang Geon" #강건
+			picture = "강건.dds"
+			traits = { 	unaccustomed_to_modern_warfare	}
+			id = 9996
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
 	}
 }
 
@@ -56,9 +101,1131 @@ country_event = {
 
 	option = { #엿이나 먹으라해라!
 		name = PRK.3.a
-		unlock_decision_category_tooltip = PRK_provocations_against_the_south
+		set_country_flag = PRK_provocations_against_the_south
 		MKR = {
 		country_event = { id = mkorea.8 }
+		}
+	}
+}
+
+#조선의 미래
+country_event = {
+	id = PRK.4
+	title = PRK.4.t
+	desc = PRK.4.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #확인
+		name = PRK.4.a
+		add_political_power = 25
+	}
+}
+
+#남한이 교류요청을 받아들이다
+country_event = {
+	id = PRK.5
+	title = PRK.5.t
+	desc = PRK.5.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #확인
+		name = PRK.5.a
+		add_timed_idea = {
+			idea = KOR_food_0
+			days = 100
+		}
+	}
+}
+
+#북한이 교류를요청하다
+country_event = {
+	id = PRK.6
+	title = PRK.6.t
+	desc = PRK.6.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #확인
+		name = PRK.6.a
+		PRK = {
+			country_event = { id = PRK.5 }
+		}
+	}
+
+	option = { #양심이있는건가!?!
+		name = PRK.6.b
+		add_political_power = 25
+		PRK = {
+			country_event = { id = PRK.7 }
+		}
+	}
+}
+
+#남한이 교류요청을 무시하다
+country_event = {
+	id = PRK.7
+	title = PRK.7.t
+	desc = PRK.7.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { #이럴줄알았다
+		name = PRK.7.a
+	}
+}
+
+country_event = { #북한이 불가침조약을 제안하다
+	id = PRK.8
+	title = PRK.8.t
+	desc = PRK.8.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	 
+	option = { #수락
+		name = PRK.8.a
+		PRK = {
+			country_event = { id = PRK.9 }
+		}
+    }	
+	
+	option = { #거부
+		name = PRK.8.b
+		PRK = {
+			country_event = { id = PRK.10 }
+		}
+    }	
+}
+
+country_event = { #남한이 수락하다
+	id = PRK.9
+	title = PRK.9.t
+	desc = PRK.9.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.9.a
+		random_other_country = {
+			limit = {
+				owns_state = 807
+				controls_state = 807 
+			}
+			effect_tooltip = {
+			diplomatic_relation = { country = ROOT relation = non_aggression_pact }
+			}
+		}
+    }	
+}
+
+country_event = { #남한이 거부하다
+	id = PRK.10
+	title = PRK.10.t
+	desc = PRK.10.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.10.a
+    }	
+}
+
+country_event = { #정통파 독립운동가들
+	id = PRK.11
+	title = PRK.11.t
+	desc = PRK.11.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.11.a
+    }	
+}
+
+country_event = { #정통사회주의파의 움직임
+	id = PRK.12
+	title = PRK.12.t
+	desc = PRK.12.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.12.a
+		unlock_decision_category_tooltip = Preparation_for_a_coup
+		
+    }	
+}
+
+country_event = { #암살당한 김정일
+	id = PRK.13
+	title = PRK.13.t
+	desc = PRK.13.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.13.a
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.14 }
+		}
+		create_country_leader = {
+	        name = "Korean People's Army"
+	        desc = ""
+	        picture = "gfx/leaders/PRK/국장.dds"
+	        expire = "1965.1.1"
+	        ideology = stalinism
+	        traits = {
+	        }
+				
+        }
+    }	
+}
+
+country_event = { #뭔가불안하다
+	id = PRK.14
+	title = PRK.14.t
+	desc = PRK.14.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.14.a
+		country_event = { id = PRK.15 }
+    }	
+}
+country_event = { #김정일이 쿠데타를 눈치채다!!
+	id = PRK.15
+	title = PRK.15.t
+	desc = PRK.15.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.15.a
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.15 }
+			PRK = {
+				create_country_leader = {
+					name = "Korean People's Army"
+					desc = ""
+					picture = "gfx/leaders/PRK/국장.dds"
+					expire = "1965.1.1"
+					ideology = stalinism
+					traits = {
+					}
+						
+				}
+				delete_unit_template_and_units = {
+					division_template = "보병 사단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "경 보병 사단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "차량화 보병 사단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "기계화사단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "포병사단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "기계화 려단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "땅크사단" 
+				}	
+				delete_unit_template_and_units = {
+					division_template = "전차려단" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "항공륙전대" 
+				}
+				delete_unit_template_and_units = {
+					division_template = "해상저격대" 
+				}	
+				PRK = { 
+					delete_unit = { 
+						state = 811             
+					}
+					delete_unit = { 
+						state = 814             
+					}
+					delete_unit = { 
+						state = 527             
+					}
+					delete_unit = { 
+						state = 818             
+					}
+					delete_unit = { 
+						state = 812             
+					}
+					delete_unit = { 
+						state = 822             
+					}
+					delete_unit = { 
+						state = 816             
+					}	
+					delete_unit = { 
+						state = 815             
+					}
+					delete_unit = { 
+						state = 820             
+					}
+				}
+				remove_unit_leader = 9982 
+				remove_unit_leader = 9983 
+				remove_unit_leader = 9984 
+				remove_unit_leader = 9985 
+				remove_unit_leader = 9988
+				remove_unit_leader = 9989 
+				remove_unit_leader = 9990  
+				remove_unit_leader = 9992 
+				remove_unit_leader = 9994 
+				remove_unit_leader = 9995 
+				remove_unit_leader = 9997
+				remove_unit_leader = 9996
+				
+			}	
+			PR1 = {
+			    transfer_state = 818
+			    transfer_state = 811
+			    transfer_state = 814
+			    transfer_state = 527
+				transfer_state = 822
+			    set_state_owner  = 818
+			    set_state_owner  = 811
+			    set_state_owner  = 814
+				set_state_owner  = 527
+				set_state_owner  = 822
+			    add_state_core  = 818
+			    add_state_core  = 811
+			    add_state_core  = 814
+			    add_state_core  = 527
+			    add_state_core  = 822
+			    add_state_core  = 812
+			    add_state_core  = 816
+				add_state_core  = 815
+				add_state_core  = 820
+			}	
+			hidden_effect = { #
+				PRK = {
+					load_oob = PRK_civ
+					set_country_flag = PRK_civ
+				}	
+				PR1 = {
+					load_oob = PR1_civ
+					add_ideas = KOR_modern_millitary
+					set_country_flag = PR1_civ
+					declare_war_on = {
+						target = PRK
+						type = take_core_state
+					}
+					set_fuel_ratio = 1.0
+				}
+			}	
+		}	
+	}
+}
+
+country_event = { #박헌영의 집권
+	id = PRK.16
+	title = PRK.16.t
+	desc = PRK.16.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.16.a
+		PRK = {
+		    create_country_leader = {
+	            name = "Pak Hon yung"
+	            desc = ""
+	            picture = "gfx/leaders/PRK/김두봉.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+	            }
+				
+            }
+		}	
+    }	
+}
+
+country_event = { #모스크바를 방문하다
+	id = PRK.17
+	title = PRK.17.t
+	desc = PRK.17.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.17.a	
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.16 }
+		}
+    }	
+}
+
+country_event = { #악마와의 거래
+	id = PRK.18
+	title = PRK.18.t
+	desc = PRK.18.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = { #장비 일부를 제공한다
+		name = PRK.18.a	
+    }	
+	
+	option = { #최신 공작기계를 지원한다
+		name = PRK.18.b
+    }	
+	
+	option = { #우리가가진 거의 모두를 지원한다 (소련으로 국가가 바뀜)
+		name = PRK.18.b
+		country_event = { id = PRK.19 }
+    }	
+}
+
+country_event = { #소련으로 국가를 바꾸시겠습니까?
+	id = PRK.19
+	title = PRK.19.t
+	desc = PRK.19.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {#그래
+		name = PRK.19.a	
+		SOV = { change_tag_from = PRK }
+    }	
+	
+	option = {#아니
+		name = PRK.19.b
+
+    }
+}
+
+country_event = { #일본 공산당과 접촉
+	id = PRK.20
+	title = PRK.20.t
+	desc = PRK.20.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {#좋군
+		name = PRK.20.a	
+		JAP = {
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+    }	
+
+}
+
+country_event = { #일본 내전발발
+	id = PRK.21
+	title = PRK.21.t
+	desc = PRK.21.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {#좋군
+		name = PRK.21.a	
+		JAP = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				size = 0.7
+				states = { 535 532 534 533 531 536 }
+				keep_unit_leaders = {
+					750 751 752
+				}
+				
+			}
+			set_cosmetic_tag = JAP_communism
+		}
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.18 }
+			JAP = {
+				division_template = { name = "Japanese People's Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+				529 = {
+					create_unit = { 
+						division = "name = \"1. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"2. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"3. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"4. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"5. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+				}
+				282 = {
+					create_unit = { 
+						division = "name = \"6. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"7. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"8. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"9. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"10. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+				}
+				530 = {
+					create_unit = { 
+						division = "name = \"11. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+					create_unit = { 
+						division = "name = \"12. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = JAP
+					}
+				}
+				load_focus_tree = generic
+				create_corps_commander = {
+					traits = { JAP_communist_sympathizer trickster}
+					id = 750 #communist general 1
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 2
+					skill = 3
+				}
+				create_corps_commander = {
+					traits = { JAP_communist_sympathizer trait_mountaineer trait_cautious}
+					id = 751 #communist general 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+					skill = 2
+				}
+				create_corps_commander = {
+					traits = { JAP_communist_sympathizer trait_reckless politically_connected}
+					id = 752 #communist general 3
+					attack_skill = 4
+					defense_skill = 1
+					planning_skill = 3
+					logistics_skill = 3
+					skill = 3
+				}
+			}
+		}
+    }	
+
+}
+
+
+country_event = { #일본해군과 충돌
+	id = PRK.22
+	title = PRK.22.t
+	desc = PRK.22.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = PRK.22.a	
+		navy_experience = 20
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.21 }
+		}
+    }	
+}
+#진주만 공습
+country_event = {
+	id = PRK.23
+	title = PRK.23.t
+	desc = PRK.23.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { 
+		name = PRK.23.a
+		hidden_effect = {
+		news_event = { hours = 6 id = kor_news.20 }
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+			expire = 0
+		}
+	}
+}
+
+
+# 일본이 항복을 제의하다
+country_event = {
+	id = PRK.24
+	title = PRK.24.t
+	desc = PRK.24.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# 좋지
+	option = {
+		name = PRK.24.a
+		effect_tooltip = {
+			every_other_country = {
+				limit = {
+					has_war_with = PRK
+				}
+				white_peace = PRK
+			}
+		}
+		JAP = {
+			country_event = { id = PRK.25 }
+		}
+		set_country_flag = achievement_JAP_sue_for_peace_CHI_completed
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	# 좋까
+	option = {
+		name = PRK.24.b
+		JAP = {
+			country_event = { id = PRK.26 }
+		}
+		
+		ai_chance = { # If Japan has lots of major enemies, the AI will not make a separate peace
+			factor = 10
+		}
+	}
+}
+
+# 북한이 우리요청을 받아들이다
+country_event = {
+	id = PRK.25
+	title = PRK.25.t
+	desc = PRK.25.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# They have accepted.
+	option = {
+		name = PRK.25.a
+		PRK = {
+			transfer_state = 526
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 530
+			transfer_state = 645
+			transfer_state = 648
+			transfer_state = 646
+			transfer_state = 647
+			transfer_state = 684
+			transfer_state = 633
+			puppet = JAP
+			country_event = { days = 1 id = PRK.27 }
+		}
+		CHI = {
+			transfer_state = 524
+		}
+	}
+}
+# 북한이 우리요청을 거부하다
+country_event = {
+	id = PRK.26
+	title = PRK.26.t
+	desc = PRK.26.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# They have accepted.
+	option = {
+		name = PRK.26.a
+	}
+}
+
+# 일본해군인도
+country_event = {
+	id = PRK.27
+	title = PRK.27.t
+	desc = PRK.27.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# They have accepted.
+	option = {
+		name = PRK.27.a
+		JAP = {
+			transfer_ship = {
+				prefer_name = ""
+				type = carrier
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = carrier
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = carrier
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = carrier
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = carrier
+				target = PRK
+			}
+			
+			transfer_ship = {
+				prefer_name = ""
+				type = battleship
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battleship
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battleship
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			
+			
+			transfer_ship = {
+				prefer_name = ""
+				type = heavy_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = heavy_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = heavy_cruiser
+				target = PRK
+			}
+			
+			
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = destroyer
+				target = PRK
+			}
+			
+			
+			transfer_ship = {
+				prefer_name = ""
+				type = modern_DDG
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+			transfer_ship = {
+				prefer_name = ""
+				type = battle_cruiser
+				target = PRK
+			}
+		}
+	}
+}
+#북한군이 우리를 공격하다!
+country_event = {
+	id = PRK.28
+	title = PRK.28.t
+	desc = PRK.28.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	
+	trigger = {
+		JDF = {
+		has_country_flag = war_PRK
+		}
+		has_war_with = PRK
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { 
+		name = PRK.28.a
+		JAP = {
+			country_event = { days = 1 id = PRK.29 }
+		}
+	}
+}
+#자위대가 우리와 합류하길원하다
+country_event = {
+	id = PRK.29
+	title = PRK.29.t
+	desc = PRK.29.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = { 
+		name = PRK.29.a
+		PRK = {
+			country_event = { days = 1 id = PRK.22 }
+		}
+		JAP = {
+			annex_country = { target = JDF transfer_troops = yes }
+			create_corps_commander = {
+				name = "Taizo Terashima"
+				picture = "데라시마 다이조.dds"
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_navy_leader = {
+				name = "Eiji Yoshikawa"
+					picture = "Eiji_Yoshikawa.dds"
+				traits = {  }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+
+			create_navy_leader = {
+				name = "Koichi Furusho"
+				picture = "Koichi_Furusho.dds"
+				traits = { old_guard_navy }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+
+			create_navy_leader = {
+				name = "Takashi Saito"
+				picture = "사이토_타카시.dds"
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+		}  	
+	}
+}
+#국지전이 발생하다!
+country_event = {
+	id = PRK.30
+	title = PRK.30.t
+	desc = PRK.30.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# They have accepted.
+	option = {
+		name = PRK.30.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 814
+				num_provinces = 4
+				on_win = japan_border_conflict.2
+				on_lose = japan_border_conflict.3
+				on_cancel = japan_border_conflict.4
+			}
+				
+			defender = {
+				state = 810
+				num_provinces = 4
+				on_win = japan_border_conflict.3
+				on_lose = japan_border_conflict.2
+				on_cancel = japan_border_conflict.4
+			}
 		}
 	}
 }

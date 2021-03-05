@@ -29,34 +29,19 @@ KOR = {
 		}
 	}
 	female = {
-		
-	}
-	surnames = {
-		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
-		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
-		Seo Shin Kwon Hwang Ahn Song
- 	}
-	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
-}
-PRK = {
-	male = {
 		names = {
-			Woosung Kyungjun Kiyoung Namgil Dongwon Seojun Seokwoo Sungmin Sungjin Seungwon
-			Shinil Indeok Euntak Jungwoo Jiseop Jihwan Taeoh Haneul Kyungpyo Sewon Inbeom Juwon
-			Changseok Hyeongjin Dowon Dongnyeong Siyang Jungwook Heesung Sangwoo Sungdeok
-			Ohjung Yongwoon Taewon Haesung Haeyo Hyeogsu Hyunsang
+			Minji Eunyoung Seol Sori Hyojung Seojun Eunji Jeongmin Sujeong Sumin
+			Ayeong Minhee
 		}
 	}
-	female = {
-		
-	}
 	surnames = {
 		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
-		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
-		Seo Shin Kwon Hwang Ahn Song
+		Park Park Park Park Choi Choi Choi Jeong Jeong Kang Kang Jo Jo Yoon Yoon Jang Jang Jung Im Han Han Oh Oh
+		Seo Seo Shin Shin Kwon Kwon Hyun Hyun Hwang Hwang Hong Hong Ahn Song
  	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
 }
+
 MKR = {
 	male = {
 		names = {
@@ -67,15 +52,19 @@ MKR = {
 		}
 	}
 	female = {
-		
+		names = {
+			Minji Eunyoung Seol Sori Hyojung Seojun Eunji Jeongmin Sujeong Sumin
+			Ayeong Minhee
+		}
 	}
 	surnames = {
 		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
-		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
-		Seo Shin Kwon Hwang Ahn Song
+		Park Park Park Park Choi Choi Choi Jeong Jeong Kang Kang Jo Jo Yoon Yoon Jang Jang Jung Im Han Han Oh Oh
+		Seo Seo Shin Shin Kwon Kwon Hyun Hyun Hwang Hwang Hong Hong Ahn Song
  	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
 }
+
 ROK = {
 	male = {
 		names = {
@@ -86,36 +75,38 @@ ROK = {
 		}
 	}
 	female = {
-		
+		names = {
+			Minji Eunyoung Seol Sori Hyojung Seojun Eunji Jeongmin Sujeong Sumin
+			Ayeong Minhee
+		}
 	}
 	surnames = {
 		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
-		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
-		Seo Shin Kwon Hwang Ahn Song
+		Park Park Park Park Choi Choi Choi Jeong Jeong Kang Kang Jo Jo Yoon Yoon Jang Jang Jung Im Han Han Oh Oh
+		Seo Seo Shin Shin Kwon Kwon Hyun Hyun Hwang Hwang Hong Hong Ahn Song
  	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
 }
- 
-FKR = {
+
+PRK = {
 	male = {
 		names = {
-			김 김 김 김 김 김 김 김 김 김 이 이 이 이 이 이 이 
-			박 박 박 박 최 최 정 정 강 조 윤 장 임 한 오 
-			서 신 권 황 안 송
+			Woosung Kyungjun Kiyoung Namgil Dongwon Seojun Seokwoo Sungmin Sungjin Seungwon
+			Shinil Indeok Euntak Jungwoo Jiseop Jihwan Taeoh Haneul Kyungpyo Sewon Inbeom Juwon
+			Changseok Hyeongjin Dowon Dongnyeong Siyang Jungwook Heesung Sangwoo Sungdeok
+			Ohjung Yongwoon Taewon Haesung Haeyo Hyeogsu Hyunsang
 		}
 	}
 	female = {
 		names = {
-			
+			Minji Eunyoung Seol Sori Hyojung Seojun Eunji Jeongmin Sujeong Sumin
+			Ayeong Minhee
 		}
 	}
 	surnames = {
-		우성 경준 기영 남일 동원 서준 석우 성민 성진 승원
-		신일 인덕 은탁 정우 지섭 지환 태오 하늘 경표 세원 인범 주원
-		창석 형진 도원 동녕 시양 정욱 희성 상우 성덕
-		오중 용운 태원 해성 해요 형수 현상
+		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
+		Park Park Park Park Choi Choi Choi Jeong Jeong Kang Kang Jo Jo Yoon Yoon Jang Jang Jung Im Han Han Oh Oh
+		Seo Seo Shin Shin Kwon Kwon Hyun Hyun Hwang Hwang Hong Hong Ahn Song
  	}
-	callsigns = { 
-		'팔공' '막강' '기라성' '화랑' '번개' '박쥐' '비창' '번개' '비룡' '악마' '마귀' '시바스' '트라이 리'
-	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
 }

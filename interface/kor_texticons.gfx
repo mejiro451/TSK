@@ -1,0 +1,26 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_faction_constitutionalism"
+		texturefile = "gfx/texticons/faction_constitutionalism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_Imperialism"
+		texturefile = "gfx/texticons/faction_Imperialism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_army_experience_dec"
+		texturefile = "gfx/texticons/army_experience_decision.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_cp_atleast_dec"
+		texturefile = "gfx/texticons/cp_atleast_dec.dds"
+		legacy_lazy_load = no
+	}
+}

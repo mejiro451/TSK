@@ -1,0 +1,11 @@
+
+technology_sharing_group = {
+
+	id = kor_research
+	name = kor_research_name
+	desc = kor_research_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.35
+
+}

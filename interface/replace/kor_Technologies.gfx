@@ -11,27 +11,27 @@ spriteTypes = {
  ################################################################################
 
 	SpriteType = {
-		name = "GFX_KOR_m_1960_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/infantry/1960_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_KOR_m_1970_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/infantry/1970_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_KOR_m_1980_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_6_medium"
 		texturefile = "gfx/interface/technologies/infantry/1980_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_KOR_m_1990_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_7_medium"
 		texturefile = "gfx/interface/technologies/infantry/1990_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_KOR_m_2000_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_8_medium"
 		texturefile = "gfx/interface/technologies/infantry/2000_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_KOR_m_2010_infantry_equipment_medium"
+		name = "GFX_KOR_infantry_equipment_9_medium"
 		texturefile = "gfx/interface/technologies/infantry/2010_infantry_equipment.dds"
 	}
 	
@@ -399,5 +399,11 @@ spriteTypes = {
     SpriteType = {
 		name = "GFX_KOR_ship_hull_FF_1_medium"
 		texturefile = "gfx/interface/technologies/navy/KOR_ship_hull_FF_1.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_Vertical_maneuvering_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/infantry/입체기동장치.dds"
 	}
 }

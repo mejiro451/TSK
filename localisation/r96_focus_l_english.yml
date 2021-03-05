@@ -1,211 +1,89 @@
 ﻿l_english:
- KOR_north_korea_problem:0 "북한문제"
- KOR_north_korea_problem_desc:0 "1950년부터 이어져온 경쟁의 역사는 우리와 저들에게 큰 상쳐를 남겼습니다.분쟁의 역사를 이제는 다른 차원에서 바라봐야 합니다."
- 
- KOR_peaceful_reunification:0 "평화적 통일 추진"
- KOR_peaceful_reunification_desc:0 "평화통일은 국민이 원하는 방식인 피를 흘리지 않는 통일입니다.대한의 아이들을 한명도 희생할 수는 없기에, 저들에게 손을 내미는 것도 좋은 방법입니다."
- 
- KOR_north_status_quo:0 "상황파악"
- KOR_north_status_quo_desc:0 "우리는 알 수 없는 힘으로 타임슬립을 해왔습니다. 저들의 상황이 어떤지 파악을 해야합니다."
- 
- KOR_north_war_plan:0 "충무 3300/9000"
- KOR_north_war_plan_desc:0 "김영삼 대통령 때 북한의 붕괴상황을 대비해서 만들은 충무3300/9000 계획은 아직도 유효합니다. 그리고 급변사태가 발생한 지금, 다시 이 계획을 꺼내들어야 합니다."
- 
- KOR_sunshine_policy:0 "햇볕정책"
- KOR_sunshine_policy_desc:0 "경제적으로 붕괴에 달한 북한은 우리가 지원해줘야 합니다."
- 
- KOR_northern_fortification:0 "북방요새 건설"
- KOR_northern_fortification_desc:0 "북방요새 건설"
- 
- KOR_north_border_dispute:0 "DMZ 분쟁"
- KOR_north_border_dispute_desc:0 "분쟁이 시작되었습니다."
- 
- KOR_inter_korean_summits:0 "남북 정상회담"
- 
- KOR_construction_of_kaesong:0 "개성공단 건설"
- 
- KOR_pro_north_korean_crackdown:0 "친북인사 탄압"
- KOR_pro_north_korean_crackdown_desc:0 "빨갱이들은 우리나라의 주적이며,원수이며,민족의 한입니다."
- 
- KOR_security_education:0 "안보 교육"
- 
- KOR_humanitarian_aid:0 "인도주의적 원조"
- 
- KOR_two_korea_is_best_korea:0 "두개의 한국 인정"
- KOR_two_korea_is_best_korea_desc:0 "타이완 넘버원"
- 
- KOR_bukjin_tongil:0 "북진통일"
- KOR_bukjin_tongil_desc:0 "때가 왔습니다.북한은 이제 끝이 날 것입니다."
- 
- KOR_rok_reunification:0 "한민족의 통일"
- 
- KOR_the_fate_of_the_kim_dynasty:0 "김씨왕조의 운명"
- KOR_the_fate_of_the_kim_dynasty_desc:0 "돼지새끼들을 죽여야 합니다"
- 
- KOR_reconstruction_of_north_korea:0 "북한지역 재건"
- 
- KOR_best_period_in_korea:0 "팍스 코리아나"
- KOR_best_period_in_korea_desc:0 "가장 어려운 시기를 견뎌냈으며 우리는 다시 일어설 때입니다."
- 
- KOR_political_tree_imf:0 "타임슬립"
- KOR_political_tree_imf_desc:0 "알 수 없는 이유로 우리는 1936년의 한반도로 돌아왔습니다. 지금 상황이 무엇인지, 어떻게 우리가 대처해야 하는지를 알아봐야 합니다."
- 
- KOR_rok_bankruptcy:0 "국가부도 선언"
- 
- KOR_pay_all_the_debts:0 "경제 안정화"
- 
- KOR_the_government_has_failed:0 "정부의 실패"
- 
- KOR_long_live_democracy:0 "민주주의의 승리"
- 
- KOR_night_of_the_darkest_day:0 "가장 어두운 시대"
- 
- KOR_park_chung_hee_dream:0 "박정희의 꿈"
- 
- KOR_saemaul_movement:0 "새마을운동"
- 
- KOR_choi_soon_sil_advice:0 "최순실의 조언"
- 
- KOR_korean_fascism:0 "한국 민족주의"
- 
- KOR_military_youth:0 "유소년 군사조직"
- 
- KOR_militaristic_spirit:0 "군국주의"
- 
- KOR_business_control:0 "비즈니스 컨트롤"
- 
- KOR_the_fight_against_crime:0 "범죄와의 전쟁"
- 
- KOR_suppression_of_democrats:0 "민주당 탄압"
- 
- KOR_dream_of_the_empire_of_korea:0 "대한제국의 꿈"
- 
- KOR_neo_confucianism:0 "성리학 강화"
- 
- KOR_absolutism:0 "절대주의"
- 
- KOR_great_fatherland:0 "위대한 조국"
- 
- KOR_sun_never_sets:0 "해가 지지않는 나라"
- 
- KOR_break_the_chain:0 "사슬 파괴"
- 
- KOR_corporate_nationalization:0 "기업 국유화"
- 
- KOR_rebuild_the_civil_service:0 "복지정책 재구성"
- 
- KOR_peoples_democracy:0 "인민민주주의"
- 
- KOR_protect_the_worker:0 "노동자를 보호하라!"
- 
- KOR_political_correctness:0 "정치적 올바름"
- 
- KOR_new_constitution:0 "7차 개헌"
- 
- KOR_revolutionary_republic:0 "혁명 공화국"
- 
- KOR_traditional_democracy:0 "전통적 민주주의"
- 
- KOR_guardian_of_the_liberal_democracy:0 "자유민주주의의 수호자"
- 
- KOR_grass_roots_democracy:0 "풀뿌리 민주주의"
- 
- KOR_land_of_the_Free:0 "자유의 땅"
- 
- KOR_freedom_of_speech:0 "표현의 자유"
- 
- KOR_hallyu:0 "한류"
- 
- KOR_new_social_reform:0 "사회 개혁"
- 
- KOR_putting_people_first:0 "사람이 먼저다"
- 
- KOR_democratic_reform:0 "민주 개혁"
- 
- KOR_abolition_of_national_security_law:0 "국가보안법 폐지"
- 
- KOR_true_education:0 "참교육"
- 
- KOR_electoral_system_reform:0 "전기제도 개혁"
- 
- KOR_no_more_danilminjok:0 "더 이상의 단일민족은 없다"
- 
- KOR_tuition_free_college:0 "등록금 국가보장"
- 
- KOR_laicite:0 "라이카이트"
- KOR_new_republic_of_korea:0 "신대한국"
- KOR_defensive_democracy:0 "민주주의를 수호하라"
- KOR_special_law_to_redeem_pro_Japanese_collaborators_property:0 "친일파 재산 회수에 관한 특별법"
- KOR_the_past_is_the_past:0 "과거는 과거일 뿐"
- KOR_establishment_of_anti_discrimination_act:0 "차별금지법 제정"
- KOR_reject_of_anti_discrimination_act:0 "차별금지법 거부"
- KOR_rok_industry:0 "한국의 산업"
- KOR_heavy_engineering:0 "중공업 기술"
- KOR_expand_oil_synthesis_plant:0 "합성섬유공장 확장"
- KOR_expand_steel:0 "철강업 확장"
- KOR_expand_steel_2:0 "철강업 확장 II"
- KOR_develop_the_seoul:0 "서울 개발"
- KOR_road_maintenance_project:0 "도로 유지/보수 프로젝트"
- KOR_road_maintenance_project_II:0 "도로 유지/보수 프로젝트 II"
- KOR_develop_the_busan:0 "부산 개발"
- KOR_korea_shipbuilding:0 "대한 조선 공사"
- KOR_jeju_naval_base:0 "제주해군기지"
- KOR_expand_the_military_factory:0 "군수 공장 확장"
- KOR_expand_the_military_factory_2:0 "군수 공장 확장 II"
- KOR_internet_network:0 "인터넷 네트워크 구축"
- KOR_future_of_the_armed_forces:0 "국군의 미래"
- KOR_army_reform:0 "육군 개편"
- KOR_bulgom_project:0 "불곰 계획"
- KOR_russian_military_technology:0 "러시아 육군 기술"
- KOR_winter_equipment:0 "겨울장비"
- KOR_supply_improvement:0 "보급 개선"
- KOR_internet_censorship:0 "인터넷 검열"
- KOR_our_armys_fathers_is:0 "국군의 아버지는..."
- KOR_imperial_japanese_army:0 "일본 제국 육군"
- KOR_supermacy_of_will:0 "의지의 주권"
- KOR_national_defense_state:0 "국방국가"
- KOR_bai_no_hayasade:0 "바이 노 하야사데"
- KOR_spiritual_mobilization:0 "영혼 동원"
- KOR_powerful_discipline:0 "강력한 규율"
- KOR_true_descendants_of_the_samurai:0 "사무라이의 진정한 후손"
- KOR_korean_independence_army:0 "대한광복군"
- KOR_supremacy_of_technology:0 "기술의 우월성"
- KOR_conscientious_objection_permit:0 "양심적 병역거부 허가"
- KOR_modern_tank:0 "현대식 전차"
- KOR_modern_armored_divisions:0 "현대식 장갑차"
- KOR_modern_artillery:0 "현대식 포병"
- KOR_tiger_of_asia:0 "아시아의 호랑이"
- KOR_air_reform:0 "공군 개편"
- KOR_fighters:0 "전투기"
- KOR_bombers:0 "폭격기"
- KOR_drones:0 "드론"
- KOR_naval_bombers:0 "함재 폭격기"
- KOR_air_doctrine:0 "공군 독트린"
- KOR_air_base:0 "더 많은 공군기지"
- KOR_navy_reform:0 "해군 개편"
- KOR_green_water_navy_plan:0 "녹수 해군 계획"
- KOR_blue_water_navy_plan:0 "청수 해군 계획"
- KOR_submarines:0 "잠수함"
- KOR_naval_doctrine:0 "해군 독트린"
- KOR_nuclear_submarines:0 "핵추진 잠수함"
- KOR_korean_carriers:0 "한국식 항공모함"
- KOR_more_dockyards:0 "더 많은 조선소"
- KOR_destroyer:0 "구축함"
- KOR_school_I:0 "대학 확대"
- KOR_school_II:0 "산업연구 태스크포스"
- KOR_future_diplomacy:0 "국제 외교전"
- KOR_international_diplomacy:0 "국제 외교 증진"
- KOR_korean_first:0 "한국이 먼저다"
- KOR_dong_yang:0 "동아시아 연맹 구상"
- KOR_other_alliance:0 "다른 동맹"
- KOR_go_usa_alliance:0 "한-미 간의 친선"
- KOR_go_jpn_alliance:0 "한-일 간의 친선"
- KOR_go_chi_alliance:0 "한-중 간의 친선"
- KOR_go_rus_alliance:0 "한-러 간의 친선"
- KOR_sunshine_policy_system:0 "햇볓정책 시스템"
- KOR_sunset_march_tt:0 "2주에 한 번씩 할 수 있다."
- KOR_sunset_timer_flag:0 "2주에 한 번씩 할 수 있다."
- KOR_your_korea:0 "당신의 한국"
- KOR_autarky:0 "경제 자립 정책"
- KOR_struggle_for_freedom:0 "자유를 위한 투쟁"
- KOR_economic_autonomy:0 "경제적 자립"
+ KOR_MB_industry:0 "시장통제 시작"
+ KOR_MB_industry_desc:0 "타임워프로 인해 경제가 개박살난 지금, 시장을 통제하여 민생을 조금이나마 살려야 합니다."
+ KOR_MB_timeslip:0 "1936년의 세계"
+ KOR_MB_timeslip_desc:0 "혼란스러운 와중, 대한민국 제 6공화국이 1936년 지구에 자리잡았습니다. 우리는 이 세계를 제대로 조사해야 합니다."
+ KOR_MB_oil_problem:0 "석유문제"
+ KOR_MB_oil_problem_desc:0 "한국이 산유국이 아님에 따라 사용할 수 있는 석유는 한정되어 있습니다. 만약 이 문제를 해결하지 못한다면 1936년으로 트립한 기술적 이점을 이용하기도 전에 망하고 말 것입니다."
+ KOR_MB_amred_future:0 "국군의 미래"
+ KOR_MB_northen_allied:0 "북쪽과 연락을 취한다"
+ KOR_MB_not_allied:0 "내부 문제 해결"
+ KOR_MB_korean_tech:0 "연구 개발"
+ KOR_MB_roadrail_contest:0 "도로정비"
+ KOR_MB_research_all:0 "과기부 전격지원"
+ KOR_MB_oil_new:0 "연료 수입책 확보"
+ KOR_MB_railload_complete:0 "국내 평지화 작업"
+ KOR_MB_resource_done:0 "자원 찾기"
+ KOR_MB_south_sea's_resource:0 "남해 자원 재개발"
+ KOR_MB_korean_tech_resource:0 "한국 자원기술 지원"
+ KOR_MB_new_usa:0 "새로운 미국에 접촉"
+ KOR_MB_new_middle_asia:0 "새로운 중동에 접촉"
+ KOR_MB_sea_oil:0 "바다 호위 작전"
+ KOR_MB_2nd_miracle_han_river:0 "2번째 한강의 기적"
+ KOR_MB_future_research:0 "3G-4G 인터넷 구축시도"
+ KOR_MB_satellite:0 "인공위성 발사"
+ KOR_MB_7kwangkoo:0 "7광구"
+ KOR_MB_seoul_industry:0 "서울 산업투자"
+ KOR_MB_gangwon_rail:0 "태백철도"
+ KOR_MB_gyungsang:0 "경상도 투자"
+ KOR_MB_jeonla:0 "전라도 투자"
+ KOR_MB_2nd_5years_plan:0 "2차 경제개발 5개년 계획"
+ KOR_MB_all_road_is_to_seoul:0 "모든 길은 서울로 통한다"
+ KOR_MB_kor-kpa_allience:0 "위기 속에 공존"
+ KOR_MB_the_korean_support:0 "북한에 경제원조"
+ KOR_MB_none-political:0 "정치활동 일시중지"
+ KOR_MB_the_last_republic:0 "계엄령 선포"
+ KOR_MB_northen_fight:0 "북쪽과의 대치상황"
+ KOR_MB_2nd_war:0 "2차 한국전쟁"
+ KOR_MB_diplo_kill:0 "외교적 압박"
+ KOR_MB_northen_allied_support:0 "통일 제안"
+ KOR_MB_northen_puppet:0 "잠정적 흡수통일"
+ KOR_MB_annexed_north_korea:0 "완전한 흡수통일"
+ KOR_MB_politic_election:0 "혼란 속 보궐선거"
+ KOR_MB_consorvatism_won:0 "한나라당의 승리"
+ KOR_MB_minju_won:0 "민주당의 승리"
+ KOR_MB_middle_won:0 "접전"
+ KOR_MB_kudeta:0 "군부 쿠데타!"
+ KOR_MB_aplok-duman:0 "압록-두만 라인 요새화"
+ KOR_MB_6:0 "착한 한국은 남쪽 한국"
+ KOR_MB_5:0 "모두들, 인민들을 도와라!"
+ KOR_MB_7:0 "외부의 개입 차단"
+ KOR_MB_8:0 "북한 군부세력 숙청"
+ KOR_MB_9:0 "더러운 동거는 하지 않는다"
+ KOR_MB_kill_kims:0 "김씨왕조 격하운동"
+ KOR_MB_4:0 "상처뿐이지는 않은 승리"
+ KOR_MB_3:0 "잔당 소탕"
+ KOR_MB_northen_nuke:0 "핵 기술 확보"
+ KOR_MB_2:0 "데프콘 유지"
+ KOR_MB_1:0 "김관진 국방장관 임명"
+ KOR_MB_10:0 "원산 폭격"
+ KOR_MB_war_or_annexed:0 "김씨는 살려는 드릴게"
+ KOR_MB_11:0 "새로운 한국"
+ KOR_MB_12:0 "안정된 한국"
+ KOR_MB_army:0 "육군 개편"
+ KOR_MB_navy:0 "해군 개편"
+ KOR_MB_airforce:0 "공군 개편"
+ KOR_MB_armed_rospel:0 "육군 교리 개혁"
+ KOR_MB_army_supply_reform:0 "보급 개편"
+ KOR_MB_kill_killer:0 "군 내부 부조리 척결운동"
+ KOR_MB_army's_manship:0 "사병의 개인인권 보장"
+ KOR_MB_restart_attack:0 "실전훈련 시작"
+ KOR_MB_rospel_done:0 "한국군 교리 개발"
+ KOR_MB_korean_army's_father:0 "한국 국군의 아버지는..."
+ KOR_MB_lee's_government:0 "이명박 정부 지원"
+ KOR_MB_the_last_order:0 "질서 유지를 위한 법률 반포"
+ KOR_MB_excuminated:0 "사형제도 임시 부활"
+ KOR_MB_next_korean_president:0 "다음 대통령 후보는?"
+ KOR_MB_park:0 "...박근혜!"
+ KOR_MB_lee_hoi_chang:0 "...이회창!"
+ KOR_MB_fascism:0 "애국심 주입"
+ KOR_MB_kim:0 "...김문수!"
+ KOR_MB_i_am_president:0 "나 도지..대통령인데?"
+ KOR_MB_conservatism_lee:0 "정통 보수주의"
+ KOR_MB_next_government:0 "다음 정부 시작"
+ KOR_MB_k-youtube:0 "한국식 영상매체 제작"
+ KOR_MB_police_up:0 "경찰 권력 강화"
+ KOR_MB_social_renuwal:0 "사회 부조리 척결운동"
+ KOR_MB_roh_advisor:0 "정치고문 노무현"
+ KOR_MB_end_of_government:0 "정부 임기 종료"
+ KOR_MB_choi_sunshil's_advise:0 "최순실을 비서실장으로 임명"

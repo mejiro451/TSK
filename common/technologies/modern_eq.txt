@@ -20,9 +20,32 @@ technologies = {
 	m_1960_infantry_eq = { #M16,Type58
 
 		enable_equipments = { 
-			m_1960_infantry_equipment
+			infantry_equipment_4
 		}
-
+		
+		enable_subunits = {
+			light_infantry
+		}
+		
+		enable_subunits = {
+			modern_motorized
+		}		
+		enable_subunits = {
+			modern_infantry
+		}		
+		enable_subunits = {
+			modern_marine
+		}
+		
+		enable_subunits = {
+			Engi_Bat
+		}		
+		enable_subunits = {
+			Heavy_Engi_Bat
+		}		
+		enable_subunits = {
+			rec_infantry
+		}
 		research_cost = 1
 		start_year = 1936
 
@@ -33,7 +56,7 @@ technologies = {
 	m_1970_infantry_eq = { #M16A1,AKM
 
 		enable_equipments = { 
-			m_1970_infantry_equipment
+			infantry_equipment_5
 		}
 
 		research_cost = 1
@@ -47,7 +70,7 @@ technologies = {
 	m_1980_infantry_eq = { #K1A,Type68
 
 		enable_equipments = { 
-			m_1980_infantry_equipment
+			infantry_equipment_6
 		}
 
 		research_cost = 1
@@ -61,7 +84,7 @@ technologies = {
 	m_1990_infantry_eq = { #K2,Type88
 
 		enable_equipments = { 
-			m_1990_infantry_equipment
+			infantry_equipment_7
 		}
 
 		research_cost = 1
@@ -75,7 +98,7 @@ technologies = {
 	m_2000_infantry_eq = { #K2C,AK-74M
 
 		enable_equipments = { 
-			m_2000_infantry_equipment
+			infantry_equipment_8
 		}
 
 		research_cost = 1
@@ -89,7 +112,7 @@ technologies = {
 	m_2010_infantry_eq = { #K2C1,AK-74MK
 
 		enable_equipments = { 
-			m_2010_infantry_equipment
+			infantry_equipment_9
 		}
 
 		research_cost = 1
@@ -260,6 +283,50 @@ technologies = {
 			always = no
 		}
 	}
+	light_tank_4 = { #PT-76
+
+		enable_equipments = { 
+			light_tank_equipment_4
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	light_tank_5 = { #tlsgmd
+
+		enable_equipments = { 
+			light_tank_equipment_5
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	Vertical_maneuvering_equipment_0 = { #입체기동장치
+		
+		enable_subunits = {
+			infantry_vec
+		}
+		
+		enable_equipments = { 
+			Vertical_maneuvering_equipment_1 
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
 ############################################################################################
 ###장갑차 APC&IFV
 ############################################################################################
@@ -669,6 +736,17 @@ technologies = {
 		}
 	}
 	
+	motorized_rocket_unit_sup = {
+
+		enable_subunits = {
+			mot_roket
+		}
+		start_year = 1936
+		
+		allow = {
+			always = no
+		}
+	}
 ##############################################################################################
 ###맨패드
 #############################################################################################
@@ -1094,6 +1172,20 @@ technologies = {
 		}
 	}
 	
+	maritime_helicopter = { #슈퍼링스,SH-60
+
+		enable_equipments = { 
+			maritime_helicopter_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
 ############################################################################################
 ###수송 헬기 
 ############################################################################################
@@ -1354,10 +1446,24 @@ technologies = {
 ###잠수함
 ############################################################################################
 
+	m_1970SS = {#로미오급
+
+		enable_equipments = { 
+			modern_submarine_1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
 	m_1980SS = {#로미오급
 
 		enable_equipments = { 
-			modern_war_heavy_cruiser_1
+			modern_submarine_2
 		}
 
 		research_cost = 1
@@ -1371,7 +1477,7 @@ technologies = {
 	m_1990SS = {#장보고급,상어급
 
 		enable_equipments = { 
-			modern_war_heavy_cruiser_1
+			modern_submarine_3
 		}
 
 		research_cost = 1
@@ -1385,7 +1491,7 @@ technologies = {
 	m_2000SS = {#손원일급
 
 		enable_equipments = { 
-			modern_war_heavy_cruiser_1
+			modern_submarine_4
 		}
 
 		research_cost = 1
@@ -1399,7 +1505,7 @@ technologies = {
 	m_2010SS = {#신포급,도산안창호급
 
 		enable_equipments = { 
-			modern_war_heavy_cruiser_1
+			modern_submarine_5
 		}
 
 		research_cost = 1
@@ -1720,6 +1826,89 @@ technologies = {
 		}
 	}
 	
+	ship_modern_sonar_1 = { #소나1
+
+		enable_equipment_modules = {
+			ship_sonar_modern_1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
+	ship_modern_sonar_2 = { #소나2
+
+		enable_equipment_modules = {
+			ship_sonar_modern_2
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
+	ship_modern_torpedo_1 = { #어뢰1
+
+		enable_equipment_modules = {
+			ship_torpedo_sub_modern_1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
+	ship_modern_torpedo_2 = { #어뢰2
+
+		enable_equipment_modules = {
+			ship_torpedo_sub_modern_2
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
+	ship_modern_torpedo_3 = { #어뢰3
+
+		enable_equipment_modules = {
+			ship_torpedo_sub_modern_3
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
+	
+	ship_sts_sub = { #수상발사 대함미사일
+
+		enable_equipment_modules = {
+			ship_sts_sub_1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		allow = {
+			always = no
+		}
+	}
 ####################################################################
 #########산업
 
@@ -1730,33 +1919,24 @@ technologies = {
 
 		start_year = 1936
 		
-		categories = {
-			industry
-			synth_resources
-		}
 		
 		allow = {
 			always = no
 		}
 	}
 	
-	modern_fuel_silos = {
+	modern_steel_mill = {
 
 		enable_building = {
-			building = fuel_silo
+			building = steel_mill
 			level = 3
 		}
 		
 		enable_building = {
-			building = synthetic_refinery
+			building = steel_alloy_ind
 			level = 3
 		}
 
 		start_year = 1936
-		
-		categories = {
-			industry
-			synth_resources
-		}
 	}
 }

@@ -285,7 +285,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 40
 		hard_attack = 33
-		ap_attack = 145
+		ap_attack = 131
 		air_attack = 0
 		
 		build_cost_ic = 38
@@ -302,7 +302,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_1950_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -310,14 +310,14 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 20
-		breakthrough = 120
+		breakthrough = 115
 		hardness = 3
 		armor_value = 150
 
 		#Offensive Abilities
 		soft_attack = 43
 		hard_attack = 35
-		ap_attack = 160
+		ap_attack = 151
 		air_attack = 0
 		
 		build_cost_ic = 38
@@ -333,7 +333,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_1960_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 3
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -341,14 +341,14 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 25
-		breakthrough = 200
+		breakthrough = 135
 		hardness = 3.5
-		armor_value = 175
+		armor_value = 180
 
 		#Offensive Abilities
 		soft_attack = 45
 		hard_attack = 37
-		ap_attack = 160
+		ap_attack = 181
 		air_attack = 0
 		
 		build_cost_ic = 38
@@ -364,7 +364,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_1970_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 4
 		
 		#Misc Abilities
 		maximum_speed = 13
@@ -372,14 +372,14 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 30
-		breakthrough = 220
+		breakthrough = 150
 		hardness = 4
-		armor_value = 180
+		armor_value = 190
 
 		#Offensive Abilities
 		soft_attack = 47
 		hard_attack = 40
-		ap_attack = 185
+		ap_attack = 191
 		air_attack = 0
 		
 		build_cost_ic = 43
@@ -395,7 +395,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_1980_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 5
 		
 		#Misc Abilities
 		maximum_speed = 15
@@ -403,14 +403,14 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 35
-		breakthrough = 250
+		breakthrough = 165
 		hardness = 4
 		armor_value = 200
 
 		#Offensive Abilities
 		soft_attack = 50
 		hard_attack = 43
-		ap_attack = 210
+		ap_attack = 201
 		air_attack = 0
 		
 		build_cost_ic = 48
@@ -426,7 +426,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_1990_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 6
 		
 		#Misc Abilities
 		maximum_speed = 16
@@ -434,14 +434,14 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 40
-		breakthrough = 280
+		breakthrough = 180
 		hardness = 4.5
-		armor_value = 220
+		armor_value = 210
 
 		#Offensive Abilities
 		soft_attack = 53
 		hard_attack = 47
-		ap_attack = 230
+		ap_attack = 211
 		air_attack = 0
 		
 		build_cost_ic = 53
@@ -457,7 +457,7 @@ equipments = {
 		archetype = modern_tank_equipment
 		parent = m_2000_mbt
 		priority = 190
-		visual_level = 1
+		visual_level = 7
 		
 		#Misc Abilities
 		maximum_speed = 16
@@ -465,7 +465,7 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 45
-		breakthrough = 310
+		breakthrough = 200
 		hardness = 5
 		armor_value = 235
 
@@ -491,7 +491,7 @@ equipments = {
 		archetype = modern_tank_artillery_equipment
 		parent = modern_tank_artillery_equipment_1
 		priority = 40
-		visual_level = 2
+		visual_level = 1
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -530,7 +530,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 20
 		breakthrough = 5
-		hardness = 1
+		hardness = 0.85
 		armor_value = 90
 
 		#Offensive Abilities
@@ -552,7 +552,7 @@ equipments = {
 		archetype = modern_tank_artillery_equipment
 		parent = m_1980_sp_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 3
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -560,7 +560,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 25
 		breakthrough = 5
-		hardness = 1.5
+		hardness = 0.85
 		armor_value = 110
 
 		#Offensive Abilities
@@ -583,7 +583,7 @@ equipments = {
 		archetype = modern_tank_artillery_equipment
 		parent = m_1990_sp_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 4
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -591,7 +591,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 30
 		breakthrough = 5
-		hardness = 1.5
+		hardness = 0.85
 		armor_value = 130
 
 		#Offensive Abilities
@@ -615,7 +615,7 @@ equipments = {
 		archetype = modern_tank_artillery_equipment
 		parent = m_2000_sp_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 5
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -623,7 +623,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 35
 		breakthrough = 5
-		hardness = 2
+		hardness = 0.85
 		armor_value = 150
 
 		#Offensive Abilities
@@ -647,7 +647,7 @@ equipments = {
 		archetype = modern_tank_aa_equipment
 		parent = modern_tank_aa_equipment_1
 		priority = 40
-		visual_level = 2
+		visual_level = 1
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -711,7 +711,7 @@ equipments = {
 		archetype = modern_tank_aa_equipment
 		parent = m_1980_spaa_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 3
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -743,7 +743,7 @@ equipments = {
 		archetype = modern_tank_aa_equipment
 		parent = m_1990_spaa_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 4
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -775,7 +775,7 @@ equipments = {
 		archetype = modern_tank_aa_equipment
 		parent = m_2000_spaa_equipment
 		priority = 40
-		visual_level = 2
+		visual_level = 5
 		
 		maximum_speed = 10
 		reliability = 0.95
@@ -797,6 +797,69 @@ equipments = {
 			steel = 4
 			rubber = 1
 			#oil = 2
+		}
+	}
+	
+##############################경전차
+
+
+	light_tank_equipment_4 = { #PT-76
+		year = 1936
+	
+		archetype = light_tank_equipment
+		parent = light_tank_equipment_3
+		priority = 10
+		visual_level = 4
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 14
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 55
+		armor_value = 35
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 11
+		ap_attack = 70
+		air_attack = 0	
+		
+		build_cost_ic = 10 
+		resources = {
+			#oil = 2
+			steel = 4
+		}
+	}
+
+	light_tank_equipment_5 = { #신흥경전차
+		year = 1936
+	
+		archetype = light_tank_equipment
+		parent = light_tank_equipment_4
+		priority = 10
+		visual_level = 5
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 14
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 58
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 28
+		hard_attack = 13
+		ap_attack = 85
+		air_attack = 0	
+		
+		build_cost_ic = 10 
+		resources = {
+			#oil = 2
+			steel = 4
 		}
 	}
 }

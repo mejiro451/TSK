@@ -121,7 +121,6 @@ buildings = {
 		show_on_map = 1
 		base_cost = 14500
 		icon_frame = 10
-		local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
@@ -132,11 +131,37 @@ buildings = {
 		show_modifier = yes
 		fuel_gain_from_states = 2.0 #per hour
 	}
+	
+	steel_mill = {
+		show_on_map = 0
+		base_cost = 14500
+		icon_frame = 14
+		local_resources_steel = 4
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = yes
+		value = 3
+		infrastructure_construction_effect = yes
+	}
+	
+	steel_alloy_ind = {
+		show_on_map = 0
+		base_cost = 10000
+		icon_frame = 15
+		local_resources_steel_alloy = 3
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
 
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
-		icon_frame = 14
+		icon_frame = 19
 		#max_level = 1
 		shares_slots = yes
 		value = 5

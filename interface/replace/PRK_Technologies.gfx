@@ -11,27 +11,27 @@ spriteTypes = {
  ################################################################################
 
 	SpriteType = {
-		name = "GFX_PRK_m_1960_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_1960_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_1970_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_1970_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_1980_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_6_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_1980_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_1990_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_7_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_1990_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2000_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_8_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_2000_infantry_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2010_infantry_equipment_medium"
+		name = "GFX_PRK_infantry_equipment_9_medium"
 		texturefile = "gfx/interface/technologies/infantry/PRK_2010_infantry_equipment.dds"
 	}
 	

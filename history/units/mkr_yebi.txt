@@ -25,7 +25,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
@@ -35,7 +35,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
@@ -45,7 +45,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
@@ -55,7 +55,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
@@ -65,7 +65,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
@@ -75,7 +75,7 @@ units = {
 		location = 7125
 		division_template = "동원 자원병사단"
 		start_experience_factor = 0.2
-		force_equipment_variants = { m_1960_infantry_equipment = { owner = "KOR" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "KOR" } }
 		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
         force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}

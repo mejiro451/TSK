@@ -1,6 +1,6 @@
 sub_units = {
 	Modern_DDH = {
-		sprite = battle_cruiser
+		sprite = Modern_DDH
 		map_icon_category = ship
 		priority = 8
 		active = yes

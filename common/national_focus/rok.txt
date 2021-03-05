@@ -2,10 +2,10 @@ focus_tree = {
 	id = rok_focus
 	country = {
 		factor = 0
-			tag = TSK
 	}
 	continuous_focus_position = { x = 100 y = 2000 }
 	shared_focus = ROKND_1
+	default = no
 	focus = { #14대 대선
 		id = presidential_election
 		icon = GFX_goal_unknown

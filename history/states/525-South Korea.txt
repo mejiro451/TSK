@@ -11,6 +11,8 @@ state={
 			industrial_complex = 10
 			dockyard = 2
 			air_base = 6
+			fuel_silo = 3
+			steel_alloy_ind = 1
 			13244 = {
 				naval_base = 8
 			}

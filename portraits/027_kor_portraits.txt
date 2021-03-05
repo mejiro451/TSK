@@ -1,0 +1,32 @@
+
+
+PRK = {
+	operative = {
+		female = {
+			"gfx/leaders/PRK/portrait_PRK_generic_operative_female_1.dds"
+		}
+		male = {
+			"gfx/leaders/PRK/portrait_PRK_generic_operative_male_1.dds"
+			"gfx/leaders/PRK/portrait_PRK_generic_operative_male_2.dds"
+			"gfx/leaders/PRK/portrait_PRK_generic_operative_male_3.dds"
+			"gfx/leaders/PRK/portrait_PRK_generic_operative_male_4.dds"
+		}
+	}
+}
+KOR = {
+	operative = {
+		female = {
+			"gfx/leaders/KOR/portrait_kor_generic_operative_female_1.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_female_2.dds"
+		}
+		male = {
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_1.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_2.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_3.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_4.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_5.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_6.dds"
+			"gfx/leaders/KOR/portrait_kor_generic_operative_male_7.dds"
+		}
+	}
+}

@@ -1,4 +1,180 @@
 spriteTypes = {	
+	### KOR - Advisor
+
+	spriteType = {
+		name = "GFX_idea_chung_won_sik"
+		texturefile = "gfx/interface/ideas/정원식.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_young_man"
+		texturefile = "gfx/interface/ideas/이용만.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chung_geun_mo"
+		texturefile = "gfx/interface/ideas/정근모.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_ghak"
+		texturefile = "gfx/interface/ideas/최각규.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_koo"
+		texturefile = "gfx/interface/ideas/김구.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chu_kyung"
+		texturefile = "gfx/interface/ideas/추경석.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_sung"
+		texturefile = "gfx/interface/ideas/이성호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_hyung"
+		texturefile = "gfx/interface/ideas/최형우.dds"
+	}
+
+
+	### KOR - 이론가
+
+	spriteType = {
+		name = "GFX_idea_cho_nam_pung"
+		texturefile = "gfx/interface/ideas/조남풍.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_dong_shin"
+		texturefile = "gfx/interface/ideas/김동신.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_sae_chang"
+		texturefile = "gfx/interface/ideas/최세창.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_seo_dong"
+		texturefile = "gfx/interface/ideas/서동열.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_yang_ho"
+		texturefile = "gfx/interface/ideas/이양호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_nam_shin"
+		texturefile = "gfx/interface/ideas/이남신.dds"
+	}
+
+
+
+	### KOR - 육,해,공참모총장
+
+	spriteType = {
+		name = "GFX_idea_kim_jing_yung"
+		texturefile = "gfx/interface/ideas/김진영.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_dong_jin"
+		texturefile = "gfx/interface/ideas/김동진.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_jin_sam"
+		texturefile = "gfx/interface/ideas/이진삼.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_do_il_kyu"
+		texturefile = "gfx/interface/ideas/도일규.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cho_geun_hae"
+		texturefile = "gfx/interface/ideas/조근해.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_hong_rae"
+		texturefile = "gfx/interface/ideas/김홍래.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_han_chu"
+		texturefile = "gfx/interface/ideas/한주석.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_an_byung_tae"
+		texturefile = "gfx/interface/ideas/안병태.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_you_sam"
+		texturefile = "gfx/interface/ideas/유삼남.dds"
+	}
+	
+	### KOR - 최고지휘부
+	
+	spriteType = {
+		name = "GFX_idea_lee_jun"
+		texturefile = "gfx/interface/ideas/이준.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_un_yong_nam"
+		texturefile = "gfx/interface/ideas/윤용남.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_jong_gu"
+		texturefile = "gfx/interface/ideas/이종구.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_goo_chang_hoe"
+		texturefile = "gfx/interface/ideas/구창회.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_yang_ho"
+		texturefile = "gfx/interface/ideas/이양호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_gwang"
+		texturefile = "gfx/interface/ideas/이광학.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chung_yong"
+		texturefile = "gfx/interface/ideas/정용후.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_soo"
+		texturefile = "gfx/interface/ideas/이수용.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chang_jung"
+		texturefile = "gfx/interface/ideas/장정길.dds"
+	}
+
+
+
+	### KOR - Theorist
+
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_chae_byungdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_chae_byungdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_choi_yongdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_choi_yongdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_jung_ilkwon"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_jung_ilkwon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_jung_keungmo"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_jung_keungmo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_lee_seunggi"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_lee_seunggi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_son_wonil"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_son_wonil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_yoon_ilseon"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_yoon_ilseon.dds"
+	}
+
 
 	### KOR - Company
 
@@ -156,6 +332,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_hyundai_car"
 		texturefile = "gfx/interface/ideas/현대자동차.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_law_of_korean"
+		texturefile = "gfx/interface/ideas/헌법5조.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_world_attack"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_nationalist_question.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_satellite"
+		texturefile = "gfx/interface/ideas/KOR/idea_kor_supremacy_of_technology.dds"
 	}
 
 }

@@ -4,9 +4,10 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = KOR
+			tag = 
 		}
 	}
+	default = no
 	continuous_focus_position = { x = 100 y = 1900 }
 	shared_focus = ROKND_1
 	focus = { #대한민국의 미래 (이벤트발생 '대한민국의 미래')
@@ -23,8 +24,15 @@ focus_tree = {
 		id = MKR_economic_crisis
 		icon = GFX_goal_economic_crisis
 		cost = 10.00
-		x = 28
-		y = 0
+		relative_position_id = MKR_recovery_from_civil_war
+		prerequisite = {
+			focus = MKR_recovery_from_civil_war
+		}
+		completion_reward = {
+			country_event = { id = mkorea.49 }
+		}
+		x = 16
+		y = 1
 
 	}
 	focus = { #내전에서의 회복 ('국가재건' 국민정신 300일동안 획득)
@@ -275,6 +283,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus =  MKR_anti_Communism
 		}
+		completion_reward = {
+			country_event = { id = mkorea.32 }
+		}
 		x = 4
 		y = 7
 
@@ -289,22 +300,37 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MKR_PDU
 		}
+		completion_reward = {
+			country_event = { id = mkorea.33 }
+		}
 		x = 2
 		y = 8
 
 	}
-	focus = { #영국과 외교
+	focus = { #석유 확보전쟁
 		id = MKR_Stand_with_UK
 		icon = GFX_focus_eng_the_sun_never_sets
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_contact_allies 
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+				expire = 0
+			}
+		}
 		x = 1
 		y = 9
 
 	}
-	focus = { #유럽에 진격
+	focus = { #장비와 식민지의 대체
 		id = MKR_Advance_to_Europe
 		icon = GFX_focus_eng_global_defense
 		cost = 10.00
@@ -313,7 +339,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 10
-
+		completion_reward = {
+			country_event = { id = mkorea.34 }
+		}
 	}
 	focus = { #태평양 방위연합
 		id = MKR_PDU
@@ -325,16 +353,27 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MKR_contact_allies 
 		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = KOR_PDU
+		}
 		x = 6
 		y = 8
 
 	}
-	focus = { #필리핀에 접촉
+	focus = { #호주에 접촉
 		id = MKR_contact_with_the_Philippines
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_PDU
+		}
+		completion_reward = {
+			AST = {
+				country_event = { id = mkorea.37 days = 3 }
+			}
 		}
 		x = 7
 		y = 9
@@ -461,6 +500,7 @@ focus_tree = {
 				expire = 0
 			}
 			set_country_flag = MKR_preventive_war
+			add_ideas = mkr_preventive_war
 		}
 		x = 12
 		y = 11
@@ -474,7 +514,7 @@ focus_tree = {
 			focus = MKR_preventive_war
 		}
 		completion_reward = {	
-			country_event = { id = mkorea.23 }
+			country_event = { id = mkorea.22 }
 		}
 		x = 12
 		y = 12
@@ -486,6 +526,12 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_non_aggression_treaty_with_Japan
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mkr_eradicating_communism
+				add_idea = mkr_eradicating_communism_1
+			}
 		}
 		x = 12
 		y = 13
@@ -500,7 +546,7 @@ focus_tree = {
 			focus = MKR_strengthening_order
 		}
 		completion_reward = {
-			country_event = { id = mkorea.6 }
+			country_event = { id = mkorea.7 }
 		}
 		x = 13
 		y = 3
@@ -513,6 +559,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_facing_north
 		}
+		completion_reward = {
+				set_rule = { can_create_factions = yes }
+				create_faction = East_Asian_Defense_Union
+				CHI = { custom_effect_tooltip = invite_to_faction_tt }
+		}
 		x = 13
 		y = 14
 
@@ -523,6 +574,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_preventive_war
+		}
+		completion_reward = {
+			add_ideas = mkr_haebyung_1
 		}
 		x = 14
 		y = 12
@@ -628,6 +682,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MKR_anti_Communism
 		}
+		completion_reward = {
+			country_event = { id = mkorea.27 }
+		}
 		x = 20
 		y = 7
 
@@ -638,6 +695,20 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_new_facism
+		}
+		completion_reward = {
+		set_politics = { ruling_party = fascism elections_allowed = no }
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Lee Beom seok"
+					picture = "이범석.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					dictator	
+					}
+				}
+			}
 		}
 		x = 20
 		y = 8
@@ -650,6 +721,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_the_appointment_of_General_Lee
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRK
+				expire = 0
+			}
+		}
 		x = 18
 		y = 9
 
@@ -660,6 +738,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_the_appointment_of_General_Lee
+		}
+		completion_reward = {
+			remove_ideas = kor_law_of_korean_5
 		}
 		x = 20
 		y = 9
@@ -672,6 +753,9 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_the_appointment_of_General_Lee
 		}
+		completion_reward = {
+			country_event = { id = mkorea.28 } 
+		}
 		x = 22
 		y = 9
 
@@ -682,6 +766,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Manchurian_pressure
+		}
+		completion_reward = {
+			add_ideas = mkr_military_training
 		}
 		x = 21
 		y = 10
@@ -697,6 +784,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Manchurian_pressure
 		}
+		completion_reward = {
+			JAP = {
+				country_event = { id = mkorea.30 } 
+			}
+		}
 		x = 19
 		y = 10
 
@@ -711,6 +803,9 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_military_exercises
 		}
+		completion_reward = {
+			add_ideas = a_colonial_war
+		}
 		x = 20
 		y = 11
 
@@ -721,6 +816,23 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_War_of_Securing_Colony
+		}
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 671
+					controls_state = 671 
+				}
+				effect_tooltip = {
+					MKR = {
+						create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 188 }
+						}
+					}
+				}
+			}
 		}
 		x = 21
 		y = 12
@@ -733,8 +845,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_economic_crisis
 		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = USA_great_depression_cooldown_tt
+		}
 		x = 24
-		y = 1
+		y = 3
 
 	}
 	focus = { #서해안 고속도로
@@ -743,9 +860,36 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Civil_engineering_work_progress
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = MKR_West_Coast_Highway
+			hidden_effect = {
+				525 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				817 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}		
 		}
 		x = 22
-		y = 2
+		y = 4
 
 	}
 	focus = { #1910년의 복수
@@ -758,6 +902,12 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_provoke_Japan
 		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = AST
+			}
+		}
 		x = 22
 		y = 11
 
@@ -768,6 +918,12 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_War_of_Securing_Colony
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = AST
+			}
 		}
 		x = 20
 		y = 13
@@ -780,6 +936,12 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Oceania_Front
 		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = USA
+			}
+		}
 		x = 22
 		y = 14
 
@@ -791,19 +953,50 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Civil_engineering_work_progress
 		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = USA_great_depression_cooldown_tt
+		}
 		x = 24
-		y = 2
+		y = 4
 
 	}
-	focus = { #호남 고속도로
+	focus = { #동해안 고속도로
 		id = MKR_Honam_Expressway
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Civil_engineering_work_progress
 		}
+		completion_reward = {
+			custom_effect_tooltip = MKR_East_Coast_Highway
+			hidden_effect = {
+				810 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				809 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
 		x = 26
-		y = 2
+		y = 4
 
 	}
 	focus = { #부서진 산업 복구
@@ -816,8 +1009,14 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_West_Coast_Highway
 		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = MKR_recover_ind
+			days = 100
+			} 
+		}
 		x = 24
-		y = 3
+		y = 5
 
 	}
 	focus = { #파산위기 기업 국유화
@@ -827,7 +1026,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_economic_crisis
 		}
-		x = 28
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_economic_crisis
+		x = 0
 		y = 1
 
 	}
@@ -838,8 +1043,14 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_nationalization_of_enterprises
 		}
-		x = 28
-		y = 2
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_nationalization_of_enterprises
+		x = 0
+		y = 1
 
 	}
 	focus = { #세금인상
@@ -849,11 +1060,18 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_securing_national_finance
 		}
-		x = 28
-		y = 3
+		completion_reward = {
+			country_event = { id = mkorea.50 } 
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_securing_national_finance
+		x = 0
+		y = 1
 
 	}
-	focus = { #지역 인프라 재정비
+	focus = { #강철합금공장 확장
 		id = MKR_Reorganization_of_Regional_Infrastructure
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 10.00
@@ -863,8 +1081,24 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Broken_Industrial_Recovery
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = steel_alloy_ind
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = steel_alloy_ind
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 		x = 25
-		y = 4
+		y = 6
 
 	}
 	focus = { #민간산업에 투자
@@ -877,8 +1111,53 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Broken_Industrial_Recovery
 		}
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 		x = 27
-		y = 4
+		y = 6
 
 	}
 	focus = { #6차 경제개발 5개년 계획
@@ -888,8 +1167,14 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_economic_crisis
 		}
-		x = 31
-		y = 1
+		completion_reward = {
+			add_timed_idea = {
+			idea = MKR_Five_Year_Economic_plan
+			days = 365
+			} 
+		}
+		x = 30
+		y = 3
 
 	}
 	focus = { #신 새마을운동
@@ -899,8 +1184,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Sixth_Economic_Development_Plan
 		}
-		x = 31
-		y = 2
+		completion_reward = {
+			add_ideas = MKR_saemaul
+		}
+		x = 30
+		y = 4
 
 	}
 	focus = { #공업단지 신설
@@ -910,19 +1198,48 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_New_Saemaul_Movement
 		}
-		x = 31
-		y = 3
-
+		x = 30
+		y = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
-	focus = { #서울 인프라 강화
+	focus = { #포항 제철소 강화
 		id = MKR_Reinforcement_of_Seoul_Infrastructure
 		icon = GFX_goal_generic_air_production
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Sixth_Economic_Development_Plan
 		}
-		x = 33
-		y = 2
+		completion_reward = {
+			809 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = steel_mill
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 32
+		y = 4
 
 	}
 	focus = { #해운국
@@ -932,8 +1249,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Sixth_Economic_Development_Plan
 		}
-		x = 36
-		y = 2
+		completion_reward = {
+			add_ideas = mkr_ships_focus
+		}
+		x = 35
+		y = 4
 
 	}
 	focus = { #방산업체 활성화
@@ -946,8 +1266,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_marine_industry
 		}
-		x = 34
-		y = 3
+		completion_reward = {
+			custom_effect_tooltip = mkr_Activating_the_defense_contractor
+		}
+		x = 33
+		y = 5
 
 	}
 	focus = { #중공업,중화학단지
@@ -960,8 +1283,42 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Activating_the_defense_contractor
 		}
-		x = 32
-		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+		x = 31
+		y = 6
 
 	}
 	focus = { #추가적인 조선소
@@ -971,8 +1328,42 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_marine_industry
 		}
-		x = 36
-		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 35
+		y = 6
 
 	}
 	focus = { #한강의 기적
@@ -985,8 +1376,14 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_heavy_industry_heavy_chemical_complex
 		}
-		x = 34
-		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MKR_saemaul
+				add_idea = MKR_han_riv
+			}
+		}
+		x = 33
+		y = 7
 
 	}
 	focus = { #무역품 수출허가
@@ -999,8 +1396,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MKR_absolute_impossibility
 		}
-		x = 38
-		y = 2
+		completion_reward = {
+			add_ideas = MKR_trade_goods
+		}
+		x = 37
+		y = 4
 
 	}
 	focus = { #대한민국 국가정보원
@@ -1054,7 +1454,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 14
-
+		completion_reward = {
+			PRC = {
+				country_event = { id = mkorea.26 }
+			}
+			PRC = {
+				kill_country_leader = yes
+			}
+		}
 	}
 	focus = { #영광의 시간
 		id = MKR_time_of_glory
@@ -1066,6 +1473,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Kill_mao
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+				expire = 0
+			}
+		}
 		x = 12
 		y = 15
 
@@ -1076,6 +1490,11 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_PDU
+		}
+		completion_reward = {
+			USA = {
+				country_event = { id = mkorea.37 days = 3 }
+			}
 		}
 		x = 5
 		y = 9
@@ -1091,6 +1510,14 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_contact_to_the_US
 		}
+		completion_reward = {
+			USA = { add_to_tech_sharing_group = kor_research }
+			AST = { add_to_tech_sharing_group = kor_research }
+			add_to_tech_sharing_group = kor_research
+			USA = {
+			country_event = { id = mkorea.43 days = 1 }
+			}
+		}
 		x = 6
 		y = 10
 
@@ -1102,16 +1529,28 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_support_the_US
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = JAP
+				expire = 0
+			}
+		}
 		x = 6
 		y = 11
 
 	}
-	focus = { #프랑스와 외교
+	focus = { #연합국 가입
 		id = MKR_Diplomacy_with_France
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_contact_allies 
+		}
+		completion_reward = {
+			ENG = {
+			country_event = { id = mkorea.46 days = 1 }
+			}
 		}
 		x = 1
 		y = 10
@@ -1125,6 +1564,13 @@ focus_tree = {
 			focus = MKR_the_old_enemy
 			focus = MKR_Allied_accession
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+				expire = 0
+			}
+		}
 		x = 4
 		y = 13
 
@@ -1136,6 +1582,12 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_War_of_Securing_Colony
 		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = MAL
+			}
+		}
 		x = 19
 		y = 12
 
@@ -1146,6 +1598,12 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Oceania_Front
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = CHI
+			}
 		}
 		x = 18
 		y = 14
@@ -1161,6 +1619,15 @@ focus_tree = {
 		prerequisite = {
 			focus = MKR_Diplomacy_with_France
 		}
+		completion_reward = {
+			if = {
+				limit = { USA = { is_in_faction_with = ENG } }
+				USA = { add_to_tech_sharing_group = kor_research }
+			}
+			ENG = { add_to_tech_sharing_group = kor_research }
+			FRA = { add_to_tech_sharing_group = kor_research }
+			add_to_tech_sharing_group = kor_research
+		}
 		x = 1
 		y = 11
 
@@ -1174,6 +1641,13 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = MKR_Advance_to_Europe
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = GER
+				expire = 0
+			}
 		}
 		x = 3
 		y = 12
@@ -1189,8 +1663,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MKR_clearance_for_export_of_trade_goods
 		}
-		x = 40
-		y = 2
+		x = 39
+		y = 4
 
 	}
 }
