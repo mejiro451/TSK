@@ -1,10 +1,9 @@
-﻿add_namespace = kor
+﻿add_namespace = KOR_MB
 
-####UKKRHEE 개발자 인사####
 country_event = {
-	id = KOR_MB.1
-	title = KOR_MB.1.title
-	desc = KOR_MB.1.desc
+	id = KOR_MB.1 #북한에게 묻다
+	title = KOR_MB.1.t
+	desc = KOR_MB.1.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -12,6 +11,77 @@ country_event = {
 		
 	option = {
 		name = KOR_MB.1.a
-		country_event = { id = KOR_MB.1 }
+		ai_chance = {
+		    factor = 0
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = KOR
+		}
 	}
+	option = {
+		name = KOR_MB.1.b
+		ai_chance = {
+		    factor = 1
+		}
+		KOR = {
+		    annex_country = { 
+				target = PRK
+				transfer_troops = yes 
+			}
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.2 #합병/괴뢰국
+	title = KOR_MB.2.t
+	desc = KOR_MB.2.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.2.a
+		ai_chance = {
+		    factor = 1
+		}
+		if = {
+		    limit = {
+				has_completed_focus = KOR_MB_northen_puppet
+			}	
+			KOR = {
+				puppet = PRK
+			}	
+		}
+		if = {
+		    limit = {
+				has_completed_focus = KOR_MB_annexed_north_korea
+			}	
+			KOR = {
+				annex_country = { 
+					target = PRK
+					transfer_troops = yes 
+				}
+			}
+			KOR = { change_tag_from = PRK }
+		}
+	}	
+}
+country_event = {
+	id = KOR_MB.3 #연평도 포격전
+	title = KOR_MB.3.t
+	desc = KOR_MB.3.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.3.a
+		ai_chance = {
+		    factor = 1
+		}
+		set_country_flag = KOR_MB_yeonpyungdo
+	}	
 }

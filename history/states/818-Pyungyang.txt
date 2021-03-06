@@ -18,7 +18,7 @@ state={
 			10065 40 
 		}
 		add_core_of = PRK
-		add_core_of = KOR
+		add_claim_of = KOR
 
 	}
 	manpower=7307084

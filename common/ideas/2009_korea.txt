@@ -22,7 +22,7 @@ ideas = {
 				has_completed_focus = KOR_MB_politic_election
 			}
 			cost = 75
-			traits = { KOR_roh_trait }
+			traits = { KOR_moon_trait }
 			ai_will_do = { factor = 100 }
 		}
 

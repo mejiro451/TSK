@@ -18,7 +18,7 @@ state={
 
 		}
 		add_core_of = PRK
-		add_core_of = KOR
+		add_claim_of = KOR
 
 	}
 

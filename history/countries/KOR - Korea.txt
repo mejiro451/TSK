@@ -15,7 +15,6 @@ if = {
 	}
 	set_naval_oob = "KOR_1936_naval_mtg"
 }
-set_fuel_ratio = 1.0
 set_convoys = 350
 
 # Starting tech
@@ -549,7 +548,7 @@ add_ideas = {
 }
 #전격전 시나리오
 1936.1.4 = {
-set_fuel_ratio = 1.0
+set_fuel_ratio = 0.8
 remove_ideas = {
     kor_supremacy_of_will
 }
@@ -779,7 +778,7 @@ if = {
 		future_submarine_hull = 1
 		future_naval_module = 1
 	}
-	set_naval_oob = "KR_mtg"
+	set_naval_oob = "KOR_1936_naval_mtg"
 }
 
 if = {
@@ -791,7 +790,7 @@ if = {
 		future_carrier_legacy = 1
 		future_submarine_legacy = 1
 	}
-	set_naval_oob = "KR_mtg"
+	set_naval_oob = "KOR_1936_naval_mtg"
 }
 
 set_convoys = 250
@@ -1266,13 +1265,13 @@ if = {
 		not = { has_dlc = "Man the Guns" }
 	}
 
-	set_naval_oob = "KR_mtg"
+	set_naval_oob = "KOR_1936_naval_mtg"
 }
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "KR_mtg"
+	set_naval_oob = "KOR_1936_naval_mtg"
 }
 if = {
 	limit = { has_dlc = "La Resistance" }

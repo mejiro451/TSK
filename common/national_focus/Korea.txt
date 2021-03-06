@@ -55,8 +55,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			remove_ideas = FKR_back_down_military
-			add_ideas = KOR_economic_collapse_1
+		    custom_effect_tooltip = KOR_MB_timeslip_is_done
+		    hidden_effect = {
+				remove_ideas = FKR_back_down_military
+				add_ideas = KOR_economic_collapse_1
+				set_major = yes
+				add_ideas = KOR_modern_millitary
+				set_country_flag = big_event_time_slip
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -629,6 +635,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
+		completion_reward = {
+		     counrty_event = {
+			     id = KOR_MB.2
+			 }
+		}
 
 	}
 	focus = {
@@ -665,6 +676,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
+		completion_reward = {
+		     counrty_event = {
+			     id = KOR_MB.2
+			 }
+		} 
 
 	}
 	focus = {
@@ -856,11 +872,13 @@ focus_tree = {
 		x = 31
 		y = 4
 		completion_reward = {
-		
+		    set_country_flag = big_event_2nd_korean_war
             declare_war_on = {
 		        target = PRK
 		        type = annex_everything
 	        }
+			hidden_effect = {
+			}
 		}	
 
 	}
@@ -873,6 +891,14 @@ focus_tree = {
 		}
 		available = {
 		    controls_state = 527
+		    controls_state = 818
+		    controls_state = 811
+		    controls_state = 814
+		    controls_state = 812
+		    controls_state = 816
+		    controls_state = 815
+		    controls_state = 820
+		    controls_state = 822
 		}
 		x = 30
 		y = 5
@@ -912,8 +938,65 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_MB_2nd_war
 		}
+		available = {
+		    controls_state = 527
+		    controls_state = 818
+		    controls_state = 811
+		    controls_state = 814
+		    controls_state = 812
+		    controls_state = 816
+		    controls_state = 815
+		    controls_state = 820
+		    controls_state = 822
+		}
 		x = 32
 		y = 5
+		completion_reward = {
+			custom_effect_tooltip = KOR_MB_none-kims_tooltip
+		    hidden_effect = {
+		    PRK = {
+				remove_state_core = 527
+				remove_state_core = 818
+				remove_state_core = 811
+				remove_state_core = 814
+				remove_state_core = 812
+				remove_state_core = 816
+				remove_state_core = 815
+				remove_state_core = 820
+				remove_state_core = 822
+				
+				remove_state_claim = 525
+				remove_state_claim = 807
+				remove_state_claim = 810
+				remove_state_claim = 817
+				remove_state_claim = 809
+				remove_state_claim = 808
+				remove_state_claim = 813
+				remove_state_claim = 821
+				remove_state_claim = 823
+			}
+			KOR = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+			}
+			}
+		} 
 
 	}
 	focus = {
@@ -931,6 +1014,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = -0.2
 			add_stability = 0.05
+			country_event = {
+			    id = KOR_MB.3
+			}
 		}
 
 	}
@@ -1001,6 +1087,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_MB_diplo_kill
 		}
+		available = {
+			has_country_flag = KOR_MB_yeonpyungdo
+		}
 		x = 38
 		y = 5
 		completion_reward = {
@@ -1054,6 +1143,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 		    add_ideas = KOR_world_attack
+		    remove_ideas = KOR_modern_millitary
 		}
 
 	}
@@ -1095,13 +1185,57 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_kudeta
-		icon = fascism
+		icon = GFX_fascism
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
 		}
 		x = 38
 		y = 10
+
+	}
+	focus = {
+		id = KOR_MB_this_is_korean_army
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = KOR_MB_kudeta_kimusa
+		}
+		cost = 10.00
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_kudeta_kimusa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_kudeta
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = KOR_MB_japapese_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_kudeta
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = KOR_MB_tsushima_annex
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_japapese_korea
+		}
+		x = 38
+		y = 12
 
 	}
 	focus = {

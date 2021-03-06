@@ -1,0 +1,9 @@
+sound = {
+	name = "tno_se_2nd_korean_war"
+	file = "KOR/성스러운전쟁.wav"
+	always_load = no
+}sound = {
+	name = "tno_se_time_slip"
+	file = "KOR/time_slip.wav"
+	always_load = no
+}

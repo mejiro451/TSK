@@ -1,0 +1,14 @@
+soundeffect = {
+	name = tno_se_2nd_korean_war
+	sounds = {
+		sound = tno_se_2nd_korean_war
+	}
+	volume = 55
+}
+soundeffect = {
+	name = tno_se_time_slip
+	sounds = {
+		sound = tno_se_time_slip
+	}
+	volume = 75
+}
