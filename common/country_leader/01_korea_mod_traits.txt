@@ -33,8 +33,35 @@ leader_traits = {
 		production_factory_start_efficiency_factor = 0.15 #기본생산효율%
 	}
 	KOR_roh_trait = {
+		stability_factor = 0.15
+		political_power_factor = 0.05
+	}
+	KOR_hong_trait = {
 		political_power_factor = 0.15
-		consumer_goods_factor = -0.05
+	}
+	KOR_han_trait = {
+		fascism_drift = 0.1
+	}
+	KOR_hoi_trait = {
+		democratic_drift = 0.1
+	}
+	KOR_yi_trait = {
+		neutrality_drift = 0.1
+	}
+	KOR_samsung_trait = {
+		consumer_goods_factor = -0.1
+		production_speed_buildings_factor = 0.1 #건설속도%
+		production_factory_max_efficiency_factor = 0.05 #생산효율성한도%
+	}
+	KOR_samsung_leader_trait = {
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.1 #건설속도%
+		production_factory_max_efficiency_factor = 0.1 #생산효율성한도%
+	}
+	KOR_son_trait = {
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.05
 	}
 
 }

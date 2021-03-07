@@ -24,9 +24,18 @@ focus_tree = {
 					can_not_declare_war = yes
 				}
 				add_ideas = KOR_modern_millitary
+				set_country_flag = 2009_scenario
+				set_country_flag = 2009_scenario_KOR
+				set_country_flag = mb_kor
                 annex_country = {
 					target = USF 
 					transfer_troops = yes 
+				}
+			}
+			JAP = {
+			
+                annex_country = {
+					target = JDF 
 				}
 			}
 		}

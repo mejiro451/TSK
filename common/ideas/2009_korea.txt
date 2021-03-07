@@ -7,23 +7,93 @@ ideas = {
 				original_tag = KOR
 			}
 			available = {
-				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_minju_won
+				has_completed_focus = KOR_MB_timeslip
 			}
-			cost = 75
+			cost = 100
 			traits = { KOR_roh_trait }
+			ai_will_do = { factor = 0 }
+		}
+		hong_junpyo = {
+			picture = hong_junpyo
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_consorvatism_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_hong_trait }
 			ai_will_do = { factor = 100 }
 		}
-		moon_jaein = {
-			picture = fkr_advisor_moon_jaein
+		han_minkoo = {
+			picture = han_minkoo
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_middle_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_han_trait }
+			ai_will_do = { factor = 0 }
+		}
+		yi_won = {
+			picture = 
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_middle_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_yi_trait }
+			ai_will_do = { factor = 0 }
+		}
+		lee_jaeyong = {
+			picture = 
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				OR = {
+				    has_completed_focus = KOR_MB_5
+				    has_completed_focus = KOR_MB_politic_election
+				}	
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_samsung_trait }
+			ai_will_do = { factor = 1 }
+		}
+		son_seokhyee = {
+			picture = 
 			allowed = {
 				original_tag = KOR
 			}
 			available = {
 				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
 			}
-			cost = 75
-			traits = { KOR_moon_trait }
-			ai_will_do = { factor = 100 }
+			cost = 100
+			traits = { KOR_son_trait }
+			ai_will_do = { factor = 1 }
+		}
+		lee_hoi_chang = {
+			picture = 
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_hoi_trait }
+			ai_will_do = { factor = 1 }
 		}
 
 	}

@@ -36,7 +36,6 @@ focus_tree = {
 		y = 0
 	    completion_reward = {
 			add_political_power = 150
-			remove_ideas = FKR_back_down_military_2
 		}		
 		ai_will_do = {
 			factor = 10
@@ -176,36 +175,79 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 527 }
 				create_unit = {
-					division = "name = \"조선인민군 1사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					division = "name = \"조선인민군 1사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
 					owner = PRK
 				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 527 }
 				create_unit = {
-					division = "name = \"조선인민군 2사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					division = "name = \"조선인민군 2사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
 					owner = PRK
 				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 527 }
 				create_unit = {
-					division = "name = \"조선인민군 3사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					division = "name = \"조선인민군 3사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
 					owner = PRK
 				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 527 }
 				create_unit = {
-					division = "name = \"조선인민군 4사단\" division_template = \"인민 해방군\" start_experience_factor = 0.6"
+					division = "name = \"조선인민군 4사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 5사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 6사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 7사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 8사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 9사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
+					owner = PRK
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 527 }
+				create_unit = {
+					division = "name = \"조선인민군 10사단\" division_template = \"경 보병 사단\" start_experience_factor = 0.6"
 					owner = PRK
 				}
 			}
 			
-			declare_war_on = {
+			create_wargoal = {
 				target = KOR
 				type = annex_everything
 			}
+			remove_ideas = FKR_back_down_military_2
 			hidden_effect = {
 			    add_equipment_to_stockpile = {
 				    type = infantry_equipment_0

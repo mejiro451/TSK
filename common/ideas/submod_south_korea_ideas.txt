@@ -152,8 +152,8 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = PRK
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.55
+				defense_bonus_against = 0.55
 			}
 			modifier = {
 				communism_drift = -0.15

@@ -70,7 +70,18 @@
  KOR_homeland_defense:0 "Homeland Defense"
  KOR_homeland_defense_desc:0 "The people will defend this land, the symbol of freedom, no matter what."
  
- KOR_roh_trait:0 "사람사는 세상"
+ TSK_loading_focus:0 "2009년 시나리오"
+ 
+ KOR_roh_trait:0 "바보"
+ KOR_moon_trait:0 "인권 변호사"
+ KOR_hong_trait:0 "모래시계 검사"
+ KOR_han_trait:0 "군부 수장"
+ KOR_samsung_trait:0 "삼성전자 부회장"
+ KOR_son_trait:0 "기자"
+ KOR_samsung_leader_trait:0 "삼성전자 회장"
+ KOR_yi_trait:0 "대한제국 황가"
+ KOR_hoi_trait:0 "보수 거물"
+ 
  KOR_world_attack:0 "전쟁하자는 것입니까?"
  KOR_world_attack_desc:0 "예 그렇슙니돠"
  KOR_satellite:0 "인공위성 발사"
@@ -79,3 +90,9 @@
  KOR_not_politic_act_2:0 "데프콘 발령"
  
  moon_jaein:0 "문 재인"
+ hong_junpyo:0 "홍 준표"
+ han_minkoo:0 "한 민구"
+ yi_won:0 "이 원"
+ lee_jaeyong:0 "이 재용"
+ son_seokhyee:0 "손 석희"
+ lee_hoi_chang:0 "이 회창"

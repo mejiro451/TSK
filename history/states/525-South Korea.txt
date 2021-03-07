@@ -30,7 +30,7 @@ state={
 			13244 20 
 		}
 		add_core_of = KOR
-		add_claim_of = PRK
+		add_claim_by = PRK
 
 	}
 

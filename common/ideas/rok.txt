@@ -31,10 +31,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { }
@@ -104,7 +101,6 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = ROK
-					original_tag = KOR
 					has_country_flag = 2009_scenario_KOR
 				}
 			}

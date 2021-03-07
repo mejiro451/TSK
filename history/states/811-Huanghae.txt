@@ -18,8 +18,8 @@ state={
 		victory_points = {
 			12040 20 
 		}
-		add_claim_of = PRK
-		add_core_of = KOR
+		add_core_of = PRK
+		add_claim_by = KOR
 
 	}
 

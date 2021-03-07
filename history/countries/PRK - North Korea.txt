@@ -16,7 +16,7 @@ add_ideas = {
 
 set_stability = 0.2
 set_war_support = 0.4
-set_fuel_ratio = 1.0
+set_fuel_ratio = 0.35
 set_convoys = 100
 
 # Starting tech
@@ -350,6 +350,11 @@ set_politics = {
 }
 set_popularities = {
 	communism = 100
+}
+add_ideas = {
+	korean_war2
+	 
+	FKR_back_down_military
 }
 
 ### Country Leader ###

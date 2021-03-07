@@ -12,7 +12,7 @@ country_event = {
 	option = {
 		name = KOR_MB.1.a
 		ai_chance = {
-		    factor = 0
+		    factor = 65
 		}
 		create_wargoal = {
 		    type = annex_everything
@@ -22,7 +22,7 @@ country_event = {
 	option = {
 		name = KOR_MB.1.b
 		ai_chance = {
-		    factor = 1
+		    factor = 35
 		}
 		KOR = {
 		    annex_country = { 
@@ -30,6 +30,7 @@ country_event = {
 				transfer_troops = yes 
 			}
 		}
+		KOR = { change_tag_from = PRK }
 	}
 }
 country_event = {
@@ -53,6 +54,7 @@ country_event = {
 			KOR = {
 				puppet = PRK
 			}	
+			KOR = { change_tag_from = PRK }
 		}
 		if = {
 		    limit = {
@@ -84,4 +86,84 @@ country_event = {
 		}
 		set_country_flag = KOR_MB_yeonpyungdo
 	}	
+}
+country_event = {
+	id = KOR_MB.4 #선거
+	title = KOR_MB.4.t
+	desc = KOR_MB.4.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.4.a
+		ai_chance = {
+		    factor = 1
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_consorvatism_won
+		remove_ideas = kor_law_of_korean_5
+	}	
+	option = {
+		name = KOR_MB.4.b
+		ai_chance = {
+		    factor = 0
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_minju_won
+		remove_ideas = kor_law_of_korean_5
+	}	
+	option = {
+		name = KOR_MB.4.c
+		ai_chance = {
+		    factor = 0
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_middle_won
+		remove_ideas = kor_law_of_korean_5
+	}	
+}
+country_event = {
+	id = KOR_MB.5 #반란
+	title = KOR_MB.5.t
+	desc = KOR_MB.5.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.5.a
+		ai_chance = {
+		    factor = 1
+		}
+		PR1 = {
+		    transfer_state = 815
+		    transfer_state = 820
+		    transfer_state = 816
+			load_oob = "KPA_1936"
+            declare_war_on = {
+		        target = KOR
+		        type = annex_everything
+	        }
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.6 #폭동진압
+	title = KOR_MB.6.t
+	desc = KOR_MB.6.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.6.a
+		ai_chance = {
+		    factor = 1
+		}
+		add_stability = 0.05
+	}
 }

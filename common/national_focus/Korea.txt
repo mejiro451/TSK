@@ -37,7 +37,7 @@ focus_tree = {
 					add_building_construction = { type = dockyard level = 1 instant_build = yes }
 				}
 				swap_ideas = {
-				    remove_idea = KOR_economic_collapse_1
+				    remove_idea = KOR_economic_collapse_3
 					add_idea = hell_joseon
 				}
 		}
@@ -58,10 +58,11 @@ focus_tree = {
 		    custom_effect_tooltip = KOR_MB_timeslip_is_done
 		    hidden_effect = {
 				remove_ideas = FKR_back_down_military
-				add_ideas = KOR_economic_collapse_1
+				add_ideas = KOR_economic_collapse_3
 				set_major = yes
 				add_ideas = KOR_modern_millitary
 				set_country_flag = big_event_time_slip
+				set_country_flag = 2009_scenario
 			}
 		}
 		ai_will_do = {
@@ -569,7 +570,7 @@ focus_tree = {
 	focus = {
 		id = KOR_MB_northen_allied
 		icon = align_to_north_korea
-		cost = 5.00
+		cost = 1
 		prerequisite = {
 			focus = KOR_MB_timeslip
 		}
@@ -577,7 +578,6 @@ focus_tree = {
 			focus = KOR_MB_not_allied
 		}
 		available ={
-		    always = no
 		}
 		x = 24
 		y = 1
@@ -590,23 +590,35 @@ focus_tree = {
 	focus = {
 		id = KOR_MB_kor-kpa_allience
 		icon = juche2
-		cost = 5.00
+		cost = 2
 		prerequisite = {
 			focus = KOR_MB_northen_allied
 		}
 		x = 23
 		y = 2
+		completion_reward = {
+			add_war_support = -0.05
+			add_stability = 0.05
+		}
 
 	}
 	focus = {
 		id = KOR_MB_the_korean_support
 		icon = trade_with_north_korea
-		cost = 5.00
+		cost = 2
 		prerequisite = {
 			focus = KOR_MB_northen_allied
 		}
 		x = 25
 		y = 2
+		completion_reward = {
+		    PRK = {
+			    swap_ideas = {
+				    remove_idea = FKR_back_down_military
+				    add_idea = FKR_back_down_military_2
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -621,6 +633,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		completion_reward = {
+		    custom_effect_tooltip = KOR_MB_not_war
+		}
 
 	}
 	focus = {
@@ -636,9 +651,19 @@ focus_tree = {
 		x = 21
 		y = 4
 		completion_reward = {
-		     counrty_event = {
+		     country_event = {
 			     id = KOR_MB.2
 			 }
+			create_country_leader = {
+				name = "Kim Jong-un"
+				desc = ""
+				picture = "gfx/leaders/KPA/KJU.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
 		}
 
 	}
@@ -651,6 +676,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
+		completion_reward = {
+		    retire_ideology_leader = communism
+		}
 
 	}
 	focus = {
@@ -662,7 +690,53 @@ focus_tree = {
 		}
 		x = 22
 		y = 5
-
+		completion_reward = {
+		    
+			custom_effect_tooltip = KOR_MB_none-kims_tooltip
+		    hidden_effect = {
+		    PRK = {
+				remove_state_core = 527
+				remove_state_core = 818
+				remove_state_core = 811
+				remove_state_core = 814
+				remove_state_core = 812
+				remove_state_core = 816
+				remove_state_core = 815
+				remove_state_core = 820
+				remove_state_core = 822
+				
+				remove_state_claim = 525
+				remove_state_claim = 807
+				remove_state_claim = 810
+				remove_state_claim = 817
+				remove_state_claim = 809
+				remove_state_claim = 808
+				remove_state_claim = 813
+				remove_state_claim = 821
+				remove_state_claim = 823
+			}
+			KOR = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+			}
+		}
+       }
 	}
 	focus = {
 		id = KOR_MB_northen_puppet
@@ -677,10 +751,10 @@ focus_tree = {
 		x = 27
 		y = 4
 		completion_reward = {
-		     counrty_event = {
+		     country_event = {
 			     id = KOR_MB.2
 			 }
-		} 
+		}
 
 	}
 	focus = {
@@ -693,6 +767,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
+		completion_reward = {
+		    add_war_support = 0.15
+		}
 
 	}
 	focus = {
@@ -707,6 +784,30 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
+		completion_reward = {
+			create_country_leader = {
+				name = "Choe Ryong hae"
+				desc = ""
+				picture = "gfx/leaders/PRK/최룡해.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+		    30 = {
+			    country_event = {
+				    id = KOR_MB.5
+					days = 7
+				}
+			}
+		    70 = {
+			    country_event = {
+				    id = KOR_MB.6
+					days = 7
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -718,6 +819,26 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
+		completion_reward = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+		}
 
 	}
 	focus = {
@@ -729,6 +850,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			add_ideas = lee_jaeyong
+		}
 
 	}
 	focus = {
@@ -1056,12 +1184,12 @@ focus_tree = {
 		x = 31
 		y = 6
 		completion_reward = {
-			
-					add_tech_bonus = {
-							name = KOR_MB_northen_nuke
-							bonus = 10.0
-							technology = nukes
-						}
+			add_tech_bonus = {
+				name = KOR_MB_northen_nuke
+				bonus = 20.0
+				technology = nukes
+			}
+			add_nuclear_bombs = 10			
 		}	
 
 	}
@@ -1119,13 +1247,9 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 		    PRK = {
-			    counrty_event = {
+			    country_event = {
 				    id = KOR_MB.1 #최후통첩
 				}
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = PRK
 			}
 			
 		}
@@ -1160,6 +1284,17 @@ focus_tree = {
 		}
 		x = 29
 		y = 8
+		completion_reward = {
+		    custom_effect_tooltip = KOR_MB_can_war
+			country_event = {
+			    id = KOR_MB.4
+			}
+		    hidden_effect = {
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}	
+		}
 
 	}
 	focus = {
@@ -1174,7 +1309,7 @@ focus_tree = {
 			focus = KOR_MB_consorvatism_won
 		}
 		available = {
-			always = no
+			has_country_flag = KOR_MB_has_election
 		}
 		x = 38
 		y = 9
@@ -1392,7 +1527,7 @@ focus_tree = {
 			focus = KOR_MB_minju_won
 		}
 		available = {
-			always = no
+			has_country_flag = KOR_MB_has_election
 		}
 		x = 29
 		y = 9
@@ -1413,7 +1548,7 @@ focus_tree = {
 			focus = KOR_MB_consorvatism_won
 		}
 		available = {
-			always = no
+			has_country_flag = KOR_MB_has_election
 		}
 		x = 20
 		y = 9
@@ -1445,6 +1580,10 @@ focus_tree = {
 		}
 		x = 26
 		y = 10
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+		}
 
 	}
 	focus = {
@@ -1456,6 +1595,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 11
+		completion_reward = {
+			remove_ideas = KOR_not_politic_act_2
+		}
 
 	}
 	focus = {
@@ -1467,6 +1609,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 11
+		completion_reward = {
+		    add_ideas = KOR_president_can_kill
+		}
 
 	}
 	focus = {

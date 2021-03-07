@@ -548,11 +548,11 @@ add_ideas = {
 }
 #전격전 시나리오
 1936.1.4 = {
-set_fuel_ratio = 0.8
+set_fuel_ratio = 1.0
 remove_ideas = {
     kor_supremacy_of_will
 }
-oob = "KOR_1939"
+oob = "KOR_1936"
 remove_unit_leader = 10001
 remove_unit_leader = 10002
 remove_unit_leader = 10003
@@ -613,76 +613,76 @@ set_party_name = {
 }
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	infantry_weapons2 = 1
-	infantry_equipment_1 = 1
-	improved_infantry_weapons = 1
-	tech_support = 1
-	motorised_infantry = 1
-	transport = 1
-	future_infantry_equipment = 1
-	future_mechanized_equipment = 1
-	future_modern_tank = 1
-	future_modern_tank_aa = 1
-	future_modern_tank_artillery = 1
-	attack_heli = 1
-	transport_heli = 1
-	future_jet_multirole = 1
-	future_jet_CAS = 1
+	#infantry_weapons = 1
+	#infantry_weapons1 = 1
+	#infantry_weapons2 = 1
+	#infantry_equipment_1 = 1
+	#improved_infantry_weapons = 1
+	#tech_support = 1
+	#motorised_infantry = 1
+	#transport = 1
+	#future_infantry_equipment = 1
+	#future_mechanized_equipment = 1
+	#future_modern_tank = 1
+	#future_modern_tank_aa = 1
+	#future_modern_tank_artillery = 1
+	#attack_heli = 1
+	#transport_heli = 1
+	#future_jet_multirole = 1
+	#future_jet_CAS = 1
 	#핵연구
 	atomic_research = 1
 	nuclear_reactor  = 1
 	#연구
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
-	decimetric_radar = 1
-	mechanical_computing = 1
+	#electronic_mechanical_engineering = 1
+	#radio = 1
+	#radio_detection = 1
+	#decimetric_radar = 1
+	#mechanical_computing = 1
 	#산업
-	basic_machine_tools = 1
-	improved_machine_tools = 1
-	concentrated_industry = 1
-	fuel_silos = 1
-	construction1 = 1
+	#basic_machine_tools = 1
+	#improved_machine_tools = 1
+	#concentrated_industry = 1
+	#fuel_silos = 1
+	#construction1 = 1
 	#공군
-	early_fighter = 1
-	fighter1 = 1
-	CAS1 = 1
-	cv_CAS1 = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_fighter1 = 1
-	fighter2 = 1
-	cv_fighter2 = 1
-	CAS2 = 1
-	cv_CAS2 = 1
-	cv_naval_bomber1 = 1
-	naval_bomber2 = 1
-	cv_naval_bomber2 = 1
-	early_bomber = 1
-	heavy_fighter1 = 1
-	tactical_bomber1 = 1
-	scout_plane1 = 1
-	strategic_bomber1 = 1
-	suicide_craft = 1
+	#early_fighter = 1
+	#fighter1 = 1
+	#CAS1 = 1
+	#cv_CAS1 = 1
+	#naval_bomber1 = 1
+	#cv_early_fighter = 1
+	#cv_fighter1 = 1
+	#fighter2 = 1
+	#cv_fighter2 = 1
+	#CAS2 = 1
+	#cv_CAS2 = 1
+	#cv_naval_bomber1 = 1
+	#naval_bomber2 = 1
+	#cv_naval_bomber2 = 1
+	#early_bomber = 1
+	#heavy_fighter1 = 1
+	#tactical_bomber1 = 1
+	#scout_plane1 = 1
+	#strategic_bomber1 = 1
+	#suicide_craft = 1
 	#땅크
-	gwtank = 1
-	basic_light_tank = 1
-	basic_light_td = 1
-	basic_light_art = 1
-	basic_light_spaa = 1
-	improved_light_tank = 1
-	basic_medium_tank = 1
-	basic_medium_td = 1
-	basic_medium_art = 1
-	basic_medium_spaa = 1
-	basic_heavy_tank = 1
+	#gwtank = 1
+	#basic_light_tank = 1
+	#basic_light_td = 1
+	#basic_light_art = 1
+	#basic_light_spaa = 1
+	#improved_light_tank = 1
+	#basic_medium_tank = 1
+	#basic_medium_td = 1
+	#basic_medium_art = 1
+	#basic_medium_spaa = 1
+	#basic_heavy_tank = 1
 	#야포
-	gw_artillery = 1
-	interwar_artillery = 1
-	interwar_antitank = 1
-	interwar_antiair = 1
+	#gw_artillery = 1
+	#interwar_artillery = 1
+	#interwar_antitank = 1
+	#interwar_antiair = 1
 	
 	
 	#미래
@@ -806,9 +806,13 @@ set_popularities = {
 	fascism = 15
 	communism = 15
 }
+set_country_flag = 2009_scenario
+has_country_flag = 2009_scenario
+has_country_flag = 2009_scenario_KOR
 
 ### Country Leader ###
 set_country_flag = mb_kor
+has_country_flag = mb_kor
 
 create_country_leader = {
 	name = "Lee Myungbak"
