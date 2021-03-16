@@ -1,0 +1,1850 @@
+focus_tree = {
+	id = new_rok_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TSK
+		}
+	}
+	default = no
+	focus = {
+		id = KOR_MB_industry
+		icon = hyundai
+		cost = 5.00
+		x = 8
+		y = 0
+		available = { 
+		    KOR = { owns_state = 807 }
+		    KOR = { owns_state = 525 }
+		    OR = {
+				has_completed_focus = KOR_MB_northen_allied_support
+				has_completed_focus = KOR_MB_northen_fight
+			}	
+		}
+		
+		completion_reward = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+				525 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = dockyard level = 1 instant_build = yes }
+				}
+				swap_ideas = {
+				    remove_idea = KOR_economic_collapse_3
+					add_idea = hell_joseon
+				}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_timeslip
+		icon = rok_emblem
+		cost = 0.3
+		x = 29
+		y = 0
+		available = { 
+		  KOR = { owns_state = 807 }
+		  KOR = { owns_state = 525 }
+		}
+		completion_reward = {
+			add_political_power = 150
+		    custom_effect_tooltip = KOR_MB_timeslip_is_done
+		    hidden_effect = {
+				remove_ideas = FKR_back_down_military
+				add_ideas = KOR_economic_collapse_3
+				set_major = yes
+				add_ideas = KOR_modern_millitary
+				set_country_flag = big_event_time_slip
+				set_country_flag = 2009_scenario
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_amred_future		
+		icon = ROKND
+		cost = 5.00
+		x = 46
+		y = 0
+		available = { 
+		    KOR = { owns_state = 807 }
+		    KOR = { owns_state = 525 }
+		    OR = {
+				has_completed_focus = KOR_MB_northen_allied_support
+				has_completed_focus = KOR_MB_northen_fight
+			}	
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = KOR_MB_oil_problem
+		icon = oil_red
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_industry
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = KOR_MB_oil_new
+		icon = production2
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_oil_problem
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = KOR_MB_new_usa
+		icon = align_to_america
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_oil_new
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+		    
+			create_import = {
+				resource = oil
+				factories = 16
+				exporter = USA
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_new_middle_asia
+		icon = major_alliance2
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_oil_new
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+		    
+			create_import = {
+				resource = oil
+				factories = 16
+				exporter = SAU
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_sea_oil
+		icon = battleships
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_new_middle_asia
+		}
+		prerequisite = {
+			focus = KOR_MB_new_usa
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			navy_experience = 25
+		}
+
+	}
+	focus = {
+		id = KOR_MB_resource_done
+		icon = defense
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_oil_problem
+		}
+		x = 5
+		y = 2
+		available = { 
+			OR = {
+				controls_state = 809
+				controls_state = 808
+		  }
+		}
+		
+		completion_reward = {
+				809 = { add_resource = { type = steel amount = 8 } }
+				808 = { add_resource = { type = steel amount = 7 } }
+		}
+
+	}
+	focus = {
+		id = KOR_MB_south_sea's_resource
+		icon = neutrality
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_resource_done
+		}
+		x = 4
+		y = 3
+		available = { 
+			controls_state = 813
+		}
+		
+		completion_reward = {
+				813 = { add_resource = { type = oil amount = 8 } }
+		}
+
+	}
+	focus = {
+		id = KOR_MB_korean_tech
+		icon = research
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_industry
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = KOR_MB_korean_tech_resource
+		icon = scientific_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_korean_tech
+		}
+		prerequisite = {
+			focus = KOR_MB_resource_done
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = KOR_MB_7kwangkoo
+		icon = oil_green
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_south_sea's_resource
+		}
+		prerequisite = {
+			focus = KOR_MB_korean_tech_resource
+		}
+		x = 5
+		y = 4
+		available = { 
+			controls_state = 813
+		}
+		
+		completion_reward = {
+				813 = { add_resource = { type = oil amount = 28 } }
+		}
+
+	}
+	focus = {
+		id = KOR_MB_satellite
+		icon = weaponized_satellites
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_korean_tech
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+		    add_ideas = KOR_satellite
+		}
+
+	}
+	focus = {
+		id = KOR_MB_roadrail_contest
+		icon = CAN_Provincial_Funding_for_Roads
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_industry
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+				807 = {
+					add_extra_state_shared_building_slots = 5
+				}
+				525 = {
+					add_extra_state_shared_building_slots = 5
+				}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_railload_complete
+		icon = GFX_roads_extend_plan
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_roadrail_contest
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+				807 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				525 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				817 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				809 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				808 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				813 = {
+					add_extra_state_shared_building_slots = 3
+				}
+		
+			807 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_research_all
+		icon = research
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_korean_tech
+		}
+		prerequisite = {
+			focus = KOR_MB_railload_complete
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		    add_ideas = cho_nam_pung
+		}
+
+	}
+	focus = {
+		id = KOR_MB_future_research
+		icon = social_media
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_satellite
+		}
+		prerequisite = {
+			focus = KOR_MB_korean_tech_resource
+		}
+		prerequisite = {
+			focus = KOR_MB_research_all
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			  add_ideas = KOR_internet_censorship
+		}
+
+	}
+	focus = {
+		id = KOR_MB_gangwon_rail
+		icon = great_railway_incident
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_railload_complete
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+				810 = {
+					add_extra_state_shared_building_slots = 6
+				}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_all_road_is_to_seoul
+		icon = roman_empire_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_research_all
+		}
+		prerequisite = {
+			focus = KOR_MB_gangwon_rail
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		    add_ideas = KOR_han_river
+			remove_ideas = hell_joseon
+		}
+
+	}
+	focus = {
+		id = KOR_MB_seoul_industry
+		icon = factory_planning
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_roadrail_contest
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+		
+			807 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					instant_build = yes
+					level = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_gyungsang
+		icon = factory_complex
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_seoul_industry
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		
+			809 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_jeonla
+		icon = factory_complex
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_seoul_industry
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_2nd_5years_plan
+		icon = import_economy
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_gyungsang
+		}
+		prerequisite = {
+			focus = KOR_MB_jeonla
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+		
+			525 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			807 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			808 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			810 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			817 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			813 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_MB_northen_allied
+		icon = align_to_north_korea
+		cost = 1
+		prerequisite = {
+			focus = KOR_MB_timeslip
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_not_allied
+		}
+		available ={
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_stability = -0.08
+		}
+
+	}
+	focus = {
+		id = KOR_MB_kor-kpa_allience
+		icon = juche2
+		cost = 2
+		prerequisite = {
+			focus = KOR_MB_northen_allied
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			add_war_support = -0.05
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = KOR_MB_the_korean_support
+		icon = trade_with_north_korea
+		cost = 2
+		prerequisite = {
+			focus = KOR_MB_northen_allied
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+		    PRK = {
+			    swap_ideas = {
+				    remove_idea = FKR_back_down_military
+				    add_idea = FKR_back_down_military_2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_northen_allied_support
+		icon = korean_peninsula
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_kor-kpa_allience
+		}
+		prerequisite = {
+			focus = KOR_MB_the_korean_support
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		    custom_effect_tooltip = KOR_MB_not_war
+		}
+
+	}
+	focus = {
+		id = KOR_MB_annexed_north_korea
+		icon = 빨갱이는_믿을수없다
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_northen_allied_support
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_northen_puppet
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+		     country_event = {
+			     id = KOR_MB.2
+			 }
+			create_country_leader = {
+				name = "Kim Jong-un"
+				desc = ""
+				picture = "gfx/leaders/KPA/KJU.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_9
+		icon = juche3
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_annexed_north_korea
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+		    retire_ideology_leader = communism
+		}
+
+	}
+	focus = {
+		id = KOR_MB_8
+		icon = juche3
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_annexed_north_korea
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+		    
+			custom_effect_tooltip = KOR_MB_none-kims_tooltip
+		    hidden_effect = {
+		    PRK = {
+				remove_state_core = 527
+				remove_state_core = 818
+				remove_state_core = 811
+				remove_state_core = 814
+				remove_state_core = 812
+				remove_state_core = 816
+				remove_state_core = 815
+				remove_state_core = 820
+				remove_state_core = 822
+				
+				remove_state_claim = 525
+				remove_state_claim = 807
+				remove_state_claim = 810
+				remove_state_claim = 817
+				remove_state_claim = 809
+				remove_state_claim = 808
+				remove_state_claim = 813
+				remove_state_claim = 821
+				remove_state_claim = 823
+			}
+			KOR = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+			}
+		}
+       }
+	}
+	focus = {
+		id = KOR_MB_northen_puppet
+		icon = 예방전쟁_북한공격
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_northen_allied_support
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_annexed_north_korea
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		     country_event = {
+			     id = KOR_MB.2
+			 }
+		}
+
+	}
+	focus = {
+		id = KOR_MB_7
+		icon = dragon
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_annexed_north_korea
+			focus = KOR_MB_northen_puppet
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+		    add_war_support = 0.15
+		}
+
+	}
+	focus = {
+		id = KOR_MB_kill_kims
+		icon = 빨갱이는_믿을수없다
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_8
+		}
+		prerequisite = {
+			focus = KOR_MB_9
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+			create_country_leader = {
+				name = "Choe Ryong hae"
+				desc = ""
+				picture = "gfx/leaders/PRK/최룡해.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+			random_list = {
+		    30 = {
+			    country_event = {
+				    id = KOR_MB.5
+					days = 7
+				}
+			}
+		    70 = {
+			    country_event = {
+				    id = KOR_MB.6
+					days = 7
+				}
+			}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_6
+		icon = GFX_peoples_referendum
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_northen_puppet
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+		}
+
+	}
+	focus = {
+		id = KOR_MB_5
+		icon = 기업국유화
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_northen_puppet
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			add_ideas = lee_jaeyong
+		}
+
+	}
+	focus = {
+		id = KOR_MB_aplok-duman
+		icon = zh05
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_6
+		}
+		prerequisite = {
+			focus = KOR_MB_5
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = KOR_MB_11
+		icon = 태극기
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_aplok-duman
+			focus = KOR_MB_kill_kims
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = KOR_MB_not_allied
+		icon = economic_crisis
+		cost = 1
+		prerequisite = {
+			focus = KOR_MB_timeslip
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_northen_allied
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 190
+				is_historical_focus_on = yes
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_none-political
+		icon = political_arrests2
+		cost = 1
+		prerequisite = {
+			focus = KOR_MB_not_allied
+		}
+		x = 33
+		y = 2
+	    completion_reward = {
+			add_political_power = 100
+			
+			set_party_name = {
+				ideology = neutrality
+				long_name = "한나라당(중도)"
+				name = "한나라당(중도)"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "한나라당(좌파)"
+				name = "한나라당(좌파)"
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = "한나라당(우파)"
+				name = "한나라당(우파)"
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_the_last_republic
+		icon = grand_battleplan
+		cost = 1
+		prerequisite = {
+			focus = KOR_MB_not_allied
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+			add_stability = -0.05
+			KOR = {
+			    add_ideas = KOR_not_politic_act
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_northen_fight
+		icon = korean_peninsula
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_MB_none-political
+		}
+		prerequisite = {
+			focus = KOR_MB_the_last_republic
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRK
+			}
+		    add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_MB_2nd_war
+		icon = attack_north_korea
+		cost = 2.00
+		prerequisite = {
+			focus = KOR_MB_northen_fight
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_diplo_kill
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+		    set_country_flag = big_event_2nd_korean_war
+            declare_war_on = {
+		        target = PRK
+		        type = annex_everything
+	        }
+			hidden_effect = {
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_MB_4
+		icon = rok_mobilization
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_2nd_war
+		}
+		available = {
+		    controls_state = 527
+		    controls_state = 818
+		    controls_state = 811
+		    controls_state = 814
+		    controls_state = 812
+		    controls_state = 816
+		    controls_state = 815
+		    controls_state = 820
+		    controls_state = 822
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+		    
+			811 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			814 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			818 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			822 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			812 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			816 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			815 = {
+					add_extra_state_shared_building_slots = 3
+			}
+			820 = {
+					add_extra_state_shared_building_slots = 3
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_3
+		icon = juche
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_2nd_war
+		}
+		available = {
+		    controls_state = 527
+		    controls_state = 818
+		    controls_state = 811
+		    controls_state = 814
+		    controls_state = 812
+		    controls_state = 816
+		    controls_state = 815
+		    controls_state = 820
+		    controls_state = 822
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = KOR_MB_none-kims_tooltip
+		    hidden_effect = {
+		    PRK = {
+				remove_state_core = 527
+				remove_state_core = 818
+				remove_state_core = 811
+				remove_state_core = 814
+				remove_state_core = 812
+				remove_state_core = 816
+				remove_state_core = 815
+				remove_state_core = 820
+				remove_state_core = 822
+				
+				remove_state_claim = 525
+				remove_state_claim = 807
+				remove_state_claim = 810
+				remove_state_claim = 817
+				remove_state_claim = 809
+				remove_state_claim = 808
+				remove_state_claim = 813
+				remove_state_claim = 821
+				remove_state_claim = 823
+			}
+			KOR = {
+				add_state_core = 527
+				add_state_core = 818
+				add_state_core = 811
+				add_state_core = 814
+				add_state_core = 812
+				add_state_core = 816
+				add_state_core = 815
+				add_state_core = 820
+				add_state_core = 822
+				remove_state_claim = 527
+				remove_state_claim = 818
+				remove_state_claim = 811
+				remove_state_claim = 814
+				remove_state_claim = 812
+				remove_state_claim = 816
+				remove_state_claim = 815
+				remove_state_claim = 820
+				remove_state_claim = 822
+			}
+			}
+		} 
+
+	}
+	focus = {
+		id = KOR_MB_diplo_kill
+		icon = gunpoint_diplomacy
+		cost = 2.00
+		prerequisite = {
+			focus = KOR_MB_northen_fight
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_2nd_war
+		}
+		x = 37
+		y = 4
+		completion_reward = {
+			add_war_support = -0.2
+			add_stability = 0.05
+			country_event = {
+			    id = KOR_MB.3
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_2
+		icon = rok_mobilization
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_2nd_war
+			focus = KOR_MB_diplo_kill
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+		    swap_ideas = {
+			     remove_idea = korean_war
+			     add_idea = korean_war2
+			}
+		    swap_ideas = {
+			     remove_idea = KOR_not_politic_act
+			     add_idea = KOR_not_politic_act_2
+			}
+			
+		}
+
+	}
+	focus = {
+		id = KOR_MB_northen_nuke
+		icon = nuclear_bomb
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_4
+		}
+		prerequisite = {
+			focus = KOR_MB_3
+		}
+		x = 31
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = KOR_MB_northen_nuke
+				bonus = 20.0
+				technology = nukes
+			}
+			add_nuclear_bombs = 10			
+		}	
+
+	}
+	focus = {
+		id = KOR_MB_1
+		icon = aggressive_diplomacy
+
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_diplo_kill
+		}
+		x = 36
+		y = 5
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = KOR_MB_10
+		icon = border_war
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_diplo_kill
+		}
+		available = {
+			has_country_flag = KOR_MB_yeonpyungdo
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+		    PRK = {
+			    add_stability = -0.15
+				add_war_support = 0.05
+			}
+			add_war_support = 0.05
+			swap_ideas = {
+			    remove_idea = KOR_nationalist_question
+				add_idea = KOR_weak_anti_nationalist
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_war_or_annexed
+		icon = political_arrests
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_1
+		}
+		prerequisite = {
+			focus = KOR_MB_10
+		}
+		x = 37
+		y = 6
+		completion_reward = {
+		    PRK = {
+			    country_event = {
+				    id = KOR_MB.1 #최후통첩
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = KOR_MB_12
+		icon = rok_armed_forces
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_northen_nuke
+			focus = KOR_MB_war_or_annexed
+		}
+		x = 34
+		y = 7
+		completion_reward = {
+		    add_ideas = KOR_world_attack
+		    remove_ideas = KOR_modern_millitary
+		}
+
+	}
+	focus = {
+		id = KOR_MB_politic_election
+		icon = election2
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_11
+			focus = KOR_MB_12
+		}
+		prerequisite = {
+			focus = KOR_MB_timeslip
+		}
+		x = 29
+		y = 8
+		completion_reward = {
+		    custom_effect_tooltip = KOR_MB_can_war
+			country_event = {
+			    id = KOR_MB.4
+			}
+		    hidden_effect = {
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}	
+		}
+
+	}
+	focus = {
+		id = KOR_MB_middle_won
+		icon = neutrality
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_politic_election
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_minju_won
+			focus = KOR_MB_consorvatism_won
+		}
+		available = {
+			has_country_flag = KOR_MB_has_election
+		}
+		x = 38
+		y = 9
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = KOR_MB_kudeta
+		icon = GFX_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_middle_won
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = KOR_MB_this_is_korean_army
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = KOR_MB_kudeta_kimusa
+		}
+		cost = 10.00
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_kudeta_kimusa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_kudeta
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = KOR_MB_japapese_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_kudeta
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = KOR_MB_tsushima_annex
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_japapese_korea
+		}
+		x = 38
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_army
+		icon = ROKA
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_amred_future
+		}
+		x = 42
+		y = 1
+		completion_reward = {
+			army_experience = 10
+		}
+
+	}
+	focus = {
+		id = KOR_MB_armed_rospel
+		icon = special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_army
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = KOR_MB_rospel_done
+		icon = army_logistics
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_armed_rospel
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KOR_MB_kill_killer
+		icon = general_staff
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_army
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = KOR_MB_army's_manship
+		icon = GFX_adopt_the_peoples_constitution
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_kill_killer
+		}
+		x = 42
+		y = 3
+		completion_reward = {
+		    army_experience = 20
+			add_war_support = -0.05
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_MB_army_supply_reform
+		icon = K1A1
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_army
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = KOR_MB_restart_attack
+		icon = attack_north_korea
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_army_supply_reform
+		}
+		x = 44
+		y = 3
+
+	}
+	focus = {
+		id = KOR_MB_korean_army's_father
+		icon = army_doctrine
+		cost = 20.00
+		prerequisite = {
+			focus = KOR_MB_army's_manship
+		}
+		prerequisite = {
+			focus = KOR_MB_restart_attack
+		}
+		prerequisite = {
+			focus = KOR_MB_rospel_done
+		}
+		x = 42
+		y = 4
+		completion_reward = {
+		  remove_ideas = KOR_kowareta_katana
+		  add_ideas = KOR_modern_millitary
+		}
+
+	}
+	focus = {
+		id = KOR_MB_navy
+		icon = ROKNAVY
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_amred_future
+		}
+		x = 46
+		y = 1
+		completion_reward = {
+			navy_experience = 25
+		}
+
+	}
+	focus = {
+		id = KOR_MB_2nd_miracle_han_river
+		icon = korail
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_future_research
+		}
+		prerequisite = {
+			focus = KOR_MB_all_road_is_to_seoul
+			focus = KOR_MB_2nd_5years_plan
+		}
+		prerequisite = {
+			focus = KOR_MB_sea_oil
+			focus = KOR_MB_7kwangkoo
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+		    add_ideas = KOR_future_ideas
+		}
+
+	}
+	focus = {
+		id = KOR_MB_consorvatism_won
+		icon = focus_Lee_Myung_bak
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_politic_election
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_middle_won
+			focus = KOR_MB_minju_won
+		}
+		available = {
+			has_country_flag = KOR_MB_has_election
+		}
+		x = 29
+		y = 9
+		completion_reward = {
+		    add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = KOR_MB_minju_won
+		icon = focus_Roh_Moo_hyun
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_politic_election
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_middle_won
+			focus = KOR_MB_consorvatism_won
+		}
+		available = {
+			has_country_flag = KOR_MB_has_election
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+		    add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = KOR_MB_airforce
+		icon = ROKAF
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_amred_future
+		}
+		x = 50
+		y = 1
+		completion_reward = {
+			air_experience = 25
+		}
+
+	}
+	focus = {
+		id = KOR_MB_lee's_government
+		icon = generic_government
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_consorvatism_won
+		}
+		x = 26
+		y = 10
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = KOR_MB_the_last_order
+		icon = examine_foreign_laws
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_lee's_government
+		}
+		x = 24
+		y = 11
+		completion_reward = {
+			remove_ideas = KOR_not_politic_act_2
+		}
+
+	}
+	focus = {
+		id = KOR_MB_excuminated
+		icon = executions
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_lee's_government
+		}
+		x = 28
+		y = 11
+		completion_reward = {
+		    add_ideas = KOR_president_can_kill
+		}
+
+	}
+	focus = {
+		id = KOR_MB_next_korean_president
+		icon = united_nations
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_consorvatism_won
+		}
+		available = {
+			always = no
+		}
+		x = 32
+		y = 10
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = KOR_MB_park
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_next_korean_president
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_kim
+			focus = KOR_MB_lee_hoi_chang
+		}
+		x = 30
+		y = 11
+		completion_reward = {
+			create_country_leader = {
+				name = "Park Geun Hye"
+				desc = ""
+				picture = "gfx/leaders/KOR/PGH.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_lee_hoi_chang
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_next_korean_president
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_kim
+			focus = KOR_MB_park
+		}
+		x = 34
+		y = 11
+		completion_reward = {
+			create_country_leader = {
+				name = "Lee Hoi-Chang"
+				desc = ""
+				picture = "gfx/leaders/KOR/Lee_Hoi-chang.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_fascism
+		icon = national_unity_red
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_k-youtube
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_kim
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_next_korean_president
+		}
+		mutually_exclusive = {
+			focus = KOR_MB_park
+			focus = KOR_MB_lee_hoi_chang
+		}
+		x = 32
+		y = 11
+		completion_reward = {
+			create_country_leader = {
+				name = "Kim Moon Soo"
+				desc = ""
+				picture = "gfx/leaders/KOR/KMS.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_MB_end_of_government
+		icon = government_beu
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_fascism
+		}
+		prerequisite = {
+			focus = KOR_MB_social_renuwal
+		}
+		prerequisite = {
+			focus = KOR_MB_police_up
+		}
+		x = 26
+		y = 13
+		completion_reward = {
+		    remove_ideas = kor_law_of_korean_5
+		}
+
+	}
+	focus = {
+		id = KOR_MB_choi_sunshil's_advise
+		icon = espionage2
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_park
+		}
+		x = 30
+		y = 12
+		completion_reward = {
+			add_ideas = KOR_choi_soon_sil
+		}
+
+	}
+	focus = {
+		id = KOR_MB_i_am_president
+		icon = political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_kim
+		}
+		x = 32
+		y = 12
+		completion_reward = {
+		   add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = KOR_MB_conservatism_lee
+		icon = conservative
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_lee_hoi_chang
+		}
+		x = 34
+		y = 12
+		completion_reward = {
+		   add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = KOR_MB_next_government
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_choi_sunshil's_advise
+			focus = KOR_MB_i_am_president
+			focus = KOR_MB_conservatism_lee
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
+		id = KOR_MB_k-youtube
+		icon = trade_with_south_korea
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_lee's_government
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = KOR_MB_police_up
+		icon = secret_police
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_excuminated
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_social_renuwal
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_the_last_order
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = KOR_MB_roh_advisor
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_MB_minju_won
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+		    add_ideas = roh_muhyun
+		}
+
+	}
+}

@@ -42,6 +42,25 @@ ideas = {
 			}
 			
 		}
+		KOR_annex_nko = { #
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = korean_money
+	   		modifier = { 
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+			
+		}
 		KOR_satellite = { #한강의 기적
 			
 			allowed = {
@@ -56,6 +75,45 @@ ideas = {
 
 			picture = korean_money
 	   		modifier = { 
+				
+				civilian_intel_factor = 1
+				army_intel_factor = 1
+				navy_intel_factor = 1
+				airforce_intel_factor = 1
+				crypto_department_enabled = 1
+				crypto_strength = 2
+				decryption_power = 200
+				crypto_strength = 10
+			}
+			
+		}
+		KOR_intelligence_agency_kor = { #한강의 기적
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+	   		modifier = { 
+				intelligence_agency_defense = 10
+				root_out_resistance_effectiveness_factor = 1
+				operation_steal_tech_outcome = 0.75
+				operation_coordinated_strike_outcome = 2.5
+				intel_from_operatives_factor = 0.5
+				operation_steal_tech_risk = -0.6
+				target_sabotage_factor = 0.3
+				boost_resistance_factor = 0.3
+				operative_death_on_capture_chance = 1
+				own_operative_detection_chance = -0.65
+				enemy_operative_recruitment_chance = 0.25
+				occupied_operative_recruitment_chance = 0.25
+				new_operative_slot_bonus = 5
 			}
 			
 		}

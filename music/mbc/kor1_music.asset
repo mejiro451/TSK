@@ -84,3 +84,8 @@ music = {
 	file = "카츄샤(한국).ogg"
 	volume = 0.85
 }
+music = {
+	name = "1991_theme"
+	file = "Koreana.ogg"
+	volume = 0.85
+}

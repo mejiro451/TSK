@@ -1,0 +1,28 @@
+core_PRK = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	    has_country_flag = 2009_scenario
+	}
+
+	visible = { 
+		always = yes
+		has_completed_focus = KOR_MB_war_or_annexed
+	}
+}
+core_HWAN = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	    has_country_flag = 2009_scenario
+	}
+
+	visible = { 
+		always = yes
+		has_completed_focus = KOR_plan_another
+	}
+}

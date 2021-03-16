@@ -274,7 +274,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/경제붕괴.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_KOR_economic_collapse_2"
+		texturefile = "gfx/interface/ideas/경제붕괴.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_economic_collapse_3"
+		texturefile = "gfx/interface/ideas/경제붕괴.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_juche"
+		texturefile = "gfx/interface/ideas/주체사상.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_PRK_kims"
 		texturefile = "gfx/interface/ideas/주체사상.dds"
 	}
 	spriteType = {

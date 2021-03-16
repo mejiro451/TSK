@@ -552,7 +552,7 @@ set_fuel_ratio = 1.0
 remove_ideas = {
     kor_supremacy_of_will
 }
-oob = "KOR_1936"
+oob = "KOR_1939"
 remove_unit_leader = 10001
 remove_unit_leader = 10002
 remove_unit_leader = 10003
@@ -574,6 +574,8 @@ remove_unit_leader = 10018
 remove_unit_leader = 10019
 remove_unit_leader = 10020
 remove_unit_leader = 10021
+#공군장교가 왜 육군 야전사령관임??
+remove_unit_leader = 33009
 add_ideas = {
 	#laws
 	korean_economy
@@ -797,8 +799,8 @@ set_convoys = 250
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1935.11.14"
-	election_frequency = 48
+	last_election = "1934.12.19"
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
@@ -863,23 +865,13 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Lee Myungbak"
 	picture = "MB.dds"
+	id = 20082013
 	traits = { }
 	skill = 9
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Chun Jinkoo"
-	picture = "Portrait_modern_general_jeon_jingu.dds"
-	traits = { career_officer commando naval_invader invader_ii }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
 }
 
 
@@ -1181,7 +1173,7 @@ create_corps_commander = {
 	}
 
 	create_corps_commander = {
-		name = "Chun Yung-Gu"
+		name = "Chun Jin-gu"
 		picture = "Portrait_Chun_Yung_Gu.dds"
 		traits = { commando naval_invader }
 		id = 33026
