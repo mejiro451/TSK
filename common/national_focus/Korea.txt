@@ -1592,7 +1592,6 @@ focus_tree = {
 		x = 42
 		y = 2
 		completion_reward = {
-			add_popularity = 100
 			army_experience = 5
 		}
 
@@ -1682,7 +1681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_imperials_defence
-		icon = neutrality
+		icon = neutralityz
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
