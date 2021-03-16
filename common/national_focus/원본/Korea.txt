@@ -1521,7 +1521,7 @@ focus_tree = {
 							uses = 2
 							category = land_doctrine
 						}
-		}			
+		}				
 
 	}
 	focus = {
