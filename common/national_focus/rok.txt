@@ -7,10 +7,8 @@ focus_tree = {
 			tag = TSK
 		}
 	}
-	continuous_focus_position = { x = 100 y = 2000 }
-	shared_focus = ROKND_1
 	default = no
-	focus = { #14대 대선
+	focus = {
 		id = presidential_election
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -18,7 +16,7 @@ focus_tree = {
 		y = 0
 
 	}
-	focus = { #경제위기
+	focus = {
 		id = economis_cris
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -26,7 +24,15 @@ focus_tree = {
 		y = 0
 
 	}
-	focus = { #김구 대통령
+	focus = {
+		id = ROK_military_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 29
+		y = 7
+
+	}
+	focus = {
 		id = President_Kim_Koo
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -40,7 +46,7 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #새 국가보안법
+	focus = {
 		id = new_national_security_law
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -51,7 +57,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #복지정책 도입
+	focus = {
 		id = welfare_policy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -62,7 +68,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #북한과 접촉
+	focus = {
 		id = contact_with_NK
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -73,7 +79,7 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = { #자유국가
+	focus = {
 		id = libration
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -84,7 +90,18 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #김영삼 대통령
+	focus = {
+		id = ROK_lian_dai
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = libration
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
 		id = President_Kim_Young_sam
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -98,7 +115,7 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #국가안전기획부 법
+	focus = {
 		id = enactment_of_law
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -110,7 +127,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #자유,평등
+	focus = {
 		id = freedom_equality
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -122,7 +139,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #조선총독부 철거
+	focus = {
 		id = Central_Office_Demolition
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -134,7 +151,7 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = { #일본을 시험하다
+	focus = {
 		id = test_Japan
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -145,7 +162,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #중국에 접촉
+	focus = {
 		id = Contact_with_China
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -159,7 +176,7 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = { #국공내전 개입
+	focus = {
 		id = intervention_in_the_civil_war
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -170,7 +187,7 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = { #일본 해방전쟁
+	focus = {
 		id = war_of_liberation
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -184,7 +201,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = { #일본에 최후통첩
+	focus = {
 		id = an_ultimatum_to_Japan
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -198,8 +215,8 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = { #검열 철폐
-		id = elimination_of_censorship 
+	focus = {
+		id = elimination_of_censorship
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -209,8 +226,8 @@ focus_tree = {
 		x = 11
 		y = 2
 
-	} 
-	focus = { #중국을 시험하다
+	}
+	focus = {
 		id = test_China
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -224,7 +241,7 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = { #장제스에게 요구하다
+	focus = {
 		id = demand_from_jang
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -235,7 +252,7 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = { #군벌을 정리
+	focus = {
 		id = theorem_of_warlords
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -249,7 +266,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = { #old_enemy
+	focus = {
 		id = old_enemy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -263,7 +280,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = { #동아시아 연합
+	focus = {
 		id = East_Asian_Union
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -278,7 +295,7 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = { #하나회 관련자 처벌
+	focus = {
 		id = Punishment_of_those_involved
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -288,8 +305,8 @@ focus_tree = {
 		x = 14
 		y = 3
 
-	} 
-	focus = { #역사 바로알기 정책
+	}
+	focus = {
 		id = history_correctly
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -300,8 +317,19 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #금융실명제
-		id = real_name_financial 
+	focus = {
+		id = ROK_good_japan_is_dead_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = history_correctly
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = real_name_financial
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -311,7 +339,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #교육에 투자
+	focus = {
 		id = investment_in_education
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -322,7 +350,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #연합국 가입
+	focus = {
 		id = Allied_accession
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -336,7 +364,198 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = { #차관을 요청하다
+	focus = {
+		id = ROK_germans_attack
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Allied_accession
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = ROK_auschibitz
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_germans_attack
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = ROK_with_usa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_auschibitz
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = ROK_hawwai_defence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_with_usa
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = ROK_the_taepyung_indo_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_hawwai_defence
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = ROK_national_attack
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_germans_attack
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = ROK_plan_green
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_national_attack
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = ROK_plan_black
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_national_attack
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = ROK_protect_spain_democracy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_plan_green
+		}
+		prerequisite = {
+			focus = ROK_plan_black
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = ROK_south_american_fascism_attack
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_plan_green
+		}
+		prerequisite = {
+			focus = ROK_plan_black
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = ROK_earth_liberty's_defencer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_protect_spain_democracy
+		}
+		prerequisite = {
+			focus = ROK_south_american_fascism_attack
+		}
+		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = ROK_bokji_of_20th_end
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_germans_attack
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = ROK_happy_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_bokji_of_20th_end
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = ROK_many_culture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_happy_korea
+		}
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = ROK_social_many
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_many_culture
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = ROK_koreas_United_nation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_earth_liberty's_defencer
+		}
+		prerequisite = {
+			focus = ROK_the_taepyung_indo_plan
+		}
+		prerequisite = {
+			focus = ROK_social_many
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = {
 		id = ask_for_a_loan
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -347,7 +566,7 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #금모으기운동
+	focus = {
 		id = gold_collecting_movement
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -358,7 +577,40 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #긴급 기업보조금 승인
+	focus = {
+		id = ROK_army_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_military_reform
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = ROK_equipment_reuse
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_army_reform
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = ROK_gospel_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_equipment_reuse
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
 		id = approval_of_corporate_subsidies
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -369,7 +621,54 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #실업자 복지정책
+	focus = {
+		id = ROK_new_general
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_army_reform
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = ROK_the_plan_of_tiger
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_new_general
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = ROK_independence_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_new_general
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = ROK_the_father_of_rok_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_the_plan_of_tiger
+		}
+		prerequisite = {
+			focus = ROK_independence_army
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
 		id = unemployment_welfare_policy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -380,7 +679,7 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #긴급 은행보조금
+	focus = {
 		id = emergency_bank_subsidy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -394,7 +693,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #물가 안정화
+	focus = {
 		id = price_stabilization
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -408,7 +707,7 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = { #경제 안정화
+	focus = {
 		id = economic_stabilization
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -419,7 +718,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #6차 경제개발5개년 계획
+	focus = {
 		id = six_five_year_flan
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -430,8 +729,8 @@ focus_tree = {
 		y = 1
 
 	}
-	focus = { #사회 개발 확대
-		id = expansion_of_social_development 
+	focus = {
+		id = expansion_of_social_development
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -441,18 +740,18 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #지역개발
+	focus = {
 		id = regional_development
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = expansion_of_social_development 
+			focus = expansion_of_social_development
 		}
 		x = 29
 		y = 3
 
 	}
-	focus = { #시장경제 질서 확립
+	focus = {
 		id = establishment_of_market_economy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -463,7 +762,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #인프라개발
+	focus = {
 		id = Infrastructure_Development
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -474,7 +773,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #공단확장
+	focus = {
 		id = Industrial_Complex_Expansion
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -484,8 +783,8 @@ focus_tree = {
 		x = 31
 		y = 3
 
-	} 
-	focus = { #산업단지 개발
+	}
+	focus = {
 		id = Industrial_Complex_Development
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -495,8 +794,8 @@ focus_tree = {
 		x = 33
 		y = 3
 
-	} 
-	focus = { #부채상환계획수립
+	}
+	focus = {
 		id = Establishing_a_debt_repayment_plan
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -510,7 +809,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #공정한 경쟁
+	focus = {
 		id = fair_competition
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -524,7 +823,7 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = { #KAIST
+	focus = {
 		id = KAIST
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -539,6 +838,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ROK_navy_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_military_reform
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
 		id = defence_industry
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -549,7 +859,18 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = { #대기업 견제
+	focus = {
+		id = ROK_plan_indo-taepyungyang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_navy_reform
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
 		id = check_of_large_enterprises
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -563,7 +884,7 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = { #부실기업 정리
+	focus = {
 		id = liquidation_of_insolvent_enterprises
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -574,7 +895,7 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = { #중소기업 정책
+	focus = {
 		id = small_business_policy
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -588,7 +909,29 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = { #경제개방 활성화
+	focus = {
+		id = ROK_airforce_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_military_reform
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = ROK_f15_pilot
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_airforce_reform
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
 		id = economic_opening
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -602,7 +945,40 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = { #수출 불허
+	focus = {
+		id = ROK_defence_export
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economic_opening
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ROK_tex_boom
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_defence_export
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ROK_koreas_new_eqp
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_f15_pilot
+		}
+		x = 39
+		y = 10
+
+	}
+	focus = {
 		id = No_export_allowed
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -612,11 +988,92 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = economic_opening
 		}
-		x = 42
+		x = 43
 		y = 2
 
 	}
-	focus = { #장제스를 만나다
+	focus = {
+		id = ROK_forigin_inpra
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = economic_opening
+			focus = No_export_allowed
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = ROK_panho
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = No_export_allowed
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = ROK_korean_tech_none-law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_defence_export
+			focus = ROK_panho
+		}
+		prerequisite = {
+			focus = ROK_forigin_inpra
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ROK_build_the_wall
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_panho
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = ROK_make_korea_great_again
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_tex_boom
+			focus = ROK_build_the_wall
+		}
+		prerequisite = {
+			focus = ROK_korean_tech_none-law
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = ROK_the_miracle_of_han_river
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = KAIST
+		}
+		prerequisite = {
+			focus = ROK_make_korea_great_again
+		}
+		prerequisite = {
+			focus = defence_industry
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
 		id = meet_chang
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -627,7 +1084,7 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = { #동아시아의 평화
+	focus = {
 		id = Peace_in_EA
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -640,7 +1097,7 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = { #군벌에 묻다
+	focus = {
 		id = bury_sb_in_a_warlord
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -654,7 +1111,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = { #아시아 민족주의
+	focus = {
 		id = Asian_nationalism
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -666,7 +1123,7 @@ focus_tree = {
 		y = 9
 
 	}
-	focus = { #영국과의 거래
+	focus = {
 		id = deal_with_UK
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -677,7 +1134,7 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = { #미국과의 거래
+	focus = {
 		id = deal_with_US
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -688,7 +1145,7 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = { #호주 초대
+	focus = {
 		id = Invitation_to_Australia
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -699,7 +1156,7 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = { #필리핀 초대
+	focus = {
 		id = Invitation_to_the_Philippines
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -710,7 +1167,7 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = { #말레이 초대
+	focus = {
 		id = Malay_Invitation
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -721,7 +1178,7 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = { #시암 압박
+	focus = {
 		id = siam_press
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -735,7 +1192,7 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = { #인도네시아의 해방
+	focus = {
 		id = Liberation_of_Indonesia
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -746,7 +1203,7 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = { #인도 초대
+	focus = {
 		id = Invitation_to_India
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -757,7 +1214,7 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = { #뉴질랜드 초대
+	focus = {
 		id = Invitation_to_New_Zealand
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -768,7 +1225,7 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = { #제국주의의 몰락
+	focus = {
 		id = the_fall_of_imperialism
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -780,6 +1237,139 @@ focus_tree = {
 		}
 		x = 8
 		y = 14
+
+	}
+	focus = {
+		id = ROK_co-aisan_allied
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Asian_nationalism
+		}
+		x = 3
+		y = 10
+
+	}
+	focus = {
+		id = ROK_eastern_nope
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_co-aisan_allied
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = ROK_the_union_of_pan-asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_democracy_is_best
+		}
+		prerequisite = {
+			focus = the_fall_of_imperialism
+		}
+		prerequisite = {
+			focus = Invitation_to_Australia
+		}
+		prerequisite = {
+			focus = ROK_east_south_asian_nationalism
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = ROK_democracy_is_best
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_eastern_nope
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = {
+		id = ROK_east_south_asian_nationalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Invitation_to_the_Philippines
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = ROK_pan_earth_union
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_koreas_United_nation
+		}
+		x = 18
+		y = 15
+
+	}
+	focus = {
+		id = ROK_airforce_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_airforce_reform
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = ROK_myth_of_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_navy_reform
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = ROK_high_sky's_korean
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_air_gospel
+		}
+		prerequisite = {
+			focus = ROK_new_air_general
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = ROK_air_gospel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_airforce_plan
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = ROK_new_air_general
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_airforce_plan
+		}
+		x = 37
+		y = 10
 
 	}
 }
