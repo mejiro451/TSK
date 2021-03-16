@@ -89,3 +89,8 @@ music = {
 	file = "Koreana.ogg"
 	volume = 0.85
 }
+music = {
+	name = "2009_theme"
+	file = "BF4.ogg"
+	volume = 0.85
+}
