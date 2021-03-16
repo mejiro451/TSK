@@ -18,7 +18,6 @@ core_HWAN = {
 	
 	allowed = {
 		tag = KOR
-	    has_country_flag = 2009_scenario
 	}
 
 	visible = { 

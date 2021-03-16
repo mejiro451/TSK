@@ -1,5 +1,4 @@
 ﻿l_english:
- # Focus Name
  presidential_election:0 "14대 대선"
  economis_cris:0 "경제위기"
  President_Kim_Koo:0 "김구 대통령"
@@ -198,16 +197,15 @@
  KOR_chopper_develop_desc:0 "헬리콥터는 하늘을 날지 않습니다. 하늘을 항복시킬 뿐입니다."
 
 
- # Custom Tool Tip
  KOR_expansion_independent_army_tt:0 "§G독립군 출신 장군들이 나타날 것입니다.§! \n"
  KOR_ancient_korean_literature_tt:0 "해금된 결정: §Y환단국의 기상§! \n"
- KOR_the_new_alliance:0 "신 연합국" # 신 연합국
- KOR_the_new_international:0 "신 국제 노동자 협회" # 신 국제노동자협회
- KOR_asia_communism_faction:0 "아시아 공산주의 연방" # 아시아 공산주의 연방
- KOR_asia_league_faction:0 "자유 아시아 연합" # 자유 아시아 연합
- KOR_return_of_emperor_faction:0 "대 아시아 민족 연방권" # 대 아시아 민족 연방권
- KOR_royal_society_faction:0 "국제 왕실 협의회" # 국제 왕실 협의회
- KOR_the_new_axis:0 "신 추축국" # 신 추축국
+ KOR_the_new_alliance:0 "신 연합국" 
+ KOR_the_new_international:0 "신 국제 노동자 협회" 
+ KOR_asia_communism_faction:0 "아시아 공산주의 연방"
+ KOR_asia_league_faction:0 "자유 아시아 연합" 
+ KOR_return_of_emperor_faction:0 "대 아시아 민족 연방권" 
+ KOR_royal_society_faction:0 "국제 왕실 협의회" 
+ KOR_the_new_axis:0 "신 추축국"
  KOR_available_industry_company_tt:0 "다음 산업 회사 활성화 \n"
  KOR_available_materiel_company_tt:0 "다음 군수장비 설계사 활성화 \n"
  KOR_available_aircraft_company_tt:0 "다음 항공기 설계사 활성화 \n"
@@ -239,7 +237,6 @@
  KOR_central_faction_flag:0 "우리는 신 동맹국 국가들과 함께 하기로 결정했습니다. \n"
  KOR_accept_spain_king_exile_flag:0 "알폰소 13세의 망명을 받아들였습니다."
  
- #New Focus
  KOR_operation_attack_pigs:0 "작전명 통일"
  KOR_operation_attack_pigs_desc:0 "우리는 드디어 행동을 개시할 때가 되었습니다. 한반도의 통일을 위해, 더 나아가 민족을 위해 움직일 차례입니다."
  KOR_reset_politic:0 "정부 재조직"

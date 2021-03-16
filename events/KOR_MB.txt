@@ -183,8 +183,18 @@ country_event = {
 		ai_chance = {
 		    factor = 50
 		}
-		has_completed_focus = KOR_MB_kudeta
+		complete_national_focus = KOR_MB_kudeta
 		add_stability = -0.05
+		set_party_name = {
+			ideology = neutrality
+			long_name = "국가안전기획부"
+			name = "국가안전기획부"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "국가안전기획부"
+			name = "국가안전기획부"
+		}
 		create_country_leader = {
 			name = "Han Min Koo"
 			desc = ""
@@ -202,7 +212,8 @@ country_event = {
 		    factor = 50
 		}
 		country_event = {
-		
+		    id = KOR_MB.8
+			days = 3
 		}
 		add_stability = 0.05
 	}
@@ -221,6 +232,8 @@ country_event = {
 		ai_chance = {
 		    factor = 1
 		}
+		add_ideas = yi_won
 		set_country_flag = KOR_MB_han_was_failed
+		complete_national_focus = KOR_imperials_defence
 	}
 }

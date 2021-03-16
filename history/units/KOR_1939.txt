@@ -584,7 +584,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = m_2000_infantry_equipment
+			type = infantry_equipment_8
 			creator = "KOR"
 		}
 		requested_factories = 6

@@ -126,8 +126,17 @@ focus_tree = {
 		id = KOR_plan_another
 		icon = goal_unknown
 		cost = 10.00
+		available = {
+			OR = {
+				has_completed_focus = KOR_MB_11
+				has_completed_focus = KOR_MB_12
+			}
+		}	
 		x = 57
 		y = 6
+		completion_reward = {
+			custom_effect_tooltip = KOR_PLAN_CORE_OPEN
+		}
 
 	}
 	focus = {
@@ -139,6 +148,14 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
+		completion_reward = {
+		    821 = {
+			    add_resource = {
+				    type = oil
+					amount = 5
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -150,6 +167,10 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+		completion_reward = {
+		    add_stability = 0.1	
+			add_political_power = 75
+		}
 
 	}
 	focus = {
@@ -417,6 +438,7 @@ focus_tree = {
 		x = 8
 		y = 4
 			completion_reward = {
+					add_ideas = KOR_intelligence_agency_kor
 					add_ideas = KOR_internet_censorship
 				}
 
@@ -727,6 +749,7 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					retire_ideology_leader = communism
+					remove_ideas = KOR_PRK_kims
 				}
 
 	}
@@ -1491,6 +1514,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = KOR_MB_armed_rospel
+							bonus = 0.3
+							uses = 2
+							category = land_doctrine
+						}
+		}				
 
 	}
 	focus = {
@@ -1502,6 +1533,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = KOR_MB_rospel_done
+							bonus = 0.75
+							uses = 8
+							category = land_doctrine
+						}
+		}				
 
 	}
 	focus = {
@@ -1552,6 +1591,10 @@ focus_tree = {
 		}
 		x = 42
 		y = 2
+		completion_reward = {
+			add_popularity = 100
+			army_experience = 5
+		}
 
 	}
 	focus = {
@@ -1579,6 +1622,18 @@ focus_tree = {
 		}
 		x = 44
 		y = 2
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_7
+				amount = 6500
+				producer = KOR
+			}
+			add_equipment_to_stockpile = {
+				type = support_infantry_equipment_3
+				amount = 2400
+				producer = KOR
+			}
+		}
 
 	}
 	focus = {
@@ -1590,6 +1645,19 @@ focus_tree = {
 		}
 		x = 44
 		y = 3
+		completion_reward = {
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_8
+				amount = 4500
+				producer = KOR
+			}
+			add_equipment_to_stockpile = {
+				type = support_infantry_equipment_4
+				amount = 1600
+				producer = KOR
+			}
+		}
 
 	}
 	focus = {
@@ -1609,13 +1677,12 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					remove_ideas = KOR_kowareta_katana
-					add_ideas = KOR_modern_millitary
 				}
 
 	}
 	focus = {
 		id = KOR_imperials_defence
-		icon = goal_unknown
+		icon = neutrality
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
@@ -1625,6 +1692,12 @@ focus_tree = {
 		}
 		x = 44
 		y = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+		}
 
 	}
 	focus = {
