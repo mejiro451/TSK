@@ -8,3 +8,4 @@ PR1 = "countries/North_Korea1.txt"
 
 USF = "countries/USFK.txt"
 JEJ = "countries/ROKNAVY.txt"
+RU1 = "countries/Soviet Union.txt"

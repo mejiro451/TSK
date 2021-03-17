@@ -9,7 +9,6 @@ core_PRK = {
 
 	visible = { 
 		always = yes
-		has_completed_focus = KOR_MB_war_or_annexed
 	}
 }
 core_HWAN = {
@@ -22,6 +21,5 @@ core_HWAN = {
 
 	visible = { 
 		always = yes
-		has_completed_focus = KOR_plan_another
 	}
 }

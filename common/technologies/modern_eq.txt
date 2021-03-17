@@ -169,10 +169,10 @@ technologies = {
 	}
 	
 	
-	m_2000_sup_infantry_eq = { #K12,PzF 3 PKM,RPG-29
+	m_1995_sup_infantry_eq = { #K12,PzF 3 PKM,RPG-29
 
 		enable_equipments = { 
-			support_infantry_equipment_2
+			support_infantry_equipment_3
 		}
 
 		research_cost = 1

@@ -362,5 +362,131 @@ spriteTypes = {
 		name = "GFX_idea_KOR_modern_millitary"
 		texturefile = "gfx/interface/ideas/korea/independence_idea.dds"
 	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_yi_won"
+		texturefile = "gfx/interface/ideas/ADVISOR/이원.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_jaeyong"
+		texturefile = "gfx/interface/ideas/ADVISOR/이재용.png"
+	}
+	spriteType = {
+		name = "GFX_idea_son_seokhyee"
+		texturefile = "gfx/interface/ideas/ADVISOR/손석희.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_hoi_chang"
+		texturefile = "gfx/interface/ideas/ADVISOR/이회창.png"
+	}
+	spriteType = {
+		name = "GFX_idea_roh_hoichan"
+		texturefile = "gfx/interface/ideas/ADVISOR/노회찬.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_chulhui"
+		texturefile = "gfx/interface/ideas/ADVISOR/이철휘.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hwang_uidon"
+		texturefile = "gfx/interface/ideas/ADVISOR/황의돈.png"
+	}
+	spriteType = {
+		name = "GFX_idea_jung_seungjo"
+		texturefile = "gfx/interface/ideas/ADVISOR/정승조.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_sangki"
+		texturefile = "gfx/interface/ideas/ADVISOR/김상기.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_yongman"
+		texturefile = "gfx/interface/ideas/ADVISOR/이영만.png"
+	}
+	spriteType = {
+		name = "GFX_idea_chung_kyungdoo"
+		texturefile = "gfx/interface/ideas/ADVISOR/정경두.png"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_chakyu"
+		texturefile = "gfx/interface/ideas/ADVISOR/최창규.png"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_yunhoi"
+		texturefile = "gfx/interface/ideas/ADVISOR/최윤회.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hwang_kicheol"
+		texturefile = "gfx/interface/ideas/ADVISOR/황기철.png"
+	}
+	spriteType = {
+		name = "GFX_idea_moon_jaein"
+		texturefile = "gfx/interface/ideas/ADVISOR/문재인.png"
+	}
+	spriteType = {
+		name = "GFX_idea_yi_yunho"
+		texturefile = "gfx/interface/ideas/ADVISOR/이윤호.png"
+	}
+	spriteType = {
+		name = "GFX_idea_yun_jungki"
+		texturefile = "gfx/interface/ideas/ADVISOR/윤중기.png"
+	}
+	spriteType = {
+		name = "GFX_idea_jung_haechen"
+		texturefile = "gfx/interface/ideas/ADVISOR/정해천.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_yeongpil"
+		texturefile = "gfx/interface/ideas/ADVISOR/김영필.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_jaehwan"
+		texturefile = "gfx/interface/ideas/ADVISOR/김재환.png"
+	}
+	spriteType = {
+		name = "GFX_idea_jung_chunseong"
+		texturefile = "gfx/interface/ideas/ADVISOR/정춘성.png"
+	}
+	spriteType = {
+		name = "GFX_idea_im_chongbin"
+		texturefile = "gfx/interface/ideas/ADVISOR/임충빈.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cho_junghwan"
+		texturefile = "gfx/interface/ideas/ADVISOR/조정환.png"
+	}
+	spriteType = {
+		name = "GFX_idea_park_hengryul"
+		texturefile = "gfx/interface/ideas/ADVISOR/박흥렬.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kwon_ohsung"
+		texturefile = "gfx/interface/ideas/ADVISOR/권오성.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_kyehoon"
+		texturefile = "gfx/interface/ideas/ADVISOR/이계훈.png"
+	}
+	spriteType = {
+		name = "GFX_idea_park_jongheon"
+		texturefile = "gfx/interface/ideas/ADVISOR/박종헌.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sung_ilhwan"
+		texturefile = "gfx/interface/ideas/ADVISOR/성일환.png"
+	}
+	spriteType = {
+		name = "GFX_idea_jung_okgeun"
+		texturefile = "gfx/interface/ideas/ADVISOR/정옥근.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_seongchan"
+		texturefile = "gfx/interface/ideas/ADVISOR/김성찬.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_myung_bak_pre"
+		texturefile = "gfx/interface/ideas/ADVISOR/이명박.png"
+	}
 
 }

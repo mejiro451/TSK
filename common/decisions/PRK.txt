@@ -31,7 +31,7 @@ PRK_2nd_war = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
@@ -1057,6 +1057,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
 			command_power > 14
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = no
 
@@ -1110,6 +1113,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_civ_spylevel value = 18 compare = greater_than_or_equals }
 			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = yes
 		
@@ -1161,6 +1167,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_civ_spylevel value = 22 compare = greater_than_or_equals }
 			command_power > 29
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = yes
 
@@ -1210,8 +1219,11 @@ prk_spy_sent = {
 		available = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
-			check_variable = { var = PRK_civ_spylevel value = 9 compare = less_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 9 compare = less_than_or_equals }
 			command_power > 9
+			PRK = { 
+			has_war = yes
+			}
 		}
 
 		fire_only_once = no
@@ -1264,15 +1276,18 @@ prk_spy_sent = {
 		available = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
-			check_variable = { var = PRK_civ_spylevel value = 15 compare = less_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 15 compare = less_than_or_equals }
 			command_power > 14
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = yes
 
 		visible = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
-			check_variable = { var = PRK_civ_spylevel value = 15 compare = less_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 15 compare = less_than_or_equals }
 		}
 
 		complete_effect = {
@@ -1316,8 +1331,11 @@ prk_spy_sent = {
 		available = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
-			check_variable = { var = PRK_civ_spylevel value = 21 compare = less_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 21 compare = less_than_or_equals }
 			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = no
 
@@ -1327,7 +1345,7 @@ prk_spy_sent = {
 		visible = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
-			check_variable = { var = PRK_civ_spylevel value = 21 compare = less_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 21 compare = less_than_or_equals }
 		}
 
 		complete_effect = {
@@ -1372,6 +1390,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 22 compare = greater_than_or_equals }
 			command_power > 29
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = no
 
@@ -1425,6 +1446,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
 			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = no
 
@@ -1478,6 +1502,9 @@ prk_spy_sent = {
 			has_country_flag = prk_Operation_commencement
 			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
 			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
 		}
 		fire_only_once = no
 

@@ -4,9 +4,6 @@ Reaction = {
 	
 	allowed = {
 		tag = MKR
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 
 	visible = { 
@@ -20,9 +17,6 @@ warlike_preparations = {
 	
 	allowed = {
 		tag = MKR
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 
 	visible = { 

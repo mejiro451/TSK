@@ -72,7 +72,7 @@
  
  TSK_loading_focus:0 "2009년 시나리오"
  
- KOR_roh_trait:0 "바보"
+ KOR_roh_trait:0 "사람사는 세상"
  KOR_moon_trait:0 "인권 변호사"
  KOR_hong_trait:0 "모래시계 검사"
  KOR_han_trait:0 "군부 수장"
@@ -128,5 +128,8 @@
  choi_yunhoi:0 "최 윤회"
  hwang_kicheol:0 "황 기철"
  
+ moon_jaein:0 "문 재인"
+ lee_myung_bak_pre:0 "이명박 대통령"
+ lee_myung_bak_pre_desc:0 "대한민국의 17대 대통령.(재임기간 2008/2/25~2013/2/25)"
  
  

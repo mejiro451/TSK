@@ -41,7 +41,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = ROK
-				NOT = { has_country_flag = 2009_scenario }
 			}
 			
 			traits = { }
@@ -55,7 +54,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = ROK
-				NOT = { has_country_flag = 2009_scenario }
 			}
 			
 			traits = { }
@@ -70,7 +68,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = ROK
-				NOT = { has_country_flag = 2009_scenario }
 			}
 			
 			traits = { communist_revolutionary }
@@ -83,10 +80,7 @@ ideas = {
 		rok_chung_geun_mo = { #정근모 (과학기술처 장관)
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { }
@@ -99,10 +93,7 @@ ideas = {
 		rok_lee_ghun = { #이건희 (삼성그룹회장)
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = KOR
 			}
 			
 			traits = { }
@@ -117,10 +108,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -139,10 +127,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -161,10 +146,7 @@ ideas = {
 			picture = ROK_MAN
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -187,10 +169,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -209,10 +188,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -230,10 +206,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -255,10 +228,7 @@ ideas = {
 		rok_kai = { #KAI (중점개방)
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -278,10 +248,7 @@ ideas = {
 		
 		rok_asiana = { #금호 아시아나 
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			research_bonus = {
@@ -304,10 +271,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 						
@@ -326,10 +290,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			
@@ -352,10 +313,7 @@ ideas = {
 		rok_gs = { #GS
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -373,10 +331,7 @@ ideas = {
 		rok_lg = { #LG
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -393,10 +348,7 @@ ideas = {
 		rok_sk = { #SK
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -409,10 +361,7 @@ ideas = {
 		rok_samsung = { #삼성
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -424,10 +373,7 @@ ideas = {
 		rok_doosan = { #두산
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -445,10 +391,7 @@ ideas = {
 		rok_st = { #S&T
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -466,10 +409,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -489,10 +429,7 @@ ideas = {
 		rok_daewoo_car = { #대우자동차
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -524,10 +461,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -543,10 +477,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			cost = 250
@@ -563,10 +494,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -581,10 +509,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			research_bonus = {
@@ -601,10 +526,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { army_chief_drill_2 }
@@ -618,10 +540,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 
 					
@@ -639,10 +558,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { air_chief_ground_support_2 }
@@ -656,10 +572,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { air_chief_all_weather_2 }
@@ -673,10 +586,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { air_chief_reform_2 }
@@ -693,10 +603,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { navy_chief_decisive_battle_2 }
@@ -710,10 +617,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 						
 			traits = { navy_chief_commerce_raiding_3 }
@@ -731,10 +635,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { army_infantry_2 }
@@ -749,10 +650,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			traits = { army_armored_3 }
 			
@@ -766,10 +664,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { army_regrouping_2 }
@@ -784,10 +679,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { army_logistics_2 }
@@ -802,10 +694,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { air_close_air_support_2 }
@@ -820,10 +709,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { air_bomber_interception_2 }
@@ -838,10 +724,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { air_airborne_2 }
@@ -856,10 +739,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { navy_fleet_logistics_2 }
@@ -874,11 +754,7 @@ ideas = {
 
 			
 			allowed = {
-				OR = {
-					original_tag = ROK
-					original_tag = KOR
-					has_country_flag = 2009_scenario_KOR
-				}
+				original_tag = ROK
 			}
 			
 			traits = { navy_anti_submarine_1 }

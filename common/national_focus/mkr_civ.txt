@@ -2,10 +2,6 @@ focus_tree = {
 	id = mkr_civ
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = MKR
-		}
 	}
 	default = no
 	focus = { #대책회의

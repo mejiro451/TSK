@@ -8,9 +8,6 @@ PRK_2nd_war = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 }
 
@@ -18,9 +15,6 @@ PRK_provocations_against_the_south = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -32,9 +26,6 @@ Retraining = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -46,9 +37,6 @@ prk_warlike_preparations = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -62,9 +50,6 @@ prk_spy_sent = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -97,9 +82,6 @@ Preparation_for_a_coup = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -113,9 +95,6 @@ soviet_sup = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -129,9 +108,6 @@ spies_in_Japan = {
 	
 	allowed = {
 		original_tag = PRK
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 	
 	visible = {
@@ -146,9 +122,6 @@ kor_spy = {
 	allowed = {
 		OR = {
 		original_tag = JDF
-		}
-		NOT = {
-		    has_country_flag = 2009_scenario
 		}
 	}
 	

@@ -2,11 +2,8 @@ focus_tree = {
 	id = rok_civ
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = ROK
-		}
 	}
+	
 	default = no
 	focus = { #긴급보안법
 		id = security_law

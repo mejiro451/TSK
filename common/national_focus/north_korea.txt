@@ -218,10 +218,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 10
-			add_timed_idea = {
-			idea = mkr_military_training
-			days = 365
-			} 
 		}
 		x = 10
 		y = 4
@@ -352,7 +348,6 @@ focus_tree = {
 			focus = prk_Juche_Idea
 		}
 		completion_reward = {
-			add_political_power = 150
 			country_event = { id = PRK.12  }
 			set_country_flag = coup
 		}
@@ -1437,19 +1432,11 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_additional_tank_plant
 		}
+		completion_reward = {
+			country_event = { id = PRK.30 }
+		}
 		x = 10
 		y = 7
-
-	}
-	focus = { #군사훈련 실시 (육군경험치 +30)
-		id = prk_conducting_military_exercises
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = prk_local_warfare
-		}
-		x = 12
-		y = 8
 
 	}
 	focus = { #남파간첩에 지침하달 (이전의 '남파간첩확대'로 침투시켜놓은 간첩숫자에따라 실행가능한 작전이 달라짐 소규모-부내내 일부 교란만가능,중규모-군수공장사보타주/기반시설 사보타주가능,대규모-발전소 사보타주로 대규모 정전사태를 유발가능/국군에 대국적으로침투하여 국군교란가능)
@@ -1459,7 +1446,11 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_local_warfare
 		}
-		x = 8
+		completion_reward = {
+			set_country_flag = prk_Operation_commencement
+			custom_effect_tooltip = prk_Operation_commencement_1
+		}
+		x = 9
 		y = 8
 
 	}
@@ -1468,10 +1459,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = prk_conducting_military_exercises
+			focus = prk_Special_Forces_Penetration
 		}
 		prerequisite = {
 			focus = prk_Southern_espionage_agent
+		}
+		completion_reward = {
+			country_event = { id = PRK.31 }
 		}
 		x = 10
 		y = 9
@@ -1487,6 +1481,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = prk_Securing_Seoul
 		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = bypass_Seoul
+			days = 30
+			} 
+		}
 		x = 9
 		y = 10
 
@@ -1501,6 +1501,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = prk_Seoul_Bypass
 		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = Securing_Seoul
+			days = 30
+			} 
+		}
 		x = 11
 		y = 10
 
@@ -1512,7 +1518,20 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_local_warfare
 		}
-		x = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					air_base > 2
+					air_base < 9
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+		x = 11
 		y = 8
 
 	}
@@ -1523,6 +1542,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Securing_Seoul
 			focus = prk_Seoul_Bypass
+		}
+		completion_reward = {
+			country_event = { id = PRK.32 }
 		}
 		x = 10
 		y = 11
@@ -1738,6 +1760,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Deals_with_the_Devil
 			focus = prk_Goryeo_federal
+		}
+		completion_reward = {
+			add_political_power = 100
 		}
 		x = 19
 		y = 18
@@ -2088,6 +2113,11 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_the_new_order
 		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
 		x = 19
 		y = 19
 
@@ -2101,6 +2131,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 20
+		completion_reward = {
+			country_event = { id = PRK.33 }
+		}
 
 	}
 	focus = { #오세아니아 중점 ('인도네시아봉기'이벤트발생하고 인도네시아가 독립전쟁을시도함)
@@ -2112,6 +2145,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 20
+		completion_reward = {
+			country_event = { id = PRK.34 }
+		}
 
 	}
 	focus = { #인도의 혁명 ('인도의혁명'이벤트발생하고 인도가 독립전쟁을시도함
@@ -2120,6 +2156,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_socialism_in_EA
+		}
+		completion_reward = {
+			country_event = { id = PRK.35 }
 		}
 		x = 19
 		y = 20
@@ -2138,6 +2177,13 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_SA_Focus
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MAL
+				expire = 0
+			}
+		}
 		x = 18
 		y = 21
 
@@ -2155,6 +2201,13 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_SA_Focus
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+				expire = 0
+			}
+		}
 		x = 20
 		y = 21
 
@@ -2169,6 +2222,9 @@ focus_tree = {
 		prerequisite = {
 			focus = prk_Asian_Liberation_War
 		}
+		completion_reward = {
+			country_event = { id = PRK.36 }
+		}
 		x = 19
 		y = 22
 
@@ -2179,6 +2235,13 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = prk_liberation_of_the_colonies
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+				expire = 0
+			}
 		}
 		x = 19
 		y = 23

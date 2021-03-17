@@ -1,0 +1,161 @@
+﻿capital = 818 
+
+oob = "RUS_1936"
+
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+}
+
+add_ideas = {
+}
+create_production_license = {
+	target = KOR
+		equipment = {
+		type = m_2000_mbt
+		version = 0
+	}
+	cost_factor = 0
+}
+set_stability = 0.2
+set_war_support = 0.4
+set_convoys = 150
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1		
+	tech_engineers4 = 1
+	tech_recon = 1
+	tech_recon2 = 1		
+	tech_recon3 = 1
+	tech_recon4 = 1
+	tech_military_police = 1		
+	tech_military_police2 = 1
+	tech_military_police3 = 1
+	tech_military_police4 = 1		
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1		
+	tech_maintenance_company4 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1		
+	tech_field_hospital3 = 1
+	tech_field_hospital4 = 1
+	tech_logistics_company = 1		
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_logistics_company4 = 1		
+	tech_signal_company = 1		
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_signal_company4 = 1	
+	
+	modern_amphibious_mechanized = 1
+
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	
+	m_1960_sup_infantry_eq = 1
+	m_1970_sup_infantry_eq = 1
+	m_1985_sup_infantry_eq = 1
+	
+	m_1950_modern_tank = 1
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	m_1990_modern_tank = 1
+	m_2000_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+
+	m_1970_IFV = 1
+	m_1980_IFV = 1
+	m_1990_IFV = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	m_2000_spaa = 1
+	m_2010_spaa = 1
+	
+	m_1970_sp = 1	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	
+	m_1970_motorized_rocket_unit = 1
+	m_1980_motorized_rocket_unit = 1
+	m_1990_motorized_rocket_unit = 1
+	
+	m_1970_manpad = 1
+	m_1980_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	m_1980_jet_CAS = 1
+	m_1990_jet_CAS = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	modern_moto = 1
+	
+	modern_steel_mill = 1
+	modern_fuel_refining = 1
+	synth_oil_experiments = 1
+	motorized_rocket_unit_sup = 1
+	fuel_silos = 1
+}
+
+add_ideas = KOR_modern_millitary
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+
+create_country_leader = {
+	name = "Yuri Nikolaevich Yakubov"
+	desc = ""
+	picture = "gfx/leaders/RU1/Yuri.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###

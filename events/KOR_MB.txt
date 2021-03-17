@@ -237,3 +237,148 @@ country_event = {
 		complete_national_focus = KOR_imperials_defence
 	}
 }
+#코어넣기 - 북한
+country_event = {
+	id = KOR_MB.9 #황해
+	title = KOR_MB.9.t
+	desc = KOR_MB.9.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.9.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.10 #강원
+	title = KOR_MB.10.t
+	desc = KOR_MB.10.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.10.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.11 #함남
+	title = KOR_MB.11.t
+	desc = KOR_MB.11.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.11.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.12 #평남
+	title = KOR_MB.12.t
+	desc = KOR_MB.12.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.12.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.13 #평북
+	title = KOR_MB.13.t
+	desc = KOR_MB.13.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.13.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.14 #자강
+	title = KOR_MB.14.t
+	desc = KOR_MB.14.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.14.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.15 #양강
+	title = KOR_MB.15.t
+	desc = KOR_MB.15.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.15.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.16 #함북
+	title = KOR_MB.16.t
+	desc = KOR_MB.16.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.16.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.17 #평양
+	title = KOR_MB.16.t
+	desc = KOR_MB.16.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.16.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}

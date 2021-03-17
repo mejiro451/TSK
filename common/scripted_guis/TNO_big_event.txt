@@ -48,7 +48,54 @@ scripted_gui = {
 			}
 		}
 	}
+	
+	kor_big_event_communism_unif = {
+		context_type = player_context
+		window_name = "kor_big_event_communism_unif"
 
+		visible = {
+			has_country_flag = communism_uniform
+		}
+	}
+
+	kor_big_event_frame_communism_unif = {
+		context_type = player_context
+		window_name = "kor_big_event_frame_communism_unif"
+
+		visible = {
+			has_country_flag = communism_uniform
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = communism_uniform
+			}
+		}
+	}
+	
+	kor_big_event_south_Unification = {
+		context_type = player_context
+		window_name = "kor_big_event_south_Unification"
+
+		visible = {
+			has_country_flag = south_Unification
+		}
+	}
+
+	kor_big_event_frame_south_Unification = {
+		context_type = player_context
+		window_name = "kor_big_event_frame_south_Unification"
+
+		visible = {
+			has_country_flag = south_Unification
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = south_Unification
+			}
+		}
+	}
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 
 }

@@ -1,11 +1,9 @@
 ideas = {
 	hidden_ideas = {
-		KOR_modern_millitary = {
+			KOR_modern_millitary = {
+			picture = generic_production_bonus
 			allowed = {
-				original_tag = KOR
-	 		    original_tag = PRK
-	 		    original_tag = ROK
-	 		    original_tag = MKR
+				always = no
 			}
 
 			removal_cost = -1
@@ -17,9 +15,9 @@ ideas = {
 				land_night_attack = 0.85
 				army_org_factor = 0.3
 				army_org_regain	= 0.3
-				supply_consumption_factor = -0.5
+				supply_consumption_factor = -0.1
+				}
 			}
-		}
 		} 
 	
 	country = {
@@ -550,6 +548,87 @@ ideas = {
 	}
 	
 	political_advisor = {
+	
+		chung_won_sik = { #정원식 (국무총리)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+		}
+		
+		lee_young_man = { #이용만 (재무부장관)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		chung_geun_mo = { #정근모 (과학기술처 장관)
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		choi_ghak = { #최각규 (경제 기획원 장관)
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+		}
+
+		han_seung = { #한승수 (산업통상자원부장관)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		park_sae = { #박세직 (안기부장)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		lee_ghun = { #이건희 (삼성그룹회장)
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+		}
 	}
 	
 	tank_manufacturer = { 
@@ -906,5 +985,376 @@ ideas = {
 	}
 	
 	
+	theorist = {
+		
+		cho_nam_pung = { #조남풍 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+		
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		kim_dong_shin = { #김동신 
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		
+		choi_sae_chang = { #최세창 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+
+			traits = { mobile_warfare_expert }
+		}
+		
+		seo_dong = { #서동열
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		lee_yang_ho = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		lee_nam_shin = { #이남신
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+	}	
+	
+	army_chief = {
+
+		kim_jing_yung = { #김진영 (하나회)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		kim_dong_jin  = { #김동진
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		lee_jin_sam = { #이진삼 (하나회)
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		do_il_kyu = { #도일규
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+
+					
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		cho_geun_hae = { #조근해
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		kim_hong_rae = { #김홍래
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		han_chu = { #한주석
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		an_byung_tae = { #안병태
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		
+		you_sam = { #유삼남
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+						
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	
+	high_command = {
+
+		lee_jun = { #이준
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		un_yong_nam = { #윤용남
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		
+		lee_jong_gu = { #이종구 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		goo_chang_hoe = { #구창회 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		lee_yang_ho = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		lee_gwang = { #이광학
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		chung_yong = { #정용후
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		lee_soo = { #이수용
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		chang_jung = { #장정길
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	
 }

@@ -14,6 +14,20 @@ ideas = {
 				consumer_goods_factor = 0.075
 			}
 		}
+	    lee_myung_bak_pre = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 	}
 	political_advisor = {	
 
@@ -28,6 +42,19 @@ ideas = {
 			}
 			cost = 100
 			traits = { KOR_roh_trait }
+			ai_will_do = { factor = 0 }
+		}
+		moon_jaein = {
+			picture = fkr_advisor_roh_muhyun
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_minju_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_moon_trait }
 			ai_will_do = { factor = 0 }
 		}
 		hong_junpyo = {

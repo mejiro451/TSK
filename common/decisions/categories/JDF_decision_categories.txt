@@ -11,8 +11,5 @@ JDF_internal_factions = {
 
 	allowed = {
 		original_tag = JDF
-		NOT = {
-		    has_country_flag = 2009_scenario
-		}
 	}
 }
