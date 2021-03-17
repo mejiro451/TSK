@@ -131,5 +131,12 @@
  moon_jaein:0 "문 재인"
  lee_myung_bak_pre:0 "이명박 대통령"
  lee_myung_bak_pre_desc:0 "대한민국의 17대 대통령.(재임기간 2008/2/25~2013/2/25)"
+ pre_503:0 "박근혜 대통령"
+ pre_moon:0 "문재인 대통령"
+ 
+ pre_prison_503:0 "수감된 박근혜"
+ pre_prison_714:0 "수감된 이명박"
+ pre_prison_moon:0 "수감된 문재인"
+ pre_prison_roh:0 "수감된 노무현"
  
  

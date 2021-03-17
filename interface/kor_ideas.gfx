@@ -488,5 +488,29 @@ spriteTypes = {
 		name = "GFX_idea_lee_myung_bak_pre"
 		texturefile = "gfx/interface/ideas/ADVISOR/이명박.png"
 	}
+	spriteType = {
+		name = "GFX_idea_pre_503"
+		texturefile = "gfx/interface/ideas/ADVISOR/박근혜 감옥.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pre_moon"
+		texturefile = "gfx/interface/ideas/ADVISOR/문재인 대통령.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pre_prison_503"
+		texturefile = "gfx/interface/ideas/ADVISOR/박근혜 감옥.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pre_prison_714"
+		texturefile = "gfx/interface/ideas/ADVISOR/이명박 감옥.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pre_prison_moon"
+		texturefile = "gfx/interface/ideas/ADVISOR/문재인.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pre_prison_roh"
+		texturefile = "gfx/interface/ideas/ADVISOR/노무현 감옥.png"
+	}
 
 }

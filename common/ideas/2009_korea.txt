@@ -28,6 +28,84 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+	    pre_503 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_prison_503 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_prison_714 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_moon = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_moon
+			
+			modifier = {
+			}
+		}
+	    pre_prison_moon = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_prison_moon
+			
+			modifier = {
+			}
+		}
+	    pre_prison_roh = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_prison_roh
+			
+			modifier = {
+			}
+		}
 	}
 	political_advisor = {	
 
