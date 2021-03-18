@@ -4,8 +4,18 @@
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_kor
+	picture = GFX_intelligence_agency_logo_KOR_2009
 	names = { "국가정보원" }
+	
+	default = { tag = KOR }
+	available = { 
+		original_tag = KOR 
+	}
+}
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_kor
+	names = { "중앙정보부" }
 	
 	default = { tag = KOR }
 	available = { original_tag = KOR }

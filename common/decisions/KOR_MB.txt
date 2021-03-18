@@ -11,6 +11,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -24,11 +29,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 		}
 
 		complete_effect = {
@@ -57,6 +57,12 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -70,11 +76,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_811
 		}
 
@@ -105,6 +106,12 @@ core_PRK = {
 		available = {
 			is_subject = no
 			PRK = { exists = no }
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
+			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
 				controls_state = 527 #평안남도
@@ -117,11 +124,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_814
 		}
 
@@ -151,6 +153,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -164,11 +171,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_812
 		}
 
@@ -198,6 +200,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -211,11 +218,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_527
 		}
 
@@ -244,6 +246,10 @@ core_PRK = {
 		}
 
 		available = {
+		}
+
+		visible = {
+			original_tag = KOR
 			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
@@ -258,11 +264,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_822
 		}
 
@@ -292,6 +293,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -305,11 +311,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_816
 		}
 
@@ -339,6 +340,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -352,11 +358,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_815
 		}
 
@@ -386,6 +387,11 @@ core_PRK = {
 
 		available = {
 			is_subject = no
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
 			PRK = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_prk_tt
@@ -399,11 +405,6 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
-		}
-
-		visible = {
-			original_tag = KOR
-			is_subject = no
 			has_country_flag = KOR_cored_in_820
 		}
 

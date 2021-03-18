@@ -477,6 +477,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ADVISOR/성일환.png"
 	}
 	spriteType = {
+		name = "GFX_idea_choi_chakyu"
+		texturefile = "gfx/interface/ideas/ADVISOR/최차규.png"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_yunhoi"
+		texturefile = "gfx/interface/ideas/ADVISOR/최윤회.png"
+	}
+	spriteType = {
 		name = "GFX_idea_jung_okgeun"
 		texturefile = "gfx/interface/ideas/ADVISOR/정옥근.png"
 	}
@@ -506,11 +514,23 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_pre_prison_moon"
-		texturefile = "gfx/interface/ideas/ADVISOR/문재인.png"
+		texturefile = "gfx/interface/ideas/ADVISOR/문재인 감옥.png"
 	}
 	spriteType = {
 		name = "GFX_idea_pre_prison_roh"
 		texturefile = "gfx/interface/ideas/ADVISOR/노무현 감옥.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_not_politic_act_2"
+		texturefile = "gfx/interface/ideas/계엄령.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_internet_censorship"
+		texturefile = "gfx/interface/ideas/k인터넷.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_intelligence_agency_kor"
+		texturefile = "gfx/interface/ideas/국정원.png"
 	}
 
 }

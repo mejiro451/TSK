@@ -93,7 +93,7 @@ ideas = {
 		rok_lee_ghun = { #이건희 (삼성그룹회장)
 			
 			allowed = {
-				original_tag = KOR
+				original_tag = ROK
 			}
 			
 			traits = { }
