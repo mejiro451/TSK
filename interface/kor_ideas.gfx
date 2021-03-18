@@ -525,12 +525,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/계엄령.png"
 	}
 	spriteType = {
+		name = "GFX_idea_KOR_not_politic_act"
+		texturefile = "gfx/interface/ideas/초기.png"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_internet_censorship"
 		texturefile = "gfx/interface/ideas/k인터넷.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_intelligence_agency_kor"
 		texturefile = "gfx/interface/ideas/국정원.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_MB_the_fascism_ideas"
+		texturefile = "gfx/interface/ideas/국뽕.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_return_yi_dynasty"
+		texturefile = "gfx/interface/ideas/황실.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_return_yi_dynasty_2"
+		texturefile = "gfx/interface/ideas/황실.dds"
 	}
 
 }

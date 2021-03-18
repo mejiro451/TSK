@@ -12,7 +12,7 @@ country_event = {
 	option = {
 		name = KOR_MB.1.a
 		ai_chance = {
-		    factor = 65
+		    factor = 50
 		}
 		create_wargoal = {
 		    type = annex_everything
@@ -22,7 +22,7 @@ country_event = {
 	option = {
 		name = KOR_MB.1.b
 		ai_chance = {
-		    factor = 35
+		    factor = 50
 		}
 		KOR = {
 		    annex_country = { 
@@ -105,7 +105,6 @@ country_event = {
 		}
 		set_country_flag = KOR_MB_has_election
 		complete_national_focus = KOR_MB_consorvatism_won
-		remove_ideas = kor_law_of_korean_5
 	}	
 	option = {
 		name = KOR_MB.4.b
@@ -114,7 +113,6 @@ country_event = {
 		}
 		set_country_flag = KOR_MB_has_election
 		complete_national_focus = KOR_MB_minju_won
-		remove_ideas = kor_law_of_korean_5
 	}	
 	option = {
 		name = KOR_MB.4.c
@@ -123,7 +121,6 @@ country_event = {
 		}
 		set_country_flag = KOR_MB_has_election
 		complete_national_focus = KOR_MB_middle_won
-		remove_ideas = kor_law_of_korean_5
 	}	
 }
 country_event = {
@@ -185,15 +182,21 @@ country_event = {
 		}
 		complete_national_focus = KOR_MB_kudeta
 		add_stability = -0.05
+		set_politics = {
+		    ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
 		set_party_name = {
 			ideology = neutrality
-			long_name = "국가안전기획부"
-			name = "국가안전기획부"
+			long_name = "국가재건최고회의"
+			name = "국가재건최고회의"
 		}
 		set_party_name = {
 			ideology = fascism
-			long_name = "국가안전기획부"
-			name = "국가안전기획부"
+			long_name = "국가재건최고회의"
+			name = "국가재건최고회의"
 		}
 		create_country_leader = {
 			name = "Han Min Koo"
@@ -205,6 +208,17 @@ country_event = {
 				#
 			}
 		}		
+		create_country_leader = {
+			name = "Han Min Koo"
+			desc = ""
+			picture = "gfx/leaders/KOR/HMK.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}		
+		set_cosmetic_tag = KOR_park
 	}
 	option = {
 		name = KOR_MB.7.b
@@ -379,6 +393,194 @@ country_event = {
 		name = KOR_MB.16.a
 		ai_chance = {
 		    factor = 1
+		}
+	}
+}
+#######
+country_event = {
+	id = KOR_MB.18 #
+	title = KOR_MB.18.t
+	desc = KOR_MB.18.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.18.a #근혜
+		ai_chance = {
+		    factor = 1
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_park
+	}
+	option = {
+		name = KOR_MB.18.b #문수
+		ai_chance = {
+		    factor = 0
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_kim
+	}
+	option = {
+		name = KOR_MB.18.c #회창
+		ai_chance = {
+		    factor = 0
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_lee_hoi_chang
+		add_ideas = lee_hoi_chang
+	}
+}
+country_event = {
+	id = KOR_MB.19 #
+	title = KOR_MB.19.t
+	desc = KOR_MB.19.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.19.a
+		ai_chance = {
+		    factor = 1
+		}
+		set_cosmetic_tag = KOR_eok
+		hidden_effect = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "새누리당"
+			name = "새누리당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "통합진보당"
+			name = "통합진보당"
+		}
+		
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+		}
+	}
+	option = {
+		name = KOR_MB.19.b
+		ai_chance = {
+		    factor = 0
+		}
+		swap_ideas = {
+		    add_idea = KOR_return_yi_dynasy_2
+			remove_idea = KOR_return_yi_dynasy
+		}
+		set_cosmetic_tag = KOR_eok
+		hidden_effect = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "새누리당"
+			name = "새누리당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "통합진보당"
+			name = "통합진보당"
+		}
+		
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
 		}
 	}
 }

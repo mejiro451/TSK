@@ -12,6 +12,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -29,6 +30,7 @@ core_PRK = {
 				controls_state = 820 #함경북도
 				controls_state = 822 #평안북도
 			}
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -58,6 +60,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 
 		visible = {
@@ -77,6 +80,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_811
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -107,6 +111,7 @@ core_PRK = {
 			is_subject = no
 			PRK = { exists = no }
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -125,6 +130,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_814
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -154,6 +160,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -172,6 +179,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_812
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -201,6 +209,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -219,6 +228,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_527
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -246,7 +256,9 @@ core_PRK = {
 		}
 
 		available = {
+			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -265,6 +277,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_822
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -294,6 +307,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -312,6 +326,7 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_816
+			has_country_flag = annex_prk_war
 		}
 
 		complete_effect = {
@@ -341,6 +356,7 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -359,9 +375,10 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_815
+			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			820 = {
 				add_core_of = ROOT
 			}
@@ -378,7 +395,7 @@ core_PRK = {
 			}
 		}
 	}
-	KOR_coring_in_527 = { #함경북도에 코어넣기
+	KOR_coring_in_818 = { #함경북도에 코어넣기
 		icon = generic_form_nation
 
 		allowed = {
@@ -388,6 +405,8 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			original_tag = KOR
@@ -406,9 +425,10 @@ core_PRK = {
 				controls_state = 822 #평안북도
 			}
 			has_country_flag = KOR_cored_in_820
+			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			818 = {
 				add_core_of = ROOT
 			}
@@ -462,7 +482,7 @@ core_HWAN = {
 			is_subject = no
 		}
 
-		complete_effect = {
+		remove_effect = {
 			every_state = {
 				limit = {
 					is_core_of = JAP
@@ -568,7 +588,7 @@ core_HWAN = {
 			is_subject = no
 		}
 
-		complete_effect = {
+		remove_effect = {
 			every_state = {
 				limit = {
 					is_core_of = CHI
@@ -617,7 +637,7 @@ core_HWAN = {
 			is_subject = no
 		}
 
-		complete_effect = {
+		remove_effect = {
 			every_state = {
 				limit = {
 					is_core_of = INS
@@ -704,7 +724,7 @@ core_HWAN = {
 			is_subject = no
 		}
 
-		complete_effect = {
+		remove_effect = {
 				584 = {
 				    add_core_of = ROOT
 				}

@@ -125,12 +125,13 @@ focus_tree = {
 	focus = {
 		id = KOR_plan_another
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		available = {
 			OR = {
 				has_completed_focus = KOR_MB_11
 				has_completed_focus = KOR_MB_12
 			}
+			has_country_flag = KOR_making_sorry
 		}	
 		x = 57
 		y = 6
@@ -962,6 +963,17 @@ focus_tree = {
 			focus = KOR_MB_aplok-duman
 			focus = KOR_MB_kill_kims
 		}
+		available = {
+				controls_state = 527 #평안남도
+				controls_state = 811 #황해도
+				controls_state = 812 #함경남도
+				controls_state = 814 #강원북부
+				controls_state = 815 #양강도
+				controls_state = 816 #자강도
+				controls_state = 818 #평양직할시
+				controls_state = 820 #함경북도
+				controls_state = 822 #평안북도
+		}		
 		x = 24
 		y = 7
 			completion_reward = {
@@ -1173,48 +1185,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = KOR_MB_none-kims_tooltip
-					hidden_effect = {
-							PRK = {
-									remove_state_core = 527
-									remove_state_core = 818
-									remove_state_core = 811
-									remove_state_core = 814
-									remove_state_core = 812
-									remove_state_core = 816
-									remove_state_core = 815
-									remove_state_core = 820
-									remove_state_core = 822
-									remove_state_claim = 525
-									remove_state_claim = 807
-									remove_state_claim = 810
-									remove_state_claim = 817
-									remove_state_claim = 809
-									remove_state_claim = 808
-									remove_state_claim = 813
-									remove_state_claim = 821
-									remove_state_claim = 823
-								}
-							KOR = {
-									add_state_core = 527
-									add_state_core = 818
-									add_state_core = 811
-									add_state_core = 814
-									add_state_core = 812
-									add_state_core = 816
-									add_state_core = 815
-									add_state_core = 820
-									add_state_core = 822
-									remove_state_claim = 527
-									remove_state_claim = 818
-									remove_state_claim = 811
-									remove_state_claim = 814
-									remove_state_claim = 812
-									remove_state_claim = 816
-									remove_state_claim = 815
-									remove_state_claim = 820
-									remove_state_claim = 822
-								}
-						}
+					set_country_flag = annex_prk_war
 				}
 
 	}
@@ -1276,10 +1247,10 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = KOR_MB_northen_nuke
-							bonus = 20.0
+							bonus = 500.0
 							technology = nukes
 						}
-					add_nuclear_bombs = 10
+					add_nuclear_bombs = 25
 				}
 
 	}
@@ -1351,6 +1322,17 @@ focus_tree = {
 			focus = KOR_MB_northen_nuke
 			focus = KOR_MB_war_or_annexed
 		}
+		available = {
+				controls_state = 527 #평안남도
+				controls_state = 811 #황해도
+				controls_state = 812 #함경남도
+				controls_state = 814 #강원북부
+				controls_state = 815 #양강도
+				controls_state = 816 #자강도
+				controls_state = 818 #평양직할시
+				controls_state = 820 #함경북도
+				controls_state = 822 #평안북도
+		}		
 		x = 34
 		y = 7
 			completion_reward = {
@@ -1363,6 +1345,7 @@ focus_tree = {
 									amount = -30
 								}
 						}
+			set_country_flag = annex_prk_war
 					}	
 				}
 
@@ -1427,23 +1410,18 @@ focus_tree = {
 		x = 38
 		y = 10
 		completion_reward = {
-			set_politics = {
-				ruling_party = fascism
-				last_election = "1934.12.19"
-				election_frequency = 60
-				elections_allowed = no
-			}
 			set_popularities = {
-				democratic = 50
-				fascism = 50
+				democratic = 80
+				neutrality = 20
 			}
+			remove_ideas = kor_law_of_korean_5
 		}
 
 	}
 	focus = {
 		id = KOR_MB_kudeta_kimusa
-		icon = goal_unknown
-		cost = 10.00
+		icon = ultranationalist_volunteers
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_kudeta
 		}
@@ -1460,35 +1438,57 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_japapese_korea
-		icon = goal_unknown
-		cost = 10.00
+		icon = attack_japan2
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_kudeta
 		}
 		x = 38
 		y = 11
+		completion_reward = {
+			add_war_support = 0.15
+		}
 
 	}
 	focus = {
 		id = KOR_MB_tsushima_annex
-		icon = goal_unknown
-		cost = 10.00
+		icon = war_against_japan
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_japapese_korea
 		}
 		x = 38
 		y = 12
+		completion_reward = {
+			transfer_state = 819
+			add_state_core = 819
+			JAP = {
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_MB_this_is_korean_army
-		icon = goal_unknown
-		cost = 10.00
+		icon = reactionary
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_kudeta_kimusa
 		}
 		x = 36
 		y = 12
+		completion_reward = {
+			
+			set_popularities = {
+				democratic = 1
+				fascism = 50
+				neutrality = 49
+				communism = 0
+			}
+		}
 
 	}
 	focus = {
@@ -1545,30 +1545,36 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_kill_minju
-		icon = goal_unknown
-		cost = 10.00
+		icon = fascist_liberty
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_kudeta
 		}
 		x = 40
 		y = 11
+		completion_reward = {
+			remove_ideas = KOR_legacy_of_518
+		}
 
 	}
 	focus = {
 		id = KOR_yushin
-		icon = goal_unknown
-		cost = 10.00
+		icon = monarchism2
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_kill_minju
 		}
 		x = 40
 		y = 12
+		completion_reward = {
+			add_ideas = KOR_MB_the_fascism_ideas
+		}
 
 	}
 	focus = {
 		id = KOR_the_new_order
-		icon = goal_unknown
-		cost = 10.00
+		icon = fascism3
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_this_is_korean_army
 		}
@@ -1580,6 +1586,12 @@ focus_tree = {
 		}
 		x = 38
 		y = 13
+		completion_reward = {
+			set_cosmetic_tag = KOR_2009_scenario
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
 
 	}
 	focus = {
@@ -1632,6 +1644,11 @@ focus_tree = {
 				amount = 2400
 				producer = KOR
 			}
+			set_technology = {
+				
+				m_2010_infantry_eq = 1
+				m_2010_modern_tank = 1
+			}
 		}
 
 	}
@@ -1681,8 +1698,8 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_imperials_defence
-		icon = neutralityz
-		cost = 10.00
+		icon = imperial_russia
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
 		}
@@ -1693,7 +1710,7 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = neutrality
 				popularity = 0.25
 			}
 		}
@@ -1701,24 +1718,35 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_imperial_bongsa
-		icon = goal_unknown
-		cost = 10.00
+		icon = return_of_the_kaiser
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_imperials_defence
 		}
 		x = 44
 		y = 11
+		completion_reward = {
+			add_ideas = KOR_return_yi_dynasty
+			add_stability = 0.15
+		}
 
 	}
 	focus = {
 		id = KOR_political_power_up
-		icon = goal_unknown
-		cost = 10.00
+		icon = political_pressure_blue
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_imperial_bongsa
 		}
 		x = 44
 		y = 12
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.06
+			}
+		}
 
 	}
 	focus = {
@@ -1737,96 +1765,230 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_navy_gospel_reform
-		icon = goal_unknown
-		cost = 10.00
+		icon = navy3
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_navy
 		}
 		x = 46
 		y = 2
+		completion_reward = {
+		
+					add_tech_bonus = {
+							bonus = 0.35
+							uses = 3
+							category = base_strike_main
+						}
+		}
 
 	}
 	focus = {
 		id = KOR_gospel_annex
-		icon = goal_unknown
-		cost = 10.00
+		icon = naval_bombers
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_navy_gospel_reform
 		}
 		x = 46
 		y = 3
+		completion_reward = {
+		
+					add_tech_bonus = {
+							bonus = 0.75
+							uses = 8
+							category = base_strike_main
+						}
+					add_tech_bonus = {
+							bonus = 0.75
+							uses = 4
+							category = cl_tech
+							category = ca_tech
+						}
+					add_tech_bonus = {
+							bonus = 0.75
+							uses = 4
+							category = dd_tech
+						}
+		}
 
 	}
 	focus = {
 		id = KOR_advisor_yi_won
-		icon = goal_unknown
-		cost = 10.00
+		icon = anti_monarchism2
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_imperials_defence
 		}
 		x = 46
 		y = 11
+		completion_reward = {
+			add_ideas = lee_myung_bak_pre
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/portrait_yi_won_2.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					KOR_yi_trait
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_myung_abbak
-		icon = goal_unknown
-		cost = 10.00
+		icon = anti_democracy2
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_advisor_yi_won
 		}
 		x = 46
 		y = 12
+		completion_reward = {
+			remove_ideas = lee_myung_bak_pre
+			set_party_name = {
+				ideology = neutrality
+				long_name = "이원 내각"
+				name = "이원 내각"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "이원 내각"
+				name = "이원 내각"
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = "이원 내각"
+				name = "이원 내각"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "이원 내각"
+				name = "이원 내각"
+			}
+			hidden_effect = {
+			
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/portrait_yi_won_2.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/ROK/portrait_yi_won_2.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					KOR_yi_trait
+				}
+			}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_naval_equipment_future
-		icon = goal_unknown
-		cost = 10.00
+		icon = continuous_naval_production
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_navy
 		}
 		x = 48
 		y = 2
+		completion_reward = {
+			set_technology = { 
+				mtg_transport = 1 
+				mtg_transport_2 = 1 
+			}
+		
+		}
 
 	}
 	focus = {
 		id = KOR_equipment_sangtae
-		icon = goal_unknown
-		cost = 10.00
+		icon = naval_dockyard
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_naval_equipment_future
 		}
 		x = 48
 		y = 3
+		completion_reward = {
+			add_ideas = hanjin_ship
+			if = {
+				limit = {
+					has_idea = hanjin_ship
+				}
+				add_political_power = 150
+			}
+			if = {
+				limit = {
+					has_idea = hyundai_ship
+				}
+				swap_ideas = {
+					add_idea = hyundai_ship
+					remove_idea = daewoo_ship
+				}
+				add_political_power = 60
+			}
+			if = {
+				limit = {
+					has_idea = daewoo_ship
+				}
+				swap_ideas = {
+					add_idea = hanjin_ship
+					remove_idea = daewoo_ship
+				}
+				add_political_power = 60
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_national_navy
-		icon = goal_unknown
-		cost = 10.00
+		icon = naval_doctrine
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_navy
 		}
 		x = 50
 		y = 2
+		completion_reward = {
+			navy_experience = 25
+		}	
 
 	}
 	focus = {
 		id = KOR_navy_is_1st
-		icon = goal_unknown
-		cost = 10.00
+		icon = naval_industry
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_national_navy
 		}
 		x = 50
 		y = 3
+		completion_reward = {
+			add_ideas = jung_okgeun
+			if = {
+				limit = {
+				    has_idea = jung_okgeun
+				}
+				add_political_power = 150
+			}
+		}	
 
 	}
 	focus = {
 		id = KOR_korean_navy's_father
-		icon = goal_unknown
-		cost = 10.00
+		icon = 350_ship_navy
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_equipment_sangtae
 		}
@@ -1838,12 +2000,22 @@ focus_tree = {
 		}
 		x = 48
 		y = 4
+		completion_reward = {
+		
+			add_ideas = hwang_kicheol
+			if = {
+				limit = {
+				    has_idea = hwang_kicheol
+				}
+				add_political_power = 150
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_manchu_plan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_another
 		}
@@ -1854,7 +2026,7 @@ focus_tree = {
 	focus = {
 		id = KOR_japans_accept
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_manchu_plan
 		}
@@ -1868,7 +2040,7 @@ focus_tree = {
 	focus = {
 		id = KOR_puppet_japan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_accept
 		}
@@ -1879,7 +2051,7 @@ focus_tree = {
 	focus = {
 		id = KOR_japanese_industry
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_accept
 		}
@@ -1890,7 +2062,7 @@ focus_tree = {
 	focus = {
 		id = KOR_this_is_japan_heemang
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_puppet_japan
 		}
@@ -1917,52 +2089,92 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_airgospel_reform
-		icon = goal_unknown
-		cost = 10.00
+		icon = close_air_support
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_airforce
 		}
 		x = 52
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1.0
+				uses = 3
+				category = battlefield_support_tree
+			}
+			every_state = {
+				limit = {
+					tag = KOR
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}	
 
 	}
 	focus = {
 		id = KOR_annex_three_ag
-		icon = goal_unknown
-		cost = 10.00
+		icon = flying_tigers
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_airgospel_reform
 		}
 		x = 52
 		y = 3
+		completion_reward = {
+		
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 3.0
+				uses = 5
+				category = battlefield_support_tree
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_f15_yangsan
-		icon = goal_unknown
-		cost = 10.00
+		icon = modern_fighter
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_airforce
 		}
 		x = 54
 		y = 2
+		completion_reward = {
+			set_technology = {
+			
+				m_2000_jet_fighter = 1
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_last_skyeqp
-		icon = goal_unknown
-		cost = 10.00
+		icon = modern_bomber
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_f15_yangsan
 		}
 		x = 54
 		y = 3
+		completion_reward = {
+		
+			set_technology = {
+			
+				m_2010_jet_CAS = 1
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_japans_cancle
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_manchu_plan
 		}
@@ -1976,7 +2188,7 @@ focus_tree = {
 	focus = {
 		id = KOR_plan_napchi_yamato
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_cancle
 		}
@@ -1987,7 +2199,7 @@ focus_tree = {
 	focus = {
 		id = KOR_chunhwa
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_cancle
 		}
@@ -1998,7 +2210,7 @@ focus_tree = {
 	focus = {
 		id = KOR_plan_of_fallen_sun
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_napchi_yamato
 		}
@@ -2012,7 +2224,7 @@ focus_tree = {
 	focus = {
 		id = KOR_plan_china
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_this_is_japan_heemang
 			focus = KOR_plan_of_fallen_sun
@@ -2027,7 +2239,7 @@ focus_tree = {
 	focus = {
 		id = KOR_new_korean_empire
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_china
 		}
@@ -2038,7 +2250,7 @@ focus_tree = {
 	focus = {
 		id = KOR_i_saekideul_bwara
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_new_korean_empire
 		}
@@ -2049,7 +2261,7 @@ focus_tree = {
 	focus = {
 		id = KOR_fenhal_china
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_china
 		}
@@ -2059,30 +2271,60 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_another_KRAF
-		icon = goal_unknown
-		cost = 10.00
+		icon = air_doctrine
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_airforce
 		}
 		x = 56
 		y = 2
+		completion_reward = {
+			add_ideas = sung_ilhwan
+			if = {
+				limit = {
+				    has_idea = sung_ilhwan
+				}
+				add_political_power = 150
+			}
+			if = {
+				limit = {
+				    has_idea = park_jongheon
+				}
+				swap_ideas = {
+					add_idea = park_jongheon
+					remove_idea = lee_kyehoon
+				}
+			}
+			if = {
+				limit = {
+				    has_idea = lee_kyehoon
+				}
+				swap_ideas = {
+					add_idea = sung_ilhwan
+					remove_idea = lee_kyehoon
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_nakhasan
-		icon = goal_unknown
-		cost = 10.00
+		icon = air_force
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_another_KRAF
 		}
 		x = 56
 		y = 3
+		completion_reward = {
+			add_political_power = 100
+		}
 
 	}
 	focus = {
 		id = KOR_high_skys_korean
-		icon = goal_unknown
-		cost = 10.00
+		icon = drone
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_annex_three_ag
 		}
@@ -2094,12 +2336,18 @@ focus_tree = {
 		}
 		x = 54
 		y = 4
+		completion_reward = {
+			set_technology = {
+			
+	m_2010_jet_multirole = 1
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_china_hwangukmong
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_fenhal_china
 		}
@@ -2110,7 +2358,7 @@ focus_tree = {
 	focus = {
 		id = KOR_plan_hitler
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_another
 		}
@@ -2121,7 +2369,7 @@ focus_tree = {
 	focus = {
 		id = KOR_go_berlin
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_hitler
 		}
@@ -2132,7 +2380,7 @@ focus_tree = {
 	focus = {
 		id = KOR_in_the_ikwon
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_go_berlin
 		}
@@ -2143,7 +2391,7 @@ focus_tree = {
 	focus = {
 		id = KOR_misile_in_the_hitler
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_go_berlin
 		}
@@ -2154,7 +2402,7 @@ focus_tree = {
 	focus = {
 		id = KOR_fascism_sure
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_in_the_ikwon
 		}
@@ -2168,7 +2416,7 @@ focus_tree = {
 	focus = {
 		id = KOR_go_london
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_hitler
 		}
@@ -2179,7 +2427,7 @@ focus_tree = {
 	focus = {
 		id = KOR_soviet_hyupbak
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_go_london
 		}
@@ -2190,7 +2438,7 @@ focus_tree = {
 	focus = {
 		id = KOR_6week_cut
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_go_london
 		}
@@ -2201,7 +2449,7 @@ focus_tree = {
 	focus = {
 		id = KOR_europe_communism_kill
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_soviet_hyupbak
 		}
@@ -2215,7 +2463,7 @@ focus_tree = {
 	focus = {
 		id = KOR_ww2_plan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_fascism_sure
 			focus = KOR_europe_communism_kill
@@ -2230,7 +2478,7 @@ focus_tree = {
 	focus = {
 		id = KOR_3
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_ww2_plan
 		}
@@ -2241,7 +2489,7 @@ focus_tree = {
 	focus = {
 		id = KOR_5
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_ww2_plan
 		}
@@ -2252,7 +2500,7 @@ focus_tree = {
 	focus = {
 		id = KOR_6
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_5
 		}
@@ -2363,7 +2611,7 @@ focus_tree = {
 		x = 28
 		y = 11
 			completion_reward = {
-					add_ideas = KOR_president_can_kill
+					add_stability = 0.075
 				}
 
 	}
@@ -2380,13 +2628,33 @@ focus_tree = {
 					always = no
 				}
 			completion_reward = {
-
+				
+				set_party_name = {
+					ideology = fascism
+					long_name = "한나라당"
+					name = "한나라당"
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "한나라당"
+					name = "한나라당"
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = "한나라당"
+					name = "한나라당"
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = "한나라당"
+					name = "한나라당"
+				}
 }
 
 	}
 	focus = {
 		id = KOR_MB_park
-		icon = goal_unknown
+		icon = democracy4
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_next_korean_president
@@ -2408,12 +2676,24 @@ focus_tree = {
 
 }
 						}
+						hidden_effect = {
+					create_country_leader = {
+							name = "Park Geun Hye"
+							desc = ""
+							picture = "gfx/leaders/KOR/PGH.dds"
+							expire = "1965.1.1"
+							ideology = rexism
+							traits = {
+
+}
+						}
+						}
 				}
 
 	}
 	focus = {
 		id = KOR_MB_lee_hoi_chang
-		icon = goal_unknown
+		icon = democracy4
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_next_korean_president
@@ -2435,6 +2715,18 @@ focus_tree = {
 
 }
 						}
+						hidden_effect = {
+					create_country_leader = {
+							name = "Lee Hoi-Chang"
+							desc = ""
+							picture = "gfx/leaders/KOR/Lee_Hoi-chang.dds"
+							expire = "1965.1.1"
+							ideology = rexism
+							traits = {
+
+}
+						}
+						}
 				}
 
 	}
@@ -2447,11 +2739,19 @@ focus_tree = {
 		}
 		x = 26
 		y = 12
+		completion_reward = {
+			KOR = {
+			add_timed_idea = {
+				idea = KOR_MB_the_fascism_ideas
+				days = 365
+			}	
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_MB_kim
-		icon = goal_unknown
+		icon = democracy4
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_next_korean_president
@@ -2473,6 +2773,18 @@ focus_tree = {
 
 }
 						}
+						hidden_effect = {
+					create_country_leader = {
+							name = "Kim Moon Soo"
+							desc = ""
+							picture = "gfx/leaders/KOR/KMS.dds"
+							expire = "1965.1.1"
+							ideology = rexism
+							traits = {
+
+}
+						}
+						}
 				}
 
 	}
@@ -2493,6 +2805,12 @@ focus_tree = {
 		y = 13
 			completion_reward = {
 					remove_ideas = kor_law_of_korean_5
+					hidden_effect = {
+						country_event = {
+							id = KOR_MB.18
+							days = 14
+						}
+				    }
 				}
 
 	}
@@ -2540,7 +2858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_next_government
-		icon = goal_unknown
+		icon = democracy5
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_choi_sunshil's_advise
@@ -2549,6 +2867,23 @@ focus_tree = {
 		}
 		x = 32
 		y = 13
+		completion_reward = {
+			set_popularities = {
+				democratic = 0
+				fascism = 100
+				communism = 0
+				neutrality = 0
+			}
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1938.12.19"
+				election_frequency = 60
+				elections_allowed = yes
+			}
+			hidden_effect = {
+				set_cosmetic_tag = KOR_2009_scenario
+			}
+		}
 
 	}
 	focus = {
@@ -2560,6 +2895,10 @@ focus_tree = {
 		}
 		x = 26
 		y = 11
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 120
+		}
 
 	}
 	focus = {
@@ -2571,17 +2910,24 @@ focus_tree = {
 		}
 		x = 28
 		y = 12
+			completion_reward = {
+					add_stability = 0.075
+					add_war_support = 0.075
+				}
 
 	}
 	focus = {
 		id = KOR_MB_social_renuwal
-		icon = goal_unknown
+		icon = social_democracy_industry
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_the_last_order
 		}
 		x = 24
 		y = 12
+		completion_reward = {
+			add_stability = 0.1
+		}
 
 	}
 	focus = {
@@ -2600,30 +2946,44 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_uihoi_jumgeo
-		icon = goal_unknown
-		cost = 10.00
+		icon = government_beu
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_imperials_defence
 		}
 		x = 42
 		y = 11
+		completion_reward = {
+			remove_ideas = KOR_legacy_of_518
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_gwaban
-		icon = goal_unknown
-		cost = 10.00
+		icon = fascism2
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_uihoi_jumgeo
 		}
 		x = 42
 		y = 12
+		completion_reward = {
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_bokgwun_vote
-		icon = goal_unknown
-		cost = 10.00
+		icon = hungarian_monarchism
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_gwaban
 		}
@@ -2635,12 +2995,18 @@ focus_tree = {
 		}
 		x = 44
 		y = 13
+		completion_reward = {
+			country_event = {
+			    id = KOR_MB.19
+			}
+			remove_ideas = kor_law_of_korean_5
+		}
 
 	}
 	focus = {
 		id = KOR_united_nation
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_4
 		}
@@ -2657,7 +3023,7 @@ focus_tree = {
 	focus = {
 		id = KOR_northen_southen_china
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_fenhal_china
 		}
@@ -2668,7 +3034,7 @@ focus_tree = {
 	focus = {
 		id = KOR_baekje_plan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_northen_southen_china
 		}
@@ -2682,7 +3048,7 @@ focus_tree = {
 	focus = {
 		id = KOR_core_in_japan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_japan_and_korea_is_brother
 		}
@@ -2696,7 +3062,7 @@ focus_tree = {
 	focus = {
 		id = KOR_japan_and_korea_is_brother
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_new_korean_empire
 		}
@@ -2707,7 +3073,7 @@ focus_tree = {
 	focus = {
 		id = KOR_1
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_ww2_plan
 		}
@@ -2718,7 +3084,7 @@ focus_tree = {
 	focus = {
 		id = KOR_2
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_1
 		}
@@ -2729,7 +3095,7 @@ focus_tree = {
 	focus = {
 		id = KOR_4
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_3
 		}
@@ -2740,7 +3106,7 @@ focus_tree = {
 	focus = {
 		id = KOR_moon_jae_in_president
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_law_minju
 		}
@@ -2757,7 +3123,7 @@ focus_tree = {
 	focus = {
 		id = KOR_neutrality_plan
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}
@@ -2768,7 +3134,7 @@ focus_tree = {
 	focus = {
 		id = KOR_people_live_the_world
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}
@@ -2779,7 +3145,7 @@ focus_tree = {
 	focus = {
 		id = KOR_war_not_call_you
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_people_live_the_world
 		}
@@ -2790,7 +3156,7 @@ focus_tree = {
 	focus = {
 		id = KOR_law_minju
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_neutrality_plan
 		}
@@ -2801,7 +3167,7 @@ focus_tree = {
 	focus = {
 		id = KOR_its_last_politic
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_up_people
 		}
@@ -2812,7 +3178,7 @@ focus_tree = {
 	focus = {
 		id = KOR_up_people
 		icon = goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}

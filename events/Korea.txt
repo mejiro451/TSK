@@ -479,6 +479,7 @@ country_event = { #공항,항구폐쇄
 	trigger = {
 		tag = KOR
 		date > 1936.1.1
+		NOT = has_completed_focus = KOR_MB_timeslip
 	}
 
 	mean_time_to_happen = {
@@ -506,6 +507,7 @@ country_event = { #국회점거
 	trigger = {
 		tag = KOR
 		date > 1936.1.1
+		NOT = has_completed_focus = KOR_MB_timeslip
 	}
 
 	mean_time_to_happen = {
@@ -596,6 +598,7 @@ country_event = { #자위대 항공기와 접촉
 	trigger = {
 		tag = KOR
 		date > 1936.1.1
+		NOT = has_completed_focus = KOR_MB_timeslip
 	}
 
 	mean_time_to_happen = {

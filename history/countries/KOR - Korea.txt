@@ -545,13 +545,18 @@ add_ideas = {
 	
 	kor_supremacy_of_will
 	KOR_legacy_of_518
+	
+	continuous_air_production
 }
 #전격전 시나리오
 1936.1.4 = {
 set_fuel_ratio = 1.0
+set_cosmetic_tag = KOR_2009_scenario
 remove_ideas = {
     kor_supremacy_of_will
 }
+set_stability = 0.3
+set_war_support = 0.56
 oob = "KOR_1939"
 remove_unit_leader = 10001
 remove_unit_leader = 10002
@@ -635,12 +640,18 @@ set_technology = {
 	#핵연구
 	atomic_research = 1
 	nuclear_reactor  = 1
+	#nukes  = 1
 	#연구
-	#electronic_mechanical_engineering = 1
-	#radio = 1
-	#radio_detection = 1
-	#decimetric_radar = 1
-	#mechanical_computing = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	jet_engines = 1
+	improved_rocket_engines = 1
+	advanced_rocket_engines = 1
 	#산업
 	#basic_machine_tools = 1
 	#improved_machine_tools = 1

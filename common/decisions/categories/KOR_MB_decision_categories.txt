@@ -4,7 +4,6 @@ core_PRK = {
 	
 	allowed = {
 		tag = KOR
-	    has_country_flag = 2009_scenario
 	}
 
 	visible = { 
