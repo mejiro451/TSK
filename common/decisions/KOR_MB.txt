@@ -33,7 +33,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			811 = {
 				add_core_of = ROOT
 			}
@@ -83,7 +83,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			814 = {
 				add_core_of = ROOT
 			}
@@ -133,7 +133,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			812 = {
 				add_core_of = ROOT
 			}
@@ -182,7 +182,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			527 = {
 				add_core_of = ROOT
 			}
@@ -231,7 +231,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			822 = {
 				add_core_of = ROOT
 			}
@@ -280,7 +280,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			816 = {
 				add_core_of = ROOT
 			}
@@ -329,7 +329,7 @@ core_PRK = {
 			has_country_flag = annex_prk_war
 		}
 
-		complete_effect = {
+		remove_effect = {
 			815 = {
 				add_core_of = ROOT
 			}
@@ -395,7 +395,7 @@ core_PRK = {
 			}
 		}
 	}
-	KOR_coring_in_818 = { #함경북도에 코어넣기
+	KOR_coring_in_818 = { #평양에 코어넣기
 		icon = generic_form_nation
 
 		allowed = {
@@ -405,7 +405,6 @@ core_PRK = {
 		available = {
 			is_subject = no
 		}
-		
 		fire_only_once = yes
 
 		visible = {

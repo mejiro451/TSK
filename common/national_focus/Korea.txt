@@ -1411,8 +1411,8 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			set_popularities = {
-				democratic = 80
-				neutrality = 20
+				democratic = 60
+				neutrality = 40
 			}
 			remove_ideas = kor_law_of_korean_5
 		}
@@ -1588,6 +1588,8 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			set_cosmetic_tag = KOR_2009_scenario
+			set_technology = { bicycle_infantry = 1 }
+			set_technology = { suicide_craft = 1 } 
 			set_politics = {
 				ruling_party = fascism
 			}
@@ -2808,7 +2810,7 @@ focus_tree = {
 					hidden_effect = {
 						country_event = {
 							id = KOR_MB.18
-							days = 14
+							days = 1
 						}
 				    }
 				}
