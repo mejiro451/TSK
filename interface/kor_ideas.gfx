@@ -550,7 +550,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_earth_is_korea"
-		texturefile = "gfx/interface/ideas/지구.dds"
+		texturefile = "gfx/interface/ideas/지구.png"
 	}
 
 }

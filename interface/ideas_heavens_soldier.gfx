@@ -4,7 +4,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_fkr_advisor_roh_muhyun"
-		texturefile = "gfx/interface/ideas/ideas_FKR_roh_mu_hyun.dds"
+		texturefile = "gfx/interface/ideas/노무현.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_fkr_advisor_ahn_changho"
