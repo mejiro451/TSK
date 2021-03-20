@@ -498,7 +498,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_pre_503"
-		texturefile = "gfx/interface/ideas/ADVISOR/박근혜 감옥.png"
+		texturefile = "gfx/interface/ideas/박근혜.png"
 	}
 	spriteType = {
 		name = "GFX_idea_pre_moon"
@@ -547,6 +547,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_KOR_return_yi_dynasty_2"
 		texturefile = "gfx/interface/ideas/황실.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_earth_is_korea"
+		texturefile = "gfx/interface/ideas/지구.dds"
 	}
 
 }

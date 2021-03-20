@@ -14,6 +14,20 @@ ideas = {
 				consumer_goods_factor = 0.075
 			}
 		}
+	    KOR_earth_is_korea = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
 	    lee_myung_bak_pre = {
 		
 			allowed = {

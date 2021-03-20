@@ -15,7 +15,7 @@ ideas = {
 				land_night_attack = 0.85
 				army_org_factor = 0.3
 				army_org_regain	= 0.3
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.6
 				}
 			}
 		} 

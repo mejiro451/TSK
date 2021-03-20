@@ -54,21 +54,6 @@ bookmarks = {
 			}
 			
 		}
-		GER = {
-			history = GER_BLITZKRIEG_DESC
-			ideology = fascism
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_15
-				GER_autarky_idea
-			}
-			focuses = {
-				GER_weserubung
-				GER_plan_z
-				GER_ussr_war_goal
-			}
-		}
 		PRK = {
 			history = KPA_GATHERING_STORM_2009_DESC
 			ideology = communism
@@ -89,13 +74,28 @@ bookmarks = {
 			ideas={
 				KOR_satellite
 				KOR_danilminjok
-				KOR_not_politic_act
+				KOR_earth_is_korea
 			}	
 			focuses = {
 				KOR_MB_timeslip
 				KOR_plan_another
 				KOR_MB_industry
 			}		
+		}
+		GER = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_15
+				GER_autarky_idea
+			}
+			focuses = {
+				GER_weserubung
+				GER_plan_z
+				GER_ussr_war_goal
+			}
 		}
 		SOV = {
 			history = SOV_BLITZKRIEG_DESC
