@@ -5,7 +5,7 @@ oob = "PRK_1936"
 add_ideas = {
 	#laws
 	tot_economic_mobilisation
-	service_by_requirement
+	korean_war
 	closed_economy
 }
 

@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_timeslip
-		icon = rok_emblem
+		icon = 타임슬립
 		cost = 0.30
 		x = 29
 		y = 0
@@ -124,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_plan_another
-		icon = goal_unknown
+		icon = 국뽕
 		cost = 5.00
 		available = {
 			OR = {

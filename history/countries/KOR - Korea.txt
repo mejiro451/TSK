@@ -138,6 +138,7 @@ set_technology = {
 
 add_ideas = {
     KOR_modern_millitary
+	korean_war
 }
 
  

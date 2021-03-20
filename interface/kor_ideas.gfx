@@ -356,7 +356,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_satellite"
-		texturefile = "gfx/interface/ideas/KOR/idea_kor_supremacy_of_technology.dds"
+		texturefile = "gfx/interface/ideas/인공위성.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_modern_millitary"

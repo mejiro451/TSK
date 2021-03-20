@@ -93,7 +93,7 @@ bookmarks = {
 			}	
 			focuses = {
 				KOR_MB_timeslip
-				KOR_MB_oil_problem
+				KOR_plan_another
 				KOR_MB_industry
 			}		
 		}
