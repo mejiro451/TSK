@@ -10,9 +10,7 @@ tags={
 }
 picture="thumbnail.png"
 replace_path="common/state_category"
-replace_path="common/units"
-replace_path="common/technologies"
-replace_path="common/units"
+replace_path="common/terrain"
 replace_path="common/resources"
 supported_version="1.10.*"
 remote_file_id="2251411816"
