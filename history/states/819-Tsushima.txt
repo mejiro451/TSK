@@ -14,6 +14,9 @@ state={
 				naval_base = 4
 			}
 		}
+		1936.1.4 = {
+			remove_state_core = JDF
+		}
 		victory_points = {
 			10011 5 
 		}

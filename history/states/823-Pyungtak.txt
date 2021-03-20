@@ -12,6 +12,9 @@ state={
 		victory_points = {
 			13246 10 
 		}
+		1936.1.4 = {
+			remove_state_core = USF
+		}
 		add_core_of = KOR
 		add_claim_by = PRK
 		add_core_of = USF
