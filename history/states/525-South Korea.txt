@@ -4,7 +4,7 @@ state={
 	name="경기도"
 
 	history={
-		owner = KOR
+		owner = KR1
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
@@ -29,9 +29,15 @@ state={
 		victory_points = {
 			13244 20 
 		}
-		add_core_of = KOR
-		add_claim_by = PRK
+		add_core_of = KR1
+		add_core_of = PRK
 
+		1936.1.9 = {
+			owner = KOR
+			controller = KOR
+			remove_core_of = KR1
+			add_core_of = KOR
+		}
 	}
 
 	provinces={

@@ -1,0 +1,57 @@
+add_namespace = rok
+country_event = { # 14대 대선
+	id = rok.1
+	title = rok.1.t
+	desc = rok.1.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #김영삼 대통령
+		name = rok.1.a
+		ai_chance = { factor = 50 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		create_country_leader = {
+			name = "Kim Young Sam"
+			picture = "김영삼.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {	
+			}
+		}
+			complete_national_focus = President_Kim_Young_sam	
+    }	
+	
+	option = { #김구 대통령
+		name = rok.1.b
+		ai_chance = { factor = 50 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		create_country_leader = {
+			name = "Kim Gu"
+			picture = "김구.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {	
+			}
+		}
+	}
+		complete_national_focus = President_Kim_Koo	
+}
+country_event = { # 내전끝
+	id = rok.2
+	title = rok.2.t
+	desc = rok.2.d
+	picture = GFX_two_peo_pic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #알겠네
+		name = rok.2.a
+		add_ideas = rok_remnants_of_the_military
+		add_ideas = KOR_economic_collapse_1
+    }	
+}

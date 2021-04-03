@@ -7,6 +7,14 @@ spriteTypes = {
 		name = "GFX_superevent_assassination_time_slip"
 		textureFile = "gfx//superevent_pictures//assassination_time_slip.dds"
 	}
+	spriteType = {
+		name = "GFX_superevent_communism_uniform"
+		textureFile = "gfx//superevent_pictures//communism_uniform.dds"
+	}
+	spriteType = {
+		name = "GFX_superevent_south_Unification"
+		textureFile = "gfx//superevent_pictures//south_Unification.dds"
+	}
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_bigevent_border"
 		size= { x=192 y=243 }

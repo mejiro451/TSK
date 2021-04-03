@@ -1,0 +1,30 @@
+﻿
+
+units = {
+	fleet = {
+		name = "조선인민군해군 동해함대"			
+		naval_base = 3981
+		task_force = {
+			name = "동해함대" 
+			location = 3981
+			ship = { name = "나진" definition = modern_FF start_experience_factor = 0.1 equipment = { ship_hull_FF_1 = { amount = 1 owner = PRK version_name = "나진급" } } }
+			ship = { name = "서호" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "서호급" } } }
+			
+			ship = { name = "사리원" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "사리원급" } } }
+			ship = { name = "해주" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "사리원급" } } }
+			ship = { name = "정주" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "사리원급" } } }
+			ship = { name = "구성" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "사리원급" } } }
+		}
+	}
+	fleet = {
+		name = "조선인민군해군 서해함대"	
+		naval_base = 4052
+		task_force = {
+			name = "서해함대" 
+			location = 4052 	 
+			ship = { name = "개성" definition = modern_FF start_experience_factor = 0.1 equipment = { ship_hull_FF_1 = { amount = 1 owner = PRK version_name = "나진급" } } }
+			ship = { name = "신의주" definition = modern_PCC start_experience_factor = 0.1 equipment = { ship_hull_PCC_1 = { amount = 1 owner = PRK version_name = "사리원급" } } }
+		}
+	}
+}
+

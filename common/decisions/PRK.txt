@@ -1,0 +1,2438 @@
+#Category only allowed for PRK
+Red_Flag_Campaign = {
+	 propaganda = { #선전물 배포
+		
+		available = {
+			has_completed_focus = prk_Red_Flag_Movement 
+			NOT = { has_country_flag = during_Red_Flag_Campaign }
+		}
+		visible = {
+			has_completed_focus = prk_Red_Flag_Movement 
+		}
+		icon = generic_operation
+		
+		cost = 50
+		
+		is_good = no
+		
+		days_re_enable = 150
+		
+		days_remove = 100
+		
+		complete_effect = {
+			set_country_flag = during_Red_Flag_Campaign
+			add_ideas = propaganda_camp
+		}
+
+		remove_effect = {
+			clr_country_flag = during_Red_Flag_Campaign
+			remove_ideas = propaganda_camp
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	 }
+	 supervision = { #관리감독 강화
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Red_Flag_Movement 
+			NOT = { has_country_flag = during_Red_Flag_Campaign }
+		}
+		visible = {
+			has_completed_focus = prk_Red_Flag_Movement 
+		}
+		
+		cost = 50
+		
+		is_good = no
+		days_re_enable = 200
+		
+		days_remove = 50
+		
+		complete_effect = {
+			set_country_flag = during_Red_Flag_Campaign
+			add_ideas = supervision
+		}
+
+		remove_effect = {
+			clr_country_flag = during_Red_Flag_Campaign
+			remove_ideas = supervision
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	 }
+	 expansion_of_labor_camps = { #노동수용소 동원
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Red_Flag_Movement 
+			NOT = { has_country_flag = during_Red_Flag_Campaign }
+		}
+		visible = {
+			has_completed_focus = prk_Red_Flag_Movement 
+		}
+		cost = 50
+		
+		is_good = no
+		days_re_enable = 150
+		
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = during_Red_Flag_Campaign
+			add_ideas = expansion_camps
+		}
+
+		remove_effect = {
+			clr_country_flag = during_Red_Flag_Campaign
+			remove_ideas = expansion_camps
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 re_education = { #재교육 운동
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Red_Flag_Movement 
+			NOT = { has_country_flag = during_Red_Flag_Campaign }
+		}
+		visible = {
+			has_completed_focus = prk_Red_Flag_Movement 
+		}
+		cost = 50
+		
+		is_good = no
+		days_re_enable = 200
+		
+		days_remove = 100
+		
+		complete_effect = {
+			set_country_flag = during_Red_Flag_Campaign
+			add_ideas = re_education_camp
+		}
+
+		remove_effect = {
+			clr_country_flag = during_Red_Flag_Campaign
+			remove_ideas = re_education_camp
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	 }
+	 agricultural_field = { #농업현장투입
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Red_Flag_Movement 
+			NOT = { has_country_flag = during_Red_Flag_Campaign }
+		}
+		visible = {
+			has_completed_focus = prk_Red_Flag_Movement 
+		}
+		cost = 50
+		
+		is_good = no
+		days_re_enable = 150
+		
+		days_remove = 100
+		
+		complete_effect = {
+			set_country_flag = during_Red_Flag_Campaign
+			add_ideas = agricultural
+		}
+
+		remove_effect = {
+			clr_country_flag = during_Red_Flag_Campaign
+			remove_ideas = agricultural
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+PRK_food_cris_cat = {
+
+	food_cris_lvl_up = { #식량난 레벨증가
+
+		icon = generic_civil_support
+
+		available = {
+			NOT = { has_idea = KOR_food_1 }
+			has_country_flag = food_cris_end
+		}
+
+		days_mission_timeout = 150
+
+		activation = {
+			has_idea = KOR_food_1
+			NOT = { has_idea = KOR_food_3 }
+		}
+
+		visible = {
+			has_idea = KOR_food_1
+			NOT = { has_idea = KOR_food_3 }
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+		country_event = { id = PRK.38 }
+		}
+	}
+	
+
+	food_cris_lvl_up_1 = { #고난의 행군!
+
+		icon = generic_civil_support
+
+		available = {
+			NOT = { has_idea = KOR_food_4 }
+			has_country_flag = food_cris_end
+		}
+		
+		days_mission_timeout = 90
+
+		activation = {
+			has_idea = KOR_food_3
+		}
+
+		visible = {
+			has_idea = KOR_food_3
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = { id = PRK.39 }
+		}
+	}
+	
+	increase_rice_production = {
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+		visible = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+
+		days_re_enable = 80
+		
+		cost = 50
+		
+		is_good = no
+		
+		days_remove = 100
+
+		complete_effect = {
+			set_country_flag = Food_policy
+		}
+
+		remove_effect = {
+			country_event = { id = PRK.40 }
+			clr_country_flag = Food_policy
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mechanization_of_agriculture = {
+
+		icon = generic_operation
+		
+		cost = 50
+		
+		available = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+		visible = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+		
+		days_re_enable = 80
+		
+		is_good = no
+		
+		days_remove = 100
+
+		complete_effect = {
+			set_country_flag = Food_policy
+		}
+
+		remove_effect = {
+			country_event = { id = PRK.40 }
+			clr_country_flag = Food_policy
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	food_imports = {
+
+		icon = generic_operation
+		
+		available = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+		visible = {
+			has_completed_focus = prk_Combat_Agriculture
+		}
+		cost = 80
+		
+		is_good = no
+		
+		days_re_enable = 80
+		
+		days_remove = 50
+
+		complete_effect = {
+			set_country_flag = Food_policy
+		}
+
+		remove_effect = {
+			country_event = { id = PRK.40 }
+			clr_country_flag = Food_policy
+			add_timed_idea = {
+				idea = KOR_fund
+				days = 100
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+PRK_counstruction_hotel = {
+	 Resume_material_procurement = {
+		
+		available = {
+			has_completed_focus = prk_Ryugyong_Hotel 
+		}
+		visible = {
+			has_country_flag = Ryugyong_Hotel
+		}
+		icon = generic_operation
+		
+		cost = 20
+		
+		is_good = no
+		
+		days_remove = 50
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = fin_Resume_material_procurement
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	 }
+	 Groundbreaking = {
+
+		icon = generic_operation
+		
+		available = {
+			has_country_flag = fin_Resume_material_procurement 
+			has_completed_focus = prk_Ryugyong_Hotel
+		}
+		visible = {
+			has_country_flag = Ryugyong_Hotel
+		}
+		
+		cost = 20
+		
+		is_good = no
+		
+		days_remove = 400
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = fin_Groundbreaking
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 opening_hotel = {
+
+		icon = generic_operation
+		
+		activation = {
+			PRK = { has_country_flag = fin_Resume_material_procurement }
+			PRK = { has_country_flag = fin_Groundbreaking }
+		}
+		
+		available = {
+			PRK = { has_country_flag = fin_Resume_material_procurement }
+			PRK = { has_country_flag = fin_Groundbreaking }
+		}
+		visible = {
+			has_country_flag = Ryugyong_Hotel
+		}
+		
+		is_good = no
+		
+		complete_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+PRK_2nd_war = {
+
+	PRK_2nd_koreawar_start = {
+
+		icon = generic_operation
+	
+		available = {
+		    has_country_flag = PRK_war1
+		}
+		
+		visible = {
+			has_country_flag = PRK_war1
+		}
+	
+		fire_only_once = yes
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			PRK = { country_event = { id = korea_war.1 } }
+				hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = PRK
+					}
+					set_country_flag = PRK_seoul
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PRK_stage_1 = {
+
+		icon = generic_operation
+		
+		available = {
+			PRK = {
+				controls_state = 807
+			}
+		}
+		
+		days_mission_timeout = 30
+		fire_only_once = yes
+
+		visible = {
+		    always = no
+		}
+	
+		fire_only_once = yes
+		
+		activation = {
+			PRK = { has_country_flag = PRK_seoul }
+		}
+
+		is_good = no
+
+		complete_effect = {
+			PRK = { set_country_flag = PRK_busan }
+			swap_ideas = {
+			remove_idea = PRK_war1
+			add_idea = PRK_war2
+			}
+		}
+		
+		timeout_effect = {
+			PRK = { 
+				country_event = { 
+					id = korea_war.3
+				}
+				country_event = { 
+					days = 2
+					id = korea_war.15
+				}
+			set_country_flag = PRK_fail_cap_seoul
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	PRK_stage_2 = {
+
+		icon = generic_operation
+		
+		
+		available = {
+		
+		PRK = {
+			controls_state = 809
+		}
+
+		}
+		
+		days_mission_timeout = 50
+		fire_only_once = yes
+
+		visible = {
+			PRK = { has_country_flag = PRK_busan }
+		}
+		
+		activation = {
+			PRK = { has_country_flag = PRK_busan }
+		}
+		
+		fire_only_once = yes
+
+		is_good = no
+		
+		timeout_effect = {
+			PRK = { country_event = { id = korea_war.4 } }
+			ROK = { country_event = { id = korea_war.5 } }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	
+PRK_provocations_against_the_south = { #대남도발
+
+	shelling_of_the_DMZ = { #휴전선 포격도발
+
+		icon = generic_operation
+	
+		available = {
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+		
+		days_remove = 100
+
+		complete_effect = {
+			if = {
+				limit = { country_exists = MKR }
+				MKR = { country_event = { id = mkorea.9 } }
+			}
+			if = {
+				limit = { country_exists = ROK }
+				ROK = { country_event = { id = mkorea.9 } }
+			}
+			country_event = { id = PRK_prov.1 } 
+			set_country_flag = provocations_doing
+		}
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NLL_infiltration = { #NLL침투
+
+		icon = generic_operation
+	
+		available = {
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+	
+		fire_only_once = no
+
+		is_good = no
+		days_remove = 100
+		
+		complete_effect = {
+			if = {
+				limit = { country_exists = MKR }
+				MKR = { country_event = { id = mkorea.10 } }
+			}
+			if = {
+				limit = { country_exists = ROK }
+				ROK = { country_event = { id = mkorea.10 } }
+			}
+			country_event = { id = PRK_prov.2 } 
+			set_country_flag = provocations_doing
+		}
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	aircraft_provocation = { #항공기 도발
+
+		icon = generic_operation
+		
+	
+		available = {
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { NOT = { has_completed_focus = MKR_hard_liine } }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+		
+		complete_effect = {
+			if = {
+				limit = { country_exists = MKR }
+				MKR = { country_event = { id = mkorea.11 } }
+			}
+			if = {
+				limit = { country_exists = ROK }
+				ROK = { country_event = { id = mkorea.11 } }
+			}
+			country_event = { id = PRK_prov.3 } 
+			set_country_flag = provocations_doing
+		}
+		
+		days_remove = 100
+		
+		fire_only_once = no
+
+		is_good = no
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shelling_of_the_DMZ_1 = { #휴전선 포격도발 (강경대응
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+		
+		days_remove = 100
+		
+		fire_only_once = no
+
+		is_good = no
+
+		complete_effect = {
+			set_country_flag = provocations_doing
+			random_list = {
+				40 = {
+					country_event = { id = PRK_prov.1 } 
+					if = {
+						limit = { country_exists = MKR }
+						MKR = { country_event = { id = mkorea.9 } }
+					}
+					if = {
+						limit = { country_exists = KOR }
+						KOR = { country_event = { id = mkorea.9 } }
+					}
+				}
+				60 = {
+					country_event = PRK_prov.4
+					MKR = { country_event = { id = PRK_prov.6 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NLL_infiltration_1 = { #NLL침투 (강경대응
+
+		icon = generic_operation
+	
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+		
+		days_remove = 100
+		
+		fire_only_once = no
+
+		is_good = no
+
+		complete_effect = {
+			set_country_flag = provocations_doing
+			random_list = {
+				40 = {
+					country_event = { id = PRK_prov.2 } 
+					if = {
+						limit = { country_exists = MKR }
+						MKR = { country_event = { id = mkorea.10 } }
+					}
+					if = {
+						limit = { country_exists = KOR }
+						KOR = { country_event = { id = mkorea.10 } }
+					}
+				}
+				60 = {
+					country_event = PRK_prov.5
+					MKR = { country_event = { id = PRK_prov.6 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	aircraft_provocation_1 = { #항공기 도발 (강경대응
+
+		icon = generic_operation
+		
+	
+		available = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			NOT = { has_country_flag = provocations_doing }
+		}
+		
+		visible = {
+			MKR = { has_completed_focus = MKR_hard_liine }
+			PRK = {
+			has_completed_focus = prk_provoke_South_Korea
+			}
+		}
+		
+		days_remove = 100
+		
+		fire_only_once = no
+
+		is_good = no
+		
+		complete_effect = {
+			set_country_flag = provocations_doing
+			random_list = {
+				40 = {
+					country_event = { id = PRK_prov.3 } 
+					if = {
+						limit = { country_exists = MKR }
+						MKR = { country_event = { id = mkorea.11 } }
+					}
+					if = {
+						limit = { country_exists = KOR }
+						KOR = { country_event = { id = mkorea.11 } }
+					}
+				}
+				60 = {
+					country_event = PRK_prov.6
+					MKR = { country_event = { id = PRK_prov.6 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = provocations_doing
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	
+Retraining = { #재교육
+
+	Retrain = { #장군 재교육
+
+		icon = generic_operation
+	
+		available = {
+			hidden_trigger = {  
+				has_army_experience > 74.9 
+			}			
+		}
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		visible = {
+			has_country_flag = Retrain_officer
+		}
+		
+		
+		cost = 100
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		is_good = no
+		
+		remove_effect = { 
+		custom_effect_tooltip = Retrain.t
+		hidden_effect = {
+				every_unit_leader = {
+					limit = {
+						has_trait = unaccustomed_to_modern_warfare
+					}
+					remove_unit_leader_trait = unaccustomed_to_modern_warfare
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		custom_cost_trigger = {
+			has_army_experience > 74.9 
+		}
+		custom_cost_text = army_xp
+	}
+}
+
+
+prk_warlike_preparations = { #전쟁준비
+
+	army_train = { #육군훈련
+		icon = GFX_decision_generic_tank
+		allowed = {
+		}
+		available = {
+			command_power > 19
+		}
+		visible = {
+			has_war = no
+		}
+
+		remove_trigger = {
+			has_war = yes
+		}
+
+		fire_only_once = no
+		#cost = 25
+		
+		days_remove = 70
+		days_re_enable = 50
+		
+		modifier = {
+			training_time_army_factor = -0.5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+		
+		remove_effect = { 
+			army_experience = 5
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+
+	af_train = { #공군훈련
+		icon = GFX_decision_generic_air
+		allowed = {
+		}
+		available = {
+			command_power > 19
+		}
+		visible = {
+			has_war = no
+		}
+
+		remove_trigger = {
+			has_war = yes
+		}
+
+		fire_only_once = no
+		#cost = 25
+		
+		days_remove = 70
+		days_re_enable = 50
+		
+		modifier = {
+			air_training_xp_gain_factor	 = 0.5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+		
+		remove_effect = { 
+			air_experience = 5
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	
+	arm_fac = { #군수공장확장
+		allowed = {
+		}
+		visible = {
+			has_war = no
+		}
+
+		remove_trigger = {
+			has_war = yes
+		}
+
+		fire_only_once = no
+		cost = 100
+		
+		days_remove = 100
+		days_re_enable = 100
+		
+		remove_effect = { 
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	Gangwon_Underground_Tunnel = { #강원도땅굴
+
+		icon = generic_political_rally
+	
+		allowed = { 
+			command_power > 10
+		}
+
+		available = {
+			command_power > 10
+			NOT = {
+				has_decision = kyunggi_Underground_Tunnel
+			}
+		}
+		fire_only_once = yes
+
+		days_remove = 150
+
+		visible = {
+			has_completed_focus = prk_additional_tunnel_construction
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			set_country_flag = Gangwon_Tunnel
+		}
+		
+		custom_cost_trigger = {
+			command_power > 10
+		}
+		custom_cost_text = cp_atleast_10
+	}
+	
+	kyunggi_Underground_Tunnel = { #경기도땅굴
+
+		icon = generic_political_rally
+	
+		allowed = { 
+			command_power > 10
+		}
+
+		available = {
+			command_power > 10
+			NOT = {
+				has_decision = Gangwon_Underground_Tunnel
+			}
+		}
+		fire_only_once = yes
+
+		days_remove = 150
+
+		visible = {
+			has_completed_focus = prk_additional_tunnel_construction
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			set_country_flag = kyunggi_Tunnel
+		}
+		
+		custom_cost_trigger = {
+			command_power > 10
+		}
+		custom_cost_text = cp_atleast_10
+	}
+	
+	ground_penetration = { #땅굴침투
+
+		icon = generic_political_rally
+	
+		allowed = { 
+			command_power > 15
+		}
+
+		available = {
+			command_power > 15
+			has_country_flag = kyunggi_Tunnel
+			has_country_flag = Gangwon_Tunnel
+		}
+		fire_only_once = yes
+
+		days_remove = 150
+
+		visible = {
+			has_completed_focus = prk_additional_tunnel_construction
+			has_country_flag = kyunggi_Tunnel
+			has_country_flag = Gangwon_Tunnel
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = prk_tunnel
+				days = 20
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = cp_atleast_15
+	}
+}
+
+
+prk_spy_sent = { 
+	
+	Political_power_transformation = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+		
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+		
+		cost = 20
+		
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			add_command_power = 10
+		}
+	}
+	civ_spy = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+			NOT = { has_country_flag = kor_Improved_organization }
+		}
+
+		available = {
+			command_power > 19
+			NOT = {
+				has_decision = arm_spy
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 40
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				45 = {
+					country_event = Spy.1
+				}
+				45 = {
+					country_event = Spy.2
+				}
+				10 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	arm_spy = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+			NOT = { has_country_flag = kor_Improved_organization }
+		}
+
+		available = {
+			command_power > 19
+			NOT = {
+				has_decision = civ_spy
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 40
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				45 = {
+					country_event = Spy.3
+				}
+				45 = {
+					country_event = Spy.4
+				}
+				10 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	imp_civ_spy = {
+
+		icon = generic_political_rally
+		
+		visible = {
+			has_country_flag = kor_Improved_organization
+		}
+		
+		allowed = { 
+			original_tag = PRK
+			has_country_flag = kor_Improved_organization
+		}
+
+		available = {
+			has_country_flag = kor_Improved_organization
+			command_power > 24
+			NOT = {
+				has_decision = imp_arm_spy
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 50
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				45 = {
+					country_event = Spy.1
+				}
+				30 = {
+					country_event = Spy.2
+				}
+				25 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = cp_atleast_25
+	}
+	imp_arm_spy = {
+
+		icon = generic_political_rally
+		
+		visible = {
+			has_country_flag = kor_Improved_organization
+		}
+	
+		allowed = { 
+			command_power > 24
+		}
+
+		available = {
+			has_country_flag = kor_Improved_organization
+			command_power > 24
+			NOT = {
+				has_decision = imp_civ_spy
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 50
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				45 = {
+					country_event = Spy.3
+				}
+				30 = {
+					country_event = Spy.4
+				}
+				25 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = cp_atleast_25
+	}
+	Infrastructure_Sabotage = { #기반시설 파괴공작
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			command_power > 9
+			check_variable = { var = PRK_civ_spylevel value = 5 compare = greater_than_or_equals }
+		}
+
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 100
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.10 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.10 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = cp_atleast_10
+	}
+	civ_fac_Sabotage = { #민간공장 사보타주
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			command_power > 14
+			check_variable = { var = PRK_civ_spylevel value = 10 compare = greater_than_or_equals }
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 100
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 10 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.12 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.12 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = cp_atleast_15
+	}
+	arm_fac_Sabotage = { #군사공장 사보타주
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+			command_power > 14
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 100
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 15 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.11 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.11 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = cp_atleast_15
+	}
+	Blast_the_airfield = { #비행장 폭파
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 18 compare = greater_than_or_equals }
+			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = yes
+		
+		
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 18 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.13 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.13 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	power_plant = { #발전소 폭파
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 22 compare = greater_than_or_equals }
+			command_power > 29
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_civ_spylevel value = 22 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -30
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.14 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.14 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 29
+		}
+		custom_cost_text = cp_atleast_30
+	}
+	Forward_Division_Disturbance = { #전방사단 일부 교란
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 5 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 9 compare = less_than_or_equals }
+			command_power > 9
+			PRK = { 
+			has_war = yes
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 100
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.16 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.16 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = cp_atleast_10
+	}
+	military_spy_few_dec = { #국군에 소규모 침투
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 15 compare = less_than_or_equals }
+			command_power > 14
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 10 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 15 compare = less_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.17 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.17 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = cp_atleast_15
+	}
+	military_spy_medium_dec = { #국군에 중규모 침투
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 21 compare = less_than_or_equals }
+			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+			check_variable = { var = PRK_army_spylevel value = 21 compare = less_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.18 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.18 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	military_spy_large_dec = { #국군에 대규모 침투
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 22 compare = greater_than_or_equals }
+			command_power > 29
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 22 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -30
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.19 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.19 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 29
+		}
+		custom_cost_text = cp_atleast_30
+	}
+	infiltration_into_the_air_force = { #공군에 침투
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.20 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.20 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+	infiltration_into_the_navy = { #해군에 침투
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = PRK
+		}
+
+		available = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+			command_power > 19
+			PRK = { 
+			has_war = yes
+			}
+		}
+		fire_only_once = no
+
+		days_remove = 10
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = prk_Operation_commencement
+			check_variable = { var = PRK_army_spylevel value = 16 compare = greater_than_or_equals }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			IF = { 
+				limit = {
+					country_exists = MKR
+				}
+				MKR = {
+					country_event = { id = Spy.21 }
+				}
+			}
+			IF = { 
+				limit = {
+					country_exists = ROK
+				}
+				ROK = {
+					country_event = { id = Spy.21 }
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = cp_atleast
+	}
+}
+
+kor_spy = { 
+	
+	Improved_organization = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			OR = {
+			original_tag = KOR
+			original_tag = MKR
+			original_tag = ROK
+			}
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_war = no
+		}
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			PRK = {
+			country_event = { id = Spy.15 }
+			}
+		}
+	}
+	
+	Counterintelligence_armspy = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			OR = {
+			original_tag = KOR
+			original_tag = MKR
+			original_tag = ROK
+			}
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			command_power > 24
+		}
+
+		cost = 250
+
+		fire_only_once = no
+
+		days_remove = 40
+		days_re_enable = 50
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				35 = {
+					country_event = Spy.5
+				}
+				35 = {
+					country_event = Spy.6
+				}
+				30 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = cp_atleast_25
+	}
+	Counterintelligence_civspy = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			OR = {
+			original_tag = KOR
+			original_tag = MKR
+			original_tag = ROK
+			}
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			command_power > 24
+		}
+
+		cost = 250
+
+		fire_only_once = no
+
+		days_remove = 40
+		days_re_enable = 50
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+
+		remove_effect = {
+			random_list = {
+				35 = {
+					country_event = Spy.7
+				}
+				35 = {
+					country_event = Spy.8
+				}
+				30 = {
+				
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = cp_atleast_25
+	}
+}
+Preparation_for_a_coup = {
+
+	Funding = { #자금조달
+
+		icon = generic_operation
+
+		visible = {
+			has_country_flag = coup
+		}
+		
+		available = {
+			NOT = {
+				has_decision = Arsenal_assault
+				has_decision = PDC_Appointment
+				has_decision = Contact_with_commanders
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 25
+		
+		is_good = no
+
+		days_remove = 30
+		
+		remove_effect = {
+			set_country_flag = Fund
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Contact_with_commanders = { #지휘관과 접촉
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				has_decision = Arsenal_assault
+				has_decision = PDC_Appointment
+				has_decision = Funding
+			}
+		}
+		
+		visible = {
+			has_country_flag = coup
+		}
+	
+		fire_only_once = yes
+		
+		cost = 25
+		
+		is_good = no
+
+		days_remove = 20
+		
+		remove_effect = {
+			set_country_flag = Contact_commanders
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PDC_Appointment = { #사단장 섭외
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				has_decision = Arsenal_assault
+				has_decision = Contact_with_commanders
+				has_decision = Funding
+			}
+		}
+		
+		visible = {
+			has_country_flag = coup
+		}
+		
+		cost = 50
+		
+		fire_only_once = yes
+
+		is_good = no
+
+		days_remove = 30
+		
+		remove_effect = {
+			set_country_flag = PD_Appointment
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Arsenal_assault = { #병기고 습격준비
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				has_decision = PDC_Appointment
+				has_decision = Contact_with_commanders
+				has_decision = Funding
+			}
+		}
+		
+		visible = {
+			has_country_flag = coup
+		}
+		
+		cost = 50
+		
+		fire_only_once = yes
+
+		is_good = no
+
+		days_remove = 30
+		
+		remove_effect = {
+			set_country_flag = Arsenalassault
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Purge = {
+
+		icon = generic_operation
+		
+		available = {
+			has_country_flag = Fund
+			has_country_flag = PD_Appointment
+			has_country_flag = Contact_commanders
+			has_country_flag = Arsenalassault
+			has_completed_focus = prk_Young_Officer_Recruitment
+			has_completed_focus = prk_Pyongyang_Defense_Command_Appointment
+			has_completed_focus = prk_Avoid_Kim_Jong_il
+			has_completed_focus = prk_orthodox_independence_activists
+			has_completed_focus = prk_dice_throw
+		}
+		
+		days_mission_timeout = 200
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = coup
+		}
+	
+		fire_only_once = yes
+		
+		activation = {
+			PRK = { has_country_flag = coup }
+		}
+
+		is_good = no
+
+		complete_effect = {
+			country_event = { id = PRK.13 }
+		}
+		
+		timeout_effect = {
+			country_event = { id = PRK.14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+soviet_sup = { #소련의 지원
+
+	soviet_civ_sup  = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		cost = 100
+		days_remove = 150
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			ROOT = { add_to_variable = { var = offmap_civ_amount value = 5 } }
+			add_offsite_building = { type = industrial_complex level = 5 }
+		}
+		
+		remove_effect = {
+			ROOT = { add_to_variable = { var = offmap_civ_amount value = -5 } }
+			add_offsite_building = { type = industrial_complex level = -5 }
+		}
+	}
+
+	soviet_aem_fac_sup  = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		cost = 100
+		days_remove = 150
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			ROOT = { add_to_variable = { var = offmap_arms_amount value = 5 } }
+			add_offsite_building = { type = arms_factory level = 5 }
+		}
+		
+		remove_effect = {
+			ROOT = { add_to_variable = { var = offmap_arms_amount value = -5 } }
+			add_offsite_building = { type = arms_factory level = -5 }
+		}
+	}
+
+}
+
+spies_in_Japan = { #대일본 전쟁준비
+
+	communist_propaganda  = {
+		ai_will_do = {
+			factor = 0
+		}
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		cost = 30
+		days_remove = 150
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			JAP = {
+			add_ideas = prk_jap_propaganda
+			}
+		}
+		
+		remove_effect = {
+			JAP = {
+			remove_ideas = prk_jap_propaganda
+			}
+		}
+	}
+
+	Expanding_influence_in_Japan  = {
+		ai_will_do = {
+			factor = 0
+		}
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		cost = 30
+		days_remove = 50
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			set_country_flag = Expanding_influence_in_Japan_1
+		}
+	}
+
+	Pre_survey = {
+		ai_will_do = {
+			factor = 0
+		}
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		cost = 30
+		days_remove = 50
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			set_country_flag = Pre_survey_1
+		}
+	}
+}

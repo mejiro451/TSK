@@ -1,0 +1,2333 @@
+ideas = {
+	country = {
+		####초반####
+		PRK_the_juche = { #주체사상
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = commie
+	   		targeted_modifier = {
+                tag = KOR			
+				justify_war_goal_time = -0.5
+			}
+	   		modifier = { 
+				stability_factor = 0.15
+			}
+			
+		}
+		KOR_han_river = { #한강의 기적
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = korean_money
+	   		modifier = { 
+				stability_factor = 0.2
+				industrial_capacity_factory = 2
+				industrial_capacity_dockyard = 2.5
+			}
+			
+		}
+		KOR_annex_nko = { #
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = korean_money
+	   		modifier = { 
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+			
+		}
+		KOR_satellite = { #한강의 기적
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = korean_money
+	   		modifier = { 
+				
+				civilian_intel_factor = 1
+				army_intel_factor = 1
+				navy_intel_factor = 1
+				airforce_intel_factor = 1
+				crypto_department_enabled = 1
+				crypto_strength = 2
+				decryption_power = 200
+			}
+			
+		}
+		KOR_MB_the_fascism_ideas = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+	   		modifier = { 
+				stability_weekly_factor = 0.001
+				fascism_drift = 0.01
+			}
+		}
+		KOR_return_yi_dynasty = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+	   		modifier = { 
+				neutrality_drift = 0.01
+				stability_factor = -0.025
+				political_power_factor = 0.05
+			}
+		}
+		KOR_return_yi_dynasty_2 = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+	   		modifier = { 
+				neutrality_drift = 0.02
+				stability_factor = -0.1
+				political_power_factor = 0.15
+			}
+		}
+		KOR_intelligence_agency_kor = { #한강의 기적
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+	   		modifier = { 
+				intelligence_agency_defense = 10
+				root_out_resistance_effectiveness_factor = 1
+				intel_from_operatives_factor = 0.5
+				target_sabotage_factor = 0.3
+				boost_resistance_factor = 0.3
+				operative_death_on_capture_chance = 1
+				own_operative_detection_chance = -0.65
+				enemy_operative_recruitment_chance = 0.25
+				occupied_operative_recruitment_chance = 0.25
+				new_operative_slot_bonus = 5
+			}
+			
+		}
+		KOR_world_attack = { #오직 전쟁!
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = korean_money
+			rule = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no
+				can_guarantee_other_ideologies = no
+				can_host_government_in_exile = yes
+			}
+		
+		
+		modifier = {
+			generate_wargoal_tension = -1.00
+			join_faction_tension = -0.80
+			lend_lease_tension = -0.50
+			send_volunteers_tension = -0.50
+			guarantee_tension = -0.25
+			annex_cost_factor = -0.5
+			civilian_intel_to_others = -20.0
+			army_intel_to_others = -5.0
+			navy_intel_to_others = -20.0
+			airforce_intel_to_others = -5
+		}
+			
+		}
+		KOR_korean_empire = { #제정복고
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = royal_charity
+	   		modifier = { 
+				neutrality_drift = 1
+			}
+			
+		}
+		KOR_legacy_of_518 = { #민주화 운동의 유산
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = kor_memories_of_the_june_struggle
+			modifier = {
+			    democratic_acceptance = 30
+				political_power_factor = 0.20
+				democratic_drift = 0.1
+			}
+		}
+		KOR_no_communism_crusader = { #멸공북진
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+			
+			targeted_modifier = {
+				tag = PRK
+				attack_bonus_against = 0.55
+				defense_bonus_against = 0.55
+			}
+			modifier = {
+				communism_drift = -0.15
+			}
+		}
+		KOR_half_country = { #반쪽난 국가
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = kor_strong_nationalist
+		}
+		kor_law_of_korean_5 = { #헌법 제 5조
+			picture = kor_weak_anti_nationalist
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+			rule = { can_not_declare_war = yes }
+	   		modifier = { 
+				justify_war_goal_time = 100
+			}
+		}
+		KOR_future_ideas = { #미래의 기술
+
+			picture = future_ideas
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = 0.1
+				industrial_capacity_factory = 1
+				production_speed_nuclear_reactor_factor = 1
+			}
+			traits = {
+			    KOR_future_ideas
+			}
+		}
+		KOR_danilminjok = { #단일민족
+
+			picture = kor_danilminjok
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = 0.1
+				political_power_factor = 0.10 #정치력%
+		        army_morale_factor = 0.1 #사단획복률%
+			}
+			traits = {
+			}
+		}
+		hell_joseon = { #서브프라임모기지사태
+
+			picture = kor_danilminjok
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.1
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+                political_power_gain = -0.15
+			    
+			}
+			traits = {
+			}
+		}
+		kor_supremacy_of_will = { #미래의 연구
+
+			picture = kor_supremacy_of_will
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+		        research_time_factor = -0.8
+			}
+			traits = {
+			}
+		}
+	    #약화된 군대
+		FKR_back_down_military = {
+
+			picture = generic_flexible_foreign_policy2
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_cost = 0.5
+				planning_speed = -0.9
+				army_org_Factor = -0.9
+				disabled_ideas = 1
+			    war_support_factor = -0.2
+				stability_factor = -0.2
+				enemy_justify_war_goal_time = 9.99
+				justify_war_goal_time = 9.99
+				lend_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+				trade_opinion_factor = -1.0
+				join_faction_tension = 1.0
+				guarantee_tension = 1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+		}
+		FKR_back_down_military_2 = {
+
+			picture = generic_flexible_foreign_policy2
+
+        	allowed = {
+				original_tag = KOR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				planning_speed = -0.5
+				army_org_Factor = -0.5
+			    war_support_factor = -0.05
+				stability_factor = -0.05
+				disabled_ideas = 0
+				enemy_justify_war_goal_time = 9.99
+				justify_war_goal_time = 9.99
+				lend_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+				trade_opinion_factor = -1.0
+				join_faction_tension = 1.0
+				guarantee_tension = 1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+		}
+		FKR_uncompromized_country_idea = {
+
+			available = {
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				enemy_justify_war_goal_time = 9.99
+				justify_war_goal_time = 9.99
+				lend_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+				trade_opinion_factor = -1.0
+				join_faction_tension = 1.0
+				guarantee_tension = 1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+				political_power_gain = -0.1
+			}
+		}
+
+		FKR_arms_seized_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = KOR
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		FKR_arms_seized_2 = {
+
+			allowed = {
+				always = no
+			}
+			name = FKR_arms_seized_1
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = KOR
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
+		FKR_arms_seized_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+			name = FKR_arms_seized_1
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = KOR
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.4
+			}
+		}
+		
+		KOR_imf_economic_crisis = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_korean_economic_crisis
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.2
+        political_power_gain = -0.15
+			}
+		}
+		
+		KOR_national_security_law = {
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_national_security_act
+			
+			modifier = {
+				#stability_factor = -0.05
+        political_power_gain = -0.1
+				#communist_drift = -0.04
+			}
+		}
+		
+		
+		KOR_danilminjok = { #https://en.wikipedia.org/wiki/Korean_ethnic_nationalism
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_danilminjok
+			
+			modifier = {
+				war_support_factor = 0.2
+				#mobilization_laws_cost_factor = -0.25
+				justify_war_goal_time = -0.2
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		
+		KOR_memories_of_the_june_struggle = {
+		
+			allowed = {
+			AND = {
+					original_tag = KOR
+					has_elections = yes
+					  }
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = memories_of_the_june_struggle
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		
+		KOR_service_by_requirement = {
+		
+			allowed = {
+					original_tag = KOR
+			}
+			
+			default = yes
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_service_by_requirement
+			
+			modifier = {
+				conscription = 0.15
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.1
+				army_org_factor = -0.03
+			}
+		}
+		
+		KOR_purged_army = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_purged_army
+			
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+			}
+		}
+		
+		#######
+		KOR_choi_soon_sil = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_choi_soon_sil
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.10
+				corruption_cost_factor = 0.3
+			}
+		}
+		
+		KOR_black_choi_soon_sil = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_black_choi_soon_sil
+		}
+		
+		###### Jingoism vs Internationalism
+		KOR_strong_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_strong_nationalist
+			
+			modifier = {
+			  stability_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				#industrial_capacity_factory = -0.1
+				#industrial_capacity_dockyard = -0.1
+			}
+		}
+		
+		KOR_weak_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_strong_nationalist
+			
+			modifier = {
+			  stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				#industrial_capacity_factory = -0.05
+				#industrial_capacity_dockyard = -0.05
+			}
+		}
+		
+		KOR_nationalist_question = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_law_of_korean
+			
+			modifier = {
+			  #stability_factor = -0.05
+				#production_speed_arms_factory_factor = 0.05
+				#production_speed_dockyard_factor = 0.05
+				#industrial_capacity_factory = -0.05
+				#industrial_capacity_dockyard = -0.05
+			}
+		}
+		
+		KOR_weak_anti_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_weak_anti_nationalist
+			
+			modifier = {
+			  stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				#industrial_capacity_factory = 0.05
+				#industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		KOR_strong_anti_nationalist = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_weak_anti_nationalist
+			
+			modifier = {
+			  stability_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				#industrial_capacity_factory = 0.1
+				#industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		####### Korean 
+		
+		KOR_kowareta_katana = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_purged_army
+			
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.05
+				army_morale_factor = -0.05
+			
+			}
+		}
+		
+		KOR_samurais_descendant = { #JAP_superior_will
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_will
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		KOR_independent_armys_descendant = { #JAP_supremacy_of_technology
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_technology
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			    stability_factor = -0.1
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+				armor = 0.05
+			}
+		}
+		KOR_not_politic_act = { #JAP_supremacy_of_technology
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_technology
+			
+			modifier = {
+				political_power_factor = 0.15
+			    stability_factor = -0.1
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+				armor = 0.05
+			}
+		}
+		KOR_not_politic_act_2 = { #JAP_supremacy_of_technology
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = kor_supremacy_of_technology
+			
+			modifier = {
+				political_power_factor = 0.30
+			    stability_factor = -0.15
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+				armor = 0.05
+			}
+		}
+		####
+		
+		KOR_neo_confucianism_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = conservatism
+			
+			modifier = {
+			  stability_factor = 0.1
+				research_speed_factor = -0.02
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		KOR_protect_the_worker_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = propaganda
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		KOR_new_constitution_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = political_power_factor
+			
+			modifier = {
+				non_core_manpower = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		
+		KOR_grass_roots_democracy_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = national_unity
+			
+			modifier = {
+				corruption_cost_factor = -0.25
+			}
+		}
+		
+		KOR_land_of_the_Free_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ban_fascism
+			
+			modifier = {
+				drift_defence_factor = 0.4
+				democratic_drift = 0.02 # Western
+				neutrality_drift = 0.02 #neutrality
+			}
+		}
+		
+		KOR_true_education_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_democracy
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		
+		KOR_good_internet = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = production_bonus
+			
+			modifier = {
+				drift_defence_factor = -0.1
+				political_power_factor = 0.15
+			}
+		}
+		
+		KOR_spiritual_mobilization = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = manpower_bonus
+			
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		
+		KOR_national_defense = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = national_defenders
+			
+			modifier = {
+				industry_air_damage_factor = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		KOR_powerful_discipline = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = army_war_college
+			
+			modifier = {
+				army_leader_start_planning_level = 1
+				planning_speed = 0.05
+			}
+		}
+		
+		KOR_internet_censorship = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_prisoners
+			
+			modifier = {
+				decryption_factor = 0.2
+			}
+		}
+		
+		KOR_russian_technology = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		KOR_russian_winter_army = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.1
+			}
+		}
+		
+		KOR_convoy_production = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+		
+		KOR_homeland_defense = {
+			picture = the_military
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
+		
+		KOR_Basic_income = {
+			picture = civil_law
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		
+		####### Kaeseong
+		
+		KOR_Kaeseong = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_treaty2
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		####
+	    KOR_PRK_kims = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				consumer_goods_factor = 0.075
+			}
+		}
+	    KOR_earth_is_korea = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+	    lee_myung_bak_pre = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	    pre_503 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_prison_503 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_prison_714 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+			}
+		}
+	    pre_moon = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_moon
+			
+			modifier = {
+			}
+		}
+	    pre_prison_moon = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_prison_moon
+			
+			modifier = {
+			}
+		}
+	    pre_prison_roh = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = idea_pre_prison_roh
+			
+			modifier = {
+			}
+		}
+	}
+	political_advisor = {	
+
+		roh_muhyun = {
+			picture = fkr_advisor_roh_muhyun
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_minju_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_roh_trait }
+			ai_will_do = { factor = 0 }
+		}
+		moon_jaein = {
+			picture = fkr_advisor_roh_muhyun
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_minju_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_moon_trait }
+			ai_will_do = { factor = 0 }
+		}
+		hong_junpyo = {
+			picture = hong_junpyo
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_consorvatism_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_hong_trait }
+			ai_will_do = { factor = 100 }
+		}
+		han_minkoo = {
+			picture = han_minkoo
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				NOT = {
+					has_completed_focus = KOR_imperials_defence
+					has_country_flag = KOR_MB_han_was_failed
+				}
+				has_completed_focus = KOR_MB_middle_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			on_add = {
+				country_event = {
+				    id = KOR_MB.7
+				}
+			}
+			cost = 100
+			traits = { KOR_han_trait }
+			ai_will_do = { factor = 0 }
+		}
+		yi_won = {
+			picture = aa
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_middle_won
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_yi_trait }
+			ai_will_do = { factor = 0 }
+		}
+		lee_jaeyong = {
+			picture = aa
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				OR = {
+				    has_completed_focus = KOR_MB_5
+				    has_completed_focus = KOR_MB_politic_election
+				}	
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_samsung_trait }
+			ai_will_do = { factor = 1 }
+		}
+		son_seokhyee = {
+			picture = aa
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_son_trait }
+			ai_will_do = { factor = 1 }
+		}
+		lee_hoi_chang = {
+			picture = aa
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { KOR_hoi_trait }
+			ai_will_do = { factor = 1 }
+		}
+		roh_hoichan = {
+			picture = aa
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
+			}
+			cost = 100
+			traits = { social_reformer }
+			ai_will_do = { factor = 1 }
+		}
+
+	}
+	theorist = {
+		
+		yi_yunho = { #이윤호(지식경제부 장관)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+				has_completed_focus = KOR_MB_research_all
+				
+			}
+		
+			research_bonus = {
+				nuclear = 0.30
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		yun_jungki = { #윤중기
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		
+		jung_haechen = { #정해천
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+
+			traits = { mobile_warfare_expert }
+		}
+		
+		kim_yeongpil = { #김영필
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		kim_jaehwan = { #김재환
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		jung_chunseong = { #정춘성
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+	}	
+	
+	army_chief = {
+
+		im_chongbin = { #임충빈
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		cho_junghwan  = { #조정환
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		park_hengryul = { #박흥렬
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		kwon_ohsung = { #권오성
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+
+					
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		lee_kyehoon = { #이계훈
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		park_jongheon = { #박종헌
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		sung_ilhwan = { #성일환
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		jung_okgeun = { #정옥근
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		
+		kim_seongchan = { #김성찬
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+						
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	
+	high_command = {
+
+		lee_chulhui = { #이철휘
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		hwang_uidon = { #황의돈
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		
+		jung_seungjo = { #정승조
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		kim_sangki = { #김상기 
+			ledger = army
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		#####
+		lee_yongman = { #이영만
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		chung_kyungdoo = { #정경두
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		choi_chakyu = { #최차규
+			ledger = air
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		####
+		choi_yunhoi = { #최윤회
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		hwang_kicheol = { #황기철
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = KOR
+				
+			}
+			available = {
+			
+				
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		nine_doosanDST = { #두산 DST
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		nine_samsungtec = { #삼성 테크원
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nine_hyundai_rottem = { #현대 로템
+
+			picture = KOR_MAN
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		nine_daewoo_ship = { #대우조선해양
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+		nine_hanjin_ship = { #한진해운
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		nine_hyundai_ship = { #현대중공업
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		nine_kai = { #KAI (중점개방)
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nine_asiana = { #금호 아시아나 
+			allowed = {
+				original_tag = KOR
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		nine_korean_air = { #대한항공 
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nine_hwanhwa = { #한화
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+	
+	industrial_concern = {
+		
+		nine_gs = { #GS
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nine_lg = { #LG
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		nine_sk = { #SK
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+		
+		nine_samsung = { #삼성
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+		nine_doosan = { #두산
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		nine_st = { #S&T
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		nine_dasan = { #다산
+
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		
+		kia_car = { #기아모터스
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		nine_hyundai_car = { #현대자동차
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	
+}

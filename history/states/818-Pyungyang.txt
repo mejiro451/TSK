@@ -10,7 +10,6 @@ state={
 			infrastructure = 9
 			arms_factory = 3
 			industrial_complex = 8
-			dockyard = 1
 			air_base = 4
 			fuel_silo = 3
 		}
@@ -18,8 +17,16 @@ state={
 			10065 40 
 		}
 		add_core_of = PRK
-		add_claim_by = KOR
+		add_core_of = KR1
 
+		1936.1.9 = {
+			remove_core_of = KR1
+			remove_core_of = PRK
+			add_core_of = KOR
+			add_core_of = KPA
+			owner = KPA
+			controller  KPA
+		}
 	}
 	manpower=7307084
 	buildings_max_level_factor=1.000

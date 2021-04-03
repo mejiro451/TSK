@@ -4,28 +4,6 @@ music_station = "mbc"
 # General
 
 music = {
-	song = "1991_theme"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-music = {
-	song = "2009_theme"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-music = {
 	song = "agguk"
 	
 	chance = {
@@ -156,3 +134,15 @@ music = {
 	}	
 }
 
+
+music = {
+	song = "kat_kor"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}

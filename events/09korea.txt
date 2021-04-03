@@ -1,0 +1,590 @@
+﻿add_namespace = KOR_MB
+
+country_event = {
+	id = KOR_MB.1 #북한에게 묻다
+	title = KOR_MB.1.t
+	desc = KOR_MB.1.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.1.a
+		ai_chance = {
+		    factor = 50
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = KOR
+		}
+	}
+	option = {
+		name = KOR_MB.1.b
+		ai_chance = {
+		    factor = 50
+		}
+		KOR = {
+		    annex_country = { 
+				target = PRK
+				transfer_troops = yes 
+			}
+		}
+		KOR = { change_tag_from = PRK }
+	}
+}
+country_event = {
+	id = KOR_MB.2 #합병/괴뢰국
+	title = KOR_MB.2.t
+	desc = KOR_MB.2.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.2.a
+		ai_chance = {
+		    factor = 1
+		}
+		if = {
+		    limit = {
+				has_completed_focus = KOR_MB_northen_puppet
+			}	
+			KOR = {
+				puppet = PRK
+			}	
+			KOR = { change_tag_from = PRK }
+		    add_ideas = KOR_PRK_kims
+		}
+		if = {
+		    limit = {
+				has_completed_focus = KOR_MB_annexed_north_korea
+			}	
+			KOR = {
+				annex_country = { 
+					target = PRK
+					transfer_troops = yes 
+				}
+			}
+		    add_ideas = KOR_PRK_kims
+			KOR = { change_tag_from = PRK }
+		}
+	}	
+}
+country_event = {
+	id = KOR_MB.3 #연평도 포격전
+	title = KOR_MB.3.t
+	desc = KOR_MB.3.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.3.a
+		ai_chance = {
+		    factor = 1
+		}
+		set_country_flag = KOR_MB_yeonpyungdo
+	}	
+}
+country_event = {
+	id = KOR_MB.4 #선거
+	title = KOR_MB.4.t
+	desc = KOR_MB.4.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.4.a
+		ai_chance = {
+		    factor = 1
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_consorvatism_won
+	}	
+	option = {
+		name = KOR_MB.4.b
+		ai_chance = {
+		    factor = 0
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_minju_won
+	}	
+	option = {
+		name = KOR_MB.4.c
+		ai_chance = {
+		    factor = 0
+		}
+		set_country_flag = KOR_MB_has_election
+		complete_national_focus = KOR_MB_middle_won
+	}	
+}
+country_event = {
+	id = KOR_MB.5 #반란
+	title = KOR_MB.5.t
+	desc = KOR_MB.5.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.5.a
+		ai_chance = {
+		    factor = 1
+		}
+		PR1 = {
+		    transfer_state = 815
+		    transfer_state = 820
+		    transfer_state = 816
+			load_oob = "KPA_1936"
+            declare_war_on = {
+		        target = KOR
+		        type = annex_everything
+	        }
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.6 #폭동진압
+	title = KOR_MB.6.t
+	desc = KOR_MB.6.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.6.a
+		ai_chance = {
+		    factor = 1
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = KOR_MB.7 #
+	title = KOR_MB.7.t
+	desc = KOR_MB.7.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.7.a
+		ai_chance = {
+		    factor = 50
+		}
+		complete_national_focus = KOR_MB_kudeta
+		add_stability = -0.05
+		set_politics = {
+		    ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "국가재건최고회의"
+			name = "국가재건최고회의"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "국가재건최고회의"
+			name = "국가재건최고회의"
+		}
+		create_country_leader = {
+			name = "Han Min Koo"
+			desc = ""
+			picture = "gfx/leaders/KOR/HMK.dds"
+			expire = "1965.1.1"
+			ideology = rexism
+			traits = {
+				#
+			}
+		}		
+		create_country_leader = {
+			name = "Han Min Koo"
+			desc = ""
+			picture = "gfx/leaders/KOR/HMK.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}		
+		set_cosmetic_tag = KOR_park
+	}
+	option = {
+		name = KOR_MB.7.b
+		ai_chance = {
+		    factor = 50
+		}
+		country_event = {
+		    id = KOR_MB.8
+			days = 3
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = KOR_MB.8 #폭동진압
+	title = KOR_MB.8.t
+	desc = KOR_MB.8.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.8.a
+		ai_chance = {
+		    factor = 1
+		}
+		add_ideas = yi_won
+		set_country_flag = KOR_MB_han_was_failed
+		complete_national_focus = KOR_imperials_defence
+	}
+}
+#코어넣기 - 북한
+country_event = {
+	id = KOR_MB.9 #황해
+	title = KOR_MB.9.t
+	desc = KOR_MB.9.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.9.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.10 #강원
+	title = KOR_MB.10.t
+	desc = KOR_MB.10.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.10.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.11 #함남
+	title = KOR_MB.11.t
+	desc = KOR_MB.11.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.11.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.12 #평남
+	title = KOR_MB.12.t
+	desc = KOR_MB.12.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.12.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.13 #평북
+	title = KOR_MB.13.t
+	desc = KOR_MB.13.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.13.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.14 #자강
+	title = KOR_MB.14.t
+	desc = KOR_MB.14.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.14.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.15 #양강
+	title = KOR_MB.15.t
+	desc = KOR_MB.15.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.15.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.16 #함북
+	title = KOR_MB.16.t
+	desc = KOR_MB.16.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.16.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.17 #평양
+	title = KOR_MB.16.t
+	desc = KOR_MB.16.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.16.a
+		ai_chance = {
+		    factor = 1
+		}
+	}
+}
+#######
+country_event = {
+	id = KOR_MB.18 #
+	title = KOR_MB.18.t
+	desc = KOR_MB.18.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.18.a #근혜
+		ai_chance = {
+		    factor = 1
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_park
+	}
+	option = {
+		name = KOR_MB.18.b #문수
+		ai_chance = {
+		    factor = 0
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_kim
+	}
+	option = {
+		name = KOR_MB.18.c #회창
+		ai_chance = {
+		    factor = 0
+		}
+		complete_national_focus = KOR_MB_next_korean_president
+		complete_national_focus = KOR_MB_lee_hoi_chang
+		add_ideas = lee_hoi_chang
+	}
+}
+country_event = {
+	id = KOR_MB.19 #
+	title = KOR_MB.19.t
+	desc = KOR_MB.19.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.19.a
+		ai_chance = {
+		    factor = 1
+		}
+		swap_ideas = {
+		    add_idea = KOR_return_yi_dynasty_2
+			remove_idea = KOR_return_yi_dynasty
+		}
+		set_cosmetic_tag = KOR_eok
+		hidden_effect = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "새누리당"
+			name = "새누리당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "통합진보당"
+			name = "통합진보당"
+		}
+		
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/이원.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/이원.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/이원.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+		}
+	}
+	option = {
+		name = KOR_MB.19.b
+		ai_chance = {
+		    factor = 0
+		}
+		swap_ideas = {
+		    add_idea = KOR_return_yi_dynasty_2
+			remove_idea = KOR_return_yi_dynasty
+		}
+		set_cosmetic_tag = KOR_eok
+		hidden_effect = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1934.12.19"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "새누리당"
+			name = "새누리당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "황국협회"
+			name = "황국협회"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "통합진보당"
+			name = "통합진보당"
+		}
+		
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+			create_country_leader = {
+				name = "Yi Won"
+				desc = ""
+				picture = "gfx/leaders/KOR/Portrait_Yi_won.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					imperial_connections
+					KOR_yi_trait
+				}
+			}
+		}
+	}
+}

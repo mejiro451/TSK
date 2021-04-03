@@ -1,0 +1,103 @@
+ideas = {
+
+	country = {
+			
+		KPA_korean_militarism1 = {
+			
+			allowed = {
+				original_tag = KPA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = office_of_strategic_services
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			
+		}
+		
+		KPA_rebuild_nation1= {
+		
+			allowed = {
+				original_tag = KPA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				industry_repair_factor = 0.20
+			}
+			
+		}
+		
+		KPA_new_korea= {
+		
+			allowed = {
+				original_tag = KPA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+			
+		}
+		
+		KPA_korean_blockade1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		KPA_focus_troop = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = -0.20
+			}
+		}

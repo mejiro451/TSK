@@ -1,11 +1,23 @@
 ﻿capital = 818 
 
 oob = "PRK_1936"
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
 
+	set_naval_oob = "PRK_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "PRK_1936_naval_mtg"
+}
 add_ideas = {
 	#laws
 	tot_economic_mobilisation
-	korean_war
+	service_by_requirement
 	closed_economy
 }
 
@@ -16,7 +28,7 @@ add_ideas = {
 
 set_stability = 0.2
 set_war_support = 0.4
-set_fuel_ratio = 0.35
+set_fuel_ratio = 1.0
 set_convoys = 100
 
 # Starting tech
@@ -124,6 +136,25 @@ set_technology = {
 	fuel_silos = 1
 	light_tank_4 = 1
 	light_tank_5 = 1
+	
+	m_1970PCC = 1
+	m_1970ff = 1
+	m_1980patrol = 1
+
+	modern_light_battery_1 = 1
+	ship_missile_luncher_1 = 1
+	ship_ciws = 1
+	ship_modern_control_system_1 = 1
+	ship_modern_radar_1 = 1
+	ship_modern_sonar_1 = 1
+	light_ship_engine_modern_1 = 1
+	
+	light_secondaries_1 = 1
+	mg = 1
+	ship_vulcan_1 = 1
+	ship_manpad = 1
+	depth_charge_modern_1 = 1
+	
 }
 
 set_variable = { PRK_army_spylevel = 0 }
@@ -336,245 +367,55 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
-1936.1.3 = {
-	set_country_flag = 2009_scenario
-}
-1936.1.4 = {
-set_convoys = 50
-
-set_politics = {
-	ruling_party = communism
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	communism = 100
-}
-add_ideas = {
-	korean_war2
-	 
-	FKR_back_down_military
-}
-
-### Country Leader ###
-
-create_country_leader = {
-	name = "김 한솔"
-	desc = ""
-	picture = "gfx/leaders/KPA/KHS.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	create_equipment_variant = {
+		name = "서호급"
+		type = ship_hull_PCC_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+		}
 	}
-}
-
-create_country_leader = {
-	name = "장 성택"
-	desc = ""
-	picture = "gfx/leaders/KPA/portrait_jang_sung_tack.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
+	create_equipment_variant = {
+		name = "나진급"
+		type = ship_hull_FF_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			rear_1_custom_slot = empty
+			mid_1_custom_slot = ship_manpad
+			front_1_custom_slot = modern_ship_light_battery_1
+		}
 	}
-}
-
-create_country_leader = {
-	name = "Kim Jong-un"
-	desc = ""
-	picture = "gfx/leaders/KPA/KJU.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
+	
+	create_equipment_variant = {
+		name = "사리원급"
+		type = ship_hull_PCC_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_secondaries_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = ship_light_secondaries_1
+			mid_1_custom_slot = empty
+		}
 	}
-}
-
-	create_field_marshal = {
-		name = "Kim Jong-un"
-			picture = "Kim_Jong-un.dds"
-		traits = { inspirational_leader }
-		id = 44100
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
-	create_corps_commander = {
-		name = "Ri Myong-su"
-			picture = "gen_Ri_Myong_Su.dds"
-		traits = {  }
-		id = 44101
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Ri Yong-gil"
-			picture = "gen_Ri_Yong_Gil.dds"
-		traits = {  }
-		id = 44102
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_navy_leader = {
-		name = "Yi Yong-ju"
-			picture = "adm_Yi_Yong_Ju.dds"
-		traits = {  }
-		id = 44103
-	}
-	create_corps_commander = {
-		name = "Hyon Yong Chol"
-		picture = "Portrait_Hyon_Yong_Chol.dds"
-		traits = {  }
-		id = 44104
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Cho Ryong Hae"
-		picture = "Portrait_Cho_Ryong_Hae.dds"
-		traits = {  }
-		id = 44105
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Choe Pu Il"
-		picture = "Portrait_Choe_Pu_Il.dds"
-		traits = {  }
-		id = 44106
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Hwang Pyong So"
-		picture = "Portrait_Hwang_Pyong_So.dds"
-		traits = {  }
-		id = 44107
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Jo Chun Ryong"
-		picture = "Portrait_Jo_Chun_Ryong.dds"
-		traits = {  }
-		id = 44108
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Kim Chun Sop"
-		picture = "Portrait_Kim_Chun_Sop.dds"
-		traits = {  }
-		id = 44109
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Jo Kyong Chol"
-		picture = "Portrait_Jo_Kyong_Chol.dds"
-		traits = {  }
-		id = 44110
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Kim Kyok Sik"
-		picture = "Portrait_Kim_Kyok_Sik.dds"
-		traits = {  }
-		id = 44111
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Kim Myong Kuk"
-		picture = "Portrait_Kim_Myong_Kuk.dds"
-		traits = {  }
-		id = 44112
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Kim Won Hong"
-		picture = "Portrait_Kim_Won_Hong.dds"
-		traits = {  }
-		id = 44113
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Kim Yong Chun"
-		picture = "Portrait_Kim_Yong_Chun.dds"
-		traits = {  }
-		id = 44114
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-
-	create_corps_commander = {
-		name = "Pak Yong Sik"
-		picture = "Portrait_Pak_Yong_Sik.dds"
-		traits = {  }
-		id = 44115
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	load_focus_tree = GDK_korea
-	complete_national_focus = TSK_loading_focus
-	set_country_flag = 2009_scenario
 }

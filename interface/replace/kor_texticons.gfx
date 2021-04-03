@@ -70,6 +70,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	
+	spriteType = {
+		name = "GFX_unit_manpad_icon_small"
+		texturefile = "gfx/texticons/unit_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_modern_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}	
 	
 #############################아이디어 사진########################################
 
@@ -81,6 +91,32 @@ spriteTypes = {
 	spriteType = {
 		name = "f_15k"
 		texturefile = "gfx/texticons/f_15k.dds"
+		legacy_lazy_load = no
+	}
+
+#######################디시전 사진##########
+	
+	spriteType = {
+		name = "GFX_faction_constitutionalism"
+		texturefile = "gfx/texticons/faction_constitutionalism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_Imperialism"
+		texturefile = "gfx/texticons/faction_Imperialism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_army_experience_dec"
+		texturefile = "gfx/texticons/army_experience_decision.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_cp_atleast_dec"
+		texturefile = "gfx/texticons/cp_atleast_dec.dds"
 		legacy_lazy_load = no
 	}
 }

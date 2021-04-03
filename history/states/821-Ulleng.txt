@@ -4,7 +4,7 @@ state={
 	name="울릉도"
 
 	history={
-		owner = KOR
+		owner = KR1
 		buildings = {
 			infrastructure = 1
 		}
@@ -14,9 +14,15 @@ state={
 		victory_points = {
 			13247 1 
 		}
-		add_core_of = KOR
-		add_claim_by = PRK
+		add_core_of = KR1
+		add_core_of = PRK
 
+		1936.1.9 = {
+			owner = KOR
+			controller = KOR
+			remove_core_of = KR1
+			add_core_of = KOR
+		}
 	}
 
 	provinces={
@@ -24,4 +30,6 @@ state={
 	}
 	manpower=5321
 	buildings_max_level_factor=1.000
+	
+	state_category = enclave
 }

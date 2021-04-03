@@ -3,7 +3,7 @@ state={
 	name="제주도"
 
 	history={
-		owner = KOR
+		owner = KR1
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -14,8 +14,15 @@ state={
 		victory_points = {
 			1177 10 
 		}
-		add_core_of = KOR
-		add_claim_by = PRK
+		add_core_of = KR1
+		add_core_of = PRK
+
+		1936.1.9 = {
+			owner = KOR
+			controller = KOR
+			remove_core_of = KR1
+			add_core_of = KOR
+		}
 	}
 
 	provinces={

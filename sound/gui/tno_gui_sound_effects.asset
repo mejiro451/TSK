@@ -12,3 +12,17 @@ soundeffect = {
 	}
 	volume = 75
 }
+soundeffect = {
+	name = kor_communism_unif
+	sounds = {
+		sound = kor_communism_unif
+	}
+	volume = 75
+}
+soundeffect = {
+	name = kor_south_Unification
+	sounds = {
+		sound = kor_south_Unification
+	}
+	volume = 75
+}

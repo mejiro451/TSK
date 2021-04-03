@@ -21,9 +21,9 @@ units = {
 		task_force = {
 			name = "지방 호위대" 
 			location = 10011 	 
-			ship = { name = "JDS Abukuma" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }
-			ship = { name = "JDS Ōyodo" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }
-			ship = { name = "JDS Sendai" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }			
+			ship = { name = "JDS Abukuma" definition = modern_FF start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }
+			ship = { name = "JDS Ōyodo" definition = modern_FF start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }
+			ship = { name = "JDS Sendai" definition = modern_FF start_experience_factor = 0.4 equipment = { ship_hull_FF_2 = { amount = 1 owner = JDF version_name = "아부쿠마급" } } }			
 		}
 	}
 }

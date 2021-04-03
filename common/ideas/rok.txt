@@ -1,0 +1,789 @@
+ideas = {
+	hidden_ideas = {
+			ROK_modern_millitary = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ROK
+	 		    original_tag = PRK
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				land_reinforce_rate = 0.4
+				attrition = -0.9
+				land_night_attack = 0.85
+				army_org_factor = 0.4
+				army_org_regain	 = 0.5
+				}
+			}
+		} 
+	
+	country = {
+		rok_remnants_of_the_military = { #군부의 잔재
+
+			picture = generic_democratic_drift_bonus
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				army_attack_factor = -0.1
+				army_morale	 = -0.1
+				army_org = -0.1
+			}
+		}
+	}
+
+	
+	political_advisor = {
+	
+		rok_lee_hoi_chang = { #이회창 (국무총리)
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { }
+		}
+		rok_choi_hyung = { #최형우 (내무부 장관)
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		rok_hong_jae = { #홍재형 (재무부 장관)
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		rok_chu_kyung = { #추경석 (건설교통부 장관)
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { communist_revolutionary }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		
+		rok_chung_geun_mo = { #정근모 (과학기술처 장관)
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		rok_lee_ghun = { #이건희 (삼성그룹회장)
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			traits = { }
+		}
+	}
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		rok_doosanDST = { #두산 DST
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		rok_samsungtec = { #삼성 테크원
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rok_hyundai_rottem = { #현대 로템
+
+			picture = ROK_MAN
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		rok_daewoo_ship = { #대우조선해양
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+		rok_hanjin_ship = { #한진해운
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		rok_hyundai_ship = { #현대중공업
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		rok_kai = { #KAI (중점개방)
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rok_asiana = { #금호 아시아나 
+			allowed = {
+				original_tag = ROK
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		rok_korean_air = { #대한항공 
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rok_hwanhwa = { #한화
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+	
+	industrial_concern = {
+		
+		rok_gs = { #GS
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rok_lg = { #LG
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		rok_sk = { #SK
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+		
+		rok_samsung = { #삼성
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+		rok_doosan = { #두산
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		rok_st = { #S&T
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		rok_dasan = { #다산
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		
+
+		
+		rok_daewoo_car = { #대우자동차
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		rok_hyundai_car = { #현대자동차
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	
+	theorist = {
+		
+		rok_kim_dong_shin = { #김동신 
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		
+		rok_seo_dong = { #서동열
+			ledger = air
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		rok_lee_yang_ho = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		rok_lee_nam_shin = { #이남신
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+	}	
+	
+	army_chief = {
+
+		rok_kim_dong_jin  = { #김동진
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		rok_do_il_kyu = { #도일규
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+
+					
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		rok_cho_geun_hae = { #조근해
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		rok_kim_hong_rae = { #김홍래
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		rok_han_chu = { #한주석
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		rok_an_byung_tae = { #안병태
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		
+		rok_you_sam = { #유삼남
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+						
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	
+	high_command = {
+
+		rok_lee_jun = { #이준
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		rok_un_yong_nam = { #윤용남
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		
+		rok_lee_jong_gu = { #이종구 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		rok_goo_chang_hoe = { #구창회 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		rok_lee_yang_ho_1 = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rok_lee_gwang = { #이광학
+			ledger = air
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		rok_chung_yong = { #정용후
+			ledger = air
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		rok_lee_soo = { #이수용
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		rok_chang_jung = { #장정길
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = ROK
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	
+}

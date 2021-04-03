@@ -1,0 +1,32 @@
+add_namespace = leader
+#과거장군재교육
+unit_leader_event = {
+	id = leader.1
+	title = leader.1.t
+	desc = leader.1.d
+	
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = leader.1.a
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 9999
+					has_id = 9998
+					has_id = 9997
+					has_id = 9996
+				}
+			}
+			random_list = {
+				70 = {
+					add_unit_leader_trait = old_guard
+				}
+				30 = {
+				}
+			}
+		}
+	}	
+}

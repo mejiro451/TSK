@@ -11,14 +11,7 @@ add_ideas = {
 
 add_ideas = {
 }
-create_production_license = {
-	target = KOR
-		equipment = {
-		type = m_2000_mbt
-		version = 0
-	}
-	cost_factor = 0
-}
+
 set_stability = 0.2
 set_war_support = 0.4
 set_convoys = 150
@@ -78,6 +71,7 @@ set_technology = {
 	m_1970_IFV = 1
 	m_1980_IFV = 1
 	m_1990_IFV = 1
+	m_2000_IFV = 1
 	
 	modern_war_artillery = 1
 	modern_war_artillery_2 = 1

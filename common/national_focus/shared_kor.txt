@@ -1,0 +1,894 @@
+shared_focus = {
+		id = ROKND_1
+		icon = GFX_goal_ROKND
+		cost = 10.00
+		x = 73
+		y = 0
+
+	}
+shared_focus = { #ROKA
+		id = ROKA
+		icon = GFX_goal_ROKA
+		cost = 10.00
+		prerequisite = {
+			focus = ROKND_1
+		}
+		x = 59
+		y = 1
+
+	}
+shared_focus = { #Army_Modernization_Concentration
+		id = Army_Modernization_Concentration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKA
+		}
+		mutually_exclusive = {
+			focus = use_of_decoration_materials
+		}
+		x = 56
+		y = 2
+
+	}
+shared_focus = { #육군 항공대
+		id = Army_Air_Corps
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_Modernization_Concentration
+		}
+		x = 48
+		y = 3
+
+	}
+shared_focus = { #공격헬기 개량
+		id = Attack_Helicopter_Improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_Air_Corps
+		}
+		x = 46
+		y = 4
+
+	}
+shared_focus = { #기계화보병
+		id = mechanized_infantry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_Modernization_Concentration
+		}
+		mutually_exclusive = {
+			focus = Defense_Division
+		}
+		x = 52
+		y = 3
+
+	}
+shared_focus = {
+		id = K1A1
+		icon = GFX_focus_K1A1
+		cost = 10.00
+		prerequisite = {
+			focus = mechanized_infantry
+		}
+		x = 51
+		y = 4
+
+	}
+shared_focus = { #자주대공포 "비호"
+		id = SPAA_BIHO
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = K1A1
+		}
+		x = 49
+		y = 5
+
+	}
+shared_focus = { #KAFV 프로젝트
+		id = KAFV_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mechanized_infantry
+		}
+		x = 53
+		y = 4
+
+	}
+shared_focus = { #방위사단
+		id = Defense_Division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_Modernization_Concentration
+		}
+		mutually_exclusive = {
+			focus = mechanized_infantry
+		}
+		x = 56
+		y = 3
+
+	}
+shared_focus = { #K2 개량형
+		id = K2_Modified_Type
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Defense_Division
+		}
+		x = 56
+		y = 4
+
+	}
+shared_focus = { #K263 개량형
+		id = K263_Modified_Type
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = K2_Modified_Type
+		}
+		x = 55
+		y = 5
+
+	}
+shared_focus = { #신형 야포
+		id = new_type_gun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = K2_Modified_Type
+		}
+		x = 57
+		y = 5
+
+	}
+shared_focus = { #추가 향토사단
+		id = Additional_Local_Division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = new_type_gun
+		}
+		prerequisite = {
+			focus = K263_Modified_Type
+		}
+		x = 56
+		y = 6
+
+	}
+shared_focus = { #차량화 집중
+		id = mot_Infantry_Focus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = K263_Modified_Type
+		}
+		prerequisite = {
+			focus = new_type_gun
+		}
+		x = 54
+		y = 6
+
+	}
+shared_focus = { #치장물자 사용
+		id = use_of_decoration_materials
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKA
+		}
+		mutually_exclusive = {
+			focus = Army_Modernization_Concentration
+		}
+		x = 59
+		y = 2
+
+	}
+shared_focus = { #보병장비 계획
+		id = Infantry_Equipment_Plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = use_of_decoration_materials
+		}
+		x = 59
+		y = 3
+
+	}
+shared_focus = { #지원화기 주력
+		id = Support_Firearms_Main
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infantry_Equipment_Plan
+		}
+		x = 59
+		y = 4
+
+	}
+shared_focus = { #야포 프로젝트
+		id = field_artillery_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infantry_Equipment_Plan
+		}
+		x = 61
+		y = 4
+
+	}
+shared_focus = { #장갑차 개발
+		id = Armored_Vehicle_Development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = field_artillery_project
+		}
+		prerequisite = {
+			focus = Support_Firearms_Main
+		}
+		x = 60
+		y = 5
+
+	}
+shared_focus = { #기갑사단
+		id = Panzer_Division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Infantry_Equipment_Plan
+		}
+		x = 64
+		y = 4
+
+	}
+shared_focus = { #중전차 계획
+		id = heavy_tank_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Panzer_Division
+		}
+		mutually_exclusive = {
+			focus = M4_Sherman
+		}
+		x = 63
+		y = 5
+
+	}
+shared_focus = { #M4셔먼
+		id = M4_Sherman
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Panzer_Division
+		}
+		mutually_exclusive = {
+			focus = heavy_tank_plan
+		}
+		x = 65
+		y = 5
+
+	}
+shared_focus = { #새로운 보병장비
+		id = new_infantry_equipment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Armored_Vehicle_Development
+			focus = heavy_tank_plan
+			focus = M4_Sherman
+		}
+		x = 61
+		y = 6
+
+	}
+shared_focus = { #ROKNAVY
+		id = ROKNAVY
+		icon = GFX_goal_ROKNAVY
+		cost = 10.00
+		prerequisite = {
+			focus = ROKND_1
+		}
+		x = 73
+		y = 1
+
+	}
+shared_focus = { #해군함정 현대화
+		id = Naval_Ship_Modernization 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKNAVY
+		}
+		mutually_exclusive = {
+			focus = Use_of_spherical_traps
+		}
+		x = 69
+		y = 2
+
+	}
+	shared_focus = { #추가적인 참수리급
+		id = Additional_Chamsuri_class
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Ship_Modernization 
+		}
+		x = 67
+		y = 3
+
+	}
+	shared_focus = { #울산급 추가건조
+		id = Ulsan_class_additional_drying
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Ship_Modernization 
+		}
+		x = 69
+		y = 3
+
+	}
+	shared_focus = { #레이더 개량
+		id = radar_improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Ship_Modernization 
+		}
+		x = 71
+		y = 3
+
+	}
+	shared_focus = { #현대식 사격통제장치
+		id = Modern_Fire_Control_Unit
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = radar_improvement
+		}
+		prerequisite = {
+			focus = Ulsan_class_additional_drying
+		}
+		x = 69
+		y = 4
+
+	}
+	shared_focus = { #신형 함포
+		id = a_new_model_gun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = radar_improvement
+		}
+		x = 72
+		y = 4
+
+	}
+	shared_focus = { #신형 구축함
+		id = new_type_destroyer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Modern_Fire_Control_Unit
+		}
+		prerequisite = {
+			focus = a_new_model_gun
+		}
+		x = 70
+		y = 5
+
+	}
+	shared_focus = { #광개토 대왕급 구축함
+		id = Gwanggaeto_the_great_class
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = new_type_destroyer
+		}
+		x = 70
+		y = 6
+
+	}
+	shared_focus = { #엔진 개량
+		id = engine_improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = a_new_model_gun
+		}
+		x = 72
+		y = 5
+
+	}
+	shared_focus = { #장보고급 잠수함
+		id = Chang_Bogo_class_submarine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Ship_Modernization 
+		}
+		x = 73
+		y = 3
+
+	}
+	shared_focus = { #구형 함정 사용
+		id = Use_of_spherical_traps
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKNAVY
+		}
+		mutually_exclusive = {
+			focus = Naval_Ship_Modernization 
+		}
+		x = 77
+		y = 2
+
+	}
+	shared_focus = { #외국 조선회사와 접촉
+		id = Contact_with_foreign_shipbuilding_companies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Use_of_spherical_traps
+		}
+		x = 77
+		y = 3
+
+	}
+	shared_focus = { #순양함 프로젝트
+		id = cruiser_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_foreign_shipbuilding_companies
+		}
+		x = 75
+		y = 4
+
+	}
+	shared_focus = { #구축함 계획
+		id = destroyer_planning
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_foreign_shipbuilding_companies
+		}
+		x = 77
+		y = 4
+
+	}
+	shared_focus = { #잠수함 계획
+		id = submarine_planning
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = destroyer_planning
+		}
+		prerequisite = {
+			focus = cruiser_project
+		}
+		x = 76
+		y = 5
+
+	}
+	shared_focus = { #항공모함 우선주의
+		id = Aircraft_Carrier_Preferentialism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_foreign_shipbuilding_companies
+		}
+		mutually_exclusive = {
+			focus = Resurrection_of_the_battleship_project
+		}
+		x = 79
+		y = 4
+
+	}
+	shared_focus = { #해군항공대
+		id = Naval_Air_Force
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Aircraft_Carrier_Preferentialism
+		}
+		x = 79
+		y = 5
+
+	}
+	shared_focus = { #함상전투기
+		id = STS_Fighter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Air_Force
+		}
+		x = 78
+		y = 6
+
+	} 
+	shared_focus = { #보조함 집중
+		id = Auxiliary_Ship_Concentration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = submarine_planning
+		}
+		x = 76
+		y = 7
+
+	}
+	shared_focus = { #함상공격기
+		id = STS_Aircraft
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Naval_Air_Force
+		}
+		x = 80
+		y = 6
+
+	}
+	shared_focus = { #거함거포주의 부활
+		id = Resurrection_of_the_battleship_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_foreign_shipbuilding_companies
+		}
+		mutually_exclusive = {
+			focus = Aircraft_Carrier_Preferentialism
+		}
+		x = 81
+		y = 4
+
+	}
+	shared_focus = { #전함 개발에착수
+		id = Launching_BattleShip_Development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Resurrection_of_the_battleship_project
+		}
+		x = 81
+		y = 5
+
+	}
+	shared_focus = { #중순양함 계획
+		id = heavy_cruiser_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Launching_BattleShip_Development
+		}
+		x = 82
+		y = 6
+
+	}
+	shared_focus = { #주력함집중
+		id = Main_ship_concentration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = heavy_cruiser_project
+			focus = STS_Aircraft
+			focus = STS_Fighter
+		}
+		x = 82
+		y = 7
+
+	}
+	shared_focus = { #바다는 우리의 것이다 
+		id = The_sea_is_ours
+		icon = GFX_goal_sea_is_ours
+		cost = 10.00
+		prerequisite = {
+			focus = Main_ship_concentration
+		}
+		prerequisite = {
+			focus = Auxiliary_Ship_Concentration
+		}
+		x = 79
+		y = 8
+
+	}
+	shared_focus = { #대한민국 공군
+		id = ROKAF
+		icon = GFX_goal_ROKAF
+		cost = 10.00
+		prerequisite = {
+			focus = ROKND_1
+		}
+		x = 86
+		y = 1
+
+	}
+	shared_focus = { #현대 항공기!
+		id = modern_aircraft
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKAF
+		}
+		mutually_exclusive = {
+			focus = fighter
+		}
+		x = 86
+		y = 2
+
+	}
+	shared_focus = { #F-5 제공호 개량
+		id = Improved_F5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = modern_aircraft
+		}
+		x = 85
+		y = 3
+
+	}
+	shared_focus = { #개선된 공군 레이더
+		id = Improved_Air_Force_Radar
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Improved_F5
+		}
+		x = 84
+		y = 4
+
+	}
+	shared_focus = { #추가적인 공군기지
+		id = Additional_Air_Force_Base
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = modern_aircraft
+		}
+		x = 88
+		y = 3
+
+	}
+	shared_focus = { #AAM-120 암람
+		id = AAM_120_AMRAAM
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Additional_Air_Force_Base
+		}
+		prerequisite = {
+			focus = Improved_F5
+		}
+		x = 86
+		y = 4
+
+	}
+	shared_focus = { #전투기 엔진 개량
+		id = fighter_engine_improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Additional_Air_Force_Base
+		}
+		x = 88
+		y = 4
+
+	}
+	shared_focus = { #KF-16C
+		id = KF_16C
+		icon = GFX_goal_KF-16C
+		cost = 10.00
+		prerequisite = {
+			focus = fighter_engine_improvement
+		}
+		prerequisite = {
+			focus = AAM_120_AMRAAM
+		}
+		x = 86
+		y = 5
+
+	}
+	shared_focus = { #F-4
+		id = F-4
+		icon = GFX_goal_F-4
+		cost = 10.00
+		prerequisite = {
+			focus = fighter_engine_improvement
+		}
+		prerequisite = {
+			focus = AAM_120_AMRAAM
+		}
+		x = 89
+		y = 5
+
+	}
+	shared_focus = { #프롭기!
+		id = fighter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROKAF
+		}
+		mutually_exclusive = {
+			focus = modern_aircraft
+		}
+		x = 91
+		y = 2
+
+	}
+	shared_focus = { #전투기 개발
+		id = fighter_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fighter
+		}
+		x = 90
+		y = 3
+
+	}
+	shared_focus = { #근접항공지원기
+		id = cas
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fighter
+		}
+		x = 92
+		y = 3
+
+	}
+	shared_focus = { #뇌격기
+		id = detonator
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = cas
+		}
+		prerequisite = {
+			focus = fighter_development
+		}
+		x = 91
+		y = 4
+
+	}
+	shared_focus = { #중형폭격기 개발
+		id = Medium_bomber
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fighter
+		}
+		mutually_exclusive = {
+			focus = a_strategic_bomber
+		}
+		x = 94
+		y = 3
+
+	}
+	shared_focus = { #전략폭격기
+		id = a_strategic_bomber
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fighter
+		}
+		mutually_exclusive = {
+			focus = Medium_bomber
+		}
+		x = 96
+		y = 3
+
+	}
+	shared_focus = { #중전투기 계획
+		id = heavy_fighter_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Medium_bomber
+			focus = a_strategic_bomber
+		}
+		x = 95
+		y = 4
+
+	}
+	shared_focus = { #제트기 프로젝트
+		id = jet_project
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = heavy_fighter_development
+		}
+		prerequisite = {
+			focus = detonator
+		}
+		x = 93
+		y = 5
+
+	}
+	shared_focus = { #신형 자주포
+		id = new_SP
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = K2_Modified_Type
+			focus = KAFV_project
+		}
+		x = 53
+		y = 5
+
+	}
+	shared_focus = { #기갑 기동대
+		id = Armored_Combat_Team
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = new_SP
+		}
+		prerequisite = {
+			focus = SPAA_BIHO
+		}
+		x = 51
+		y = 6
+
+	}
+	shared_focus = { #AGM-84
+		id = AGM-84
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Ulsan_class_additional_drying
+		}
+		x = 67
+		y = 4
+
+	}
+	shared_focus = { #포항급 개량
+		id = Pohang-class_improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Modern_Fire_Control_Unit
+		}
+		prerequisite = {
+			focus = AGM-84
+		}
+		x = 68
+		y = 5
+
+	}
+	shared_focus = { #수송헬기 개량
+		id = Transportation_Helicopter_Improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_Air_Corps
+		}
+		x = 48
+		y = 4
+
+	}
+	shared_focus = { #공격헬기 생산집중
+		id = Attack_Helicopter_Production_Concentration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Transportation_Helicopter_Improvement
+		}
+		prerequisite = {
+			focus = Attack_Helicopter_Improvement
+		}
+		x = 46
+		y = 5
+
+	}
+}

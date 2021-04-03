@@ -1,0 +1,11 @@
+PRK = "countries/North_Korea.txt"
+KPA = "countries/North_Korea.txt"
+JDF = "countries/JMSDF.txt"
+ROK = "countries/Korea.txt"
+KR1 = "countries/Korea.txt"
+MKR = "countries/Korea.txt"
+PR1 = "countries/North_Korea1.txt"
+
+USF = "countries/USFK.txt"
+JEJ = "countries/ROKNAVY.txt"
+RU1 = "countries/Soviet Union.txt"

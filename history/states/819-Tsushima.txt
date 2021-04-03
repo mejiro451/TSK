@@ -14,16 +14,20 @@ state={
 				naval_base = 4
 			}
 		}
-		1936.1.4 = {
-			remove_state_core = JDF
-		}
 		victory_points = {
 			10011 5 
 		}
 		add_core_of = JAP
 		add_core_of = JDF
 
+		1936.1.9 = {
+			owner = JAP
+			controller = JAP
+			remove_core_of = JDF
+		}
 	}
 	manpower=21313
 	buildings_max_level_factor=1.000
+	
+	state_category = large_city
 }

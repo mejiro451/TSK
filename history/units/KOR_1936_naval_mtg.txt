@@ -7,24 +7,48 @@ units = {
 		task_force = {
 			name = "1함대" 
 			location = 7021 	 
+			ship = { name = "ROKS 광개토대왕" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+			ship = { name = "ROKS 양만춘" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
 			ship = { name = "ROKS 울산" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
 			ship = { name = "ROKS 충남" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
 			ship = { name = "ROKS 마산" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "ROKS 원주" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 진주" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 여수" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 진해" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 순천" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 익산" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
-			ship = { name = "ROKS 포항" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 목포" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKS 포항" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 동해" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해급" } } }
 			ship = { name = "ROKS 수원" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해급" } } }
 			ship = { name = "ROKS 강릉" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해급" } } }
 			ship = { name = "ROKS 안양" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_1 = { amount = 1 owner = KOR version_name = "동해급" } } }
+			}
+		task_force = {
+			name = "동해 고속정사령부" 
+			location = 7021 	 
+			ship = { name = "PKM-315" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-316" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-317" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-318" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-319" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-320" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-321" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-322" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-323" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-324" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-325" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-336" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-337" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-338" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-339" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-340" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
 		}
 		task_force = {
 			name = "2함대" 
 			location = 13244 	 
+			ship = { name = "ROKS 을지문덕" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
 			ship = { name = "ROKS 서울" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
 			ship = { name = "ROKS 경북" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
 			ship = { name = "ROKS 전남" definition = modern_FF start_experience_factor = 0.3 equipment = { ship_hull_FF_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
@@ -36,6 +60,26 @@ units = {
 			ship = { name = "ROKS 속초" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 군산" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 김천" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKS 천안" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
+		}
+		task_force = {
+			name = "서해 고속정사령부" 
+			location = 13244 
+			ship = { name = "PKM-326" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-327" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-328" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-329" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-330" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-331" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-332" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-333" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-334" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-335" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-341" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-342" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-343" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-344" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
+			ship = { name = "PKM-345" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
 		}
 		task_force = {
 			name = "3함대" 
@@ -51,6 +95,83 @@ units = {
 			ship = { name = "ROKS 경주" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 			ship = { name = "ROKS 충주" definition = modern_PCC start_experience_factor = 0.3 equipment = { ship_hull_PCC_2 = { amount = 1 owner = KOR version_name = "포항급" } } }
 		}
+	}
+	fleet = {
+		name = "기동전대"			
+		naval_base = 4056
+		task_force = {
+			name = "71기동전대" 
+			location = 4056
+			ship = { name = "ROKS 세종대왕" definition = modern_DDG start_experience_factor = 0.3 equipment = { ship_hull_modern_DDG_2 = { amount = 1 owner = KOR version_name = "세종대왕급" } } }
+			ship = { name = "ROKS 충무공이순신" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+			ship = { name = "ROKS 대조영" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+			ship = { name = "ROKS 강감찬" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+		}
+		task_force = {
+			name = "72기동전대" 
+			location = 4056
+			ship = { name = "ROKS 문무대왕" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+			ship = { name = "ROKS 왕건" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+			ship = { name = "ROKS 최영" definition = modern_DDH start_experience_factor = 0.3 equipment = { ship_hull_modern_DDH_2 = { amount = 1 owner = KOR version_name = "충무공이순신급" } } }
+		}
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_modern_DDG_2
+			creator = "KOR" 
+			version_name = "세종대왕급"
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_modern_DDG_2
+			creator = "KOR" 
+			version_name = "세종대왕급"
+		}
+		requested_factories = 1
+		progress = 0.3
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_FF_3
+			creator = "KOR" 
+			version_name = "인천급"
+		}
+		requested_factories = 1
+		progress = 0.45
+		amount = 2
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_FF_3
+			creator = "KOR" 
+			version_name = "인천급"
+		}
+		requested_factories = 1
+		progress = 0.3
+		amount = 2
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_FF_3
+			creator = "KOR" 
+			version_name = "인천급"
+		}
+		requested_factories = 1
+		progress = 0.3
+		amount = 2
 	}
 }
 

@@ -8,9 +8,9 @@ state={
 		rubber=4.000
 	}
 	history={
-		owner = KOR
-		add_core_of = KOR
-		add_claim_by = PRK
+		owner = KR1
+		add_core_of = KR1
+		add_core_of = PRK
 		buildings = {
 			infrastructure = 6 
 			arms_factory = 2
@@ -32,6 +32,13 @@ state={
 		}
 		victory_points = {
 			13251 10 
+		}
+
+		1936.1.9 = {
+			owner = KOR
+			controller = KOR
+			remove_core_of = KR1
+			add_core_of = KOR
 		}
 	}
 

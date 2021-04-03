@@ -9,13 +9,13 @@ division_template = {
 		heavy_mechanized = { x = 0 y = 2 }
 		heavy_mechanized = { x = 0 y = 3 }
 		
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
+		modern_mechanized = { x = 1 y = 0 }
+		modern_mechanized = { x = 1 y = 1 }
 		heavy_mechanized = { x = 1 y = 2 }
 		
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		modern_motorized = { x = 2 y = 0 }
+		modern_motorized = { x = 2 y = 1 }
+		modern_motorized = { x = 2 y = 2 }
 		
 		mot_artillery_brigade = { x = 3 y = 0 }
 		mot_artillery_brigade = { x = 3 y = 1 }
@@ -37,5 +37,27 @@ units = {
 		location = 13252
 		division_template = "주한미군"
 		start_experience_factor = 0.8
+	}
+}
+
+
+air_wings = {
+	823 = { 
+		m_1990_jet_multirole_equipment = {
+			owner = "USF" 
+			amount = 20
+		}
+		m_1990_jet_multirole_equipment = {
+			owner = "USF" 
+			amount = 20
+		}
+		m_1990_jet_CAS_equipment = {
+			owner = "USF" 
+			amount = 20
+		}
+		m_1990_attack_helicopter_equipment = {
+			owner = "USF" 
+			amount = 40
+		}
 	}
 }

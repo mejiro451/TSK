@@ -19,8 +19,16 @@ state={
 			12040 20 
 		}
 		add_core_of = PRK
-		add_claim_by = KOR
+		add_core_of = KR1
 
+		1936.1.9 = {
+			remove_core_of = KR1
+			remove_core_of = PRK
+			add_core_of = KOR
+			add_core_of = KPA
+			owner = KPA
+			controller  KPA
+		}
 	}
 
 	provinces={

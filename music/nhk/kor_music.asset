@@ -20,8 +20,8 @@ music = {
 }
 
 music = {
-	name = "panzerlied"
-	file = "panzerlied.ogg"
+	name = "panzerlied_1"
+	file = "기갑가.ogg"
 	volume = 0.85
 }
 

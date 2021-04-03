@@ -1,0 +1,517 @@
+﻿capital = 807 #South Korea - Seoul or Busan
+
+oob = "KR1_1936"
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+
+	set_naval_oob = "KR1_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "KR1_1936_naval_mtg"
+}
+set_fuel_ratio = 1.0
+set_convoys = 350
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1		
+	tech_engineers4 = 1
+	tech_recon = 1
+	tech_recon2 = 1		
+	tech_recon3 = 1
+	tech_recon4 = 1
+	tech_military_police = 1		
+	tech_military_police2 = 1
+	tech_military_police3 = 1
+	tech_military_police4 = 1		
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1		
+	tech_maintenance_company4 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1		
+	tech_field_hospital3 = 1
+	tech_field_hospital4 = 1
+	tech_logistics_company = 1		
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_logistics_company4 = 1		
+	tech_signal_company = 1		
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_signal_company4 = 1	
+	
+	modern_amphibious_mechanized = 1
+
+	m_1960_infantry_eq = 1
+	m_1970_infantry_eq = 1
+	m_1980_infantry_eq = 1
+	m_1990_infantry_eq = 1
+	
+	m_1960_sup_infantry_eq = 1
+	m_1970_sup_infantry_eq = 1
+	m_1985_sup_infantry_eq = 1
+	
+	m_1950_modern_tank = 1	
+	m_1960_modern_tank = 1
+	m_1970_modern_tank = 1
+	m_1980_modern_tank = 1
+	
+	m_1970_mechanized_equipment = 1
+	m_1980_mechanized_equipment = 1
+	m_1990_mechanized_equipment = 1
+	
+	modern_war_artillery = 1
+	modern_war_artillery_2 = 1
+	modern_war_artillery_3 = 1
+	
+	m_1970_spaa = 1
+	m_1980_spaa = 1
+	m_1990_spaa = 1
+	
+	m_1970_sp = 1	
+	m_1980_sp = 1
+	m_1990_sp = 1
+	
+	m_1980_motorized_rocket_unit = 1
+	
+	m_1980_manpad = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	heavy_anti_air = 1
+	aa_missile = 1
+	
+	m_1970_jet_multirole = 1
+	m_1980_jet_multirole = 1
+	m_1990_jet_multirole = 1
+	
+	m_1970_jet_fighter = 1
+	m_1980_jet_fighter = 1
+	m_1990_jet_fighter = 1
+	
+	m_1970_jet_CAS = 1
+	
+	m_1970_atgm = 1
+	m_1980_atgm = 1
+	m_1990_atgm = 1
+	
+	m_1970_attack_helicopter = 1
+	m_1980_attack_helicopter = 1
+	
+	m_1970_util_helicopter = 1
+	m_1980_util_helicopter = 1
+	m_1990_util_helicopter = 1
+	
+	maritime_helicopter = 1
+	
+	m_1970PCC = 1
+	m_1980PCC = 1
+	m_1970ff = 1
+	m_1980patrol = 1
+	modern_moto = 1
+	
+	modern_light_battery_1 = 1
+	ship_missile_luncher_1 = 1
+	ship_missile_luncher_2 = 1
+	ship_ciws = 1
+	ship_modern_control_system_1 = 1
+	ship_modern_radar_1 = 1
+	ship_modern_sonar_1 = 1
+	light_ship_engine_modern_1 = 1
+	ship_hel = 1
+	
+	light_secondaries_1 = 1
+	mg = 1
+	ship_vulcan_1 = 1
+	ship_manpad = 1
+	depth_charge_modern_1 = 1
+	
+	modern_steel_mill = 1
+	modern_fuel_refining = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+}
+
+add_ideas = {
+    KOR_modern_millitary
+}
+
+ 
+set_convoys = 5
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+	fascism = 0
+	communism = 0
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "Rho Tae whoo"
+	desc = ""
+	picture = "Rho_Tae_Whoo.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rho Tae whoo"
+	desc = ""
+	picture = "Rho_Tae_Whoo.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Gu Chang hoe"
+	picture = "구창회.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Jin young"
+	picture = "김진영.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ahn Pil jun"
+	picture = "안필준.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Nam shin"
+	picture = "이남신.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Jong gu"
+	picture = "이종구.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Cho Nam poong"
+	picture = "조남풍.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Choi Se chang"
+	picture = "최세창.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gil Hyung bo"
+	picture = "길형보.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Dong shin"
+	picture = "김동신.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Do Il gyu"
+	picture = "도일규.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oh Ja bok"
+	picture = "오자복.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yoon Yong nam"
+	picture = "운용남.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Jun"
+	picture = "이준.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee jin sam"
+	picture = "이진삼.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Min Kyung bae"
+	picture = "민경배.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Pil sub"
+	picture = "이필섭.dds"
+	traits = { army KOR_Hanahoe }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim dong jin"
+	picture = "김동진.dds"
+	traits = { army }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jung Yong hoo"
+	picture = "정용후.dds"
+	traits = { air_force }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Han Ju seok"
+	picture = "한주석.dds"
+	traits = { air_force }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Lee Soo yong"
+		picture = "이수용.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jang Jeong gil"
+		picture = "장정길.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Moon Jung il"
+		picture = "문정일.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Yu sam nam"
+		picture = "유삼남.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	create_equipment_variant = {
+		name = "동해급"
+		type = ship_hull_PCC_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "포항급"
+		type = ship_hull_PCC_2
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			rear_1_custom_slot = ship_missile_luncher_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "울산급"
+		type = ship_hull_FF_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			rear_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			front_1_custom_slot = modern_ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "참수리급"
+		type = ship_hull_PK_1
+		name_group = ROK_PKM_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_light_secondaries_slot = ship_light_secondaries_1
+			fixed_ship_light_aa_slot = ship_vulcan_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_sonar_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			mid_1_custom_slot = ship_mg
+			rear_1_custom_slot = ship_vulcan_1
+		}
+	}
+}

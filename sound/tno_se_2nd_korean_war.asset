@@ -7,3 +7,13 @@ sound = {
 	file = "KOR/time_slip.wav"
 	always_load = no
 }
+sound = {
+	name = "kor_communism_unif"
+	file = "KOR/communism_unif.wav"
+	always_load = no
+}
+sound = {
+	name = "kor_south_Unification"
+	file = "KOR/kor_south_Unification.wav"
+	always_load = no
+}

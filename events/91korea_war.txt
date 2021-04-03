@@ -1,0 +1,224 @@
+add_namespace = korea_war
+#목표서울
+country_event = {
+	id = korea_war.1
+	title = korea_war.1.t
+	desc = korea_war.1.d
+	picture = GFX_report_event_hitler_parade
+	
+	is_triggered_only = yes
+	
+
+	option = { 
+		name = korea_war.1.a
+		add_ideas = PRK_war1
+		add_war_support = 0.2
+		activate_mission = PRK_stage_1
+	}
+}
+#목표부산
+country_event = {
+	id = korea_war.2
+	title = korea_war.2.t
+	desc = korea_war.2.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+
+	option = { 
+		name = korea_war.2.a
+		add_ideas = PRK_war2
+		activate_mission = PRK_stage_2
+	}
+}
+#서울점령 실패
+country_event = {
+	id =  korea_war.3
+	title = korea_war.3.t
+	desc = korea_war.3.d
+	picture = GFX_report_event_998
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { 
+		name = korea_war.3.a
+		remove_ideas = PRK_war1
+	}
+}
+#부산점령 실패
+country_event = {
+	id =  korea_war.4
+	title = korea_war.4.t
+	desc = korea_war.4.d
+	picture = GFX_report_event_998
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { 
+		name = korea_war.4.a
+		remove_ideas = PRK_war2
+		add_ideas = PRK_focus_def
+	}
+}
+country_event = { #반격의 시간
+	id = korea_war.5
+	title = korea_war.5.t
+	desc = korea_war.5.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = korea_war.5.a
+		ai_chance = { factor = 100 }
+			add_timed_idea = {
+			idea = ROK_counterattack
+			days = 100
+		}
+    }	
+}
+
+country_event = { #군사정부:최후의 저항
+	id = korea_war.6
+	title = korea_war.6.t
+	desc = korea_war.6.d
+	picture = GFX_two_peo_pic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = korea_war.6.a
+		ai_chance = { factor = 100 }
+			add_timed_idea = {
+			idea = KOR_focus_def
+			days = 100
+		}
+    }	
+}
+
+country_event = { #평화 : 부산점령실패시
+	id = korea_war.13
+	title = korea_war.13.t
+	desc = korea_war.13.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #전쟁이전으로 되돌리자
+		name = korea_war.13.a
+		ai_chance = { factor = 70 }
+		ROK = {
+			country_event = {
+            id = korea_war.14
+			days = 1
+		    }
+        }	
+	}
+	
+	option = { #이길수있다!
+		name = korea_war.13.a
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = { #받아들이다 
+	id = korea_war.14
+	title = korea_war.14.t
+	desc = korea_war.14.d
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		remove_ideas = ROK_counterattack
+	}
+
+	option = {
+		name = korea_war.14.a
+		white_peace = PRK
+		ai_chance = { factor = 100 }
+		ROK = {
+			    transfer_state = 525
+			    transfer_state = 807
+			    transfer_state = 810
+			    transfer_state = 817
+			    set_state_owner  = 525
+			    set_state_owner  = 807
+			    set_state_owner  = 810
+			    set_state_owner  = 817
+				set_country_flag = ROK_win_civ
+		}
+	}	
+}
+
+country_event = { #평화 : 서울점령실패
+	id = korea_war.15
+	title = korea_war.15.t
+	desc = korea_war.15.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #전쟁이전으로 되돌리자
+		name = korea_war.15.a
+		ai_chance = { factor = 100 }
+		MKR = {
+			country_event = {
+            id = korea_war.16
+			days = 1
+		    }
+        }	
+	}
+	
+	option = { #이길수있다!
+		name = korea_war.15.a
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = korea_war.16
+	title = korea_war.16.t
+	desc = korea_war.16.d
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		remove_ideas = ROK_counterattack
+	}
+
+	option = { #받아들이다
+		name = korea_war.16.a
+		ai_chance = { factor = 90 }
+		MKR = {
+		white_peace = PRK
+		}
+	}	
+	
+	option = { #헛소리!
+		name = korea_war.16.b
+		ai_chance = { factor = 10 }
+	}	
+}

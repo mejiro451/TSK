@@ -36,6 +36,31 @@ spriteTypes = {
 	}
 	
  ################################################################################
+ ######지원화기
+ ################################################################################
+
+	SpriteType = {
+		name = "GFX_PRK_support_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRK_support_infantry_equipment_0.png"
+	}
+	SpriteType = {
+		name = "GFX_PRK_support_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRK_support_infantry_equipment_1.png"
+	}
+	SpriteType = {
+		name = "GFX_PRK_support_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRK_support_infantry_equipment_2.png"
+	}
+	SpriteType = {
+		name = "GFX_PRK_support_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRK_support_infantry_equipment_3.png"
+	}
+	SpriteType = {
+		name = "GFX_PRK_support_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRK_support_infantry_equipment_4.png"
+	}
+	
+ ################################################################################
  ######전차
  ################################################################################
  
@@ -80,6 +105,10 @@ spriteTypes = {
 		name = "GFX_PRK_modern_artillery_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/art/PRK_modern_war_artillery_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_PRK_modern_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/art/PRK_modern_war_artillery_3.png"
+	}
 	
  ################################################################################
  ######MLRS
@@ -96,6 +125,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_PRK_m_1990_mlrs_equipment_medium"
 		texturefile = "gfx/interface/technologies/art/PRK_1990_mlrs.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRK_m_2000_mlrs_equipment_medium"
+		texturefile = "gfx/interface/technologies/art/PRK_2000_mlrs.png"
 	}
  ################################################################################
  ######APC
@@ -194,20 +227,20 @@ spriteTypes = {
  ######맨패드
  ################################################################################
 	SpriteType = {
+		name = "GFX_PRK_m_1970_manpad_equipment_medium"
+		texturefile = "gfx/interface/technologies/aa/PRK_1970_manpad.png"
+	}
+	SpriteType = {
 		name = "GFX_PRK_m_1980_manpad_equipment_medium"
-		texturefile = "gfx/interface/technologies/aa/PRK_1980_manpad.dds"
+		texturefile = "gfx/interface/technologies/aa/PRK_1980_manpad.png"
 	}
 	SpriteType = {
-		name = "GFX_PRK_aa_missile_medium"
-		texturefile = "gfx/interface/technologies/aa/PRK_aa_missile.dds"
+		name = "GFX_PRK_m_1990_manpad_equipment_medium"
+		texturefile = "gfx/interface/technologies/aa/PRK_1990_manpad.png"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_1990_spaa_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_1990_spaa.dds"
-	}
-	SpriteType = {
-		name = "GFX_PRK_m_2000_spaa_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_2000_spaa.dds"
+		name = "GFX_PRK_m_2000_manpad_equipment_medium"
+		texturefile = "gfx/interface/technologies/aa/PRK_2000_manpad.png"
 	}
 	
  ################################################################################
@@ -215,19 +248,23 @@ spriteTypes = {
  ################################################################################
 	SpriteType = {
 		name = "GFX_PRK_m_1970_atgm_equipment_medium"
-		texturefile = "gfx/interface/technologies/at/PRK_1970_atgm_equipment.dds"
+		texturefile = "gfx/interface/technologies/at/PRK_1970_atgm_equipment.png"
 	}
 	SpriteType = {
 		name = "GFX_PRK_m_1980_atgm_equipment_medium"
-		texturefile = "gfx/interface/technologies/at/PRK_1980_atgm_equipment.dds"
+		texturefile = "gfx/interface/technologies/at/PRK_1980_atgm_equipment.png"
 	}
 	SpriteType = {
 		name = "GFX_PRK_m_1990_atgm_equipment_medium"
-		texturefile = "gfx/interface/technologies/at/PRK_1990_atgm_equipment.dds"
+		texturefile = "gfx/interface/technologies/at/PRK_1990_atgm_equipment.png"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2000_spaa_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_2000_spaa.dds"
+		name = "GFX_PRK_m_2000_atgm_equipment_medium"
+		texturefile = "gfx/interface/technologies/at/PRK_2000_atgm_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_PRK_m_2010_atgm_equipment_medium"
+		texturefile = "gfx/interface/technologies/at/PRK_2010_atgm_equipment.png"
 	}
 	
  ################################################################################
@@ -242,12 +279,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/planes/PRK_1980_attack_helicopter.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2000_attack_helicopter_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_1990_spaa.dds"
+		name = "GFX_PRK_m_1990_attack_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/PRK_1990_attack_helicopter.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2010_attack_helicopter_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_2000_spaa.dds"
+		name = "GFX_PRK_m_2000_attack_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/PRK_2000_attack_helicopter.dds"
 	}
 
 	
@@ -267,8 +304,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/planes/PRK_1990_util_helicopter.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRK_m_2000_spaa_equipment_medium"
-		texturefile = "gfx/interface/technologies/spg/PRK_2000_spaa.dds"
+		name = "GFX_PRK_m_1990_util_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/PRK_2000_util_helicopter.dds"
 	}
 	
 	
@@ -335,13 +372,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_PRK_m_2010_jet_CAS_equipment_medium"
 		texturefile = "gfx/interface/technologies/planes/PRK_2010_CAS.dds"
-	}
-    SpriteType = {
-		name = "GFX_ship_hull_modern_DDG_1_medium"
-		texturefile = "gfx/interface/technologies/navy/ship_hull_DDG_1.dds"
-	}
-    SpriteType = {
-		name = "GFX_ship_hull_modern_DDH_1_medium"
-		texturefile = "gfx/interface/technologies/navy/ship_hull_DDH_1.dds"
 	}
 }

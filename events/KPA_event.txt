@@ -1,0 +1,25 @@
+add_namespace = kpa
+
+####김정은에 도전한 인민군 장교단####
+country_event = {
+	id = kpa.1
+	title = kpa.1.t
+	desc = kpa.1.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = kpa.1.a
+		start_civil_war = {
+            ruling_party = neutrality
+            ideology = communism
+            size = 0.5
+            capital = 527
+            states = { 
+                804 802
+                }
+            }		
+		}
+}

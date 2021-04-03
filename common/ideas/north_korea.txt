@@ -1,0 +1,558 @@
+ideas = {
+
+	country = {
+		strong_and_powerful_nation = { #강성대국
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = -0.04
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.10
+			}
+		}	
+		agricultural = { #농업현장투입
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.01
+				weekly_manpower = 500
+			}
+		}	
+		re_education_camp = { #재교육 운동
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}	
+		expansion_camps = { #노동수용소 동원
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}	
+		supervision = { #관리감독 강화
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				production_factory_max_efficiency_factor = 0.05 #생산효율성한도%
+				production_factory_efficiency_gain_factor = 0.05 #생산효율성성장%
+			}
+		}	
+		propaganda_camp = { #선전물 배포
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_weekly_factor	= 0.02
+				war_support_weekly_factor = 0.03
+				weekly_manpower = 100
+			}
+		}	
+		KOR_worker = { #노동자 장려
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				production_factory_max_efficiency_factor = 0.05 #생산효율성한도%
+				production_factory_efficiency_gain_factor = 0.05 #생산효율성성장%
+				line_change_production_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}		
+		KOR_Ryugyong_Hotel = { #류경호텔
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = 0.15
+				political_power_gain = 0.2
+				communism_drift = 0.05
+			}
+		}		
+		KOR_combat_ind = { #전투공업
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				production_factory_max_efficiency_factor = 0.05 #생산효율성한도%
+				production_factory_efficiency_gain_factor = 0.05 #생산효율성성장%
+			}
+		}		
+
+		KOR_combat_food = { #전투농업
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = 0.02
+				stability_factor = 0.02
+				conscription = 0.01
+			}
+		}		
+		KOR_food_1 = { #식량난 위기
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = -0.08
+				stability_factor = -0.05
+				conscription = -0.03
+			}
+		}
+		
+		KOR_food_2 = { #식량난 위기2
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = -0.15
+				stability_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		
+		KOR_food_3 = { #식량난 위기3
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = -0.2
+				stability_factor = -0.2
+				conscription = -0.07
+			}
+		}		
+		
+		KOR_food_4 = { #고난의 행군
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = -2
+				stability_factor = -0.4
+				conscription = -0.2
+			}
+		}		
+		KOR_food_0 = { #남한의 식량지원
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+			    monthly_population = 0.08
+				stability_factor = 0.05
+			}
+		}
+		
+		KOR_fund = { #비용지불
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		KOR_juche = { #주체사상
+
+			picture = idea_KOR_juche
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_factor = 0.2
+				drift_defence_factor = 0.7
+				justify_war_goal_time = -0.2
+				political_power_gain = 0.1
+			}
+		}
+		
+		KOR_juche_2 = { #주체사상
+
+			picture = idea_KOR_juche
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_factor = 0.2
+				drift_defence_factor = 0.7
+				justify_war_goal_time = -0.2
+				political_power_gain = 0.2
+				communism_drift = 0.05
+				stability_factor = 0.2
+			}
+		}
+		
+		KOR_Marx  = { #마르크스레닌주의
+
+			picture = idea_KOR_juche
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				production_speed_buildings_factor = 0.05
+				conscription = 0.03
+				drift_defence_factor = 0.5
+				communism_drift = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		chunrima = { #천리마운동
+
+			picture = raj_risk_of_famine
+
+        	allowed = {
+				original_tag = PRK
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = 0.05
+				consumer_goods_factor = 0.01
+				production_factory_start_efficiency_factor = 0.05 #기본생산효율%
+			}
+		}
+
+		prk_jap_propaganda = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = jap_the_unthinkable_option
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		
+		
+		Securing_Seoul = { #서울확보
+		
+        	allowed = {
+				original_tag = PRK
+    		}
+        	removal_cost = -1
+
+	   		modifier = { 
+				breakthrough_factor = 0.05
+				army_infantry_attack_factor = 0.05
+				army_armor_attack_factor = 0.05
+			}
+		}
+		
+		bypass_Seoul = { #서울우회
+		
+        	allowed = {
+				original_tag = PRK
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				army_speed_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+		}
+	}
+	
+	political_advisor = {
+	
+		kim_young_nam = { #김영남 (최고인민회의 위원장)
+
+			
+			allowed = {
+				original_tag = PRK
+			}
+			
+			traits = { }
+		}
+		
+		choe_yung = { #최영림 (국가계획위원장)
+
+			
+			allowed = {
+				original_tag = PRK
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		lee_byung = { #리병철 (군수공업부 부장)
+			
+			allowed = {
+				original_tag = PRK
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		kim_doo = { #김두봉 (조선민주주의인민공화국 초대원수)
+
+			
+			allowed = {
+				original_tag = PRK
+			}
+			
+			traits = { }
+		}
+		
+		park_hun = { #박헌영
+
+			cost = 75
+			
+			allowed = {
+				original_tag = PRK
+			}
+			available = {
+				has_completed_focus = prk_Marxism_Leninism
+			}
+			
+			traits = { }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		cho_bong = { #조봉암
+
+			cost = 75
+			
+			allowed = {
+				original_tag = PRK
+			}
+			available = {
+				has_completed_focus = prk_Marxism_Leninism
+			}
+			
+			traits = { }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		yeo_un = { #여운형
+
+			
+			allowed = {
+				original_tag = PRK
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

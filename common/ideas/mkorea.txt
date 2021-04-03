@@ -1,0 +1,1172 @@
+ideas = {
+	
+	country = {
+		
+		mkr_nationwide_demonstration = { #전국적인 대규모시위
+
+			picture = generic_democratic_drift_bonus
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.6
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.8
+				conscription_factor = -0.5
+			}
+		}
+		mkr_nationwide_demonstration_2 = { #전국적인 중규모시위
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.5
+				consumer_goods_factor = 0.025
+				political_power_gain = -0.65
+				conscription_factor = -0.5
+			}
+		}
+		mkr_nationwide_demonstration_3 = { #전국적인 소규모시위
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.4
+				consumer_goods_factor = 0.02
+				political_power_gain = -0.5
+				conscription_factor = -0.4
+			}
+		}
+		mkr_nationwide_demonstration_4 = { #전국적인 소규모시위
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.3
+				consumer_goods_factor = 0.015
+				political_power_gain = -0.35
+				conscription_factor = -0.2
+			}
+		}
+		
+		mkr_nationwide_demonstration_5 = { #소규모데모 활개
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.2
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.2
+				conscription_factor = -0.1
+			}
+		}
+		
+		mkr_unstable_security = { #매우불안정한 치안
+
+			picture = idea_mkr_unstable_security
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = -0.3
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.1
+			}
+		}
+		
+		mkr_combat_police = { #전투경찰
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = 0.05
+			}
+		}
+		
+		mkr_war_against_crime = { #범죄와의 전쟁
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_factor = 0.15
+				political_power_gain = 0.05
+			}
+		}
+		MKR_recover_fronciv = { #내전에서의 회복
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		mkr_unorthodox_goverment = { #정통성없는 정부
+
+			picture = idea_mkr_unorthodox_goverment
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = -0.4
+				stability_factor = -0.15
+			}
+		}
+		
+		mkr_unorthodox_goverment_1 = { #군사정부
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = -0.25
+			}
+		}
+		mkr_curfew = { #통행금지령
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = 0.15
+			}
+		}
+		
+		mkr_press_censorship = { #언론검열
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = 0.2
+				stability_factor = 0.01
+			}
+		}
+		
+		mkr_mitigate_censorship = { #언론검열완화
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				political_power_gain = -0.1
+				stability_factor = 0.15
+			}
+		}
+		mkr_safety_planning_department = { #대한민국 국가안전기획부
+
+			picture = mkr_safety_planning_department
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				encryption = 1
+				decryption = 2
+			}
+		}
+		
+		mkr_compromise = { #진보주의자와 타협
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_weekly_factor	 = 0.01
+			}
+		}
+		
+		mkr_well_run_university = { #대학휴교령 해제
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				research_speed_factor = 0.05
+			}
+		}
+		
+		mkr_libarty = { #자유주의
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				stability_weekly_factor	= 0.001
+				political_power_gain = 0.15
+			}
+		}
+
+		MKR_defense_security_command = { #국군기무사령부
+			removal_cost = -1
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+			
+			modifier = {
+				subversive_activites_upkeep = -0.2
+				operative_slot = 1
+				land_reinforce_rate = 0.1
+			}
+		}
+
+		MKR_NCUI = { #통일주체국민회의
+			removal_cost = -1
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+			
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+		
+		mkr_irregularities_barracks = { #병영내 부조리
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				army_org_regain	= -0.10
+				army_morale = -0.15
+				land_night_attack = -0.15
+			}
+		}
+		
+		mkr_eradicating_communism = { #북진멸공
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_weekly = 0.05
+			}
+		}
+		
+		mkr_eradicating_communism_1 = { #북진멸공 
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+        	removal_cost = -1
+
+	   		modifier = { 
+				war_support_weekly = 0.05
+			}
+		}
+		
+		prc_invasion = { #국민당 침공
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.4
+			}
+        	removal_cost = -1
+		}
+		
+		mkr_preventive_war = { #예방전쟁
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+			targeted_modifier = {
+				tag = PRK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.2
+			}
+			modifier = {
+				air_close_air_support_attack_factor  = 0.1
+				air_air_superiority_attack_factor  = 0.1
+				air_air_superiority_defence_factor   = 0.1
+				
+			}
+		}
+		
+		mkr_haebyung_1 = { #해병대 중심 
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				amphibious_invasion = 0.1
+				amphibious_invasion_defence = 0.1
+			}
+		}
+		
+		mkr_new_facism = { #신 제국주의
+
+			picture = future_ideas
+
+        	allowed = {
+				always = no
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+        	removal_cost = -1
+
+	   		modifier = { 
+				fascism_drift = 0.15
+			}
+		}
+		
+		mkr_military_training = { #군사 훈련
+			picture = generic_production_bonus
+			
+        	allowed = {
+				original_tag = MKR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				training_time_army_factor = -0.1
+			}
+		}
+		a_colonial_war = { #식민지확보전쟁
+			picture = generic_production_bonus
+			
+        	allowed = {
+				original_tag = MKR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				justify_war_goal_time = -0.25
+			}
+		}
+		increase_tax = { #세금인상
+			picture = generic_production_bonus
+
+        	allowed = {
+				original_tag = MKR
+    		}
+
+			allowed_civil_war = {
+	    		always = yes
+    		}
+
+        	removal_cost = -1
+
+	   		modifier = { 
+				consumer_goods_factor = -0.3
+				stability_factor = -0.1
+			}
+		}
+		
+		MKR_recover_ind = { #부서진 산업 복구
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.3
+			}
+		}
+		
+		
+		MKR_Five_Year_Economic_plan = { #6차경제개발 5개년계힉
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_steel_mill_factor = 0.1
+				production_speed_steel_alloy_ind_factor = 0.1
+			}
+		}
+		
+		
+		MKR_saemaul = { #새마을운동
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		
+		MKR_han_riv = { #한강의기적
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2 #건설속도%
+				line_change_production_efficiency_factor = 0.15 #생산효율성유지%
+				production_factory_start_efficiency_factor = 0.15 #기본생산효율%
+			}
+		}
+		
+		mkr_ships_focus = { #조선국
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				naval_equipment_upgrade_xp_cost = -0.1
+			}
+			
+			equipment_bonus = {
+
+				ship_hull_FF = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_PCC = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				convoy_1 = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		MKR_trade_goods = { #무역품 수출허가
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = MKR
+	 		    original_tag = PRK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+
+	}
+	
+	political_advisor = {
+	
+		mkr_chung_won_sik = { #정원식 (국무총리)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+		}
+		
+		mkr_lee_young_man = { #이용만 (재무부장관)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		mkr_chung_geun_mo = { #정근모 (과학기술처 장관)
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mkr_choi_ghak = { #최각규 (경제 기획원 장관)
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+		}
+
+		mkr_han_seung = { #한승수 (산업통상자원부장관)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		mkr_park_sae = { #박세직 (안기부장)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		mkr_lee_ghun = { #이건희 (삼성그룹회장)
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { }
+		}
+	}
+
+	theorist = {
+		
+		mkr_cho_nam_pung = { #조남풍 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+		
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		mkr_kim_dong_shin = { #김동신 
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		
+		mkr_choi_sae_chang = { #최세창 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+
+			traits = { mobile_warfare_expert }
+		}
+		
+		mkr_seo_dong = { #서동열
+			ledger = air
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		mkr_lee_yang_ho = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		mkr_lee_nam_shin = { #이남신
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+	}	
+	
+	army_chief = {
+
+		mkr_kim_jing_yung = { #김진영 (하나회)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mkr_kim_dong_jin  = { #김동진
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		mkr_lee_jin_sam = { #이진삼 (하나회)
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		mkr_do_il_kyu = { #도일규
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+
+					
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		mkr_cho_geun_hae = { #조근해
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		mkr_kim_hong_rae = { #김홍래
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mkr_han_chu = { #한주석
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		mkr_an_byung_tae = { #안병태
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		
+		mkr_you_sam = { #유삼남
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+						
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	
+	high_command = {
+
+		mkr_lee_jun = { #이준
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		mkr_un_yong_nam = { #윤용남
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		
+		mkr_lee_jong_gu = { #이종구 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		mkr_goo_chang_hoe = { #구창회 (하나회)
+			ledger = army
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		mkr_lee_yang_ho_1 = { #이양호
+			ledger = air
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mkr_lee_gwang = { #이광학
+			ledger = air
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		mkr_chung_yong = { #정용후
+			ledger = air
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		mkr_lee_soo = { #이수용
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+		mkr_chang_jung = { #장정길
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = MKR
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	
+}

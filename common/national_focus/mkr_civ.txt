@@ -1,0 +1,140 @@
+focus_tree = {
+	id = mkr_civ
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = { #대책회의
+		id = Countermeasure_Conference
+		icon = GFX_goal_unknown
+		cost = 0.5
+		x = 8
+		y = 0
+		completion_reward = {
+			MKR = {
+			country_event = mkorea.1
+			}
+		}
+
+	}
+	focus = { #향토예비군 동원
+		id = mobilization_order
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = Countermeasure_Conference
+		}
+		completion_reward = {
+			MKR = {
+			country_event = mkorea.2
+			}
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = { #독립군장교단
+		id = Independent_Army_Corps
+		icon = GFX_goal_unknown
+		cost = 0.5
+		prerequisite = {
+			focus = mobilization_order
+		}
+		completion_reward = {
+			MKR = {
+			country_event = mkorea.3
+			}
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = { #비상대책법
+		id = emergency_measure
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = mobilization_order
+		}
+		completion_reward = {
+				add_timed_idea = {
+				idea = KOR_focus_def
+				days = 50
+			}
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = { #무차별 폭격 승인
+		id = indiscriminate_bombing_approval
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = emergency_measure
+		}
+		prerequisite = {
+			focus = Independent_Army_Corps
+		}
+		completion_reward = {
+			MKR = {
+			country_event = mkorea.4
+			}
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {#대공세
+		id = Offensive
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = indiscriminate_bombing_approval
+		}
+		completion_reward = {
+				add_timed_idea = {
+				idea = ROK_offensive
+				days = 100
+			}
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = { #정보전 돌입
+		id = information_warfare
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = indiscriminate_bombing_approval
+		}
+
+		x = 10
+		y = 4
+
+	}
+	focus = { #내전에서의 승리
+		id = mkr_victory_in_the_civil_war
+		icon = GFX_goal_unknown
+		cost = 5
+		available = {
+			is_puppet = no
+			has_war = no
+			has_country_flag = fall_of_busan_MKR_1
+		}
+		prerequisite = {
+			focus = information_warfare
+		}
+		prerequisite = {
+			focus = Offensive
+		}
+		completion_reward = {
+			load_focus_tree = mkorea_focus_tree
+			set_global_flag = civil_mkr_win
+		}
+		x = 8
+		y = 5
+
+	}
+}

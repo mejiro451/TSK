@@ -1,0 +1,333 @@
+spriteTypes = {	
+	### KOR - Advisor
+
+	spriteType = {
+		name = "GFX_idea_chung_won_sik"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/정원식.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_young_man"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이용만.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chung_geun_mo"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/정근모.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_ghak"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/최각규.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_koo"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/김구.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chu_kyung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/추경석.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_sung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이성호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_hyung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/최형우.dds"
+	}
+
+
+	### KOR - 이론가
+
+	spriteType = {
+		name = "GFX_idea_cho_nam_pung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/조남풍.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_dong_shin"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/김동신.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_choi_sae_chang"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/최세창.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_seo_dong"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/서동열.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_yang_ho"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이양호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_nam_shin"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이남신.dds"
+	}
+
+
+
+	### KOR - 육,해,공참모총장
+
+	spriteType = {
+		name = "GFX_idea_kim_jing_yung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/김진영.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_dong_jin"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/김동진.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_jin_sam"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이진삼.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_do_il_kyu"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/도일규.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cho_geun_hae"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/조근해.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kim_hong_rae"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/김홍래1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_han_chu"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/한주석1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_an_byung_tae"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/안병태.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_you_sam"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/유삼남.dds"
+	}
+	
+	### KOR - 최고지휘부
+	
+	spriteType = {
+		name = "GFX_idea_lee_jun"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이준.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_un_yong_nam"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/윤용남.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_jong_gu"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이종구.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_goo_chang_hoe"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/구창회.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_yang_ho_1"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이양호.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_gwang"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이광학1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_chung_yong"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/정용후.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lee_soo"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/이수용.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chang_jung"
+		texturefile = "gfx/interface/ideas/ADVISOR/91/장정길.dds"
+	}
+
+	### KOR - Company
+
+	spriteType = {
+		name = "GFX_idea_doosanDST"
+		texturefile = "gfx/interface/ideas/두산DST.png"
+	}
+	spriteType = {
+		name = "GFX_idea_samsungtec"
+		texturefile = "gfx/interface/ideas/삼성테크원.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_rottem"
+		texturefile = "gfx/interface/ideas/현대로템.png"
+	}
+	spriteType = {
+		name = "GFX_idea_daewoo_ship"
+		texturefile = "gfx/interface/ideas/대우조선해양.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hanjin_ship"
+		texturefile = "gfx/interface/ideas/한진해운.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_ship"
+		texturefile = "gfx/interface/ideas/현대중공업.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kai"
+		texturefile = "gfx/interface/ideas/KAI.png"
+	}
+	spriteType = {
+		name = "GFX_idea_asiana"
+		texturefile = "gfx/interface/ideas/금호아시아나.png"
+	}
+	spriteType = {
+		name = "GFX_idea_korean_air"
+		texturefile = "gfx/interface/ideas/대한항공.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hwanhwa"
+		texturefile = "gfx/interface/ideas/한화.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_gs"
+		texturefile = "gfx/interface/ideas/GS.png"
+	}
+	spriteType = {
+		name = "GFX_idea_honam"
+		texturefile = "gfx/interface/ideas/honam.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lg"
+		texturefile = "gfx/interface/ideas/LG.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sk"
+		texturefile = "gfx/interface/ideas/SK.png"
+	}
+	spriteType = {
+		name = "GFX_idea_samsung"
+		texturefile = "gfx/interface/ideas/삼성.png"
+	}
+	spriteType = {
+		name = "GFX_idea_doosan"
+		texturefile = "gfx/interface/ideas/두산.png"
+	}
+	spriteType = {
+		name = "GFX_idea_st"
+		texturefile = "gfx/interface/ideas/ST.png"
+	}
+	spriteType = {
+		name = "GFX_idea_dasan"
+		texturefile = "gfx/interface/ideas/다산.png"
+	}
+	spriteType = {
+		name = "GFX_idea_daewoo_car"
+		texturefile = "gfx/interface/ideas/대우자동차.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hyundai_car"
+		texturefile = "gfx/interface/ideas/현대자동차.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kia_car"
+		texturefile = "gfx/interface/ideas/기아.png"
+	}
+	
+    ##### KOR_idea
+	
+	spriteType = {
+		name = "GFX_idea_mkr_unstable_security"
+		texturefile = "gfx/interface/ideas/치안붕괴.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mkr_unorthodox_goverment"
+		texturefile = "gfx/interface/ideas/정통성없는_정부.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mkr_safety_planning_department"
+		texturefile = "gfx/interface/ideas/안기부.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_economic_collapse_1"
+		texturefile = "gfx/interface/ideas/경제붕괴.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_juche"
+		texturefile = "gfx/interface/ideas/주체사상.dds"
+	}
+
+	### 09KOR - Company
+
+	spriteType = {
+		name = "GFX_idea_nine_doosanDST"
+		texturefile = "gfx/interface/ideas/두산DST.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_samsungtec"
+		texturefile = "gfx/interface/ideas/삼성테크원.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_hyundai_rottem"
+		texturefile = "gfx/interface/ideas/현대로템.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_daewoo_ship"
+		texturefile = "gfx/interface/ideas/대우조선해양.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_hanjin_ship"
+		texturefile = "gfx/interface/ideas/한진해운.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_hyundai_ship"
+		texturefile = "gfx/interface/ideas/현대중공업.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_kai"
+		texturefile = "gfx/interface/ideas/KAI.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_asiana"
+		texturefile = "gfx/interface/ideas/금호아시아나.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_korean_air"
+		texturefile = "gfx/interface/ideas/대한항공.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_hwanhwa"
+		texturefile = "gfx/interface/ideas/한화.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_gs"
+		texturefile = "gfx/interface/ideas/GS.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_lg"
+		texturefile = "gfx/interface/ideas/LG.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_sk"
+		texturefile = "gfx/interface/ideas/SK.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_samsung"
+		texturefile = "gfx/interface/ideas/삼성.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_doosan"
+		texturefile = "gfx/interface/ideas/두산.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_st"
+		texturefile = "gfx/interface/ideas/ST.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_dasan"
+		texturefile = "gfx/interface/ideas/다산.png"
+	}
+	spriteType = {
+		name = "GFX_idea_nine_hyundai_car"
+		texturefile = "gfx/interface/ideas/현대자동차.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kia_car"
+		texturefile = "gfx/interface/ideas/기아.png"
+	}
+}

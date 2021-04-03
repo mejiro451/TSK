@@ -105,14 +105,14 @@ set_technology = {
 	
 	ship_torpedo_modern_1 = 1
 	
-	ship_ciws = 1
 	ship_ciws_2 = 1
 	
 	ship_missile_luncher_1 = 1	
 	ship_missile_luncher_2 = 1	
 	
 	ship_vls_1 = 1
-	
+	ship_vls_2 = 1
+
 	modern_light_battery_1 = 1
 	modern_light_battery_2 = 1
 
@@ -137,6 +137,9 @@ set_technology = {
 	armored_car1 = 1
 	
 	m_1990_IFV = 1
+	
+	ship_armor_cruiser_modern_1 = 1
+	ship_armor_cruiser_modern_2 = 1
 }
 
 add_ideas = {
@@ -265,10 +268,10 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_modern_2
 			fixed_ship_sts_slot = ship_missile_luncher_2
 			fixed_ship_armor_slot = ship_armor_cruiser_modern_2
-			front_1_custom_slot = ship_vls_1
+			front_1_custom_slot = ship_vls_2
 			front_2_custom_slot = ship_ciws_2
 			mid_1_custom_slot = ship_missile_luncher_2
-			rear_1_custom_slot = ship_vls_1
+			rear_1_custom_slot = ship_vls_2
 			rear_2_custom_slot = ship_torpedo_modern_1
 		}
 	}

@@ -1,0 +1,1665 @@
+focus_tree = {
+	id = mkorea_focus_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = { x = 100 y = 1900 }
+	shared_focus = ROKND_1
+	focus = { #대한민국의 미래 (이벤트발생 '대한민국의 미래')
+		id = MKR_The_Future_of_Korea
+		icon = GFX_goal_kor_flag
+		cost = 10.00
+		x = 12
+		y = 0
+		completion_reward = {
+			country_event = { id = mkorea.5 }
+		}
+	}
+	focus = { #경제위기 (이벤트발생 '경제위기')
+		id = MKR_economic_crisis
+		icon = GFX_goal_economic_crisis
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_recovery_from_civil_war
+		}
+		completion_reward = {
+			country_event = { id = mkorea.49 }
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = { #내전에서의 회복 ('국가재건' 국민정신 300일동안 획득)
+		id = MKR_recovery_from_civil_war 
+		icon = GFX_goal_recovery_from_civil_war 
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_The_Future_of_Korea
+		}
+		completion_reward = {
+			country_event = { id = mkorea.6 }
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = { #질서강화 (전두환이 국가지도자로)
+		id = MKR_strengthening_order
+		icon = GFX_goal_chun
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_recovery_from_civil_war
+		}
+		mutually_exclusive = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+		add_ideas = mkr_unorthodox_goverment
+		set_country_flag = leader_chun
+		add_popularity = { ideology = neutrality popularity = 0.6 }
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Chun Doo Hwan"
+					picture = "Chun_Doo_Hwan.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					dictator	
+					}
+				}
+			}
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = { #통금령실시
+		id = MKR_a_curfew_order
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			add_ideas = mkr_curfew
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = { #언론검열정책
+		id = MKR_Press_censorship_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			add_ideas = mkr_press_censorship
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = { #시민운동 탄압
+		id = MKR_suppression_of_civil_movements
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = { #국회 폐쇄
+		id = MKR_the_closure_of_the_NA
+		icon = GFX_goal_cap_na
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mkr_unorthodox_goverment
+				add_idea = mkr_unorthodox_goverment_1
+			}
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = { #유화책실시
+		id = MKR_implementation_of_appeasement_policy
+		icon = GFX_goal_Roh_tae_woo
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_recovery_from_civil_war
+		}
+		mutually_exclusive = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+		set_country_flag = leader_rho
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Rho Tae Whoo"
+					picture = "gfx/leaders/KOR/Rho_Tae_Whoo.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+					}
+				}
+			}
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = { #인기있는 얼굴마담
+		id = MKR_Popular
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+			focus = MKR_strengthening_order
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = { #통일주체국민회의
+		id = MKR_NCUI
+		icon = GFX_goal_NCUI
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+			add_ideas = MKR_NCUI
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = { #국군기무사령부
+		id = MKR_DCS
+		icon = GFX_goal_kimu
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			add_ideas = MKR_defense_security_command
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = { #북한과 접촉하다
+		id = MKR_contact_with_North_Korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_DCS
+		}
+		prerequisite = {
+			focus = MKR_Popular
+		}
+		completion_reward = {
+			PRK = {
+			country_event = { id = PRK.3 }
+			}
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = { #동해 무력시위
+		id = MKR_East_Sea_show_of_force
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_with_North_Korea
+		}
+		completion_reward = {
+			country_event = { id = mkorea.13 }
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = { #동아시아 긴장고조
+		id = MKR_East_Asia_Tension_Stiff
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_with_North_Korea
+		}			
+		completion_reward = {
+		add_named_threat = { threat = 5 name = GER_rhineland }
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = { #군대 재정비
+		id = MKR_Military_Reorganization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_East_Asia_Tension_Stiff
+		}
+		prerequisite = {
+			focus = MKR_East_Sea_show_of_force
+		}
+		completion_reward = {
+		remove_ideas = mkr_irregularities_barracks
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = { #미국과 함께 가자
+		id = MKR_Stand_with_US
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Military_Reorganization
+		}
+		mutually_exclusive = {
+			focus =  MKR_anti_Communism
+		}
+		completion_reward = {
+			country_event = { id = mkorea.32 }
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = { #연합국에 접촉하다
+		id = MKR_contact_allies
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Stand_with_US
+		}
+		mutually_exclusive = {
+			focus = MKR_PDU
+		}
+		completion_reward = {
+			country_event = { id = mkorea.33 }
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = { #석유 확보전쟁
+		id = MKR_Stand_with_UK
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_allies 
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+				expire = 0
+			}
+		}
+		x = 1
+		y = 9
+
+	}
+	focus = { #장비와 식민지의 대체
+		id = MKR_Advance_to_Europe
+		icon = GFX_focus_eng_global_defense
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_allies 
+		}
+		x = 3
+		y = 10
+		completion_reward = {
+			country_event = { id = mkorea.34 }
+		}
+	}
+	focus = { #태평양 방위연합
+		id = MKR_PDU
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Stand_with_US
+		}
+		mutually_exclusive = {
+			focus = MKR_contact_allies 
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = KOR_PDU
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = { #호주에 접촉
+		id = MKR_contact_with_the_Philippines
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_PDU
+		}
+		completion_reward = {
+			AST = {
+				country_event = { id = mkorea.37 days = 3 }
+			}
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = { #북진멸공
+		id = MKR_anti_Communism
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Military_Reorganization
+		}
+		mutually_exclusive = {
+			focus = MKR_new_facism
+			focus = MKR_Stand_with_US
+		}
+		completion_reward = {
+			country_event = { id = mkorea.14 }
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = { #도발에 강경대응
+		id = MKR_hard_liine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_anti_Communism
+		}
+		completion_reward = {
+			custom_effect_tooltip = hard_line
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = { #북한에게 경고
+		id = MKR_Warning_to_North_Korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_anti_Communism
+		}
+		completion_reward = {
+			country_event = { id = mkorea.15 }
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = { #38선 경비 강화
+		id = MKR_Reinforcement_of_38_Line_Expense
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_hard_liine
+		}
+		prerequisite = {
+			focus = MKR_Warning_to_North_Korea
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = { #해군 동원
+		id = MKR_naval_mobilization
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Warning_to_North_Korea
+		}
+		completion_reward = {
+		custom_effect_tooltip = mkr_naval
+		hidden_effect = {
+			country_event = { id = mkorea.20 }
+			}
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = { #일본위협
+		id = MKR_new_radar_station
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_hard_liine
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = { #서부전선 포격사건
+		id = MKR_West_Front_Artillery_Incident
+		icon = GFX_goal_West_Front_Artillery_Incident
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Reinforcement_of_38_Line_Expense
+			focus = MKR_new_radar_station
+			focus = MKR_naval_mobilization
+		}
+		completion_reward = {
+		custom_effect_tooltip = mkr_Artillery_Incident
+		hidden_effect = {
+			country_event = { id = mkorea.21 }
+			}
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = { #예방전쟁
+		id = MKR_preventive_war
+		icon = GFX_goal_strike_prk_1
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_West_Front_Artillery_Incident
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRK
+				expire = 0
+			}
+			set_country_flag = MKR_preventive_war
+			add_ideas = mkr_preventive_war
+		}
+		x = 12
+		y = 11
+
+	}
+	focus = { #일본과의 불가침조약
+		id = MKR_non_aggression_treaty_with_Japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_preventive_war
+		}
+		completion_reward = {	
+			country_event = { id = mkorea.22 }
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = { #북진 지속
+		id = MKR_facing_north
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_non_aggression_treaty_with_Japan
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mkr_eradicating_communism
+				add_idea = mkr_eradicating_communism_1
+			}
+		}
+		x = 12
+		y = 13
+
+	}
+	focus = { #자유주의자들 문제
+		id = MKR_libertarians
+		icon = GFX_goal_libertarians
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			country_event = { id = mkorea.7 }
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = { #장제스지원
+		id = MKR_support_chang
+		icon = GFX_goal_support_chang
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_facing_north
+		}
+		completion_reward = {
+				set_rule = { can_create_factions = yes }
+				create_faction = East_Asian_Defense_Union
+				CHI = { custom_effect_tooltip = invite_to_faction_tt }
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = { #2의전선
+		id = MKR_Reserve_Force_Mobilization
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_preventive_war
+		}
+		completion_reward = {
+			add_ideas = mkr_haebyung_1
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = { #진보주의자 요구 수용
+		id = MKR_liberal_demand_acceptance
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = mkr_compromise
+			days = 100
+			} 
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = { #시민운동 허용
+		id = MKR_Allow_Civil_Movement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = { #제한적 자유 허용
+		id = MKR_Allow_limited_freedom
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+			add_ideas = mkr_libarty
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = { #언론검열완화
+		id = MKR_mitigation_of_press_censorship
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+		add_ideas = mkr_mitigate_censorship
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = { #범죄와의 전쟁
+		id = MKR_a_war_against_crime
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mkr_unstable_security
+				add_idea = mkr_war_against_crime
+			}
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = { #대학 휴교령 해제
+		id = MKR_the_lifting_of_the_university_closure_order
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_implementation_of_appeasement_policy
+		}
+		completion_reward = {
+		add_ideas = mkr_well_run_university
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = { #신 제국주의
+		id = MKR_new_facism
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Military_Reorganization
+		}
+		mutually_exclusive = {
+			focus = MKR_anti_Communism
+		}
+		completion_reward = {
+			country_event = { id = mkorea.27 }
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = { #이범석장군을 추대
+		id = MKR_the_appointment_of_General_Lee
+		icon = GFX_goal_General_Lee
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_new_facism
+		}
+		completion_reward = {
+		set_politics = { ruling_party = fascism elections_allowed = no }
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Lee Beom seok"
+					picture = "이범석.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					dictator	
+					}
+				}
+			}
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = { #빨갱이는 믿을수없다
+		id = MKR_cant_trust_commies
+		icon = GFX_focus_commies
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_the_appointment_of_General_Lee
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRK
+				expire = 0
+			}
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = { #헌법제5조 폐기
+		id = MKR_Stronger_Korea
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_the_appointment_of_General_Lee
+		}
+		completion_reward = {
+			remove_ideas = kor_law_of_korean_5
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = { #만주국 압박
+		id = MKR_Manchurian_pressure
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_the_appointment_of_General_Lee
+		}
+		completion_reward = {
+			country_event = { id = mkorea.28 } 
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = { #군사훈련
+		id = MKR_military_exercises
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Manchurian_pressure
+		}
+		completion_reward = {
+			add_ideas = mkr_military_training
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = { #일본을 도발하다
+		id = MKR_provoke_Japan
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Stronger_Korea
+		}
+		prerequisite = {
+			focus = MKR_Manchurian_pressure
+		}
+		completion_reward = {
+			JAP = {
+				country_event = { id = mkorea.30 } 
+			}
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = { #식민지 확보전쟁
+		id = MKR_War_of_Securing_Colony
+		icon = GFX_focus_jap_strike_south
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_provoke_Japan
+		}
+		prerequisite = {
+			focus = MKR_military_exercises
+		}
+		completion_reward = {
+			add_ideas = a_colonial_war
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = { #동남아시아 확보
+		id = MKR_Securing_SA
+		icon = GFX_focus_attack_france
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_War_of_Securing_Colony
+		}
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 671
+					controls_state = 671 
+				}
+				effect_tooltip = {
+					MKR = {
+						create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 188 }
+						}
+					}
+				}
+			}
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = { #대형 토목공사진행
+		id = MKR_Civil_engineering_work_progress
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_economic_crisis
+		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = USA_great_depression_cooldown_tt
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = { #서해안 고속도로
+		id = MKR_West_Coast_Highway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Civil_engineering_work_progress
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = MKR_West_Coast_Highway
+			hidden_effect = {
+				525 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				817 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = { #1910년의 복수
+		id = MKR_revenge_of_1910
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_military_exercises
+		}
+		prerequisite = {
+			focus = MKR_provoke_Japan
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = AST
+			}
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = { #오세아니아 전선
+		id = MKR_Oceania_Front
+		icon = GFX_focus_attack_australia
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_War_of_Securing_Colony
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = AST
+			}
+		}
+		x = 20
+		y = 13
+
+	}
+	focus = { #태평양을 건너
+		id = MKR_across_the_Pacific
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Oceania_Front
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = USA
+			}
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = { #추가적인 발전소 건설
+		id = MKR_additional_power_plant_construction
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Civil_engineering_work_progress
+		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = USA_great_depression_cooldown_tt
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = { #동해안 고속도로
+		id = MKR_Honam_Expressway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Civil_engineering_work_progress
+		}
+		completion_reward = {
+			custom_effect_tooltip = MKR_East_Coast_Highway
+			hidden_effect = {
+				810 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				809 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = { #부서진 산업 복구
+		id = MKR_Broken_Industrial_Recovery
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Honam_Expressway
+		}
+		prerequisite = {
+			focus = MKR_West_Coast_Highway
+		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = MKR_recover_ind
+			days = 100
+			} 
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = { #파산위기 기업 국유화
+		id = MKR_nationalization_of_enterprises
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_economic_crisis
+		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_economic_crisis
+		x = 0
+		y = 1
+
+	}
+	focus = { #국가재정 확보
+		id = MKR_securing_national_finance
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_nationalization_of_enterprises
+		}
+		completion_reward = {
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_nationalization_of_enterprises
+		x = 0
+		y = 1
+
+	}
+	focus = { #세금인상
+		id = MKR_tax_increase
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_securing_national_finance
+		}
+		completion_reward = {
+			country_event = { id = mkorea.50 } 
+			KOR_economic_collapse_level_down = yes
+			set_country_flag = { flag = KOR_economic_collapse_cooldown value = 1 days = 100 }
+			custom_effect_tooltip = KOR_economic_collapse_cooldown_tt
+		}
+		relative_position_id = MKR_securing_national_finance
+		x = 0
+		y = 1
+
+	}
+	focus = { #강철합금공장 확장
+		id = MKR_Reorganization_of_Regional_Infrastructure
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_tax_increase
+		}
+		prerequisite = {
+			focus = MKR_Broken_Industrial_Recovery
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = steel_alloy_ind
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = steel_alloy_ind
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = { #민간산업에 투자
+		id = MKR_investment_in_private_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_tax_increase
+		}
+		prerequisite = {
+			focus = MKR_Broken_Industrial_Recovery
+		}
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = { #6차 경제개발 5개년 계획
+		id = MKR_Sixth_Economic_Development_Plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_economic_crisis
+		}
+		completion_reward = {
+			add_timed_idea = {
+			idea = MKR_Five_Year_Economic_plan
+			days = 365
+			} 
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = { #신 새마을운동
+		id = MKR_New_Saemaul_Movement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Sixth_Economic_Development_Plan
+		}
+		completion_reward = {
+			add_ideas = MKR_saemaul
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = { #공업단지 신설
+		id = MKR_new_industrial_complex
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_New_Saemaul_Movement
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+	}
+	focus = { #포항 제철소 강화
+		id = MKR_Reinforcement_of_Seoul_Infrastructure
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Sixth_Economic_Development_Plan
+		}
+		completion_reward = {
+			809 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = steel_mill
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = { #해운국
+		id = MKR_marine_industry
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Sixth_Economic_Development_Plan
+		}
+		completion_reward = {
+			add_ideas = mkr_ships_focus
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = { #방산업체 활성화
+		id = MKR_Activating_the_defense_contractor
+		icon = GFX_goal_defense_contractor
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Reinforcement_of_Seoul_Infrastructure
+		}
+		prerequisite = {
+			focus = MKR_marine_industry
+		}
+		completion_reward = {
+			custom_effect_tooltip = mkr_Activating_the_defense_contractor
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = { #중공업,중화학단지
+		id = MKR_heavy_industry_heavy_chemical_complex
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_new_industrial_complex
+		}
+		prerequisite = {
+			focus = MKR_Activating_the_defense_contractor
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = { #추가적인 조선소
+		id = MKR_additional_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_marine_industry
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = { #한강의 기적
+		id = MKR_Miracle_on_the_Han_River
+		icon = GFX_focus_hol_united_netherlands
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_additional_shipyard
+		}
+		prerequisite = {
+			focus = MKR_heavy_industry_heavy_chemical_complex
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MKR_saemaul
+				add_idea = MKR_han_riv
+			}
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = { #무역품 수출허가
+		id = MKR_clearance_for_export_of_trade_goods
+		icon = GFX_goal_ship
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Sixth_Economic_Development_Plan
+		}
+		mutually_exclusive = {
+			focus = MKR_absolute_impossibility
+		}
+		completion_reward = {
+			add_ideas = MKR_trade_goods
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = { #대한민국 국가정보원
+		id = MKR_NIS
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			add_ideas = mkr_safety_planning_department
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = { #경찰력 증강
+		id = MKR_police_buildup
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_strengthening_order
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mkr_unstable_security
+				add_idea = mkr_combat_police
+			}
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = { #긴급동원령
+		id = MKR_Emergency_Mobilization_Ordinance
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_preventive_war
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = { #마오 제거
+		id = MKR_Kill_mao
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_facing_north
+		}
+		x = 11
+		y = 14
+		completion_reward = {
+			PRC = {
+				country_event = { id = mkorea.26 }
+			}
+			PRC = {
+				kill_country_leader = yes
+			}
+		}
+	}
+	focus = { #영광의 시간
+		id = MKR_time_of_glory
+		icon = GFX_goal_glory
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_support_chang
+		}
+		prerequisite = {
+			focus = MKR_Kill_mao
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+				expire = 0
+			}
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = { #미국에 접촉
+		id = MKR_contact_to_the_US
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_PDU
+		}
+		completion_reward = {
+			USA = {
+				country_event = { id = mkorea.37 days = 3 }
+			}
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = { #미합중국을 지원하다
+		id = MKR_support_the_US
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_with_the_Philippines
+		}
+		prerequisite = {
+			focus = MKR_contact_to_the_US
+		}
+		completion_reward = {
+			USA = { add_to_tech_sharing_group = kor_research }
+			AST = { add_to_tech_sharing_group = kor_research }
+			add_to_tech_sharing_group = kor_research
+			USA = {
+			country_event = { id = mkorea.43 days = 1 }
+			}
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = { #오랜적군 타도
+		id = MKR_the_old_enemy
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_support_the_US
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = JAP
+				expire = 0
+			}
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = { #연합국 가입
+		id = MKR_Diplomacy_with_France
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_contact_allies 
+		}
+		completion_reward = {
+			ENG = {
+			country_event = { id = mkorea.46 days = 1 }
+			}
+		}
+		x = 1
+		y = 10
+
+	}
+	focus = { #파시즘타도
+		id = MKR_the_defeat_of_fascism
+		icon = GFX_focus_attack_germany
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_the_old_enemy
+			focus = MKR_Allied_accession
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+				expire = 0
+			}
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = { #열강의 식민지들
+		id = MKR_colonies_of_the_great_powers
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_War_of_Securing_Colony
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = MAL
+			}
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = { #천년의 적
+		id = MKR_Toward_the_Indian_Ocean
+		icon = GFX_focus_attack_china
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Oceania_Front
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = CHI
+			}
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = { #연합국 기술공유
+		id = MKR_Allied_Technical_Sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Advance_to_Europe
+		}
+		prerequisite = {
+			focus = MKR_Diplomacy_with_France
+		}
+		completion_reward = {
+			if = {
+				limit = { USA = { is_in_faction_with = ENG } }
+				USA = { add_to_tech_sharing_group = kor_research }
+			}
+			ENG = { add_to_tech_sharing_group = kor_research }
+			FRA = { add_to_tech_sharing_group = kor_research }
+			add_to_tech_sharing_group = kor_research
+		}
+		x = 1
+		y = 11
+
+	}
+	focus = { #연합국 가입
+		id = MKR_Allied_accession
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Allied_Technical_Sharing
+		}
+		prerequisite = {
+			focus = MKR_Advance_to_Europe
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = GER
+				expire = 0
+			}
+		}
+		x = 3
+		y = 12
+
+	}
+	focus = { #절대불허
+		id = MKR_absolute_impossibility
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MKR_Sixth_Economic_Development_Plan
+		}
+		mutually_exclusive = {
+			focus = MKR_clearance_for_export_of_trade_goods
+		}
+		x = 39
+		y = 4
+
+	}
+}

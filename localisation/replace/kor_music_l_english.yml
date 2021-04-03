@@ -3,7 +3,7 @@
  warshipmarch:0 "군함행진곡 [무가사] (Warship march)"
  
  Schwarzbraun:0 "흑갈색의 헤이즐넛 [무가사] (Schwarzbraun ist die Haselnuss)"
- panzerlied:0 "기갑가 [무가사] (Panzerlied)"
+ panzerlied_1:0 "기갑가 [무가사] (Panzerlied)"
  konig_im_luftrevier:0 "세상에서 가장 강력한 왕 [무가사] (Der mächtigste König im Luftrevier)"
  Horst_Wessel:0 "호르스트 베셀의 노래 [나치당가] [무가사] (Horst Wessel Lied)"
  Erika:0 "에리카 [무가사] (Erika)"
@@ -42,5 +42,4 @@
  maintheme:0 "WIC ost - Incursion (급습)"
  allies:0 "주제곡 - 연합국 (Main Theme - Allies)"
  1991_theme:0 "1991시나리오 테마곡 - 손에 손잡고"
- 2009_theme:0 "2009시나리오 테마곡 - Battlefield 4 - OFFICIAL MAIN THEME"
  agguk_north:0 "애국가 (북한) [무가사]"
