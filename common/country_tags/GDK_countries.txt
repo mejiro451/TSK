@@ -1,2 +1,0 @@
-FKR = "countries/FutureKorea.txt"
-KPA = "countries/NorthKorea.txt"

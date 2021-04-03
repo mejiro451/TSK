@@ -1,3 +1,0 @@
-add_namespace = repkorea
-# 반란
-
