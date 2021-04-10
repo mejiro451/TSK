@@ -1,0 +1,25 @@
+core_PRK = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	}
+
+	visible = { 
+		always = yes
+	}
+}
+
+core_HWAN = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	allowed = {
+		tag = KOR
+	}
+
+	visible = { 
+		always = yes
+	}
+}

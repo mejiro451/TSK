@@ -4,6 +4,26 @@ music_station = "mbc"
 # General
 
 music = {
+	song = "BF4"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+music = {
+	song = "koreana"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+		}		
+	}	
+}
+music = {
 	song = "agguk"
 	
 	chance = {
