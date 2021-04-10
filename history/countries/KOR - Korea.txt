@@ -1,6 +1,7 @@
 ﻿capital = 807 #South Korea - Seoul or Busan
 
 oob = "KOR_1939"
+set_research_slots = 4
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

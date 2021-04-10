@@ -1,4 +1,4 @@
-name="Time Slip Korea (DEV VER.)"
+name="TIME SLIP KOREA"
 tags={
 	"Graphics"
 	"Events"
