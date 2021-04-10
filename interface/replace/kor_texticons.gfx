@@ -93,6 +93,12 @@ spriteTypes = {
 		texturefile = "gfx/texticons/f_15k.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "na"
+		texturefile = "gfx/texticons/국회.png"
+		legacy_lazy_load = no
+	}
+
 
 #######################디시전 사진##########
 	
