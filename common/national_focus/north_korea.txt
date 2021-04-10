@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 	focus = { #정보수집 ('정보수집'이벤트)
 		id = prk_collect_intel
-		icon = GFX_goal_unknown
+		icon = 타임슬립
 		cost = 10.00
 		x = 15
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = { #천리마운동 재개 (국민정신 '천리마운동'추가)
 		id = prk_Chollima_Movement
-		icon = GFX_goal_unknown
+		icon = 천리마운동재개
 		cost = 10.00
 		x = 35
 		y = 0
@@ -31,15 +31,21 @@ focus_tree = {
 	}
 	focus = { #조선인민군 (육,해,공군경험치 +10)
 		id = prk_KPA
-		icon = GFX_goal_unknown
+		icon = 조선인민군
 		cost = 10.00
 		x = 65
 		y = 0
+		completion_reward = {
+			
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
 
 	}
 	focus = { #독립운동가들의 귀국 ('독립운동가들의 귀국' 이벤트발생)
 		id = prk_the_return_of_independence_fighters
-		icon = GFX_goal_unknown
+		icon = communism5
 		cost = 10.00
 		prerequisite = {
 			focus = prk_collect_intel
@@ -52,7 +58,7 @@ focus_tree = {
 	} 
 	focus = { #국가 안정 (안정도 +10)
 		id = prk_national_stability
-		icon = GFX_goal_unknown
+		icon = national_unity_red
 		cost = 10.00
 		prerequisite = {
 			focus = prk_collect_intel
@@ -66,7 +72,7 @@ focus_tree = {
 	}
 	focus = { #조선의 미래 (정치력 +100)
 		id = prk_The_Future_of_Joseon
-		icon = GFX_goal_unknown
+		icon = 조선의미래
 		cost = 10.00
 		prerequisite = {
 			focus = prk_national_stability
@@ -83,7 +89,7 @@ focus_tree = {
 	}
 	focus = { #주체사상 강화 ('주체사상'국민정신 변동)
 		id = prk_Juche_Idea
-		icon = GFX_goal_unknown
+		icon = 주체사상
 		cost = 10.00
 		prerequisite = {
 			focus = prk_The_Future_of_Joseon
@@ -108,7 +114,7 @@ focus_tree = {
 	}
 	focus = { #남조선과 관계유지 (남한에 관계도 +50)
 		id = prk_Maintaining_Relations
-		icon = GFX_goal_unknown
+		icon = align_to_south_korea
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Juche_Idea
@@ -134,7 +140,7 @@ focus_tree = {
 	}
 	focus = { #바뀌어버린 세상 (청치력 +150)
 		id = prk_a_changed_world
-		icon = GFX_goal_unknown
+		icon = GFX_unite_the_opposition
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Maintaining_Relations
@@ -148,7 +154,7 @@ focus_tree = {
 	}
 	focus = { #남조선과 교류하다 (남한에 '북한이 협력을요청하다' 이벤트발생)
 		id = prk_interact_with_the_South
-		icon = GFX_goal_unknown
+		icon = trade_with_south_korea
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Maintaining_Relations
@@ -170,7 +176,7 @@ focus_tree = {
 	}
 	focus = { #불가침조약 제정 (남한과 불가침조약 제정)
 		id = prk_non_aggression_treaty
-		icon = GFX_goal_unknown
+		icon = tripartite_pact
 		cost = 10.00
 		prerequisite = {
 			focus = prk_interact_with_the_South
@@ -195,7 +201,7 @@ focus_tree = {
 	}
 	focus = { #공동연락사무소 설치 (남한에 '북한지원'디시전생김)
 		id = prk_Joint_Liaison_Office
-		icon = GFX_goal_unknown
+		icon = aplly_to_join_csto
 		cost = 10.00
 		prerequisite = {
 			focus = prk_interact_with_the_South
@@ -208,7 +214,7 @@ focus_tree = {
 	}
 	focus = { #적화통일준비 (육군경험치 +20,사단훈련시간 -10%가지는 '전쟁준비'국민정신 300일간생기고 '전쟁준비'디시전카테고리 활성화)
 		id = prk_Communistic_Unification
-		icon = GFX_goal_unknown
+		icon = attack_south_korea
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Juche_Idea
@@ -339,7 +345,7 @@ focus_tree = {
 	}
 	focus = { #정통 사회주의 (정치력 +150)
 		id = prk_orthodox_socialism
-		icon = GFX_goal_unknown
+		icon = 정통사회주의
 		cost = 10.00
 		prerequisite = {
 			focus = prk_The_Future_of_Joseon
@@ -357,7 +363,7 @@ focus_tree = {
 	}
 	focus = { #정통파 독립운동가들 ('정통파 독립운동가들'이벤트발생)
 		id = prk_orthodox_independence_activists
-		icon = GFX_goal_unknown
+		icon = peoples_liberation_army
 		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
@@ -372,7 +378,7 @@ focus_tree = {
 	}
 	focus = { #젊은 장성 섭외
 		id = prk_Young_Officer_Recruitment
-		icon = GFX_goal_unknown
+		icon = recruitment
 		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
@@ -386,7 +392,7 @@ focus_tree = {
 	}
 	focus = { #평양방위사령부 섭외 ('평양방어사령부 섭외' 이벤트발생)
 		id = prk_Pyongyang_Defense_Command_Appointment
-		icon = GFX_goal_unknown
+		icon = coalition_army
 		cost = 5.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
@@ -416,7 +422,7 @@ focus_tree = {
 	}
 	focus = { #새정부의 수립 (안정도 +10 '새정부의 수립'이벤트발생)
 		id = prk_a_new_government
-		icon = GFX_goal_unknown
+		icon = juche2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_dice_throw
@@ -431,7 +437,7 @@ focus_tree = {
 	}
 	focus = { #마르크스-레닌주의 ('박헌영'을 장관으로 쓸수있음)
 		id = prk_Marxism_Leninism
-		icon = GFX_goal_unknown
+		icon = marxism
 		cost = 10.00
 		prerequisite = {
 			focus = prk_a_new_government
@@ -448,7 +454,7 @@ focus_tree = {
 	}
 	focus = { #김정일의 눈을 피하라 ('김정일의 눈을피하라' 디시전활성화. 천군에있는 제주도활동은폐형식으로,시간내에 찍지못하면 김일성이 반란을 눈치채고 반란세력을 숙청함)
 		id = prk_Avoid_Kim_Jong_il
-		icon = GFX_goal_unknown
+		icon = intelligence_exchange
 		cost = 10.00
 		prerequisite = {
 			focus = prk_orthodox_socialism
@@ -462,7 +468,7 @@ focus_tree = {
 	}
 	focus = { #사민주의 (여운형을 장관으로 고용하였을시 찍을수있음,'군부의 불만'국민정신활성화)
 		id = prk_Social_democracy
-		icon = GFX_goal_unknown
+		icon = social_democracy
 		cost = 10.00
 		prerequisite = {
 			focus = prk_a_new_government
@@ -476,7 +482,7 @@ focus_tree = {
 	}
 	focus = { #좌우합작운동 ('좌우 합작운동'디시전활성화)
 		id = prk_left_right_joint_movement
-		icon = GFX_goal_unknown
+		icon = support_the_left_right
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Social_democracy
@@ -487,40 +493,49 @@ focus_tree = {
 	}
 	focus = { #군부내 고위지휘관 설득 ('군부내 불만' 국민정신대체)
 		id = prk_Persuasion_of_the_High_Command_Officer
-		icon = GFX_goal_unknown
+		icon = army_officers_communist
 		cost = 10.00
 		prerequisite = {
 			focus = prk_left_right_joint_movement
 		}
 		x = 26
 		y = 10
+		completion_reward = {
+		
+		}
 
 	}
 	focus = { #소련유학파출신 숙청 ('군부내 불만' 국민정신대체2)
 		id = prk_Purge_of_the_Soviet_Union_Overseas
-		icon = GFX_goal_unknown
+		icon = bloody_purge
 		cost = 10.00
 		prerequisite = {
 			focus = prk_left_right_joint_movement
 		}
 		x = 28
 		y = 10
+		completion_reward = {
+		
+		}
 
 	}
 	focus = { #반대파 제거 ('좌우합작운동' 디시전에서 일정디시전까지 찍었을시 중점활성화)
 		id = prk_anti_wave_removal
-		icon = GFX_goal_unknown
+		icon = communist_purge
 		cost = 10.00
 		prerequisite = {
 			focus = prk_left_right_joint_movement
 		}
 		x = 30
 		y = 10
+		completion_reward = {
+		
+		}
 
 	}
 	focus = { #당내부 지지확보 (안정도 +10)
 		id = prk_Securing_support_within_the_party
-		icon = GFX_goal_unknown
+		icon = workers_party
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Purge_of_the_Soviet_Union_Overseas
@@ -533,6 +548,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 11
+		completion_reward = {
+			add_stability = 0.1
+		}
 
 	}
 	focus = { #권력장악 ('군부내 불만' 국민정신 제거)
@@ -595,7 +613,7 @@ focus_tree = {
 	}
 	focus = { #전투농업 ('식량난' 국민정신 패널티감소)
 		id = prk_Combat_Agriculture
-		icon = GFX_goal_unknown
+		icon = farming
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Chollima_Movement
@@ -609,7 +627,7 @@ focus_tree = {
 	}
 	focus = { #산지개발정책 (기반시설 +2)
 		id = prk_mountain_development
-		icon = GFX_goal_unknown
+		icon = CAN_oil_sands
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Combat_Agriculture
@@ -667,7 +685,7 @@ focus_tree = {
 	}
 	focus = { #신 농업정책 ('식량난' 패널티 감소)
 		id = prk_New_Agricultural_Policy
-		icon = GFX_goal_unknown
+		icon = mechanized_agriculture
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Combat_Agriculture
@@ -683,7 +701,7 @@ focus_tree = {
 	}
 	focus = { #개성공업단지 (민공 +3)
 		id = prk_Kaesong_Industrial_Complex
-		icon = GFX_goal_unknown
+		icon = industrial_complexes
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Combat_Agriculture
@@ -703,7 +721,7 @@ focus_tree = {
 	}
 	focus = { #류경호텔 ('류경호텔' 국민정신 100일간 소비재공장 -5%)
 		id = prk_Ryugyong_Hotel
-		icon = GFX_goal_unknown
+		icon = 류경호텔
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Kaesong_Industrial_Complex
@@ -720,7 +738,7 @@ focus_tree = {
 	}
 	focus = { #전투공업 ('전투공업'국민정신 획득)
 		id = prk_Combat_Industry
-		icon = GFX_goal_unknown
+		icon = 전투공업
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Chollima_Movement
@@ -734,7 +752,7 @@ focus_tree = {
 	}
 	focus = { #공업단지 신설 (민공 +1,군공+2)
 		id = prk_new_industrial_complex
-		icon = GFX_goal_unknown
+		icon = 공업단지신설
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Combat_Industry
@@ -761,7 +779,7 @@ focus_tree = {
 	}
 	focus = { #노동자 장려 ('노동자장려' 국민정신 200일간 획득)
 		id = prk_encouragement_of_workers
-		icon = GFX_goal_unknown
+		icon = mobilize_the_workers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_industrial_complex
@@ -781,7 +799,7 @@ focus_tree = {
 	}
 	focus = { #평양인프라 개발 (평양 기반시설 +2)
 		id = prk_Pyongyang_Infrastructure_Development
-		icon = GFX_goal_unknown
+		icon = sustainable_development
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_industrial_complex
@@ -804,7 +822,7 @@ focus_tree = {
 	}
 	focus = { #군수공업단지 (군공+2)
 		id = prk_Munitions_Industrial_Complex
-		icon = GFX_goal_unknown
+		icon = factory_planning
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Pyongyang_Infrastructure_Development
@@ -830,7 +848,7 @@ focus_tree = {
 	}
 	focus = { #3대혁명 ('3대혁명' 국민정신 획득)
 		id = prk_Three_Great_Revolution
-		icon = GFX_goal_unknown
+		icon = communist_revolution_asia
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Chollima_Movement
@@ -844,7 +862,7 @@ focus_tree = {
 	}
 	focus = { #붉은기쟁취운동 (정치력 +150)
 		id = prk_Red_Flag_Movement
-		icon = GFX_goal_unknown
+		icon = communist_party_of_china
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Three_Great_Revolution
@@ -858,40 +876,56 @@ focus_tree = {
 	}
 	focus = { #생산혁명 ('생산력증대'디시전활성화)
 		id = prk_production_revolution
-		icon = GFX_goal_unknown
+		icon = red_industry
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Red_Flag_Movement
 		}
 		x = 38
 		y = 3
+		completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
 
 	}
 	focus = { #사상혁명 ('사상혁명'국민정신획득하고 주간안정도 +0.5%,이념변화방어 70%)
 		id = prk_ideological_revolution
-		icon = GFX_goal_unknown
+		icon = fifth_international
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Red_Flag_Movement
 		}
 		x = 40
 		y = 3
+		completion_reward = {
+			add_ideas = internationalism
+		}	
 
 	}
 	focus = { #기술혁명 ('기술혁명' 국민정신 획득하고 연구속도 +5%)
 		id = prk_technical_revolution
-		icon = GFX_goal_unknown
+		icon = tech_sharing
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Red_Flag_Movement
 		}
 		x = 42
 		y = 3
+		completion_reward = {
+					add_research_slot = 1
+		}
 
 	}
 	focus = { #강성대국 건설 ('강성대국' 국민정신 획득하고 일간정치력획득 +15%)
 		id = prk_a_powerful_and_powerful_nation
-		icon = GFX_goal_unknown
+		icon = 강성대국 
 		cost = 10.00
 		prerequisite = {
 			focus = prk_technical_revolution
@@ -914,18 +948,21 @@ focus_tree = {
 	}
 	focus = { #조선인민군 륙군 (육군경험치 +20)
 		id = prk_KPAA
-		icon = GFX_goal_unknown
+		icon = small_arms_west
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPA
 		}
 		x = 52
 		y = 2
+		completion_reward = {
+			army_experience = 20
+		}
 
 	}
 	focus = { #륙군항공대 (공격헬리콥터,수송헬리콥터 100일간 생산비용 -10%)
 		id = prk_KPAA_air
-		icon = GFX_goal_unknown
+		icon = flying_tigers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA
@@ -936,7 +973,7 @@ focus_tree = {
 	}
 	focus = { #Mi-24 개량 ('1990년대 공격헬기'기술력추가)
 		id = prk_Mi-24mod
-		icon = GFX_goal_unknown
+		icon = escort_fighters
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA_air
@@ -947,7 +984,7 @@ focus_tree = {
 	}
 	focus = { #추가 수송헬기 ('1980년대 수송헬기' 50만큼 재고에 추가)
 		id = prk_Additional_Transport_Helicopter
-		icon = GFX_goal_unknown
+		icon = drone
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA_air
@@ -958,7 +995,7 @@ focus_tree = {
 	}
 	focus = { #현대무기 
 		id = prk_modern_weapons
-		icon = GFX_goal_unknown
+		icon = examine_foreign_small_arms
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA
@@ -972,7 +1009,7 @@ focus_tree = {
 	}
 	focus = { #88식 보총 보급 ('1990년대 보병장비' 5000만큼 재고에추가)
 		id = prk_type_88
-		icon = GFX_goal_unknown
+		icon = combined_arms
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_weapons
@@ -983,7 +1020,7 @@ focus_tree = {
 	}
 	focus = { #로농적위대 ('로농적위대' 민병편제 생성 (미구현))
 		id = prk_jeockwidae
-		icon = GFX_goal_unknown
+		icon = coalition_army
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA
@@ -994,7 +1031,7 @@ focus_tree = {
 	}
 	focus = { #땅크여단 신설 ('전차여단'편제를새로만들고 2개생성)
 		id = prk_a_tank_brigade
-		icon = GFX_goal_unknown
+		icon = draw_up_war_plans
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_weapons
@@ -1005,7 +1042,7 @@ focus_tree = {
 	}
 	focus = { #IFV 집중 ('1990년대 IFV' 기술력추가)
 		id = prk_focus_ifv
-		icon = GFX_goal_unknown
+		icon = generic_entrenchment
 		cost = 10.00
 		prerequisite = {
 			focus = prk_a_tank_brigade
@@ -1016,7 +1053,7 @@ focus_tree = {
 	}
 	focus = { #APC 현대화 ('1990년대 APC' 기술력추가)
 		id = prk_modern_apc
-		icon = GFX_goal_unknown
+		icon = apc
 		cost = 10.00
 		prerequisite = {
 			focus = prk_a_tank_brigade
@@ -1027,7 +1064,7 @@ focus_tree = {
 	}
 	focus = { #대공자주포 개량 ('대공자주포' 대공공격 +5%)
 		id = prk_modern_spaag
-		icon = GFX_goal_unknown
+		icon = tanks5
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_apc
@@ -1041,7 +1078,7 @@ focus_tree = {
 	} 
 	focus = { #땅크 생산집중 (150일간 '주력전차' 생산비용 -15%)
 		id = prk_tank_produce
-		icon = GFX_goal_unknown
+		icon = bob_semple
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_spaag
@@ -1055,7 +1092,7 @@ focus_tree = {
 	}
 	focus = { #폭풍호 개발 ('1990년대 주력전차' 기술해금)
 		id = prk_pokpung_ho
-		icon = GFX_goal_unknown
+		icon = tanks
 		cost = 10.00
 		prerequisite = {
 			focus = prk_tank_produce
@@ -1066,7 +1103,7 @@ focus_tree = {
 	}
 	focus = { #구식무기 (보병장비,야포,기갑종류 2개의 연구속도 50%증가)
 		id = prk_an_oldera_weapon
-		icon = GFX_goal_unknown
+		icon = small_arms
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA
@@ -1080,7 +1117,7 @@ focus_tree = {
 	}
 	focus = { #소총개발 (보병장비종류 2개의 연구속도 50%증가)
 		id = prk_rifle_development
-		icon = GFX_goal_unknown
+		icon = small_arms3
 		cost = 10.00
 		prerequisite = {
 			focus = prk_an_oldera_weapon
@@ -1091,7 +1128,7 @@ focus_tree = {
 	}
 	focus = { #지원화기 개발 (보병장비종류 1개의 연구속도 50%증가)
 		id = prk_Support_Firearms_Development
-		icon = GFX_goal_unknown
+		icon = grenade
 		cost = 10.00
 		prerequisite = {
 			focus = prk_rifle_development
@@ -1102,7 +1139,7 @@ focus_tree = {
 	}
 	focus = { #신형 야포 (야포종류 1개의 연구속도 50%증가)
 		id = prk_new_arty
-		icon = GFX_goal_unknown
+		icon = artillery3
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Support_Firearms_Development
@@ -1113,7 +1150,7 @@ focus_tree = {
 	}
 	focus = { #T-34 사용 (중형전차종류 2개의 연구속도 50%증가)
 		id = prk_use_T34
-		icon = GFX_goal_unknown
+		icon = tanks5
 		cost = 10.00
 		prerequisite = {
 			focus = prk_an_oldera_weapon
@@ -1124,7 +1161,7 @@ focus_tree = {
 	}
 	focus = { #중땅크 계획 (중전차종류 2개의 연구속도 50%증가)
 		id = prk_heavy_tank_project
-		icon = GFX_goal_unknown
+		icon = tanks
 		cost = 10.00
 		prerequisite = {
 			focus = prk_use_T34
@@ -1135,7 +1172,7 @@ focus_tree = {
 	}
 	focus = { #장갑차 개발 (장갑차종류 2개의 연구속도 50%증가)
 		id = prk_develop_APC
-		icon = GFX_goal_unknown
+		icon = tanks4
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_arty
@@ -1149,7 +1186,7 @@ focus_tree = {
 	}
 	focus = { #특수작전군 (특수부대 연구속도 50%증가)
 		id = prk_special_ops
-		icon = GFX_goal_unknown
+		icon = volunteers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPAA
@@ -1160,7 +1197,7 @@ focus_tree = {
 	}
 	focus = { #항공륙전대 현대화 ('1990년대 수송헬기' 기술력해금)
 		id = prk_modern_air_assult
-		icon = GFX_goal_unknown
+		icon = carriers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_special_ops
@@ -1171,7 +1208,7 @@ focus_tree = {
 	}
 	focus = { #해상저격대 ('해상저격대'국민정신 상륙시 공격 +10%,상륙수용량 늘어나고 침투속도 늘어남)
 		id = prk_naval_snipe_brigade
-		icon = GFX_goal_unknown
+		icon = amphibious_assault
 		cost = 10.00
 		prerequisite = {
 			focus = prk_special_ops
@@ -1182,7 +1219,7 @@ focus_tree = {
 	}
 	focus = { #추가적인 항공륙전대 ('항공륙전대' 편제신설하고 2개사단생성
 		id = prk_more_air_assult
-		icon = GFX_goal_unknown
+		icon = carriers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_naval_snipe_brigade
@@ -1196,7 +1233,7 @@ focus_tree = {
 	}
 	focus = { #항공 및 반항공군 (공군경험치 +25)
 		id = prk_kpaairforce
-		icon = GFX_goal_unknown
+		icon = modern_bomber
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPA
@@ -1207,7 +1244,7 @@ focus_tree = {
 	}
 	focus = { #공군 현대화 ('공군현대화'이벤트발생)
 		id = prk_modern_af
-		icon = GFX_goal_unknown
+		icon = air_doctrine
 		cost = 10.00
 		prerequisite = {
 			focus = prk_kpaairforce
@@ -1218,7 +1255,7 @@ focus_tree = {
 	}
 	focus = { #하이엔드 (효과없음)
 		id = prk_high 
-		icon = GFX_goal_unknown
+		icon = close_air_support
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_af
@@ -1232,7 +1269,7 @@ focus_tree = {
 	}
 	focus = { #MIG-29 (300일간 '멀티롤'의 생산비용 -10%)
 		id = prk_MIG_29
-		icon = GFX_goal_unknown
+		icon = modern_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = prk_high 
@@ -1243,7 +1280,7 @@ focus_tree = {
 	}
 	focus = { #신형 공대공미사일 (멀티롤,제공전투기 공격력 +5%)
 		id = prk_new_aam
-		icon = GFX_goal_unknown
+		icon = air_defense2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_MIG_29
@@ -1254,7 +1291,7 @@ focus_tree = {
 	}
 	focus = { #로우엔드 
 		id = prk_low
-		icon = GFX_goal_unknown
+		icon = fighters
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_af
@@ -1268,7 +1305,7 @@ focus_tree = {
 	}
 	focus = { #프롭기 개발 (공군종류 1개의 연구속도 +50%)
 		id = prk_new_fighterr
-		icon = GFX_goal_unknown
+		icon = fighters2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_low
@@ -1279,7 +1316,7 @@ focus_tree = {
 	}
 	focus = { #근접지원항공기 (근접지원항공기종류 2개의 연구속도 +50%)
 		id = prk_new_cas
-		icon = GFX_goal_unknown
+		icon = fighter_plane
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_fighterr
@@ -1290,7 +1327,7 @@ focus_tree = {
 	}
 	focus = { #중폭격기 (전락폭격기종류 2개의 연구속도 +50%)
 		id = prk_focus_bomber
-		icon = GFX_goal_unknown
+		icon = bombs3
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_fighterr
@@ -1301,7 +1338,7 @@ focus_tree = {
 	}
 	focus = { #새로운 조선인민공군 (공군경험치 +50)
 		id = prk_new_kpaaf
-		icon = GFX_goal_unknown
+		icon = air_doctrine
 		cost = 10.00
 		prerequisite = {
 			focus = prk_focus_bomber
@@ -1311,22 +1348,28 @@ focus_tree = {
 		}
 		x = 68
 		y = 7
+		completion_reward = {
+			air_experience = 50
+		}
 
 	}
 	focus = { #조선인민군 해군 (해군경험치 +25)
 		id = prk_KPANF
-		icon = GFX_goal_unknown
+		icon = naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPA
 		}
 		x = 78
 		y = 2
+		completion_reward = {
+			navy_experience = 25
+		}
 
 	}
 	focus = { #연안함대
 		id = prk_small_navy
-		icon = GFX_goal_unknown
+		icon = navy2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPANF
@@ -1340,7 +1383,7 @@ focus_tree = {
 	}
 	focus = { #대함미사일 중점 (주력함 주포공격 +10%)
 		id = prk_sts_missile 
-		icon = GFX_goal_unknown
+		icon = torpedo
 		cost = 10.00
 		prerequisite = {
 			focus = prk_small_navy
@@ -1351,7 +1394,7 @@ focus_tree = {
 	}
 	focus = { #호위함 개발 ('호위함 함체I' 기술력추가)
 		id = prk_new_ff
-		icon = GFX_goal_unknown
+		icon = cruisers2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_small_navy
@@ -1362,7 +1405,7 @@ focus_tree = {
 	}
 	focus = { #수상함대의 꿈 (해군경험치 +50)
 		id = prk_big_navy
-		icon = GFX_goal_unknown
+		icon = cruisers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_KPANF
@@ -1376,7 +1419,7 @@ focus_tree = {
 	}
 	focus = { #구축함 개발계획 (구축함종류 3개의 연구속도 +50%)
 		id = prk_dd_project
-		icon = GFX_goal_unknown
+		icon = destroyers
 		cost = 10.00
 		prerequisite = {
 			focus = prk_big_navy
@@ -1388,7 +1431,7 @@ focus_tree = {
 	}
 	focus = { #잠수함 중점 (현대 잠수함함체 II기술력추가 (미구현))
 		id = prk_focus_submarine
-		icon = GFX_goal_unknown
+		icon = submarines
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_ff
@@ -1402,7 +1445,7 @@ focus_tree = {
 	}
 	focus = { #순양함 중점 (순양함종류 3개의 연구속도 +50%)
 		id = prk_focus_crusier
-		icon = GFX_goal_unknown
+		icon = cruisers2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_big_navy
@@ -1413,7 +1456,7 @@ focus_tree = {
 	}
 	focus = { #해군 레이더 개선 ('해군레이더 II' 기술력추가)
 		id = prk_radar_mod
-		icon = GFX_goal_unknown
+		icon = coastal_fort
 		cost = 10.00
 		prerequisite = {
 			focus = prk_focus_crusier
@@ -1425,7 +1468,7 @@ focus_tree = {
 	}
 	focus = { #전함 프로젝트 (전함종류 3개의 연구속도 +50%)
 		id = prk_battlesjip_project
-		icon = GFX_goal_unknown
+		icon = battleships
 		cost = 10.00
 		prerequisite = {
 			focus = prk_big_navy
@@ -1436,7 +1479,7 @@ focus_tree = {
 	}
 	focus = { #초중전함 (초중전함종류 2개의 연구속도 +50%)
 		id = prk_bc_project
-		icon = GFX_goal_unknown
+		icon = battleships2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_battlesjip_project
@@ -1450,7 +1493,7 @@ focus_tree = {
 	}
 	focus = { #신형 함포 ('현대함포 II' 기술력 추가)
 		id = prk_new_navy_gun
-		icon = GFX_goal_unknown
+		icon = wolfpacks
 		cost = 10.00
 		prerequisite = {
 			focus = prk_bc_project
@@ -1464,7 +1507,7 @@ focus_tree = {
 	}
 	focus = { #전투함 (전함종류 3개 연구속도 -50%)
 		id = prk_battleship
-		icon = GFX_goal_unknown
+		icon = navy
 		cost = 10.00
 		prerequisite = {
 			focus = prk_battlesjip_project
@@ -1478,7 +1521,7 @@ focus_tree = {
 	}
 	focus = { #대함미사일 실험 ('대함미사일 II' 기술력추가)
 		id = prk_test_missile
-		icon = GFX_goal_unknown
+		icon = navy3
 		cost = 10.00
 		prerequisite = {
 			focus = prk_battleship
@@ -1490,7 +1533,7 @@ focus_tree = {
 	}
 	focus = { #남한을 도발하다 ('휴선선 긴장감고조'뉴스뜸)
 		id = prk_provoke_South_Korea
-		icon = GFX_goal_unknown
+		icon = war_in_asia
 		cost = 10.00
 		prerequisite = {
 			focus = prk_south_wave_espionage
@@ -1507,7 +1550,7 @@ focus_tree = {
 	}
 	focus = { #국지전 실행 ('국지전실행' 디시전활성화)
 		id = prk_local_warfare
-		icon = GFX_goal_unknown
+		icon = border_war
 		cost = 10.00
 		prerequisite = {
 			focus = prk_troop_strength
@@ -1527,7 +1570,7 @@ focus_tree = {
 	}
 	focus = { #남파간첩에 지침하달 (이전의 '남파간첩확대'로 침투시켜놓은 간첩숫자에따라 실행가능한 작전이 달라짐 소규모-부내내 일부 교란만가능,중규모-군수공장사보타주/기반시설 사보타주가능,대규모-발전소 사보타주로 대규모 정전사태를 유발가능/국군에 대국적으로침투하여 국군교란가능)
 		id = prk_Southern_espionage_agent
-		icon = GFX_goal_unknown
+		icon = war4
 		cost = 10.00
 		prerequisite = {
 			focus = prk_local_warfare
@@ -1542,7 +1585,7 @@ focus_tree = {
 	}
 	focus = { #작전명 "폭풍" (작전명 "폭풍" 국민정신 획득 50일간 공방 +15%)
 		id = prk_Operation_storm
-		icon = GFX_goal_unknown
+		icon = 조선의미래
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Special_Forces_Penetration
@@ -1559,7 +1602,7 @@ focus_tree = {
 	}
 	focus = { #서울 우회 ('서울우회' 국민정신획득 50일간 사단속도 +10%)
 		id = prk_Seoul_Bypass
-		icon = GFX_goal_unknown
+		icon = war2_green
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Operation_storm
@@ -1579,7 +1622,7 @@ focus_tree = {
 	}
 	focus = { #서울확보 ('서울확보' 국민정신획득 50일간 사단공격 +5%)
 		id = prk_Securing_Seoul
-		icon = GFX_goal_unknown
+		icon = 빨갱이는_믿을수없다
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Operation_storm
@@ -1599,7 +1642,7 @@ focus_tree = {
 	}
 	focus = { #특수작전부대 침투 ('특수작전군' 편제를 전라도,경상도,충청도지역에 생성)
 		id = prk_Special_Forces_Penetration
-		icon = GFX_goal_unknown
+		icon = special_forces
 		cost = 10.00
 		prerequisite = {
 			focus = prk_local_warfare
@@ -1623,7 +1666,7 @@ focus_tree = {
 	}
 	focus = { #적화통일 선언 (남한내 남한핵심주 모두제거,국민정신 '적화통일'획득
 		id = prk_Declaration_of_Communistic_Unification
-		icon = GFX_goal_unknown
+		icon = 조선인민군
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Securing_Seoul
@@ -1638,7 +1681,7 @@ focus_tree = {
 	}
 	focus = { #경제적원조요청 (남한에 이벤트,남한이 수락할시 민공5개를 북한에대여/또는 북한에 오프맵민공 5개를 60일간제공)
 		id = prk_Request_for_Economic_Assistance
-		icon = GFX_goal_unknown
+		icon = better_money_on_fire
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Joint_Liaison_Office
@@ -1648,11 +1691,47 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
+		completion_reward = {
+			
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+						KOR = {
+							add_political_power = -120
+						}
+		}
 
 	}
 	focus = { #적대행위 중단 약속 (휴전선요새 남북한모두철거)
 		id = prk_a_promise_to_cease_hostilities
-		icon = GFX_goal_unknown
+		icon = broadway
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Request_for_Economic_Assistance
@@ -1663,7 +1742,7 @@ focus_tree = {
 	}
 	focus = { #휴전선 병력 철수? (서울,경기,강원도 비무장지대화/북한은 강원도북쪽,황해도 비무장지대화)
 		id = prk_Withdrawal_from_the_border?
-		icon = GFX_goal_unknown
+		icon = align_to_south_korea
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Request_for_Economic_Assistance
@@ -1674,7 +1753,7 @@ focus_tree = {
 	}
 	focus = { #한반도의 2국가 (효과미정)
 		id = prk_the_two_countries_on_the_Korean_Peninsula
-		icon = GFX_goal_unknown
+		icon = korean_peninsula
 		cost = 10.00
 		prerequisite = {
 			focus = prk_a_promise_to_cease_hostilities
@@ -1688,7 +1767,7 @@ focus_tree = {
 	}
 	focus = { #주체사상 폐기 선언 ('주체사상'국민정신 제거)
 		id = prk_Declaration_of_the_Abolition_of_Juche_Idea
-		icon = GFX_goal_unknown
+		icon = juche3
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Marxism_Leninism
@@ -1702,7 +1781,7 @@ focus_tree = {
 	}
 	focus = { #주체사상탑 폭파 (안정도 -5%
 		id = prk_Explosion_of_the_Juche_Tower
-		icon = GFX_goal_unknown
+		icon = communism11
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Declaration_of_the_Abolition_of_Juche_Idea
@@ -1716,7 +1795,7 @@ focus_tree = {
 	}
 	focus = { #새로운 정부 ('북한군부'지도자교체)
 		id = prk_new_leader
-		icon = GFX_goal_unknown
+		icon = government_beu
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Declaration_of_the_Abolition_of_Juche_Idea
@@ -1730,7 +1809,7 @@ focus_tree = {
 	}
 	focus = { #모스크바를 방문하다 (소련에 이벤트발생 '북한관료들의 모스크바방문'
 		id = prk_visit_Moscow
-		icon = GFX_goal_unknown
+		icon = align_to_soviet_union
 		cost = 10.00
 		prerequisite = {
 			focus = prk_an_old_friend
@@ -1744,7 +1823,7 @@ focus_tree = {
 	}
 	focus = { #스탈린과 우호약속 (소련과 관계도 +50)
 		id = prk_Treaty_of_Friendship_with_Stalin
-		icon = GFX_goal_unknown
+		icon = align_to_soviet_union2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_visit_Moscow
@@ -1758,7 +1837,7 @@ focus_tree = {
 	}
 	focus = { #소련의 지원 (200일간 오프맵민공 10개추가)
 		id = prk_Soviet_support
-		icon = GFX_goal_unknown
+		icon = support_the_left_right
 		cost = 10.00
 		prerequisite = {
 			focus = prk_visit_Moscow
@@ -1772,7 +1851,7 @@ focus_tree = {
 	} 
 	focus = { #악마와의 거래 (소련과 관계도 +50/후에 이중점을찍을시 이벤트가 발생하고 선택에따라 소련중점이 새중점으로 대체됨)
 		id = prk_Deals_with_the_Devil
-		icon = GFX_goal_unknown
+		icon = industry_communism
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Treaty_of_Friendship_with_Stalin
@@ -1789,7 +1868,7 @@ focus_tree = {
 	}
 	focus = { #코민테른에 가입하다 (북한 코민테른가입
 		id = prk_join_the_Comintern
-		icon = GFX_goal_unknown
+		icon = labor_unions
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Deals_with_the_Devil
@@ -1810,7 +1889,7 @@ focus_tree = {
 	}
 	focus = { #휴전선 철거 (효과미정)
 		id = prk_Demolition_of_the_truce_line
-		icon = GFX_goal_unknown
+		icon = national_unity
 		cost = 10.00
 		prerequisite = {
 			focus = prk_yeo_visit_south
@@ -1827,7 +1906,7 @@ focus_tree = {
 	}
 	focus = { #고려연방제 제안 (남한에 이벤트발생 '북한의 고려연방제 제안')
 		id = prk_Goryeo_federal
-		icon = GFX_goal_unknown
+		icon = korail
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Reorganization_of_the_KPA
@@ -1841,7 +1920,7 @@ focus_tree = {
 	}
 	focus = { #새로운 질서 (정치력 +150)
 		id = prk_the_new_order
-		icon = GFX_goal_unknown
+		icon = national_unity_red
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Deals_with_the_Devil
@@ -1856,7 +1935,7 @@ focus_tree = {
 	}
 	focus = { #일본제국주의 타도 ('일본내 간첩침투' 디시전카테고리활성화)
 		id = prk_overthrow_of_Japanese
-		icon = GFX_goal_unknown
+		icon = japanese_imperialism
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Explosion_of_the_Juche_Tower
@@ -1873,7 +1952,7 @@ focus_tree = {
 	}
 	focus = { #일본공산당과 접촉 ('일본공산당과 접촉'이벤트뜨고 일본에 100일간 '일본공산당의 영향'국민정신추가 일간공산주의 지지 +20)
 		id = prk_contact_with_the_CPJ
-		icon = GFX_goal_unknown
+		icon = japan_communist_party
 		cost = 10.00
 		prerequisite = {
 			focus = prk_overthrow_of_Japanese
@@ -1887,7 +1966,7 @@ focus_tree = {
 	}
 	focus = { #소총을지원 ('일본내 간첩침투' 디시전카테고리의 '소총지원'디시전생김)
 		id = prk_rifle_support
-		icon = GFX_goal_unknown
+		icon = thompson_submachine_gun
 		cost = 10.00
 		prerequisite = {
 			focus = prk_contact_with_the_CPJ
@@ -1901,7 +1980,7 @@ focus_tree = {
 	}
 	focus = { #일본내 영향력 확대 (효과미정)
 		id = prk_Expanding_Influence_in_Japan
-		icon = GFX_goal_unknown
+		icon = japanese_monarchy
 		cost = 10.00
 		prerequisite = {
 			focus = prk_contact_with_the_CPJ
@@ -1916,7 +1995,7 @@ focus_tree = {
 	}
 	focus = { #일본내전 사주 (일본내전발발, 뉴스이벤트'공산당이 봉기한 일본'발생)
 		id = prk_Japanese_Civil_War
-		icon = GFX_goal_unknown
+		icon = communist_revolution_asia
 		cost = 10.00
 		available = {
 			has_country_flag = Expanding_influence_in_Japan_1
@@ -1937,7 +2016,7 @@ focus_tree = {
 	}
 	focus = { #오랜친구 (소련에 '북한이 우리와 접촉하다'이벤트발생)
 		id = prk_an_old_friend
-		icon = GFX_goal_unknown
+		icon = communist_purge
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Explosion_of_the_Juche_Tower
@@ -1956,7 +2035,7 @@ focus_tree = {
 	}
 	focus = { #중공외교전 (중국에 '북한이 우리와 접촉하다'이벤트발생)
 		id = prk_China_Diplomacy_War
-		icon = GFX_goal_unknown
+		icon = communism9
 		cost = 10.00
 		prerequisite = {
 			focus = prk_new_leader
@@ -1973,7 +2052,7 @@ focus_tree = {
 	}
 	focus = { #마오주의 비판 (중화인민공화국과 관계도 -50)
 		id = prk_Maoist_Criticism
-		icon = GFX_goal_unknown
+		icon = communist_spies2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_China_Diplomacy_War
@@ -1988,7 +2067,7 @@ focus_tree = {
 	}
 	focus = { #독재자 장제스 (중화민국과 관계도 -50)
 		id = prk_dictator_Jean_Jes
-		icon = GFX_goal_unknown
+		icon = chiang_kai_shek
 		cost = 10.00
 		prerequisite = {
 			focus = prk_China_Diplomacy_War
@@ -2003,7 +2082,7 @@ focus_tree = {
 	}
 	focus = { #중공에 묻다 (중화인민공화국에 전쟁명분 '합병'생김)
 		id = prk_ask_prc
-		icon = GFX_goal_unknown
+		icon = dragon
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Maoist_Criticism
@@ -2021,7 +2100,7 @@ focus_tree = {
 	}
 	focus = { #중화민국 침공 (중화민국에 전쟁명분 '합병'생김)
 		id = prk_Invasion_of_the_ROC
-		icon = GFX_goal_unknown
+		icon = TAI_flag_burning
 		cost = 10.00
 		prerequisite = {
 			focus = prk_warlords_and_antagonists
@@ -2042,7 +2121,7 @@ focus_tree = {
 	}
 	focus = { #만주 확보 (만주국에 전쟁명분 '합병'생김)
 		id = prk_Securing_Manchuria
-		icon = GFX_goal_unknown
+		icon = mandate_of_heaven
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Japanese_Civil_War
@@ -2060,7 +2139,7 @@ focus_tree = {
 	}
 	focus = { #군벌과 적대 (중국내 모든군벌에 전쟁명분 '합병'생김)
 		id = prk_warlords_and_antagonists
-		icon = GFX_goal_unknown
+		icon = chinese_nationalism
 		cost = 10.00
 		prerequisite = {
 			focus = prk_dictator_Jean_Jes
@@ -2093,7 +2172,7 @@ focus_tree = {
 	}
 	focus = { #백년의 적 (일본과 관계도 -50)
 		id = prk_hundred_years_enemy
-		icon = GFX_goal_unknown
+		icon = 백년의적
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Declaration_of_Communistic_Unification
@@ -2109,7 +2188,7 @@ focus_tree = {
 	}
 	focus = { #해상자위대 침투 ('자위대에 침투'디시전활성화)
 		id = prk_attack_JMSDF
-		icon = GFX_goal_unknown
+		icon = attack_japan2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_hundred_years_enemy
@@ -2130,7 +2209,7 @@ focus_tree = {
 	}
 	focus = { #해상저격여단 강화 ('해상저격대' 사단 2개추가)
 		id = prk_marine_improve
-		icon = GFX_goal_unknown
+		icon = kempeitai
 		cost = 10.00
 		prerequisite = {
 			focus = prk_hundred_years_enemy
@@ -2144,7 +2223,7 @@ focus_tree = {
 	}
 	focus = { #선제공격 (일본에 전쟁명분 '합병'추가)
 		id = prk_pre_emptive_strike
-		icon = GFX_goal_unknown
+		icon = 선제공격
 		cost = 10.00
 		prerequisite = {
 			focus = prk_attack_JMSDF
@@ -2165,7 +2244,7 @@ focus_tree = {
 	}
 	focus = { #태평양으로 ('일본에 함선요구'디시전활성화)
 		id = prk_to_the_Pacific_Ocean
-		icon = GFX_goal_unknown
+		icon = 조소
 		cost = 10.00
 		prerequisite = {
 			focus = prk_pre_emptive_strike
@@ -2180,7 +2259,7 @@ focus_tree = {
 	}
 	focus = { #하와이 공습 (미국에 '진주만공습'이벤트발생 뉴스이벤트 '진주만 공습'발생)
 		id = prk_Hawaiian_Air_Attack
-		icon = GFX_goal_unknown
+		icon = 미제국주의
 		cost = 10.00
 		prerequisite = {
 			focus = prk_to_the_Pacific_Ocean
@@ -2194,7 +2273,7 @@ focus_tree = {
 	}
 	focus = { #동아시아의 사회주의 ('동아시아의 사회주의' 국민정신얻고 전쟁명분 정당화시간 -25%)
 		id = prk_socialism_in_EA
-		icon = GFX_goal_unknown
+		icon = communist_party_of_china
 		cost = 10.00
 		prerequisite = {
 			focus = prk_the_new_order
@@ -2210,7 +2289,7 @@ focus_tree = {
 	}
 	focus = { #동남아시아 중점 ('동남아시아봉기'이벤트발생하고 베크남이 프랑스로부터 독립전쟁을시도함)
 		id = prk_SA_Focus
-		icon = GFX_goal_unknown
+		icon = asean_mutual_trade
 		cost = 10.00
 		prerequisite = {
 			focus = prk_socialism_in_EA
@@ -2224,7 +2303,7 @@ focus_tree = {
 	}
 	focus = { #오세아니아 중점 ('인도네시아봉기'이벤트발생하고 인도네시아가 독립전쟁을시도함)
 		id = prk_Oceania_Focus
-		icon = GFX_goal_unknown
+		icon = squander_bugs
 		cost = 10.00
 		prerequisite = {
 			focus = prk_socialism_in_EA
@@ -2238,7 +2317,7 @@ focus_tree = {
 	}
 	focus = { #인도의 혁명 ('인도의혁명'이벤트발생하고 인도가 독립전쟁을시도함
 		id = prk_Indian_Revolution
-		icon = GFX_goal_unknown
+		icon = indian_communism
 		cost = 10.00
 		prerequisite = {
 			focus = prk_socialism_in_EA
@@ -2252,7 +2331,7 @@ focus_tree = {
 	}
 	focus = { #아시아 해방전쟁 (영국에 전쟁명분추가)
 		id = prk_Asian_Liberation_War
-		icon = GFX_goal_unknown
+		icon = enemy_of_britain
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Indian_Revolution
@@ -2276,7 +2355,7 @@ focus_tree = {
 	}
 	focus = { #동남아시아 해방전쟁 (프랑스에 전쟁명분추가)
 		id = prk_sa_Liberation_War
-		icon = GFX_goal_unknown
+		icon = war_against_france
 		cost = 10.00
 		prerequisite = {
 			focus = prk_Oceania_Focus
@@ -2300,7 +2379,7 @@ focus_tree = {
 	}
 	focus = { #열강 식민지 해방 (필리핀에 전쟁명분추가)
 		id = prk_liberation_of_the_colonies
-		icon = GFX_goal_unknown
+		icon = philippines
 		cost = 10.00
 		prerequisite = {
 			focus = prk_sa_Liberation_War
@@ -2317,7 +2396,7 @@ focus_tree = {
 	}
 	focus = { #자본주의 본토 타격 (미국에 전쟁명분추가)
 		id = prk_capitalist_mainland_blow
-		icon = GFX_goal_unknown
+		icon = usa
 		cost = 10.00
 		prerequisite = {
 			focus = prk_liberation_of_the_colonies
@@ -2335,7 +2414,7 @@ focus_tree = {
 	}
 	focus = { #방사포 생산집중 (다연장로켓포 생산비용 -10%)
 		id = prk_MLRS_production
-		icon = GFX_goal_unknown
+		icon = artillery2
 		cost = 10.00
 		prerequisite = {
 			focus = prk_modern_spaag
@@ -2349,7 +2428,7 @@ focus_tree = {
 	}
 	focus = { #신형 방사포 개발 ('2000년도 다연장로켓포' 기술력추가)
 		id = prk_new_MLRS
-		icon = GFX_goal_unknown
+		icon = artillery
 		cost = 10.00
 		prerequisite = {
 			focus = prk_MLRS_production
@@ -2360,7 +2439,7 @@ focus_tree = {
 	}
 	focus = { #추가 장사정포 ('1980년대 다연장로켓포' 재고 100개추가)
 		id = prk_add_mlrs
-		icon = GFX_goal_unknown
+		icon = army_reform
 		cost = 10.00
 		prerequisite = {
 			focus = prk_MLRS_production
@@ -2371,7 +2450,7 @@ focus_tree = {
 	}
 	focus = { #천마호 추가개량 (육군경험치 +50)
 		id = prk_chunma_ho_mod
-		icon = GFX_goal_unknown
+		icon = grand_battleplan
 		cost = 10.00
 		prerequisite = {
 			focus = prk_tank_produce

@@ -81,6 +81,7 @@ focus_tree = {
 							set_major = yes
 							add_ideas = KOR_modern_millitary
 							set_country_flag = big_event_time_slip
+							set_country_flag = 2009_scenario
 							813 = {
 								add_resource = {
 									type = oil
@@ -130,7 +131,6 @@ focus_tree = {
 				has_completed_focus = KOR_MB_11
 				has_completed_focus = KOR_MB_12
 			}
-			has_country_flag = KOR_making_sorry
 		}	
 		x = 57
 		y = 6
@@ -683,7 +683,7 @@ focus_tree = {
 		x = 25
 		y = 2
 			completion_reward = {
-					PRK = {
+					KPA = {
 							swap_ideas = {
 									remove_idea = FKR_back_down_military
 									add_idea = FKR_back_down_military_2
@@ -765,7 +765,7 @@ focus_tree = {
 			completion_reward = {
 					custom_effect_tooltip = KOR_MB_none-kims_tooltip
 					hidden_effect = {
-							PRK = {
+							KPA = {
 									remove_state_core = 527
 									remove_state_core = 818
 									remove_state_core = 811
@@ -945,9 +945,9 @@ focus_tree = {
 		x = 27
 		y = 6
 		completion_reward = {
-			KOR = { annex_country = { target = PRK transfer_troops = yes } }
+			KOR = { annex_country = { target = KPA transfer_troops = yes } }
 			hidden_effect = {
-				KOR = { change_tag_from = PRK }
+				KOR = { change_tag_from = KPA }
 		
 			}
 		}
@@ -1084,7 +1084,7 @@ focus_tree = {
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
-							target = PRK
+							target = KPA
 						}
 					add_war_support = 0.1
 				}
@@ -1105,7 +1105,7 @@ focus_tree = {
 			completion_reward = {
 					set_country_flag = big_event_2nd_korean_war
 					declare_war_on = {
-							target = PRK
+							target = KPA
 							type = annex_everything
 						}
 					hidden_effect = {
@@ -1280,7 +1280,7 @@ focus_tree = {
 					has_country_flag = KOR_MB_yeonpyungdo
 				}
 			completion_reward = {
-					PRK = {
+					KPA = {
 							add_stability = -0.15
 							add_war_support = 0.05
 						}
@@ -1305,7 +1305,7 @@ focus_tree = {
 		x = 37
 		y = 6
 			completion_reward = {
-					PRK = {
+					KPA = {
 							country_event = {
 									id = KOR_MB.1
 								}
@@ -1406,6 +1406,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_imperials_defence
 		}
+		available = {
+			always = no
+		}
 		x = 38
 		y = 10
 		completion_reward = {
@@ -1414,6 +1417,7 @@ focus_tree = {
 				neutrality = 40
 			}
 			remove_ideas = kor_law_of_korean_5
+			add_ideas = pre_prison_714
 		}
 
 	}
@@ -1553,6 +1557,7 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			remove_ideas = KOR_legacy_of_518
+			add_ideas = pre_prison_moon
 		}
 
 	}
@@ -1586,6 +1591,7 @@ focus_tree = {
 		x = 38
 		y = 13
 		completion_reward = {
+			set_cosmetic_tag = KOR_2009_scenario
 			set_technology = { bicycle_infantry = 1 }
 			set_technology = { suicide_craft = 1 } 
 			set_politics = {
@@ -1706,6 +1712,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_MB_kudeta
 		}
+		available = {
+			always = no
+		}
+		
 		x = 44
 		y = 10
 		completion_reward = {
@@ -2014,18 +2024,24 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_manchu_plan
-		icon = goal_unknown
+		icon = GFX_focus_jap_cast_the_die
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_another
 		}
 		x = 53
 		y = 7
+		completion_reward = {
+			country_event = {
+				id = KOR_MB.20
+				days = 3
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_japans_accept
-		icon = goal_unknown
+		icon = GFX_focus_CZE_german_puppet
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_manchu_plan
@@ -2033,35 +2049,85 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_japans_cancle
 		}
+		available = {
+			always = no
+		}
 		x = 51
 		y = 8
 
 	}
 	focus = {
 		id = KOR_puppet_japan
-		icon = goal_unknown
+		icon = japanese_imperialism
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_accept
 		}
 		x = 50
 		y = 9
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = KOR_MB.22
+					days = 4
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_japanese_industry
-		icon = goal_unknown
+		icon = industry4
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_accept
 		}
+		available = {
+			JAP = {
+				is_puppet = yes
+			}
+		}
 		x = 52
 		y = 9
+		completion_reward = {
+			282  = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}	
+			531  = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+			535  = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}	
+			534  = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}	
+		}
 
 	}
 	focus = {
 		id = KOR_this_is_japan_heemang
-		icon = goal_unknown
+		icon = japanese_pacific_guardian
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_puppet_japan
@@ -2071,6 +2137,13 @@ focus_tree = {
 		}
 		x = 51
 		y = 10
+		completion_reward = {
+			JAP = {
+				remove_ideas = JAP_hirohito
+				set_cosmetic_tag = JAP_republic
+				add_ideas = pre_chongdok_503
+			}
+		}
 
 	}
 	focus = {
@@ -2173,13 +2246,16 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_japans_cancle
-		icon = goal_unknown
+		icon = GFX_focus_jap_showa_restoration
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_manchu_plan
 		}
 		mutually_exclusive = {
 			focus = KOR_japans_accept
+		}
+		available = {
+			always = no
 		}
 		x = 55
 		y = 8
@@ -2198,18 +2274,24 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_chunhwa
-		icon = goal_unknown
+		icon = goal_hitomi
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_cancle
 		}
 		x = 56
 		y = 9
+		completion_reward = {
+			JAP = {
+				add_war_support = -0.15
+				add_stability = -0.1
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_plan_of_fallen_sun
-		icon = goal_unknown
+		icon = 선제공격
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_napchi_yamato
@@ -2219,11 +2301,17 @@ focus_tree = {
 		}
 		x = 55
 		y = 10
-
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+				expire = 0
+			}
+		}
 	}
 	focus = {
 		id = KOR_plan_china
-		icon = goal_unknown
+		icon = 장개석
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_this_is_japan_heemang
@@ -2232,6 +2320,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KOR_manchu_plan
 		}
+		available = {
+			has_country_flag = KOR_making_sorry
+		}	
 		x = 53
 		y = 11
 
@@ -2245,6 +2336,13 @@ focus_tree = {
 		}
 		x = 51
 		y = 12
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = KOR_MB.23
+				}	
+			}
+		}
 
 	}
 	focus = {
@@ -2361,6 +2459,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_another
+		}
+		available = {
+			has_country_flag = KOR_making_sorry
 		}
 		x = 61
 		y = 7
@@ -2879,6 +2980,9 @@ focus_tree = {
 				last_election = "1938.12.19"
 				election_frequency = 60
 				elections_allowed = yes
+			}
+			hidden_effect = {
+				set_cosmetic_tag = KOR_2009_scenario
 			}
 		}
 
