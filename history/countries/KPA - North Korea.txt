@@ -161,17 +161,27 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
-	name = "Kim Jong-un"
+	name = "Kim Jong-Il"
 	desc = ""
-	picture = "gfx/leaders/KPA/KJU.dds"
+	picture = "gfx/leaders/KPA/김정일.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
 		#
 	}
 }
+
+#create_country_leader = {
+#	name = "Kim Jong-un"
+#	desc = ""
+#	picture = "gfx/leaders/KPA/KJU.dds"
+#	expire = "1965.1.1"
+#	ideology = stalinism
+#	traits = {
+#		#
+#	}
+#}
 
 	create_field_marshal = {
 		name = "Kim Jong-un"

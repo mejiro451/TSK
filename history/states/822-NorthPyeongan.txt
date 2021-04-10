@@ -16,7 +16,7 @@ state={
 		add_core_of = PRK
 		add_core_of = KR1
 
-		1936.1.9 = {
+		1936.1.3 = {
 			remove_core_of = KR1
 			remove_core_of = PRK
 			add_core_of = KOR

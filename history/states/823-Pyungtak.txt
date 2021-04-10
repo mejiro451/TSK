@@ -16,7 +16,7 @@ state={
 		add_core_of = PRK
 		add_core_of = USF
 
-		1936.1.9 = {
+		1936.1.4 = {
 			owner = KOR
 			controller = KOR
 			remove_core_of = KR1

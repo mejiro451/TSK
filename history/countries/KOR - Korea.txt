@@ -1,6 +1,6 @@
 ﻿capital = 807 #South Korea - Seoul or Busan
 
-oob = "KOR_1936"
+oob = "KOR_1939"
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -161,6 +161,7 @@ set_technology = {
 	m_1970_attack_helicopter = 1
 	m_1980_attack_helicopter = 1
 	m_1990_attack_helicopter = 1
+	m_2000_attack_helicopter = 1
 	
 	m_1970_util_helicopter = 1
 	m_1980_util_helicopter = 1
@@ -226,7 +227,7 @@ set_technology = {
 }
 
 add_ideas = {
-    KOR_modern_millitary
+    KOR_09_modern_millitary
 }
 
 
