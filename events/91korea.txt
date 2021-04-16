@@ -384,7 +384,6 @@ country_event = { #1936
 	
 	option = {
 		name = korea.3.a
-		ai_chance = { factor = 100 }
     }	
 }
 
@@ -401,11 +400,6 @@ country_event = { #정보수집
 	
 	option = {
 		name = korea.4.a
-		ai_chance = { factor = 100 }
-		KOR = {
-			add_ideas = KOR_economic_collapse_1
-
-		}	
     }	
 }
 
@@ -593,14 +587,7 @@ country_event = { #자위대 항공기와 접촉
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = KR1
-		date > 1936.1.1
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = korea.12.a
@@ -639,3 +626,29 @@ country_event = { #a
 		}
     }	
 }
+#서울해방
+country_event = {
+	id = korea.14
+	title = korea.14.t
+	desc = korea.14.b
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		807 = { is_owned_by = PRK }
+		807 = { is_controlled_by = ROK }
+		ROK = { has_war_with = PRK }
+		NOT = { has_global_flag = return_seoul_ROK }
+		ROK = {
+			has_country_flag = fall_of_seoul_rok
+		}	
+	}
+	
+	option = {
+		name = korea.14.a	
+		news_event = { hours = 6 id = kor_news.3 }
+    }
+}	

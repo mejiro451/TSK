@@ -40,6 +40,7 @@ division_template = {
 		light_infantry = { x = 2 y = 0 }
 		modern_infantry = { x = 2 y = 1 }
 		modern_infantry = { x = 2 y = 2 }
+		modern_artillery_brigade = { x = 2 y = 3 }
 		modern_mbt = { x = 3 y = 0 }
 
 	}
@@ -243,6 +244,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -251,6 +253,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -259,6 +262,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1970_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -267,6 +271,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -275,6 +280,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -283,6 +289,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -291,6 +298,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -299,6 +307,7 @@ units = {
 		division_template = "상비사단(중)"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -307,6 +316,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -315,6 +325,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1960_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_2 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -323,6 +334,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -331,6 +343,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -339,6 +352,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } } 
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -347,6 +361,7 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	division= {
@@ -355,48 +370,121 @@ units = {
 		division_template = "상비사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
 		force_equipment_variants = { m_1970_sp_equipment = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.4
 	}
 	#####################동원사단################
+	division= {
+		name = "제60 보병사단 '권율'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
 	division= {
 		name = "제61 보병사단 '상승'"
 		location = 7125
 		division_template = "동원사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 	}
 	division= {
 		name = "제62 보병사단 '충룡'"
 		location = 7125
 		division_template = "동원사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 	}
 	division= {
 		name = "제65 보병사단 '밀물'"
 		location = 7125
 		division_template = "동원사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "제66 보병사단 '횃불'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
 	}
 	division= {
 		name = "제67 보병사단 '용진'"
 		location = 7125
 		division_template = "동원사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "제68 보병사단 '철벽'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "제69 보병사단 '태풍'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
 	}
 	division= {
 		name = "제70 보병사단 '충효'"
 		location = 7125
 		division_template = "동원사단"
 		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "제71 보병사단 '선승'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "제72 보병사단 '올림픽'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "제73 보병사단 '충일'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "제75 보병사단 '철마'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "제76 보병사단 '진격'"
+		location = 7125
+		division_template = "동원사단"
+		force_equipment_variants = { m_1950_mbt = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
+		start_experience_factor = 0.2
 	}
 	#####################기계화##########
 	
@@ -500,84 +588,120 @@ units = {
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제32 보병사단 '백룡'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제35 보병사단 '충경'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제36 보병사단 '백호'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= { #충청북도
 		name = "제37 보병사단 '충용'" 
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= { 
 		name = "제39 보병사단 '충무'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제50 보병사단 '강철'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제51 보병사단 '전승'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제52 보병사단 '화살'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제53 보병사단 '충렬'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제55 보병사단 '봉화'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 	division= {
 		name = "제56 보병사단 '북한산'"
 		location = 7125
 		division_template = "향토방위사단"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_5 = { owner = "KOR" } }
+		force_equipment_variants = { heavy_anti_air_eq = { owner = "KOR" } }
+		force_equipment_variants = { support_infantry_equipment_1 = { owner = "KOR" } }
+		force_equipment_variants = { modern_artillery_equipment_1 = { owner = "KOR" } }
 	}
 }
 

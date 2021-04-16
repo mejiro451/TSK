@@ -36,8 +36,7 @@ news_event = {
 		trigger = { TAG = ROK }
 	}
 }
-	
-news_event = {#서울 함락
+news_event = {
 	id = kor_news.2
 	title = kor_news.2.t
 	desc = kor_news.2.desc
@@ -45,27 +44,28 @@ news_event = {#서울 함락
 	
 	major = yes
 	
-	fire_only_once = yes
-	
 	trigger = {
-		OR = {
-			807 = { is_owned_by = MKR }
-			807 = { is_owned_by = ROK }
-			807 = { is_owned_by = KOR }
-			MKR = { has_war_with = PRK }
-			ROK = { has_war_with = PRK }
-			KOR = { has_war_with = PRK }
-		}
+	OR = {
+		807 = { is_owned_by = KR1 }
+		KR1 = { has_war_with = PRK }
+		807 = { is_owned_by = ROK }
+		ROK = { has_war_with = PRK }
+		807 = { is_owned_by = MKR }
+		MKR = { has_war_with = PRK }
+	}
 		807 = { is_controlled_by = PRK }
-		NOT = { has_global_flag = fall_of_seoul_PRK }
+		NOT = { has_global_flag = fall_of_seoul }
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_seoul_PRK
+		set_global_flag = fall_of_seoul
+		ROK = {
+		set_country_flag = fall_of_seoul_rok
+		}
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 2
 	}
 	
 	option = {
@@ -73,7 +73,7 @@ news_event = {#서울 함락
 		trigger = {
 			NOT = {
 				TAG = MKR
-				TAG = KOR
+				TAG = KR1
 				TAG = ROK
 				TAG = PRK
 			}
@@ -83,13 +83,14 @@ news_event = {#서울 함락
 		name = kor_news.2.b
 		trigger = { TAG = MKR }
 		trigger = { TAG = ROK }
-		trigger = { TAG = KOR }
+		trigger = { TAG = KR1 }
 	}
 	option = {
 		name = kor_news.2.c
 		trigger = { TAG = PRK }
 	}
 }
+
 
 news_event = {#서울 수복
 	id = kor_news.3
@@ -99,17 +100,9 @@ news_event = {#서울 수복
 	
 	major = yes
 	
-	fire_only_once = yes
-	
-	trigger = {
-		807 = { is_controlled_by = ROK }
-		807 = { is_owned_by = PRK }
-		has_global_flag = fall_of_seoul_PRK
-		NOT = { has_global_flag = return_seoul_ROK }
-	}
+	is_triggered_only = yes
 	
 	immediate = {
-		set_global_flag = return_seoul_ROK
 		hidden_effect = {
 			PRK = {
 				country_event = {
@@ -119,17 +112,11 @@ news_event = {#서울 수복
 			}	
 		}
 	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
 		name = kor_news.3.a
 		trigger = {
 			NOT = {
 				TAG = MKR
-				TAG = KOR
 				TAG = ROK
 				TAG = PRK
 			}
@@ -139,7 +126,6 @@ news_event = {#서울 수복
 		name = kor_news.3.b
 		trigger = { TAG = MKR }
 		trigger = { TAG = ROK }
-		trigger = { TAG = KOR }
 	}
 	option = {
 		name = kor_news.3.c
