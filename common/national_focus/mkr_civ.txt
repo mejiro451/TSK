@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = { #대책회의
 		id = Countermeasure_Conference
-		icon = GFX_goal_unknown
+		icon = GFX_Countermeasure_Conference
 		cost = 0.5
 		x = 8
 		y = 0
@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = { #향토예비군 동원
 		id = mobilization_order
-		icon = GFX_goal_unknown
+		icon = GFX_mobilization_order
 		cost = 1
 		prerequisite = {
 			focus = Countermeasure_Conference
@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = { #독립군장교단
 		id = Independent_Army_Corps
-		icon = GFX_goal_unknown
+		icon = GFX_Independent_Army_Corps
 		cost = 0.5
 		prerequisite = {
 			focus = mobilization_order
@@ -55,7 +55,7 @@ focus_tree = {
 	}
 	focus = { #비상대책법
 		id = emergency_measure
-		icon = GFX_goal_unknown
+		icon = GFX_emergency_measure
 		cost = 2
 		prerequisite = {
 			focus = mobilization_order
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = { #무차별 폭격 승인
 		id = indiscriminate_bombing_approval
-		icon = GFX_goal_unknown
+		icon = GFX_indiscriminate_bombing_approval
 		cost = 3
 		prerequisite = {
 			focus = emergency_measure
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {#대공세
 		id = Offensive
-		icon = GFX_goal_unknown
+		icon = GFX_Offensive
 		cost = 3
 		prerequisite = {
 			focus = indiscriminate_bombing_approval
@@ -108,7 +108,7 @@ focus_tree = {
 	}
 	focus = { #정보전 돌입
 		id = information_warfare
-		icon = GFX_goal_unknown
+		icon = GFX_information_warfare
 		cost = 2
 		prerequisite = {
 			focus = indiscriminate_bombing_approval
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = { #내전에서의 승리
 		id = mkr_victory_in_the_civil_war
-		icon = GFX_goal_unknown
+		icon = GFX_mkr_victory_in_the_civil_war
 		cost = 5
 		available = {
 			is_puppet = no

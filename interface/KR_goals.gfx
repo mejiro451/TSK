@@ -1,0 +1,103 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_1936_world"
+		texturefile = "gfx/interface/goals/K_asche/1936_world.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_intel"
+		texturefile = "gfx/interface/goals/K_asche/KOR_intel.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_press_control"
+		texturefile = "gfx/interface/goals/K_asche/KOR_press_control.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_martial_law"
+		texturefile = "gfx/interface/goals/K_asche/KOR_martial_law.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_NA_Occupation"
+		texturefile = "gfx/interface/goals/K_asche/KOR_NA_Occupation.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_airport_closure"
+		texturefile = "gfx/interface/goals/K_asche/KOR_airport_closure.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_USFK_issue"
+		texturefile = "gfx/interface/goals/K_asche/KOR_USFK_issue.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_KOR_suppression_order"
+		texturefile = "gfx/interface/goals/K_asche/KOR_suppression_order.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_mobilization_order"
+		texturefile = "gfx/interface/goals/K_asche/mobilization_order.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Countermeasure_Conference"
+		texturefile = "gfx/interface/goals/K_asche/Countermeasure_Conference.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_emergency_measure"
+		texturefile = "gfx/interface/goals/K_asche/emergency_measure.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Independent_Army_Corps"
+		texturefile = "gfx/interface/goals/K_asche/Independent_Army_Corps.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_indiscriminate_bombing_approval"
+		texturefile = "gfx/interface/goals/K_asche/indiscriminate_bombing_approval.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Offensive"
+		texturefile = "gfx/interface/goals/K_asche/Offensive.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_information_warfare"
+		texturefile = "gfx/interface/goals/K_asche/information_warfare.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_mkr_victory_in_the_civil_war"
+		texturefile = "gfx/interface/goals/K_asche/mkr_victory_in_the_civil_war.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_The_Future_of_Korea"
+		texturefile = "gfx/interface/goals/K_asche/MKR_The_Future_of_Korea.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_a_curfew_order"
+		texturefile = "gfx/interface/goals/K_asche/MKR_a_curfew_order.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_suppression_of_civil_movements"
+		texturefile = "gfx/interface/goals/K_asche/MKR_suppression_of_civil_movements.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_NIS"
+		texturefile = "gfx/interface/goals/K_asche/MKR_NIS.png"
+		legacy_lazy_load = no
+	}
+}

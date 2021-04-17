@@ -8,7 +8,7 @@ focus_tree = {
 	shared_focus = ROKND_1
 	focus = { #대한민국의 미래 (이벤트발생 '대한민국의 미래')
 		id = MKR_The_Future_of_Korea
-		icon = GFX_goal_kor_flag
+		icon = GFX_MKR_The_Future_of_Korea
 		cost = 10.00
 		x = 12
 		y = 0
@@ -77,7 +77,7 @@ focus_tree = {
 	}
 	focus = { #통금령실시
 		id = MKR_a_curfew_order
-		icon = GFX_goal_unknown
+		icon = GFX_MKR_a_curfew_order
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_strengthening_order
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = { #언론검열정책
 		id = MKR_Press_censorship_policy
-		icon = GFX_goal_unknown
+		icon = GFX_KOR_press_control
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_strengthening_order
@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = { #시민운동 탄압
 		id = MKR_suppression_of_civil_movements
-		icon = GFX_goal_unknown
+		icon = GFX_MKR_suppression_of_civil_movements
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_strengthening_order
@@ -1400,7 +1400,7 @@ focus_tree = {
 	}
 	focus = { #대한민국 국가정보원
 		id = MKR_NIS
-		icon = GFX_goal_unknown
+		icon = GFX_MKR_NIS
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_strengthening_order
