@@ -4,7 +4,7 @@ country_event = { # 대책회의
 	id = mkorea.1
 	title = mkorea.1.t
 	desc = mkorea.1.d
-	picture = GFX_two_peo_pic
+	picture = GFX_대책회의
 
 	is_triggered_only = yes
 	
@@ -19,7 +19,7 @@ country_event = { # 예비군 추가동원
 	id = mkorea.2
 	title = mkorea.2.t
 	desc = mkorea.2.d
-	picture = GFX_two_peo_pic
+	picture = GFX_에비군
 
 	is_triggered_only = yes
 	
@@ -38,7 +38,7 @@ country_event = {
 	id = mkorea.3
 	title = mkorea.3.title
 	desc = mkorea.3.desc
-	picture = GFX_report_event_fkr_korea_MP
+	picture = GFX_지청천_이범석
 
 	is_triggered_only = yes
 	
@@ -75,7 +75,7 @@ country_event = { #테러폭격?
 	id = mkorea.4
 	title = mkorea.4.t
 	desc = mkorea.4.d
-	picture = GFX_two_peo_pic
+	picture = GFX_폭격
 
 	is_triggered_only = yes
 	
@@ -91,7 +91,7 @@ country_event = { #대한민국의 미래
 	id = mkorea.5
 	title = mkorea.5.t
 	desc = mkorea.5.d
-	picture = GFX_two_peo_pic
+	picture = GFX_광주사태
 
 	is_triggered_only = yes
 	
@@ -117,7 +117,7 @@ country_event = { #내전에서의 회복
 	id = mkorea.6
 	title = mkorea.6.t
 	desc = mkorea.6.d
-	picture = GFX_two_peo_pic
+	picture = GFX_국가재건위원회
 
 	is_triggered_only = yes
 	
