@@ -20,10 +20,10 @@ state={
 		1936.1.3 = {
 			remove_core_of = KR1
 			remove_core_of = PRK
-			add_core_of = KOR
 			add_core_of = KPA
 			owner = KPA
-			controller  KPA
+			controller = KPA
+			add_claim_by = KOR
 		}
 	}
 
