@@ -164,4 +164,54 @@ spriteTypes = {
 		name = "GFX_학업지옥"
 		texturefile = "gfx/event_pictures/학업지옥.png"
 	}
+
+	spriteType = {
+		name = "GFX_연평도_포격"
+		texturefile = "gfx/event_pictures/연평도_포격.png"
+	}
+
+	spriteType = {
+		name = "GFX_황해도_어느_농가"
+		texturefile = "gfx/event_pictures/황해도_어느_농가.png"
+	}
+
+	spriteType = {
+		name = "GFX_강원도_산골_마을"
+		texturefile = "gfx/event_pictures/강원도_산골_마을.png"
+	}
+
+	spriteType = {
+		name = "GFX_함흥차사"
+		texturefile = "gfx/event_pictures/함흥차사.png"
+	}
+
+	spriteType = {
+		name = "GFX_남포의_하루"
+		texturefile = "gfx/event_pictures/남포의_하루.png"
+	}
+
+	spriteType = {
+		name = "GFX_신의주의_강가에서"
+		texturefile = "gfx/event_pictures/신의주의_강가에서.png"
+	}
+
+	spriteType = {
+		name = "GFX_고원의_아이들"
+		texturefile = "gfx/event_pictures/고원의_아이들.png"
+	}
+
+	spriteType = {
+		name = "GFX_어떤_도시_이름"
+		texturefile = "gfx/event_pictures/어떤_도시_이름.png"
+	}
+
+	spriteType = {
+		name = "GFX_아오지탄광"
+		texturefile = "gfx/event_pictures/아오지탄광.png"
+	}
+
+	spriteType = {
+		name = "GFX_혁명의수도평양"
+		texturefile = "gfx/event_pictures/혁명의수도평양.png"
+	}
 }

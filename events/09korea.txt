@@ -76,7 +76,7 @@ country_event = {
 	id = KOR_MB.3 #연평도 포격전
 	title = KOR_MB.3.t
 	desc = KOR_MB.3.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_연평도_포격
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -256,7 +256,7 @@ country_event = {
 	id = KOR_MB.9 #황해
 	title = KOR_MB.9.t
 	desc = KOR_MB.9.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_황해도_어느_농가
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -272,7 +272,7 @@ country_event = {
 	id = KOR_MB.10 #강원
 	title = KOR_MB.10.t
 	desc = KOR_MB.10.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_강원도_산골_마을
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -288,7 +288,7 @@ country_event = {
 	id = KOR_MB.11 #함남
 	title = KOR_MB.11.t
 	desc = KOR_MB.11.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_함흥차사
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -304,7 +304,7 @@ country_event = {
 	id = KOR_MB.12 #평남
 	title = KOR_MB.12.t
 	desc = KOR_MB.12.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_남포의_하루
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -320,7 +320,7 @@ country_event = {
 	id = KOR_MB.13 #평북
 	title = KOR_MB.13.t
 	desc = KOR_MB.13.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_신의주의_강가에서
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -336,7 +336,7 @@ country_event = {
 	id = KOR_MB.14 #자강
 	title = KOR_MB.14.t
 	desc = KOR_MB.14.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_고원의_아이들
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -352,7 +352,7 @@ country_event = {
 	id = KOR_MB.15 #양강
 	title = KOR_MB.15.t
 	desc = KOR_MB.15.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_어떤_도시_이름
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -368,7 +368,7 @@ country_event = {
 	id = KOR_MB.16 #함북
 	title = KOR_MB.16.t
 	desc = KOR_MB.16.d
-	picture = GFX_report_event_chamberlain_announce
+	picture = GFX_아오지탄광
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -382,15 +382,15 @@ country_event = {
 }
 country_event = {
 	id = KOR_MB.17 #평양
-	title = KOR_MB.16.t
-	desc = KOR_MB.16.d
-	picture = GFX_report_event_chamberlain_announce
+	title = KOR_MB.17.t
+	desc = KOR_MB.17.d
+	picture = GFX_혁명의수도평양
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 		
 	option = {
-		name = KOR_MB.16.a
+		name = KOR_MB.17.a
 		ai_chance = {
 		    factor = 1
 		}
