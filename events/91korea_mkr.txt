@@ -136,7 +136,7 @@ country_event = { #자유주의자들 문제
 	id = mkorea.7
 	title = mkorea.7.t
 	desc = mkorea.7.d
-	picture = GFX_two_peo_pic
+	picture = GFX_학업지옥 #실제 나의 교제사진(k -asche)
 
 	is_triggered_only = yes
 	

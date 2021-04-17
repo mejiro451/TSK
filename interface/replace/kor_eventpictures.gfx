@@ -159,4 +159,9 @@ spriteTypes = {
 		name = "GFX_국가재건위원회"
 		texturefile = "gfx/event_pictures/국가재건위원회.png"
 	}
+
+	spriteType = {
+		name = "GFX_학업지옥"
+		texturefile = "gfx/event_pictures/학업지옥.png"
+	}
 }
