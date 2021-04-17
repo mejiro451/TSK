@@ -42,6 +42,7 @@ state={
 			controller = KOR
 			remove_core_of = KR1
 			add_core_of = KOR
+			add_claim_by = KPA
 			add_manpower = 1200000
 		}
 	}
