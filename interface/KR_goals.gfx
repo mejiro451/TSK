@@ -80,4 +80,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/K_asche/mkr_victory_in_the_civil_war.png"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_MKR_The_Future_of_Korea"
+		texturefile = "gfx/interface/goals/K_asche/MKR_The_Future_of_Korea.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_a_curfew_order"
+		texturefile = "gfx/interface/goals/K_asche/MKR_a_curfew_order.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_suppression_of_civil_movements"
+		texturefile = "gfx/interface/goals/K_asche/MKR_suppression_of_civil_movements.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_MKR_NIS"
+		texturefile = "gfx/interface/goals/K_asche/MKR_NIS.png"
+		legacy_lazy_load = no
+	}
 }

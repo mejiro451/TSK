@@ -4,7 +4,7 @@ country_event = {
 	id = korea.1
 	title = korea.1.t
 	desc = korea.1.desc
-	picture = GFX_report_event_generic_riot
+	picture = GFX_korea_riot
 
 	fire_only_once = yes
 
@@ -224,7 +224,7 @@ country_event = {
 	id = korea.100
 	title = korea.100.t
 	desc = korea.100.b
-	picture = GFX_report_event_generic_riot
+	picture = GFX_korea_war_in_south
 
 	fire_only_once = yes
 
@@ -262,7 +262,7 @@ country_event = {
 	id = korea.200
 	title = korea.200.t
 	desc = korea.200.b
-	picture = GFX_report_event_generic_riot
+	picture = GFX_korea_war_in_south
 
 	fire_only_once = yes
 
@@ -299,7 +299,7 @@ country_event = {
 	id = korea.300
 	title = korea.300.t
 	desc = korea.300.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_korean_navy_riot
 	
 	fire_only_once = yes
 	
@@ -323,7 +323,7 @@ country_event = {
 	id = korea.301
 	title = korea.301.t
 	desc = korea.301.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_korean_navy_riot
 	
 	fire_only_once = yes
 	
@@ -342,7 +342,7 @@ country_event = { #북한군 남침?
 	id = korea.2 
 	title = korea.2.t
 	desc = korea.2.d
-	picture = GFX_two_peo_pic
+	picture = GFX_attack_attack_south
 
 	fire_only_once = yes
 
@@ -376,7 +376,7 @@ country_event = { #1936
 	id = korea.3
 	title = korea.3.t
 	desc = korea.3.d
-	picture = GFX_two_peo_pic
+	picture = GFX_1991_to_1936_world
 
 	fire_only_once = yes
 
@@ -392,7 +392,7 @@ country_event = { #정보수집
 	id = korea.4
 	title = korea.4.t
 	desc = korea.4.d
-	picture = GFX_two_peo_pic
+	picture = `GFX_two_peo_pic`
 
 	fire_only_once = yes
 
@@ -407,7 +407,7 @@ country_event = { #계엄령 선포
 	id = korea.5
 	title = korea.5.t
 	desc = korea.5.d
-	picture = GFX_two_peo_pic
+	picture = GFX_Martial_law_declared
 
 	fire_only_once = yes
 
@@ -427,7 +427,7 @@ country_event = { #주한미군 문제
 	id = korea.6
 	title = korea.6.t
 	desc = korea.6.d
-	picture = GFX_two_peo_pic
+	picture = GFX_usa_army_problem_in_korea
 
 	fire_only_once = yes
 
@@ -447,7 +447,7 @@ country_event = { #언론통제
 	id = korea.7
 	title = korea.7.t
 	desc = korea.7.d
-	picture = GFX_two_peo_pic
+	picture = GFX_Media_censorship
 
 	fire_only_once = yes
 
@@ -466,7 +466,7 @@ country_event = { #공항,항구폐쇄
 	id = korea.8
 	title = korea.8.t
 	desc = korea.8.d
-	picture = GFX_two_peo_pic
+	picture = GFX_Airport_closure
 
 	fire_only_once = yes
 
@@ -493,7 +493,7 @@ country_event = { #국회점거
 	id = korea.9
 	title = korea.9.t
 	desc = korea.9.d
-	picture = GFX_two_peo_pic
+	picture = GFX_attack_room
 
 	fire_only_once = yes
 
@@ -519,7 +519,7 @@ country_event = { #주한미군 참전
 	id = korea.10
 	title = korea.10.t
 	desc = korea.10.d
-	picture = GFX_two_peo_pic
+	picture = GFX_usa_joining_wo_korean_war
 
 	fire_only_once = yes
 
@@ -553,7 +553,7 @@ country_event = { #패잔병 재편성
 	id = korea.11
 	title = korea.11.t
 	desc = korea.11.d
-	picture = GFX_two_peo_pic
+	picture = GFX_korean_A_loser
 
 	fire_only_once = yes
 
@@ -583,7 +583,7 @@ country_event = { #자위대 항공기와 접촉
 	id = korea.12
 	title = korea.12.t
 	desc = korea.12.d
-	picture = GFX_two_peo_pic
+	picture = GFX_자위대
 
 	fire_only_once = yes
 
@@ -599,7 +599,7 @@ country_event = { #a
 	id = korea.13
 	title = korea.13.t
 	desc = korea.13.d
-	picture = GFX_two_peo_pic
+	picture = GFX_T80u
 	
 	is_triggered_only = yes
 	hidden = yes
