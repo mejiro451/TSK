@@ -3,7 +3,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_unknown"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"
-		legacy_lazy_load = no
+		legacy_lazy_load = no 
 	}
 	####
 	SpriteType = {
@@ -56,7 +56,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "기업국유화"
-		texturefile = "gfx/interface/goals/기업국유화.dds"
+		texturefile = "gfx/interface/goals/기업국유화.dds" 
 	}
 	SpriteType = {
 		name = "rok_armed_forces"
@@ -65,9 +65,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "타임슬립"
 		texturefile = "gfx/interface/goals/타임슬립.dds"
-	}
+	} 
 	SpriteType = {
-		name = "국뽕"
+		name = "국뽕" 
 		texturefile = "gfx/interface/goals/국뽕.png"
 	}
 	SpriteType = {
@@ -75,8 +75,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/선제공격.png"
 	}
 	SpriteType = {
-		name = "야마토납치"
-		texturefile = "gfx/interface/goals/야마토납치.png"
+		name = "나가토"
+		texturefile = "gfx/interface/goals/나가토.png"
 	} 
 	SpriteType = {
 		name = "주체사상"
@@ -97,5 +97,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "goal_hitomi"
 		texturefile = "gfx/interface/goals/goal_hitomi.tga"
+	}
+	SpriteType = {
+		name = "한민구" 
+		texturefile = "gfx/interface/goals/한민구.png"
 	}
 }

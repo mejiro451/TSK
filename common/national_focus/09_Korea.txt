@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = KOR_MB_industry
-		icon = hyundai
+		icon = hyundai 
 		cost = 5.00
 		x = 8
 		y = 0
@@ -1249,7 +1249,7 @@ focus_tree = {
 							bonus = 500.0
 							technology = nukes
 						}
-					add_nuclear_bombs = 25
+					add_nuclear_bombs = 1
 				}
 
 	}
@@ -1398,7 +1398,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_kudeta
-		icon = fascism
+		icon = 한민구
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
@@ -2266,7 +2266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_plan_napchi_yamato
-		icon = 야마토납치
+		icon = 나가토 
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_cancle 

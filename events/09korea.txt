@@ -627,7 +627,7 @@ country_event = {
 			puppet = MEN
 		}
 		ai_chance = {
-		    factor = 5
+		    factor = 0.5
 		}
 	}
 	option = {
@@ -641,7 +641,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-		    factor = 5
+		    factor = 0.5
 		}
 	}
 }
