@@ -1511,12 +1511,40 @@ ideas = {
 				original_tag = KOR
 			}
 			available = {
-				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_minju_won
 				has_completed_focus = KOR_MB_timeslip
 			}
 			cost = 100
 			traits = { social_reformer }
 			ai_will_do = { factor = 1 }
+		}
+		kim_sungho = {
+			picture = aa
+			allowed = {
+				if = {
+					limit = {
+						has_dlc = "Battle for the Bosporus"
+					}
+				}
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_MB_politic_election
+				has_completed_focus = KOR_MB_timeslip
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			cost = 100
+			traits = { head_of_intelligence }
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_intelligence_agency = no
+					factor = 0
+				}
+			}
 		}
 
 	}
