@@ -710,3 +710,35 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = KOR_MB.2009 #일본 '합병'
+	title = KOR_MB.2009.t
+	desc = KOR_MB.2009.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		 
+	option = {
+		name = KOR_MB.2009.a #동의하지
+	}
+	option = {
+		name = KOR_MB.2009.b #동의하지
+		country_event = {
+			KOR_MB.1991
+		}
+	}
+}
+country_event = {
+	id = KOR_MB.1991 #일본 '합병'
+	title = KOR_MB.1991.t
+	desc = KOR_MB.1991.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+		
+	option = {
+		name = KOR_MB.1991.a #동의하지
+	}
+}
