@@ -695,11 +695,11 @@ country_event = {
 		
 	option = {
 		name = KOR_MB.23.a #동의하지
-		KOR = { annex_country = { target = KPA transfer_troops = yes } }
+		KOR = { annex_country = { target = JAP transfer_troops = yes } }
 		KOR = {
 			add_ideas = KOR_hirohito
-		{	
-		ai_chance = {
+		}
+		ai_chance = { 
 		    factor = 5
 			modifier = {
 				KOR = {
@@ -709,7 +709,7 @@ country_event = {
 			}
 		}
 	}
-}
+} 
 country_event = {
 	id = KOR_MB.2009 #일본 '합병' 
 	title = KOR_MB.2009.t
