@@ -16,11 +16,13 @@ state={
 		add_core_of = PRK
 		add_core_of = USF
 
+		1936.1.2 = {
+			remove_core_of = PRK
+		}
 		1936.1.4 = {
 			owner = KOR
 			controller = KOR
 			remove_core_of = KR1
-			remove_core_of = PRK
 			remove_core_of = USF
 			add_core_of = KOR
 			add_manpower = 34909

@@ -44,7 +44,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "기업국유화"
-		texturefile = "gfx/interface/goals/기업국유화.dds"
+		texturefile = "gfx/interface/goals/기업국유화.dds" 
 	}
 	SpriteType = {
 		name = "빨갱이는_믿을수없다"
@@ -60,7 +60,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "rok_armed_forces"
-		texturefile = "gfx/interface/goals/south_korea/rok_armed_forces.dds"
+		texturefile = "gfx/interface/goals/south_korea/rok_armed_forces.dds" 
 	}
 	SpriteType = {
 		name = "타임슬립"
@@ -69,5 +69,33 @@ spriteTypes = {
 	SpriteType = {
 		name = "국뽕"
 		texturefile = "gfx/interface/goals/국뽕.png"
+	}
+	SpriteType = {
+		name = "선제공격"
+		texturefile = "gfx/interface/goals/선제공격.png"
+	}
+	SpriteType = {
+		name = "야마토납치"
+		texturefile = "gfx/interface/goals/야마토납치.png"
+	} 
+	SpriteType = {
+		name = "주체사상"
+		texturefile = "gfx/interface/goals/주체사상.png"
+	}
+	SpriteType = {
+		name = "정통사회주의"
+		texturefile = "gfx/interface/goals/정통사회주의.png"
+	}
+	SpriteType = {
+		name = "조선인민군"
+		texturefile = "gfx/interface/goals/조선인민군.png"
+	}
+	SpriteType = {
+		name = "천리마운동재개"
+		texturefile = "gfx/interface/goals/천리마운동재개.png"
+	}
+	SpriteType = {
+		name = "goal_hitomi"
+		texturefile = "gfx/interface/goals/goal_hitomi.tga"
 	}
 }

@@ -2263,13 +2263,16 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_plan_napchi_yamato
-		icon = goal_unknown
+		icon = 야마토납치
 		cost = 5.00
 		prerequisite = {
-			focus = KOR_japans_cancle
+			focus = KOR_japans_cancle 
 		}
 		x = 54
 		y = 9
+		completion_reward = {
+			
+		}
 
 	}
 	focus = {

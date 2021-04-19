@@ -1332,6 +1332,21 @@ ideas = {
 			picture = generic_spy_coup
 			
 			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+	    pre_chongdok_503 = {
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				political_power_gain = 0.25
 			}
 		}
 	    pre_prison_714 = {

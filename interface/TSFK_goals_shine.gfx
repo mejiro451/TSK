@@ -88,13 +88,14 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 				animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "타임슬립"
+		name = "타임슬립_shine"
 		texturefile = "gfx/interface/goals/타임슬립.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/타임슬립.dds"
+			animationmaskfile = "gfx/interface/goals/타임슬립.dds" 
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -117,6 +118,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "ROKAF"
@@ -194,7 +196,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		animation = {
+		animation = { 
 			animationmaskfile = "gfx/interface/goals/ROKND.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
@@ -236,7 +238,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 				animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		legacy_lazy_load = no 
 	}
 	spriteType = {
 		name = "air_doctrine_shine"

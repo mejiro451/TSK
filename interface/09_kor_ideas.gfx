@@ -163,6 +163,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ADVISOR/박근혜.png"
 	}
 	spriteType = {
+		name = "GFX_idea_pre_chongdok_503"
+		texturefile = "gfx/interface/ideas/ADVISOR/박근혜.png"
+	}
+	spriteType = {
 		name = "GFX_idea_pre_moon"
 		texturefile = "gfx/interface/ideas/ADVISOR/문재인 대통령.png"
 	}
