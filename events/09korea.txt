@@ -723,9 +723,35 @@ country_event = {
 		country_event = {
 			id = KOR_MB.1991
 		}
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
 	}
 	option = {
 		name = KOR_MB.2009.b #동의하지
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
 	}
 }
 country_event = {
