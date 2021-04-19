@@ -19,7 +19,7 @@ ideas = {
 				}
 			}
 		} 
-	country = {
+	country = { 
 	    KOR_hirohito = {
 			picture = JAP_hirohito
         	allowed = {

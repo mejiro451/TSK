@@ -67,3 +67,8 @@
  UEG_unified_neutrality_ADJ:0 "인류 제국"
  
  JAP_communism:0 "일본인민공화국"
+ 
+ JAP_republic_democratic:0 "일본 총독부"
+ JAP_republic_fascism:0 "일본 총독부"
+ JAP_republic_neutrality:0 "일본 총독부"
+ JAP_republic_communism:0 "일본 총독부" 

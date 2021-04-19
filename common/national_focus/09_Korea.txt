@@ -2138,10 +2138,13 @@ focus_tree = {
 		x = 51
 		y = 10
 		completion_reward = {
-			JAP = {
+			JAP = { 
 				remove_ideas = JAP_hirohito
 				set_cosmetic_tag = JAP_republic
 				add_ideas = pre_chongdok_503
+			}
+			KOR = {
+				add_ideas = KOR_hirohito
 			}
 		}
 

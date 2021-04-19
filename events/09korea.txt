@@ -659,7 +659,7 @@ country_event = {
 		KOR = {
 			puppet = JAP
 		}
-		add_ideas = JAP_hirohito
+		remove_ideas = JAP_hirohito
 		ai_chance = {
 		    factor = 5
 			modifier = {
@@ -689,8 +689,11 @@ country_event = {
 	title = KOR_MB.23.t
 	desc = KOR_MB.23.d
 	picture = GFX_report_event_chamberlain_announce
-	is_triggered_only = yes
-	fire_only_once = yes
+	trigger = {
+		date > 1937.8.15
+		has_completed_focus = KOR_this_is_japan_heemang
+		tag = JAP
+	}
 	
 		
 	option = {
