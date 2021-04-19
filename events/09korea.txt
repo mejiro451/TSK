@@ -739,4 +739,7 @@ country_event = {
 	option = {
 		name = KOR_MB.1991.a #동의하지
 	}
+	option = {
+		name = KOR_MB.1991.b #동의하지
+	}
 }
