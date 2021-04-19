@@ -3,22 +3,28 @@ on_actions = {
     on_startup = {
         effect = {
             KOR = {
-                    country_event = { id = KOR_MB.2009 }
+                country_event = {
+					id = KOR_MB.2009
+					days = 0
+				}
             }
-        }
-        effect = {
             KR1 = {
-                    country_event = { id = KOR_MB.2009 }
+                country_event = {
+					id = KOR_MB.2009
+					days = 0
+				}
             }
-        }
-        effect = {
-            KPA = {
-                    country_event = { id = KOR_MB.2009 }
-            }
-        }
-        effect = {
             PRK = {
-                    country_event = { id = KOR_MB.2009 }
+                country_event = {
+					id = KOR_MB.2009
+					days = 0
+				}
+            }
+            KPA = {
+                country_event = {
+					id = KOR_MB.2009
+					days = 0
+				}
             }
         }
     }
