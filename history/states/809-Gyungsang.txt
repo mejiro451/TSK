@@ -38,7 +38,6 @@ state={
 		}
 		1936.1.2 = {
 					add_manpower = 1600000
-					add_manpower = 1600000
 		}	
 
 		1936.1.3 = {
@@ -48,6 +47,7 @@ state={
 			remove_core_of = PRK
 			add_core_of = KOR
 			add_claim_by = KPA
+					add_manpower = 1600000
 		}
 	}
 
