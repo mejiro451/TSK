@@ -84,6 +84,10 @@ spriteTypes = {
 		name = "GFX_report_event_fkr_future_division"
 		texturefile = "gfx/event_pictures/report_event_fkr_future_division.dds"
 	}
+	spriteType = {
+		name = "GFX_event_hirohito_moe"
+		texturefile = "gfx/event_pictures/GFX_event_hirohito_moe.png"
+	}
 	
 }
 	

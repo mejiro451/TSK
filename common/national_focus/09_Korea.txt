@@ -2272,6 +2272,10 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			
+			JAP = {
+				add_war_support = -0.15
+				add_stability = -0.1
+			}
 		}
 
 	}
@@ -2285,9 +2289,8 @@ focus_tree = {
 		x = 56
 		y = 9
 		completion_reward = {
-			JAP = {
-				add_war_support = -0.15
-				add_stability = -0.1
+			country_event = {
+				id = KOR_MB.24
 			}
 		}
 
