@@ -315,4 +315,8 @@ spriteTypes = {
 		name = "GFX_idea_han_minkoo"
 		texturefile = "gfx/interface/ideas/KOR/idea_han_minkoo.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_hirohito"
+		texturefile = "gfx/interface/ideas/idea_jap_hirohito.dds"
+	}
 }

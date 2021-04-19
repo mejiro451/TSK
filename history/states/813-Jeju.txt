@@ -21,8 +21,9 @@ state={
 			owner = KOR
 			controller = KOR
 			remove_core_of = KR1
+			remove_core_of = PRK
 			add_core_of = KOR
-			add_manpower = 30000
+			add_manpower = 31563
 			add_claim_by = KPA
 		}
 	}
