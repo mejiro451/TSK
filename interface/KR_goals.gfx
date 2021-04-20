@@ -100,4 +100,39 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/K_asche/MKR_NIS.png"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_mother_anarchy"
+		texturefile = "gfx/interface/goals/K_asche/mother_anarchy.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_free_demo"
+		texturefile = "gfx/interface/goals/K_asche/free_demo.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_38line"
+		texturefile = "gfx/interface/goals/K_asche/38line.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_come_on_baby"
+		texturefile = "gfx/interface/goals/K_asche/come_on_baby.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_death_communsim"
+		texturefile = "gfx/interface/goals/K_asche/death_communsim.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Warning_to_North_Korea"
+		texturefile = "gfx/interface/goals/K_asche/Warning_to_North_Korea.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HELLO_NK"
+		texturefile = "gfx/interface/goals/K_asche/HELLO_NK.png"
+		legacy_lazy_load = no
+	}
 }
