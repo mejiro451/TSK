@@ -4,7 +4,7 @@ country_event = {
 	id = PRK.1
 	title = PRK.1.t
 	desc = PRK.1.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_1936년의세계
 	
 	fire_only_once = yes
 
@@ -24,7 +24,7 @@ country_event = {
 	id = PRK.2
 	title = PRK.2.t
 	desc = PRK.2.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_노무현이_북한에서_살래서_진짜간_운동가
 	
 	fire_only_once = yes
 
@@ -89,7 +89,7 @@ country_event = {
 	id = PRK.3
 	title = PRK.3.t
 	desc = PRK.3.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_당대회
 	
 	fire_only_once = yes
 
@@ -113,7 +113,7 @@ country_event = {
 	id = PRK.4
 	title = PRK.4.t
 	desc = PRK.4.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_우리민족끼리
 	
 	fire_only_once = yes
 
@@ -134,7 +134,7 @@ country_event = {
 	id = PRK.5
 	title = PRK.5.t
 	desc = PRK.5.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_구호물자출발
 	
 	fire_only_once = yes
 
@@ -158,7 +158,7 @@ country_event = {
 	id = PRK.6
 	title = PRK.6.t
 	desc = PRK.6.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_고난의_행군
 	
 	fire_only_once = yes
 
@@ -208,7 +208,7 @@ country_event = { #북한이 불가침조약을 제안하다
 	id = PRK.8
 	title = PRK.8.t
 	desc = PRK.8.d
-	picture = GFX_two_peo_pic
+	picture = GFX_정상회담촉구
 
 	is_triggered_only = yes
 	 
