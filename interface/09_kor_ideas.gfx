@@ -187,6 +187,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ADVISOR/노무현 감옥.png"
 	}
 	spriteType = {
+		name = "GFX_idea_kim_sungho"
+		texturefile = "gfx/interface/ideas/ADVISOR/김성호.png" 
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_not_politic_act_2"
 		texturefile = "gfx/interface/ideas/계엄령.png"
 	}

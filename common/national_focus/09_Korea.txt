@@ -1377,7 +1377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_middle_won
-		icon = neutrality
+		icon = GFX_KOR_press_control
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_politic_election
@@ -1577,7 +1577,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_the_new_order
-		icon = fascism3
+		icon = GFX_mkr_victory_in_the_civil_war
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_this_is_korean_army
@@ -1704,7 +1704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_imperials_defence
-		icon = imperial_russia
+		icon = 대한국만세
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_middle_won
@@ -1728,7 +1728,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_imperial_bongsa
-		icon = return_of_the_kaiser
+		icon = imperial_russia
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_imperials_defence
@@ -1836,7 +1836,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Yi Won"
 				desc = "이원은 대한제국 고종 황제의 증손자로서 제5대 대한제국의 황실 수장이다. 전주이씨대동종약원의 총재를 맡고 있음과 돟시의 대한민국의 총리직을 맡고 있다. 그의 본명은 이상협이다. 그는 대한제국 초대 대한제국 고종 황제의 5번째 아들인 의친왕의 9남이던 이갑의 장남으로 1962년 9월 23일 서울 종로구 혜화동에서 태어났다. 1981년 상문고등학교를 졸업한 뒤, 이듬해 아버지를 따라 도미하여, 뉴욕공과대학교(New York Institute of Technology)에서 신문방송학을 전공하였다. 이후, 미국 케이블사 홈박스오피스(HBO)의 프로듀서를 거쳐 1995년 귀국해서는 금강기획 제작 업무 및 현대방송의 프로듀서로 근무하였으며 2001년 현대홈쇼핑에 입사하여 2005년에 디지털 방송본부장으로 퇴직하였다. 황세손 '이구'가 후사를 이을 자손이 없어 전주이씨대동종약원과 황태손은 2003년 6월 1일을 기하여 의친왕 이강의 9남인 이갑의 아들 이원을 상면하고 황세손 '이구'의 계자로 입후하기로 결정을 하였다. 황세손이 2005년 7월 16일 사망하자 계자인 '이원'이 대한제국 황가의 주상으로 등극하였고 한민구의 구데타가 실패한 이후 구 황실 지지세력에 의하여 다시 한 번 대한민국은 제국의 황실 이씨의 `이원`이 통치하게 되었다. 이제 대한의 미래는 그에게 달려있다."
-				picture = "gfx/leaders/ROK/이원.dds"
+				picture = "GFX_portrait_yi_won"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -2142,6 +2142,14 @@ focus_tree = {
 				remove_ideas = JAP_hirohito
 				set_cosmetic_tag = JAP_republic
 				add_ideas = pre_chongdok_503
+				create_country_leader = {
+					name = "Cho Yung Kil"
+					ideology = nazism
+					picture = "gfx/leaders/KOR/Gen_Cho_Yung-kil"
+					traits = {
+					
+					}
+				}
 			}
 			KOR = {
 				add_ideas = KOR_hirohito
@@ -2284,7 +2292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_chunhwa
-		icon = goal_hitomi
+		icon = Start_of_propaganda
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_japans_cancle
@@ -2620,7 +2628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_2nd_miracle_han_river
-		icon = korail
+		icon = 한강의기적
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_future_research
@@ -2684,7 +2692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_MB_lee's_government
-		icon = generic_government
+		icon = press_censorship
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_consorvatism_won
@@ -2992,6 +3000,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				set_cosmetic_tag = KOR_2009_scenario
+				remove_ideas = KOR_legacy_of_518 
 			}
 		}
 
@@ -3064,14 +3073,14 @@ focus_tree = {
 		x = 42
 		y = 11
 		completion_reward = {
-			remove_ideas = KOR_legacy_of_518
+			remove_ideas = KOR_legacy_of_518 
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
-			}
+			}   
 		}
 
-	}
+	} 
 	focus = {
 		id = KOR_gwaban
 		icon = fascism2
@@ -3085,14 +3094,14 @@ focus_tree = {
 			
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.18
 			}
 		}
 
 	}
 	focus = {
 		id = KOR_bokgwun_vote
-		icon = hungarian_monarchism
+		icon = 극동로마
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_gwaban
@@ -3232,46 +3241,72 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_neutrality_plan
-		icon = goal_unknown
+		icon = neutrality
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}
 		x = 20
 		y = 11
+		completion_reward = {
+			add_timed_idea = {
+				idea = neutrality_idea
+				days = 720
+			}	
+		}
 
 	}
 	focus = {
 		id = KOR_people_live_the_world
-		icon = goal_unknown
+		icon = GFX_adopt_the_peoples_constitution
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}
 		x = 22
 		y = 11
+		completion_reward = {
+			add_political_power = 120
+			add_war_support = 0.12
+			hidden_effect = {
+			swap_ideas = {
+				add_idea = korean_war
+				remove_idea = korean_war2
+			}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_war_not_call_you
-		icon = goal_unknown
+		icon = war_is_over
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_people_live_the_world
 		}
 		x = 22
 		y = 12
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.1
+		}
 
 	}
 	focus = {
 		id = KOR_law_minju
-		icon = goal_unknown
+		icon = blue_democracy
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_neutrality_plan
 		}
 		x = 20
 		y = 12
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.21
+			}	
+		}
 
 	}
 	focus = {
@@ -3283,17 +3318,30 @@ focus_tree = {
 		}
 		x = 18
 		y = 12
+		completion_reward = {
+			add_stability = 0.12
+			remove_ideas = KOR_not_politic_act_2
+			add_political_power = 120
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.15
+			}	
+		}
 
 	}
 	focus = {
 		id = KOR_up_people
-		icon = goal_unknown
+		icon = liberal_press
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_MB_roh_advisor
 		}
 		x = 18
 		y = 11
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.12
+		}
 
 	}
 }

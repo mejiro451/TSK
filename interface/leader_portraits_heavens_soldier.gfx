@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_Portrait_leader_Alfonso_XIII"
 		texturefile = "gfx/leaders/SPR/Portrait_leader_Alfonso_XIII.dds"		
 	}
+	spriteType = {
+		name = "GFX_portrait_yi_won"
+		texturefile = "gfx/leaders/KOR/portrait_yi_won.png"	 	
+	}
 }

@@ -1,0 +1,445 @@
+﻿army = {
+	gfx = GFX_theatre_army_shield
+
+
+	icon = {
+		color_override = no
+		name = "Capital Corps"
+	}
+	icon = {
+		color_override = no
+		name = "I Corps"
+	}
+	icon = {
+		color_override = no
+		name = "II Corps"
+	}
+	icon = {
+		color_override = no
+		name = "III Corps"
+	}
+	icon = {
+		color_override = no
+		name = "V Corps"
+	}
+	icon = {
+		color_override = no
+		name = "VI Corps"
+	}
+	icon = {
+		color_override = no
+		name = "VII Corps"
+	}
+	icon = {
+		color_override = no
+		name = "VIII Corps"
+	}
+	icon = {
+		color_override = no
+		name = "1st Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "2nd Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "3rd Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "5th Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "20th Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "30th Armored Brigade(2020-)/30th Infantry Division(1955-2020)"
+	}
+	icon = {
+		color_override = no
+		name = "102nd Armored Brigade"
+	}
+	icon = {
+		color_override = no
+		name = "Army Headquarters"
+	}
+	icon = {
+		color_override = no
+		name = "The Capital Defense Command"
+	}
+	icon = {
+		color_override = no
+		name = "Special Warfare Command"
+	}
+	icon = {
+		color_override = no
+		name = "Army Aviation Operations Command"
+	}
+	icon = {
+		color_override = no
+		name = "Army Mobilization Force Command"
+	}
+	icon = {
+		color_override = no
+		name = "Army Missile Command"
+	}
+	icon = {
+		color_override = no
+		name = "Army Training & Doctrine Command"
+	}
+	icon = {
+		color_override = no
+		name = "Army Logistics Command"
+	}
+	icon = {
+		color_override = no
+		name = "Korea Military Academy"
+	}
+	icon = {
+		color_override = no
+		name = "The Capital Mechanized Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "1st Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "2nd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "3rd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "5th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "6th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "7th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "8th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "9th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "11st Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "12nd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "15th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "17th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "21st Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "22nd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "23rd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "25th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "27th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "28th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "31st Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "32nd Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "35th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "36th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "37th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "39th Infantry Division"
+	}
+	icon = {
+		color_override = no
+		name = "UAE Military Cooperation"
+	}
+	icon = {
+		color_override = no
+		name = "Army Logistics School"
+	}
+	icon = {
+		color_override = no
+		name = "1st Special Forces Brigade (Airborne)"
+	}
+	icon = {
+		color_override = no
+		name = "3rd Special Forces Brigade (Airborne)"
+	}
+	icon = {
+		color_override = no
+		name = "7th Special Forces Brigade (Airborne)"
+	}
+	icon = {
+		color_override = no
+		name = "9th Special Forces Brigade (Airborne)"
+	}
+	icon = {
+		color_override = no
+		name = "707th Special Missions Group"
+	}
+	icon = {
+		color_override = no
+		name = "International Peace Supporting Standby Force"
+	}
+	icon = {
+		color_override = no
+		name = "Republic of Korea Marine Corps"
+	}
+}
+	
+army_group = {
+	gfx = GFX_theatre_army_group_shield
+	
+	icon = {
+	}
+	icon = {
+		color_override = no
+		available = 
+		{
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	icon = {
+		color_override = no
+		name = "15. Army Group"
+		available = 
+		{
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	icon = {
+		color_override = no
+		name = "12. Army Group"
+		available = 
+		{
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	icon = {
+		color_override = no
+		name = "6. Army Group"
+		available = 
+		{
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	icon = {
+		color_override = no
+		available = 
+		{
+			has_dlc = "Waking the Tiger"
+		}
+	}
+}
+
+fleet = {
+	gfx = GFX_theatre_task_force_shield
+	
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+}
+
+task_force = {
+	gfx = GFX_theatre_task_force_shield
+	
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+	icon = {
+	}
+}
+
+naval_equipment_role = {
+	gfx = GFX_naval_equipment_role_icons
+	
+	icon = {
+		color_override = no
+		name = "Battery"
+	}
+	icon = {
+		color_override = no
+		name = "Shield"
+	}
+	icon = {
+		color_override = no
+		name = "Spotter"
+	}
+	icon = {
+		color_override = no
+		name = "Minelayer"
+	}
+	icon = {
+		color_override = no
+		name = "Minesweeper"
+	}
+	icon = {
+		color_override = no
+		name = "Skull"
+	}
+	icon = {
+		color_override = no
+		name = "Airplane"
+	}
+	icon = {
+		color_override = no
+		name = "Crab"
+	}
+}
