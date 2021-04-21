@@ -101,5 +101,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "한민구" 
 		texturefile = "gfx/interface/goals/한민구.png"
+	} 
+	SpriteType = {
+		name = "대한국만세"  
+		texturefile = "gfx/interface/goals/대한국만세.png"
+	}
+	SpriteType = {
+		name = "한강의기적" 
+		texturefile = "gfx/interface/goals/한강의기적.png"
+	}
+	SpriteType = { 
+		name = "Start_of_propaganda" 
+		texturefile = "gfx/interface/goals/Start_of_propaganda.dds"
+	}
+	SpriteType = { 
+		name = "극동로마" 
+		texturefile = "gfx/interface/goals/극동로마.png"
 	}
 }

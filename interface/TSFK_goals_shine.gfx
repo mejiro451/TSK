@@ -31,7 +31,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "ROKA"
+		name = "ROKA_shine"
 		texturefile = "gfx/interface/goals/ROKA.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -61,7 +61,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "국뽕"
+		name = "국뽕_shine"
 		texturefile = "gfx/interface/goals/국뽕.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -121,7 +121,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "ROKAF"
+		name = "ROKAF_shine"
 		texturefile = "gfx/interface/goals/ROKAF.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -151,7 +151,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "ROKNAVY"
+		name = "ROKNAVY_shine"
 		texturefile = "gfx/interface/goals/ROKNAVY.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -181,7 +181,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "ROKND"
+		name = "ROKND_shine"
 		texturefile = "gfx/interface/goals/ROKND.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

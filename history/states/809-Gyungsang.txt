@@ -15,7 +15,7 @@ state={
 			infrastructure = 6 
 			arms_factory = 2
 			industrial_complex = 3
-			dockyard = 2
+			dockyard = 5
 			air_base = 4
 			steel_mill = 1
 			fuel_silo = 3
@@ -38,6 +38,8 @@ state={
 		}
 		1936.1.2 = {
 			remove_core_of = PRK
+			infrastructure = 3
+			industrial_complex = 5
 		}
 
 		1936.1.3 = {

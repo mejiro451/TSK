@@ -55,6 +55,12 @@ leader_traits = {
 	KOR_yi_trait = {
 		neutrality_drift = 0.1
 	}
+	KOR_yi_emp_trait = {
+		political_power_factor = 0.25
+		neutrality_drift = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+	}
 	KOR_samsung_trait = {
 		consumer_goods_factor = -0.1
 		production_speed_buildings_factor = 0.1 

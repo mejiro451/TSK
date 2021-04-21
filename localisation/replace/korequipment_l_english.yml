@@ -421,6 +421,8 @@
  KOR_m_1980_manpad_equipment:0 "휴샘 스팅어"
  KOR_m_1990_manpad_equipment:0 "휴샘 미스트랄"
  KOR_m_2000_manpad_equipment:0 "신궁"
+ manpad_equipment:0 "맨패드" 
+ manpad_equipment_desc:0 "맨패드" 
  
  KR1_m_1980_manpad_equipment:0 "휴샘 스팅어"
  KR1_m_1990_manpad_equipment:0 "휴샘 미스트랄"

@@ -101,6 +101,8 @@
  roh_hoichan:0 "노 회찬"
  kim_sungho:0 "김 성호" 
  
+ KOR_yi_emp_trait:0 "대한제국 황제"
+ 
  KOR_economic_collapse_3:0 "무너진 경제"
  KOR_intelligence_agency_kor:0 "국가정보원(NIS)"
  
@@ -148,3 +150,5 @@
  KOR_hirohito_desc:0 "저들이 그랬었던 것처럼, 우리도 일본 총독부를 세워서 관리를 해야합니다.\n\n또한 저들이 고종에게 '왕공족'을 부여했던 것처럼, 우리도 똑같이 되갚아주는 것이 어떨까요?\n\n\n압도적인 힘으로."
  
  KOR_making_sorry:0 "아직 제작 중입니다! 후에 업데이트로 찾아뵐 수 있습니다"
+ 
+ united_state_of_human_wargoal:0 "지구연방 건설"

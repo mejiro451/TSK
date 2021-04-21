@@ -36,6 +36,9 @@ core_PRK = {
 			811 = {
 				add_core_of = ROOT
 			}
+			811 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 811
 			set_country_flag = KOR_cored_in_811
 			hidden_effect = {
@@ -87,6 +90,9 @@ core_PRK = {
 			814 = {
 				add_core_of = ROOT
 			}
+			814 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 814
 			set_country_flag = KOR_cored_in_814
 			hidden_effect = {
@@ -136,6 +142,9 @@ core_PRK = {
 		remove_effect = {
 			812 = {
 				add_core_of = ROOT
+			}
+			812 = {
+				remove_core_of = KPA
 			}
 			remove_state_claim = 812
 			set_country_flag = KOR_cored_in_812
@@ -187,6 +196,9 @@ core_PRK = {
 			527 = {
 				add_core_of = ROOT
 			}
+			527 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 527
 			set_country_flag = KOR_cored_in_527
 			hidden_effect = {
@@ -236,6 +248,9 @@ core_PRK = {
 		remove_effect = {
 			822 = {
 				add_core_of = ROOT
+			}
+			822 = {
+				remove_core_of = KPA
 			}
 			remove_state_claim = 822
 			set_country_flag = KOR_cored_in_822
@@ -288,6 +303,9 @@ core_PRK = {
 			816 = {
 				add_core_of = ROOT
 			}
+			816 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 816
 			set_country_flag = KOR_cored_in_816
 			hidden_effect = {
@@ -337,6 +355,9 @@ core_PRK = {
 		remove_effect = {
 			815 = {
 				add_core_of = ROOT
+			}
+			815 = {
+				remove_core_of = KPA
 			}
 			remove_state_claim = 815
 			set_country_flag = KOR_cored_in_815
@@ -388,6 +409,9 @@ core_PRK = {
 			820 = {
 				add_core_of = ROOT
 			}
+			820 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 820
 			hidden_effect = {
 			    country_event = {
@@ -438,14 +462,27 @@ core_PRK = {
 			818 = {
 				add_core_of = ROOT
 			}
+			818 = {
+				remove_core_of = KPA
+			}
 			remove_state_claim = 818
 			set_country_flag = KOR_cored_in_818
 			set_country_flag = PRK_is_our
 			hidden_effect = {
 			    country_event = {
-				id = KOR_MB.17
+					id = KOR_MB.17
 				}
-			}
+				KPA = {
+					remove_state_core = 525
+					remove_state_core = 807
+					remove_state_core = 808
+					remove_state_core = 809
+					remove_state_core = 810
+					remove_state_core = 813
+					remove_state_core = 817
+					remove_state_core = 821
+				}
+			}	
 		}
 
 		cost = 10
