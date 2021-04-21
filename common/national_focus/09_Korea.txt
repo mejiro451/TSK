@@ -1404,6 +1404,7 @@ focus_tree = {
 			focus = KOR_MB_middle_won
 		}
 		mutually_exclusive = {
+			focus = KOR_anarchy
 			focus = KOR_imperials_defence
 		}
 		available = {
@@ -1710,6 +1711,7 @@ focus_tree = {
 			focus = KOR_MB_middle_won
 		}
 		mutually_exclusive = {
+			focus = KOR_anarchy
 			focus = KOR_MB_kudeta
 		}
 		available = {
@@ -3344,4 +3346,27 @@ focus_tree = {
 		}
 
 	}
+
+	focus = {
+		id = KOR_anarchy
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_MB_middle_won
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = KOR_imperials_defence
+			focus = KOR_MB_kudeta
+		}
+		
+		x = 41
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = sub_mod_kasche
+		}
+	}
+	
 }

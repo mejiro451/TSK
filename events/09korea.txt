@@ -221,6 +221,14 @@ country_event = {
 		set_cosmetic_tag = KOR_park
 	}
 	option = {
+		name = KOR_MB.7.c
+		ai_chance = {
+		    factor = 0
+		}
+		complete_national_focus = KOR_anarchy
+		add_stability = -0.5
+	}
+	option = {
 		name = KOR_MB.7.b
 		ai_chance = {
 		    factor = 50
@@ -801,4 +809,5 @@ country_event = {
 	option = {
 		name = KOR_MB.1991.a #동의하지
 	}
+	
 }
