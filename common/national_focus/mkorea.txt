@@ -206,7 +206,7 @@ focus_tree = {
 	}
 	focus = { #북한과 접촉하다
 		id = MKR_contact_with_North_Korea
-		icon = GFX_goal_unknown
+		icon = GFX_HELLO_NK
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_DCS
@@ -376,7 +376,7 @@ focus_tree = {
 	}
 	focus = { #북진멸공
 		id = MKR_anti_Communism
-		icon = GFX_focus_ger_great_red_menace
+		icon = GFX_death_communsim
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_Military_Reorganization
@@ -394,7 +394,7 @@ focus_tree = {
 	}
 	focus = { #도발에 강경대응
 		id = MKR_hard_liine
-		icon = GFX_goal_unknown
+		icon = GFX_come_on_baby
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_anti_Communism
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = { #북한에게 경고
 		id = MKR_Warning_to_North_Korea
-		icon = GFX_goal_unknown
+		icon = GFX_Warning_to_North_Korea
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_anti_Communism
@@ -422,7 +422,7 @@ focus_tree = {
 	}
 	focus = { #38선 경비 강화
 		id = MKR_Reinforcement_of_38_Line_Expense
-		icon = GFX_goal_unknown
+		icon = GFX_38line
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_hard_liine
@@ -517,7 +517,7 @@ focus_tree = {
 	}
 	focus = { #북진 지속
 		id = MKR_facing_north
-		icon = GFX_goal_unknown
+		icon = GFX_death_communsim
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_non_aggression_treaty_with_Japan
@@ -596,8 +596,7 @@ focus_tree = {
 	}
 	focus = { #시민운동 허용
 		id = MKR_Allow_Civil_Movement
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_free_demo
 		prerequisite = {
 			focus = MKR_implementation_of_appeasement_policy
 		}
@@ -638,7 +637,7 @@ focus_tree = {
 	}
 	focus = { #범죄와의 전쟁
 		id = MKR_a_war_against_crime
-		icon = GFX_goal_unknown
+		icon = GFX_mother_anarchy
 		cost = 10.00
 		prerequisite = {
 			focus = MKR_implementation_of_appeasement_policy

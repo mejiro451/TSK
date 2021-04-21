@@ -214,4 +214,32 @@ spriteTypes = {
 		name = "GFX_혁명의수도평양"
 		texturefile = "gfx/event_pictures/혁명의수도평양.png"
 	}
+
+	spriteType = {
+		name = "GFX_노무현이_북한에서_살래서_진짜간_운동가"
+		texturefile = "gfx/event_pictures/노무현이_북한에서_살래서_진짜간_운동가.png"
+	}
+
+	spriteType = {
+		name = "GFX_당대회"
+		texturefile = "gfx/event_pictures/당대회.png"
+	}
+
+	spriteType = {
+		name = "GFX_우리민족끼리"
+		texturefile = "gfx/event_pictures/우리민족끼리.png"
+	}
+
+	spriteType = {
+		name = "GFX_정상회담촉구"
+		texturefile = "gfx/event_pictures/정상회담촉구.png"
+	}
+	spriteType = {
+		name = "GFX_고난의_행군"
+		texturefile = "gfx/event_pictures/고난의_행군.png"
+	}
+	spriteType = {
+		name = "GFX_구호물자출발"
+		texturefile = "gfx/event_pictures/구호물자출발.png"
+	}
 }
