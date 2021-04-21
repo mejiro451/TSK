@@ -243,7 +243,6 @@ wargoal_types = {
 		
 		puppet_cost = -50
 
-		expire = 1
 		
 		threat = 0
 	}
