@@ -135,4 +135,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/K_asche/HELLO_NK.png"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_attack_battle"
+		texturefile = "gfx/interface/goals/K_asche/attack_battle.png"
+		legacy_lazy_load = no
+	}
+
 }

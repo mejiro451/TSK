@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = { #조선의 미래 (정치력 +100)
 		id = prk_The_Future_of_Joseon
-		icon = 조선의미래
+		icon = GFX_attack_battle
 		cost = 10.00
 		prerequisite = {
 			focus = prk_national_stability
