@@ -2,7 +2,9 @@
 state={
 	id=525
 	name="경기도"
-
+	resources={
+		steel_alloy = 4
+	}	
 	history={
 		owner = KR1
 		buildings = {

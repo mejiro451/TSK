@@ -534,6 +534,10 @@ core_HWAN = {
 				}
 				add_core_of = ROOT
 			}
+			add_timed_ideas = {
+				idea = KOR_kowareta_katana
+				days = 120
+			}
 		}
 
 		cost = 150
@@ -640,6 +644,10 @@ core_HWAN = {
 				}
 				add_core_of = ROOT
 			}
+			add_timed_ideas = {
+				idea = KOR_kowareta_katana
+				days = 120
+			}
 		}
 
 		cost = 150
@@ -706,6 +714,10 @@ core_HWAN = {
 					is_core_of = VIE
 				}
 				add_core_of = ROOT
+			}
+			add_timed_ideas = {
+				idea = KOR_kowareta_katana
+				days = 120
 			}
 		}
 
@@ -863,6 +875,10 @@ core_HWAN = {
 				655 = {
 				    add_core_of = ROOT
 				}
+			add_timed_ideas = {
+				idea = KOR_kowareta_katana
+				days = 120
+			}
 		}
 
 		cost = 150

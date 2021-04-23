@@ -99,7 +99,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_hitomi.tga"
 	}
 	SpriteType = {
-		name = "한민구" 
+		name = "한민구"  
 		texturefile = "gfx/interface/goals/한민구.png"
 	} 
 	SpriteType = {
@@ -117,5 +117,9 @@ spriteTypes = {
 	SpriteType = { 
 		name = "극동로마" 
 		texturefile = "gfx/interface/goals/극동로마.png"
+	}
+	SpriteType = { 
+		name = "moonjaein" 
+		texturefile = "gfx/interface/goals/moonjaein.png"
 	}
 }

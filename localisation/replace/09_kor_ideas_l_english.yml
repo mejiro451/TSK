@@ -21,8 +21,8 @@
  KOR_weak_anti_nationalist:0 "민족주의 vs 반민족주의 - 반민족주의 우세"
  KOR_strong_anti_nationalist:0 "민족주의 vs 반민족주의 - 반민족주의 강세"
  KOR_rivalry_time:0 "지난 6개월 동안 총회가 소집되었다."
- KOR_kowareta_katana:0 "코와레타카타나"
- KOR_kowareta_katana_desc:0 "South Korea's military was strongly influenced by the Japanese Empire, which ruled the Korean Peninsula from 1910 to 1945.\n\nIn many parts of the South Korean military culture, the Japanese military's absurdities during World War II remain intact."
+ KOR_kowareta_katana:0 "생업에 종사하는 예비군"
+ KOR_kowareta_katana_desc:0 "" 
  KOR_samurais_descendant:0 "사무라이의 후예"
  KOR_samurais_descendant_desc:0 "The Korean military wants to recognize the Japanese Imperial Army as its ancestors and follow the Japanese military's culture."
  KOR_independent_armys_descendant:0 "독립군의 후예"
@@ -138,14 +138,27 @@
  pre_503:0 "박근혜 대통령"
  pre_moon:0 "문재인 대통령"
  
+ moon_jaein:0 "문 재인"
+ lee_myung_bak_pre:0 "이명박 대통령"
+ lee_myung_bak_pre_desc:0 "대한민국의 17대 대통령.(재임기간 2008/2/25~2013/2/25)"
+ pre_503:0 "박근혜 대통령"
+ pre_moon:0 "문재인 대통령"
+ 
  pre_prison_503:0 "수감된 박근혜"
  pre_prison_714:0 "수감된 이명박"
  pre_prison_moon:0 "수감된 문재인"
  pre_prison_roh:0 "수감된 노무현"
+ pre_chongdok_503:0 "일본 총독 박근혜"
  KOR_MB_the_fascism_ideas:0 "대한 민족주의"
  KOR_return_yi_dynasty:0 "황실 복권논의"
  KOR_return_yi_dynasty_2:0 "대한황실"
  KOR_earth_is_korea:0 "지구 집정 연합"
+ KOR_hirohito:0 "일왕 히로히토"
+ KOR_hirohito_desc:0 "저들이 그랬었던 것처럼, 우리도 일본 총독부를 세워서 관리를 해야합니다.\n\n또한 저들이 고종에게 '왕공족'을 부여했던 것처럼, 우리도 똑같이 되갚아주는 것이 어떨까요?\n\n\n압도적인 힘으로."
+ 
+ KOR_making_sorry:0 "아직 제작 중입니다! 후에 업데이트로 찾아뵐 수 있습니다"
+ 
+ united_state_of_human_wargoal:0 "지구연방 건설"
  
  nine_doosanDST:0 "두산DST"
  nine_samsungtec:0 "삼성테크원"

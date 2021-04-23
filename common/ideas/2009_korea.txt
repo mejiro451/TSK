@@ -865,9 +865,10 @@ ideas = {
 			picture = kor_purged_army
 			
 			modifier = {
-				army_defence_factor = -0.05
-				army_attack_factor = -0.05
-				army_morale_factor = -0.05
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+				army_morale_factor = -0.1
+				conscription_factor = -0.77
 			
 			}
 		}

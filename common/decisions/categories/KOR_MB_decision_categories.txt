@@ -7,7 +7,7 @@ core_PRK = {
 	}
 
 	visible = { 
-		always = yes
+		has_completed_focus = KOR_MB_not_allied
 	}
 }
 
@@ -20,6 +20,9 @@ core_HWAN = {
 	}
 
 	visible = { 
-		always = yes
+		OR = {
+			has_completed_focus = KOR_plan_another
+			has_country_flag = debug
+		}	
 	}
 }
