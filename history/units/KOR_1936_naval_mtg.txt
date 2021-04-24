@@ -82,50 +82,7 @@ units = {
 			ship = { name = "PKM-345" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
 		}
 		task_force = {
-			name = "제2 서해 고속정사령부" 
-			location = 13244 
-			ship = { name = "PKM-346" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-347" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-348" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-349" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-350" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-351" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-352" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-353" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-354" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-355" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-356" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-357" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-358" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-359" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-360" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-		}
-		task_force = {
-			name = "제3 서해 고속정사령부" 
-			location = 13244 
-			ship = { name = "PKM-361" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-362" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-363" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-364" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-365" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-366" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-367" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-368" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-369" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-370" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-371" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-372" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-373" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-374" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-375" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-376" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-377" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-378" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-379" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-			ship = { name = "PKM-380" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
-		}
-		task_force = {
-			name = "제3 동해 고속정사령부" 
+			name = "제2 동해 고속정사령부" 
 			location = 11948
 			ship = { name = "PKM-381" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }
 			ship = { name = "PKM-382" definition = modern_PK start_experience_factor = 0.3 equipment = { ship_hull_PK_1 = { amount = 1 owner = KOR version_name = "참수리급" } } }

@@ -3,6 +3,9 @@ on_actions = {
     on_startup = {
         effect = {
             KOR = {
+                    country_event = { id = korea.13 }
+            }
+            KOR = {
                 country_event = {
 					id = KOR_MB.2009
 					days = 0
