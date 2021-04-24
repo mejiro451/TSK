@@ -19,6 +19,8 @@ focus_tree = {
 			country_event = korea.3
 			country_event = korea.12
 			}
+			country_event = { id = korea.3 }
+			country_event = { id = korea.12 }
 		}
 	}
 	focus = { #정보 수집
@@ -34,6 +36,7 @@ focus_tree = {
 			KR1 = {
 			country_event = korea.4
 			}
+			country_event = { id = korea.4 }
 		}
 	}
 	focus = { #계엄령 선포
@@ -49,6 +52,7 @@ focus_tree = {
 			KR1 = {
 			country_event = korea.5
 			}
+			country_event = { id = korea.5 }
 
 		}
 	}
@@ -60,9 +64,13 @@ focus_tree = {
 			focus = KOR_intel
 		}
 		completion_reward = {
+
 			KR1 = {
 			country_event = korea.7
 			}
+
+			country_event = { id = korea.7 }
+
 
 		}
 		x = 10
@@ -77,7 +85,7 @@ focus_tree = {
 			focus = KOR_press_control
 		}
 		available = {
-				always = no
+			always = no
 		}
 		x = 9
 		y = 3
@@ -91,9 +99,13 @@ focus_tree = {
 			focus = KOR_press_control
 		}
 		completion_reward = {
+
 			KR1 = {
 			country_event = korea.6
 			}
+
+			country_event = { id = korea.6 }
+
 
 		}
 		x = 11
@@ -127,9 +139,13 @@ focus_tree = {
 		x = 10
 		y = 4
 		completion_reward = {
+
 			KR1 = {
 			country_event = korea.1
 			}
+
+			country_event = { id = korea.1 }
+
 
 		}
 	}
