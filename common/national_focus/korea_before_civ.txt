@@ -15,10 +15,6 @@ focus_tree = {
 		x = 10
 		y = 0
 		completion_reward = {
-			KR1 = {
-			country_event = korea.3
-			country_event = korea.12
-			}
 			country_event = { id = korea.3 }
 			country_event = { id = korea.12 }
 		}
@@ -33,9 +29,6 @@ focus_tree = {
 		x = 10
 		y = 1
 		completion_reward = {
-			KR1 = {
-			country_event = korea.4
-			}
 			country_event = { id = korea.4 }
 		}
 	}
@@ -49,9 +42,6 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = {
-			KR1 = {
-			country_event = korea.5
-			}
 			country_event = { id = korea.5 }
 
 		}
@@ -64,11 +54,6 @@ focus_tree = {
 			focus = KOR_intel
 		}
 		completion_reward = {
-
-			KR1 = {
-			country_event = korea.7
-			}
-
 			country_event = { id = korea.7 }
 
 
@@ -99,11 +84,6 @@ focus_tree = {
 			focus = KOR_press_control
 		}
 		completion_reward = {
-
-			KR1 = {
-			country_event = korea.6
-			}
-
 			country_event = { id = korea.6 }
 
 
@@ -139,10 +119,6 @@ focus_tree = {
 		x = 10
 		y = 4
 		completion_reward = {
-
-			KR1 = {
-			country_event = korea.1
-			}
 
 			country_event = { id = korea.1 }
 
