@@ -15,9 +15,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		completion_reward = {
-			MKR = {
-			country_event = mkorea.1
-			}
+			country_event = { id = mkorea.1 }
 		}
 
 	}
@@ -29,9 +27,7 @@ focus_tree = {
 			focus = Countermeasure_Conference
 		}
 		completion_reward = {
-			MKR = {
-			country_event = mkorea.2
-			}
+			country_event = { id = mkorea.2 }
 		}
 		x = 8
 		y = 1
@@ -45,9 +41,7 @@ focus_tree = {
 			focus = mobilization_order
 		}
 		completion_reward = {
-			MKR = {
-			country_event = mkorea.3
-			}
+			country_event = { id = mkorea.3 }
 		}
 		x = 6
 		y = 2
@@ -81,9 +75,7 @@ focus_tree = {
 			focus = Independent_Army_Corps
 		}
 		completion_reward = {
-			MKR = {
-			country_event = mkorea.4
-			}
+			country_event = { id = mkorea.4 }
 		}
 		x = 8
 		y = 3
