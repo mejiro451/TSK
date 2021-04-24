@@ -1418,7 +1418,6 @@ focus_tree = {
 				neutrality = 40
 			}
 			remove_ideas = kor_law_of_korean_5
-			add_ideas = pre_prison_714
 		}
 
 	}
@@ -1558,7 +1557,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			remove_ideas = KOR_legacy_of_518
-			add_ideas = pre_prison_moon
 		}
 
 	}
@@ -2143,7 +2141,6 @@ focus_tree = {
 			JAP = { 
 				remove_ideas = JAP_hirohito
 				set_cosmetic_tag = JAP_republic
-				add_ideas = pre_chongdok_503
 				create_country_leader = {
 					name = "Cho Yung Kil"
 					ideology = nazism
@@ -2935,7 +2932,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_MB_choi_sunshil's_advise
+		id = KOR_MB_lee_support_to_park
 		icon = espionage2
 		cost = 5.00
 		prerequisite = {
@@ -2981,7 +2978,7 @@ focus_tree = {
 		icon = democracy5
 		cost = 5.00
 		prerequisite = {
-			focus = KOR_MB_choi_sunshil's_advise
+			focus = KOR_MB_lee_support_to_park
 			focus = KOR_MB_i_am_president
 			focus = KOR_MB_conservatism_lee
 		}
