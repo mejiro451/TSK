@@ -520,7 +520,7 @@ air_wings = {
 	808 = { 
 		m_1990_jet_multirole_equipment = {
 			owner = "KOR" 
-			amount = 40
+			amount = 140
 		}
 		m_1990_jet_fighter_equipment = {
 			owner = "KOR" 
@@ -531,17 +531,17 @@ air_wings = {
 	810 = { 
 		m_2000_jet_fighter_equipment = {
 			owner = "KOR" 
-			amount = 40
+			amount = 50
 		}
 		m_2000_jet_fighter_equipment = {
 			owner = "KOR" 
-			amount = 40
+			amount = 50
 		}
 	}
 	525 = { 
 		m_2000_jet_multirole_equipment = {
 			owner = "KOR" 
-			amount = 40
+			amount = 70
 		}
 		m_2000_attack_helicopter_equipment = {
 			owner = "KOR" 
