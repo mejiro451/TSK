@@ -9,6 +9,8 @@
 		}
 		generic_pattern = AIR_WING_NAME_KOR_GENERIC
 		unique = {}
+	}
+
 	jet_fighter_equipment = {
 		prefix = ""
 		generic = {
