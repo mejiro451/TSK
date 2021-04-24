@@ -159,6 +159,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ADVISOR/이명박.png"
 	}
 	spriteType = {
+		name = "GFX_KOR_lee_factions_support"
+		texturefile = "gfx/interface/ideas/ADVISOR/이명박.png"
+	}
+	spriteType = {
 		name = "GFX_idea_pre_503"
 		texturefile = "gfx/interface/ideas/ADVISOR/박근혜.png"
 	}

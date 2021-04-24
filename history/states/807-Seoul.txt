@@ -23,6 +23,7 @@ state={
 			owner = KOR
 			controller = KOR
 			remove_core_of = KR1
+			remove_core_of = PRK
 			add_core_of = KOR
 			add_claim_by = KPA
 		}
