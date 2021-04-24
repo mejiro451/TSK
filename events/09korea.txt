@@ -689,7 +689,6 @@ country_event = {
 	id = KOR_MB.23 #일본 '합병'
 	title = KOR_MB.23.t
 	desc = KOR_MB.23.d
-	picture = GFX_report_event_chamberlain_announce
 	trigger = {
 		date > 1937.8.15
 		has_completed_focus = KOR_this_is_japan_heemang
@@ -718,7 +717,6 @@ country_event = {
 	id = KOR_MB.24 #모에화 폭탄
 	title = KOR_MB.24.t
 	desc = KOR_MB.24.d
-	picture = GFX_event_hirohito_moe
 	is_triggered_only = yes
 	fire_only_once = yes
 	 
@@ -737,7 +735,6 @@ country_event = {
 	id = KOR_MB.25 #모에화 폭탄
 	title = KOR_MB.25.t
 	desc = KOR_MB.25.d
-	picture = GFX_event_hirohito_moe
 	is_triggered_only = yes
 	fire_only_once = yes
 	
