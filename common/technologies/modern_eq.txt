@@ -2077,8 +2077,8 @@ technologies = {
 
 	modern_fuel_refining = {
 		
-		fuel_gain_factor = 1.5
-		fuel_gain_factor_from_states = 1.5
+		fuel_gain_factor = 1
+		fuel_gain_factor_from_states = 1
 
 		start_year = 1936
 		

@@ -330,8 +330,8 @@ PRK_food_cris_cat = {
 		}
 	}
 }
-PRK_counstruction_hotel = {
-	 Resume_material_procurement = {
+PRK_counstruction_hotel = { #류경호텔건설
+	 Resume_material_procurement = { #재료조달
 		
 		available = {
 			has_completed_focus = prk_Ryugyong_Hotel 
@@ -362,7 +362,7 @@ PRK_counstruction_hotel = {
 			factor = 1
 		}
 	 }
-	 Groundbreaking = {
+	 Groundbreaking = { #기공
 
 		icon = generic_operation
 		
@@ -395,7 +395,7 @@ PRK_counstruction_hotel = {
 			factor = 1
 		}
 	}
-	 opening_hotel = {
+	 opening_hotel = { #호텔개장
 
 		icon = generic_operation
 		
@@ -422,7 +422,7 @@ PRK_counstruction_hotel = {
 		}
 	}
 }
-PRK_2nd_war = {
+PRK_2nd_war = { #초반 2차한국전쟁
 
 	PRK_2nd_koreawar_start = {
 

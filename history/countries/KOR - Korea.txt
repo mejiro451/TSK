@@ -161,8 +161,6 @@ set_technology = {
 	
 	m_1970_attack_helicopter = 1
 	m_1980_attack_helicopter = 1
-	m_1990_attack_helicopter = 1
-	m_2000_attack_helicopter = 1
 	
 	m_1970_util_helicopter = 1
 	m_1980_util_helicopter = 1

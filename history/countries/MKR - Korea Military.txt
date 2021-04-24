@@ -1,6 +1,6 @@
 ﻿capital = 807 #South Korea - Seoul or Busan
 
-oob = "KOR_1936"
+oob = "1936"
 
 # Starting tech
 set_technology = {
@@ -109,7 +109,6 @@ set_technology = {
 	modern_light_battery_1 = 1
 	ship_missile_luncher_1 = 1
 	ship_missile_luncher_2 = 1
-	ship_aa_missile_luncher_1 = 1
 	ship_ciws = 1
 	ship_modern_control_system_1 = 1
 	ship_modern_radar_1 = 1
@@ -128,6 +127,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_silos = 1
 }
+
 set_fuel_ratio = 1.0
 
 set_convoys = 5
@@ -264,4 +264,81 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+}
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	create_equipment_variant = {
+		name = "동해급"
+		type = ship_hull_PCC_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "포항급"
+		type = ship_hull_PCC_2
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			front_1_custom_slot = modern_ship_light_battery_1
+			rear_1_custom_slot = ship_missile_luncher_1
+			mid_1_custom_slot = ship_ciws_1
+		}
+	}
+	create_equipment_variant = {
+		name = "울산급"
+		type = ship_hull_FF_1
+		name_group = ROK_PCC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = modern_ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_ciws_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_modern_radar_1
+			fixed_ship_sts_slot = ship_missile_luncher_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			rear_1_custom_slot = modern_ship_light_battery_1
+			mid_1_custom_slot = ship_missile_luncher_1
+			front_1_custom_slot = modern_ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "참수리급"
+		type = ship_hull_PK_1
+		name_group = ROK_PKM_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_light_secondaries_slot = ship_light_secondaries_1
+			fixed_ship_light_aa_slot = ship_vulcan_1
+			fixed_ship_fire_control_system_slot = ship_modern_fire_control_system_1
+			fixed_ship_radar_slot = ship_sonar_modern_1
+			fixed_ship_engine_slot = light_ship_engine_modern_1
+			fixed_ship_depth_charge_slot = ship_depth_charge_modern_1
+			mid_1_custom_slot = ship_mg
+			rear_1_custom_slot = ship_vulcan_1
+		}
+	}
 }

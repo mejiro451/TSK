@@ -201,12 +201,17 @@ country_event = {
 							days = 5
 						}			
                 	}	
-					PRK = {
-						country_event = {
-                       		id = korea.2
-			           		days = 1
-		            	}
-                	}	
+					if = {
+					limit = { is_ai = yes
+						PRK = {
+							
+							country_event = {
+								id = korea.2
+								days = 1
+							}
+						}	
+					}
+					}
 			    KR1 = {
 				    remove_state_core = 525
 				    remove_state_core = 810
@@ -234,6 +239,7 @@ country_event = {
 		name = korea.100.a	
 		ai_chance = { factor = 100 }		
 			news_event = { hours = 6 id = kor_news.1 }
+		hidden_effect = {
             delete_unit_template_and_units = {
                 division_template = "향토방위사단 2" 
             }
@@ -256,7 +262,8 @@ country_event = {
                 division_template = "공수특전사단 2" 
             }	
 		}
-    }	
+	}
+}	
 #Ai용
 country_event = {
 	id = korea.200
@@ -311,6 +318,8 @@ country_event = {
 		JEJ = { 
 			transfer_state = 813
 			add_state_core = 813
+			transfer_state = 821
+			add_state_core = 821
 			country_event = {
 				id = korea.301
 				days = 1
