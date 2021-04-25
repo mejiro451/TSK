@@ -773,27 +773,27 @@ country_event = {
 
 ########
 country_event = { #정보
-	id = KOR_MB.mod_help
-	title = KOR_MB.mod_help.t
-	desc = KOR_MB.mod_help.d
+	id = KOR_MB.2009
+	title = KOR_MB.2009.t
+	desc = KOR_MB.2009.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.mod_help.a 
+		name = KOR_MB.2009.a 
 		country_event = {
-			id = KOR_MB.uk
+			id = KOR_MB.2010
 		}
 	}
 	option = {
-		name = KOR_MB.mod_help.b 
+		name = KOR_MB.2009.b 
 		country_event = {
-			id = KOR_MB.inf
+			id = KOR_MB.2013
 		}
 	}
 	option = {
-		name = KOR_MB.uk.c #동의하지
+		name = KOR_MB.2009.c #동의하지
 		if = {
 			limit = {
 				original_tag = KOR
@@ -811,21 +811,21 @@ country_event = { #정보
 	
 }
 country_event = {
-	id = KOR_MB.uk #UKKRHEE
-	title = KOR_MB.uk.t
-	desc = KOR_MB.uk.d
+	id = KOR_MB.2010 #UKKRHEE
+	title = KOR_MB.2010.t
+	desc = KOR_MB.2010.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		 
 	option = {
-		name = KOR_MB.uk.a #동의하지
+		name = KOR_MB.2010.a #동의하지
 		country_event = {
-			id = KOR_MB.kk
+			id = KOR_MB.2011
 		}
 	}
 	option = {
-		name = KOR_MB.uk.b #동의하지
+		name = KOR_MB.2010.b #동의하지
 		if = {
 			limit = {
 				original_tag = KOR
@@ -842,21 +842,21 @@ country_event = {
 	}
 }
 country_event = { #kkshunp
-	id = KOR_MB.kk
-	title = KOR_MB.kk.t
-	desc = KOR_MB.kk.d
+	id = KOR_MB.2011
+	title = KOR_MB.2011.t
+	desc = KOR_MB.2011.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.kk.a 
+		name = KOR_MB.2011.a 
 		country_event = {
-			id = KOR_MB.help
+			id = KOR_MB.2012
 		}
 	}
 	option = {
-		name = KOR_MB.kk.b 
+		name = KOR_MB.2011.b 
 		if = {
 			limit = {
 				original_tag = KOR
@@ -873,20 +873,20 @@ country_event = { #kkshunp
 	}
 }
 country_event = { #도움준사람들
-	id = KOR_MB.help
-	title = KOR_MB.help.t
-	desc = KOR_MB.help.d
+	id = KOR_MB.2012
+	title = KOR_MB.2012.t
+	desc = KOR_MB.2012.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 	option = {
-		name = KOR_MB.help.a 
+		name = KOR_MB.2012.a 
 		country_event = {
-			id = KOR_MB.mod_help
+			id = KOR_MB.2009
 		}
 	}
 	option = {
-		name = KOR_MB.help.a 
+		name = KOR_MB.2012.b 
 		if = {
 			limit = {
 				original_tag = KOR
@@ -904,22 +904,22 @@ country_event = { #도움준사람들
 	
 }
 country_event = { #모드정보 - 육군 
-	id = KOR_MB.inf
-	title = KOR_MB.inf.t
-	desc = KOR_MB.inf.d
+	id = KOR_MB.2013
+	title = KOR_MB.2013.t
+	desc = KOR_MB.2013.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.inf.a 
+		name = KOR_MB.2013.a 
 		country_event = {
-			id = KOR_MB.inf_ind
+			id = KOR_MB.2014
 		}
 	}
 	
 	option = {
-		name = KOR_MB.inf.b 
+		name = KOR_MB.2013.b 
 		if = {
 			limit = {
 				original_tag = KOR
@@ -936,22 +936,22 @@ country_event = { #모드정보 - 육군
 	}
 }
 country_event = { #모드정보 - 기타등등
-	id = KOR_MB.inf_ind
-	title = KOR_MB.inf_ind.t
-	desc = KOR_MB.inf_ind.d
+	id = KOR_MB.2014
+	title = KOR_MB.2014.t
+	desc = KOR_MB.2014.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.inf_ind.a 
+		name = KOR_MB.2014.a 
 		country_event = {
-			id = KOR_MB.mod_help
+			id = KOR_MB.2009
 		}
 	}
 	
 	option = {
-		name = KOR_MB.inf_ind.b 
+		name = KOR_MB.2014.b 
 		if = {
 			limit = {
 				original_tag = KOR
