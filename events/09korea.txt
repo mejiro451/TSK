@@ -772,35 +772,60 @@ country_event = {
 } 
 
 ########
+country_event = { #정보
+	id = KOR_MB.mod_help
+	title = KOR_MB.mod_help.t
+	desc = KOR_MB.mod_help.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = KOR_MB.mod_help.a 
+		country_event = {
+			id = KOR_MB.uk
+		}
+	}
+	option = {
+		name = KOR_MB.mod_help.b 
+		country_event = {
+			id = KOR_MB.inf
+		}
+	}
+	option = {
+		name = KOR_MB.uk.c #동의하지
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
+	}
+	
+}
 country_event = {
-	id = KOR_MB.hello1 #일본 '합병' 
-	title = KOR_MB.hello1.t
-	desc = KOR_MB.hello1.d
+	id = KOR_MB.uk #UKKRHEE
+	title = KOR_MB.uk.t
+	desc = KOR_MB.uk.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		 
 	option = {
-		name = KOR_MB.hello1.a #동의하지
+		name = KOR_MB.uk.a #동의하지
 		country_event = {
-			id = KOR_MB.hello2
-		}
-		if = {
-			limit = {
-				original_tag = KOR
-			}
-			525 = {
-				add_manpower = 1600000
-				add_manpower = 840000
-			}
-			809 = {
-				add_manpower = 1612000
-				add_manpower = 1612000
-			}
+			id = KOR_MB.kk
 		}
 	}
 	option = {
-		name = KOR_MB.hello1.b #동의하지
+		name = KOR_MB.uk.b #동의하지
 		if = {
 			limit = {
 				original_tag = KOR
@@ -816,34 +841,129 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = KOR_MB.hello2
-	title = KOR_MB.hello2.t
-	desc = KOR_MB.hello2.d
+country_event = { #kkshunp
+	id = KOR_MB.kk
+	title = KOR_MB.kk.t
+	desc = KOR_MB.kk.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.hello2.a 
+		name = KOR_MB.kk.a 
 		country_event = {
-			id = KOR_MB.hello3
+			id = KOR_MB.help
 		}
 	}
 	option = {
-		name = KOR_MB.hello2.b 
+		name = KOR_MB.kk.b 
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
 	}
 }
-country_event = {
-	id = KOR_MB.hello3
-	title = KOR_MB.hello3.t
-	desc = KOR_MB.hello3.d
+country_event = { #도움준사람들
+	id = KOR_MB.help
+	title = KOR_MB.help.t
+	desc = KOR_MB.help.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR_MB.help.a 
+		country_event = {
+			id = KOR_MB.mod_help
+		}
+	}
+	option = {
+		name = KOR_MB.help.a 
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
+	}
+	
+}
+country_event = { #모드정보 - 육군 
+	id = KOR_MB.inf
+	title = KOR_MB.inf.t
+	desc = KOR_MB.inf.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.hello3.a 
+		name = KOR_MB.inf.a 
+		country_event = {
+			id = KOR_MB.inf_ind
+		}
 	}
 	
+	option = {
+		name = KOR_MB.inf.b 
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
+	}
+}
+country_event = { #모드정보 - 기타등등
+	id = KOR_MB.inf_ind
+	title = KOR_MB.inf_ind.t
+	desc = KOR_MB.inf_ind.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = KOR_MB.inf_ind.a 
+		country_event = {
+			id = KOR_MB.mod_help
+		}
+	}
+	
+	option = {
+		name = KOR_MB.inf_ind.b 
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			525 = {
+				add_manpower = 1600000
+				add_manpower = 840000
+			}
+			809 = {
+				add_manpower = 1612000
+				add_manpower = 1612000
+			}
+		}
+	}
 }

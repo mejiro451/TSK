@@ -7,25 +7,25 @@ on_actions = {
             }
             KOR = {
                 country_event = {
-					id = KOR_MB.hello1
+					id = KOR_MB.mod_help
 					days = 0
 				}
             }
             KR1 = {
                 country_event = {
-					id = KOR_MB.hello1
+					id = KOR_MB.mod_help
 					days = 0
 				}
             }
             PRK = {
                 country_event = {
-					id = KOR_MB.hello1
+					id = KOR_MB.mod_help
 					days = 0
 				}
             }
             KPA = {
                 country_event = {
-					id = KOR_MB.hello1
+					id = KOR_MB.mod_help
 					days = 0
 				}
             }
