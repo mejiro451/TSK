@@ -15,6 +15,8 @@
  modern_marine_desc:0 "상륙장갑차를활용,더수월한 상륙작전을 펼칠수있는해병대입니다. 이들은 또한 지상전에서도 좋은전투력을 제공합니다."
  modern_armed_rec:0 "기갑수색대대"
  modern_armed_rec_desc:0 ""
+ modern_mbt:0 "현대식 기갑대대"
+ modern_mbt_rec_desc:0 ""
  rec_infantry:0 "수색대"
  rec_infantry_desc:0 ""
  Heavy_Engi_Bat:0 "중공병대대"
