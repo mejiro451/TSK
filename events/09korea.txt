@@ -773,17 +773,17 @@ country_event = {
 
 ########
 country_event = {
-	id = KOR_MB.2009 #일본 '합병' 
-	title = KOR_MB.2009.t
-	desc = KOR_MB.2009.d
+	id = KOR_MB.hello1 #일본 '합병' 
+	title = KOR_MB.hello1.t
+	desc = KOR_MB.hello1.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		 
 	option = {
-		name = KOR_MB.2009.a #동의하지
+		name = KOR_MB.hello1.a #동의하지
 		country_event = {
-			id = KOR_MB.1991
+			id = KOR_MB.hello2
 		}
 		if = {
 			limit = {
@@ -800,7 +800,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = KOR_MB.2009.b #동의하지
+		name = KOR_MB.hello1.b #동의하지
 		if = {
 			limit = {
 				original_tag = KOR
@@ -817,15 +817,33 @@ country_event = {
 	}
 }
 country_event = {
-	id = KOR_MB.1991 #일본 '합병'
-	title = KOR_MB.1991.t
-	desc = KOR_MB.1991.d
+	id = KOR_MB.hello2
+	title = KOR_MB.hello2.t
+	desc = KOR_MB.hello2.d
 	picture = GFX_report_event_chamberlain_announce
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = KOR_MB.1991.a #동의하지
+		name = KOR_MB.hello2.a 
+		country_event = {
+			id = KOR_MB.hello3
+		}
+	}
+	option = {
+		name = KOR_MB.hello2.b 
+	}
+}
+country_event = {
+	id = KOR_MB.hello3
+	title = KOR_MB.hello3.t
+	desc = KOR_MB.hello3.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = KOR_MB.hello3.a 
 	}
 	
 }
