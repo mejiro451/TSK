@@ -25,9 +25,11 @@ state={
 		add_core_of = KR1
 		add_core_of = PRK
 		1936.1.2 = {
+			buildings = {
 			infrastructure = 5
 			industrial_complex = 4
 			dockyard = 2
+			}
 			remove_core_of = PRK
 		}
 		1936.1.3 = {
