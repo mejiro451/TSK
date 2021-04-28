@@ -543,9 +543,46 @@ ideas = {
 				army_defence_factor = 0.2
 				army_attack_factor = 0.2
 			}
+		}
 
+		ROK_death_before_surrender = { #항복할 바엔 죽으리라
+
+			name = ROK_death_before_surrender
+
+			picture = generic_acquire_tanks
+
+			allowed = {
+				original_tag = ROK
+			}
+
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+
+		ROK_independent_officer = { #독립운동가 장교진
+
+			name = ROK_independent_officer
+
+			picture = ROK_nationalist_remnants
+
+			allowed_civil_war = {
+			always = yes
+			}
+			modifier = {	
+				max_command_power = 100
+				army_leader_cost_factor = -0.5
+				army_leader_start_level = 2
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 2
+				army_leader_start_defense_level	= 2
+			    army_leader_start_logistics_level = 1
 		}
 	}
+
+
 	
 	political_advisor = {
 	
