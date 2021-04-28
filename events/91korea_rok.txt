@@ -1,4 +1,6 @@
 add_namespace = rok
+add_namespace = rok_civ
+
 country_event = { # 14대 대선
 	id = rok.1
 	title = rok.1.t
@@ -53,5 +55,124 @@ country_event = { # 내전끝
 		name = rok.2.a
 		add_ideas = rok_remnants_of_the_military
 		add_ideas = KOR_economic_collapse_1
+		remove_ideas = ROK_bomb
     }	
+}
+
+country_event = { # 긴급보안법
+	id = rok_civ.1
+	title = rok_civ.1.t
+	desc = rok_civ.1.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.1.a
+		ai_chance = { factor = 100 }
+    }	
+}
+
+country_event = { # 국민지지확보
+	id = rok_civ.2
+	title = rok_civ.2.t
+	desc = rok_civ.2.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.2.a
+		add_timed_idea = {
+		idea = ROK_death_before_surrender
+		days = 150
+		}
+    }	
+}
+
+country_event = { # 독립운동가 귀국
+	id = rok_civ.3
+	title = rok_civ.3.t
+	desc = rok_civ.3.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.3.a
+
+    }	
+}
+
+country_event = { # 독립군 장교단
+	id = rok_civ.4
+	title = rok_civ.4.t
+	desc = rok_civ.4.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.4.a
+		add_ideas = ROK_independent_officer
+    }	
+}
+
+country_event = { # 테러폭격의 피해
+	id = rok_civ.5
+	title = rok_civ.5.t
+	desc = rok_civ.5.d
+	picture = GFX_
+
+    is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.5.a
+		add_ideas = ROK_bomb
+    }	
+}
+
+country_event = { # 예비사단 동원
+	id = rok_civ.6
+	title = rok_civ.6.t
+	desc = rok_civ.6.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.6.a
+    }	
+}
+
+country_event = { # 물자보급
+	id = rok_civ.7
+	title = rok_civ.7.t
+	desc = rok_civ.7.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = rok_civ.7.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 5000
+			producer = KOR
+		}
+    }
 }

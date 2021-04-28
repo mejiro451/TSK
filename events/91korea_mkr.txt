@@ -78,6 +78,10 @@ country_event = { #테러폭격?
 	picture = GFX_폭격
 
 	is_triggered_only = yes
+
+	immediate = {
+		ROK = {country_event = rokciv.5}
+		}
 	
 	fire_only_once = yes
 	
