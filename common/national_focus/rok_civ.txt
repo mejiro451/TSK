@@ -7,87 +7,139 @@ focus_tree = {
 			tag = ROK
 		}
 	}
-	
 	default = no
-	focus = { #긴급보안법
-		id = security_law
+
+	focus = {
+		id = security_law #긴급보안법
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 0.5
+		completion_reward = {
+			country_event = { id = rok_civ.1 }
+		}
 		x = 8
 		y = 0
-
 	}
-	focus = { #국민지지확보
-		id = national_support
+
+	focus = {
+		id = national_support #국민지지확보
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 1
 		prerequisite = {
 			focus = security_law
+		}
+		completion_reward = {
+			country_event = { id = rok_civ.2 }
 		}
 		x = 8
 		y = 1
 
 	}
-	focus = { #독립운동가 귀국
-		id = independence_fighters
+	focus = {
+		id = independence_fighters #독립운동가 귀국
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2
 		prerequisite = {
 			focus = national_support
+		}
+		completion_reward = {
+			country_event = { id = rok_civ.3 }
 		}
 		x = 6
 		y = 2
 
 	}
-	focus = { #동원령
-		id = mobilization_order
+
+	focus = {
+		id = Attack_Instructions #공격지침 하달
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 3
 		prerequisite = {
 			focus = national_support
 		}
+		    completion_reward = {
+			    every_army_leader = {
+			     	add_skill_level = 2
+			    }
+			}
 		x = 8
 		y = 2
-
 	}
-	focus = { #물자보급
-		id = supply of goods
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = mobilization_order
-		}
-		x = 8
-		y = 3
 
-	}
-	focus = { #독립군 장교단
-		id = Independent_Army_Officers
+	focus = {
+		id = rok_mobilization_order #동원령
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2
 		prerequisite = {
 			focus = national_support
+		}
+		completion_reward = {
+			country_event = { id = rok_civ.6 }
 		}
 		x = 10
 		y = 2
+	}
+
+	focus = {
+		id = supply_of_goods 물자보급
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = Attack_Instructions
+		}
+		prerequisite = {
+		    focus = rok_mobilization_order
+		}
+		completion_reward = {
+			country_event = { id = rok_civ.7 }
+		}
+		x = 9
+		y = 3
+	}
+	focus = {
+		id = Independent_Army_Officers #독립군 장교단
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = independence_fighters
+		}
+		prerequisite = {
+		    focus = Attack_Instructions
+		}
+		completion_reward = {
+			country_event = { id = rok_civ.4 }
+		}
+		x = 7
+		y = 3
 
 	}
-	focus = { #국민의 승리
-		id = victory_of_the_people
+	focus = {
+		id = Break_through #대공세 혹은 돌파
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 3
 		prerequisite = {
 			focus = Independent_Army_Officers
 		}
 		prerequisite = {
-			focus = independence_fighters
+			focus = supply_of_goods
 		}
 		completion_reward = {
-			load_focus_tree = rok_focus
-			set_global_flag = civil_rok_win
+			add_ideas = ROK_offensive
 		}
 		x = 8
 		y = 4
-
+	}
+	focus = {
+		id = victory_of_the_people #국민의 승리
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = Break_through
+		}
+			completion_reward = {
+					load_focus_tree = rok_focus
+					set_global_flag = civil_rok_win
+				}
+		x = 8
+		y = 5
 	}
 }
